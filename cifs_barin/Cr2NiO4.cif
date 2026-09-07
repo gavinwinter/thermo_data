@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Cr2NiO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.84269732
+_cell_length_b   5.92279520
+_cell_length_c   5.95569652
+_cell_angle_alpha   59.05547855
+_cell_angle_beta   60.66484075
+_cell_angle_gamma   90.04302093
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Cr2NiO4
+_chemical_formula_sum   'Cr4 Ni2 O8'
+_cell_volume   145.03058009
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cr  Cr0  1  -0.00002294  0.99989343  0.50021246  1.0
+  Cr  Cr1  1  0.99993335  0.49996403  1.00003364  1.0
+  Cr  Cr2  1  0.99993195  0.00000694  1.00001577  1.0
+  Cr  Cr3  1  0.50030667  0.00014473  0.49971756  1.0
+  Ni  Ni4  1  0.62679791  0.37052206  0.74544981  1.0
+  Ni  Ni5  1  0.37216726  0.62937894  0.25469170  1.0
+  O  O6  1  0.24224185  0.76158555  0.97550398  1.0
+  O  O7  1  0.76106668  0.78124135  0.47792500  1.0
+  O  O8  1  0.76504737  0.23929599  0.47099498  1.0
+  O  O9  1  0.78169432  0.76106579  0.97631659  1.0
+  O  O10  1  0.75810183  0.23864432  0.02362002  1.0
+  O  O11  1  0.23935878  0.21874666  0.52201230  1.0
+  O  O12  1  0.23570212  0.76077083  0.52894681  1.0
+  O  O13  1  0.21767385  0.23873839  0.02456137  1.0

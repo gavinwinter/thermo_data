@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_TiMnO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.57539335
+_cell_length_b   5.57539356
+_cell_length_c   5.57539301
+_cell_angle_alpha   54.84196489
+_cell_angle_beta   54.84195498
+_cell_angle_gamma   54.84195199
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TiMnO3
+_chemical_formula_sum   'Ti2 Mn2 O6'
+_cell_volume   107.83263051
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ti  Ti0  1  0.85282028  0.85282028  0.85282028  1.0
+  Ti  Ti1  1  0.14717972  0.14717972  0.14717972  1.0
+  Mn  Mn2  1  0.64076144  0.64076144  0.64076144  1.0
+  Mn  Mn3  1  0.35923856  0.35923856  0.35923856  1.0
+  O  O4  1  0.04584299  0.78144035  0.43799747  1.0
+  O  O5  1  0.78144035  0.43799747  0.04584299  1.0
+  O  O6  1  0.43799747  0.04584299  0.78144035  1.0
+  O  O7  1  0.95415801  0.21855965  0.56200253  1.0
+  O  O8  1  0.56200253  0.95415801  0.21855965  1.0
+  O  O9  1  0.21855965  0.56200253  0.95415801  1.0

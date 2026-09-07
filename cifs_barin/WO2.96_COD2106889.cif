@@ -1,0 +1,109 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-10-09 19:52:31 +0300 (Fri, 09 Oct 2015) $
+#$Revision: 162570 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/10/68/2106889.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2106889
+loop_
+_publ_author_name
+'Sundberg, M.R.'
+_publ_section_title
+;
+ The crystal and defect structures of W25 O73, a member of the homologous
+ series Wn O3N/-2
+;
+_journal_name_full               'Acta Crystallographica B (24,1968-38,1982)'
+_journal_page_first              2144
+_journal_page_last               2149
+_journal_volume                  32
+_journal_year                    1976
+_chemical_formula_sum            'O73 W25'
+_chemical_name_systematic        'W25 O73'
+_space_group_IT_number           13
+_symmetry_space_group_name_Hall  '-P 2yc'
+_symmetry_space_group_name_H-M   'P 1 2/c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 98.3
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   11.93
+_cell_length_b                   3.82
+_cell_length_c                   59.72
+_cell_volume                     2693.089
+_citation_journal_id_ASTM        ACBCAR
+_cod_data_source_file            Sundberg_ACBCAR_1976_954.cif
+_cod_data_source_block           O73W25
+_cod_database_code               2106889
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,-z+1/2
+-x,-y,-z
+x,-y,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O14 O 0.4 0.5 0.011 1 0.0
+W10 W 0.059 0.54 0.351 1 0.0
+O27 O 0.467 0.5 0.28 1 0.0
+W11 W 0.377 0.462 0.371 1 0.0
+O26 O 0.18 0.5 0.26 1 0.0
+O4 O -0.004 0 0.089 1 0.0
+W8 W 0.135 0.458 0.289 1 0.0
+O12 O 0.308 0 0.433 1 0.0
+O17 O 0.34 0.5 0.079 1 0.0
+O5 O 0.318 0 0.109 1 0.0
+W5 W 0.318 0.537 0.109 1 0.0
+O7 O 0.189 0 0.23 1 0.0
+O37 O 0.09 0.5 0.49 1 0.0
+O32 O 0.03 0.5 0.381 1 0.0
+O8 O 0.135 0 0.289 1 0.0
+O2 O 0.059 0 0.026 1 0.0
+O35 O 0.466 0.5 0.452 1 0.0
+O18 O 0.158 0.5 0.095 1 0.0
+O23 O 0.22 0.5 0.198 1 0.0
+O34 O 0.144 0.5 0.425 1 0.0
+W13 W 0.263 0.472 0.495 1 0.0
+O24 O 0.034 0.5 0.218 1 0.0
+O3 O 0.374 0 0.048 1 0.0
+O11 O 0.377 0 0.371 1 0.0
+O9 O 0.435 0 0.31 1 0.0
+W12 W 0.308 0.533 0.433 1 0.0
+O25 O 0.345 0.5 0.239 1 0.0
+O29 O 0.09 0.5 0.319 1 0.0
+O16 O 0.035 0.5 0.058 1 0.0
+O33 O 0.325 0.5 0.402 1 0.0
+O6 O 0.253 0 0.17 1 0.0
+W2 W 0.059 0.475 0.026 1 0.0
+O13 O 0.263 0 0.495 1 0.0
+W7 W 0.189 0.547 0.23 1 0.0
+O30 O 0.41 0.5 0.34 1 0.0
+O19 O 0.478 0.5 0.117 1 0.0
+W3 W 0.374 0.459 0.048 1 0.0
+O20 O 0.28 0.5 0.138 1 0.0
+O28 O 0.28 0.5 0.299 1 0.0
+O15 O 0.218 0.5 0.03 1 0.0
+O22 O 0.41 0.5 0.178 1 0.0
+W4 W -0.004 0.465 0.089 1 0.0
+W9 W 0.435 0.543 0.31 1 0.0
+W1 W 0.5 0.454 0.25 1 0.0
+O10 O 0.059 0 0.351 1 0.0
+O1 O 0.5 0 0.25 1 0.0
+O21 O 0.09 0.5 0.157 1 0.0
+O31 O 0.22 0.5 0.361 1 0.0
+O36 O 0.285 0.5 0.463 1 0.0
+W6 W 0.253 0.458 0.17 1 0.0

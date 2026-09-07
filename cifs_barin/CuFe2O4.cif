@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Fe2CuO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.91298585
+_cell_length_b   5.91297117
+_cell_length_c   5.91282995
+_cell_angle_alpha   119.65944999
+_cell_angle_beta   119.65924351
+_cell_angle_gamma   90.58389376
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Fe2CuO4
+_chemical_formula_sum   'Fe4 Cu2 O8'
+_cell_volume   146.93518114
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  1  0.87499983  0.62499648  0.24999593  1.0
+  Fe  Fe1  1  0.37499819  0.12500086  0.74999886  1.0
+  Fe  Fe2  1  0.37500288  0.62499949  0.25000097  1.0
+  Fe  Fe3  1  0.37500009  0.62500185  0.75000338  1.0
+  Cu  Cu4  1  -0.00000695  0.00000561  0.99999373  1.0
+  Cu  Cu5  1  0.75000600  0.24999434  0.50000628  1.0
+  O  O6  1  0.61226296  0.38331327  0.22895527  1.0
+  O  O7  1  0.61663274  0.84567857  0.22895999  1.0
+  O  O8  1  0.61667665  0.38773278  0.77103573  1.0
+  O  O9  1  0.13337412  0.40432340  0.27104603  1.0
+  O  O10  1  0.13773948  0.86668491  0.27104457  1.0
+  O  O11  1  0.15431900  0.38336778  0.77104056  1.0
+  O  O12  1  0.59567766  0.86663360  0.72896084  1.0
+  O  O13  1  0.13331836  0.86226605  0.72895787  1.0

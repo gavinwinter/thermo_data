@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_MnTe2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.99939637
+_cell_length_b   6.99939637
+_cell_length_c   6.99939637
+_cell_angle_alpha   90.00219685
+_cell_angle_beta   90.00217655
+_cell_angle_gamma   89.99774225
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MnTe2
+_chemical_formula_sum   'Mn4 Te8'
+_cell_volume   342.91127366
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  1  -0.00000000  0.00000000  -0.00000000  1.0
+  Mn  Mn1  1  0.50000000  0.00000000  0.50000000  1.0
+  Mn  Mn2  1  0.50000000  0.50000000  -0.00000000  1.0
+  Mn  Mn3  1  -0.00000000  0.50000000  0.50000000  1.0
+  Te  Te4  1  0.38533224  0.38571669  0.38534331  1.0
+  Te  Te5  1  0.11445439  0.61445139  0.88554661  1.0
+  Te  Te6  1  0.88571569  0.11465669  0.61466776  1.0
+  Te  Te7  1  0.61465569  0.88533024  0.11428431  1.0
+  Te  Te8  1  0.61466776  0.61428331  0.61465669  1.0
+  Te  Te9  1  0.88554561  0.38554861  0.11445339  1.0
+  Te  Te10  1  0.11428431  0.88534331  0.38533224  1.0
+  Te  Te11  1  0.38534431  0.11466976  0.88571669  1.0

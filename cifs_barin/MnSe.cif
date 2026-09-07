@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_MnSe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.19787289
+_cell_length_b   4.19804940
+_cell_length_c   6.80459918
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99859254
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MnSe
+_chemical_formula_sum   'Mn2 Se2'
+_cell_volume   103.85231181
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  1  0.66665128  0.33330256  0.49934394  1.0
+  Mn  Mn1  1  0.33334872  0.66669744  0.99934394  1.0
+  Se  Se2  1  0.66667697  0.33335295  0.87665606  1.0
+  Se  Se3  1  0.33332303  0.66664705  0.37665606  1.0

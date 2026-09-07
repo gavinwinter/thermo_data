@@ -1,0 +1,1353 @@
+Formula,Name,Page number,bare_formula,phase_tag,reduced_formula,material_id,match_method,spacegroup,cif_file
+Ag,SILVER,1,Ag,,Ag,mp-8566,most_stable_guess_polymorph_unresolved,P6_3/mmc,Ag.cif
+Ag3AsO4,SILVER ARSENATE,3,Ag3AsO4,,Ag3AsO4,mp-1229124,most_stable_guess_polymorph_unresolved,R3c,Ag3AsO4.cif
+AgBr,SILVER BROMIDE,3,AgBr,,AgBr,mp-23231,most_stable_guess_polymorph_unresolved,Fm-3m,AgBr.cif
+AgBrO3,SILVER BROMATE,4,AgBrO3,,AgBrO3,mp-1178562,most_stable_guess_polymorph_unresolved,R3m,AgBrO3.cif
+AgCN,SILVER CYANIDE,5,AgCN,,AgCN,mp-9519,most_stable_guess_polymorph_unresolved,R3m,AgCN.cif
+Ag2C03,SILVER CARBONATE,5,Ag2CO3,,Ag2CO3,mp-4691,most_stable_guess_polymorph_unresolved,P2_1/m,Ag2C03.cif
+AgCl,SILVER CHLORIDE,6,AgCl,,AgCl,mp-22922,most_stable_guess_polymorph_unresolved,Fm-3m,AgCl.cif
+AgClO3,SILVER CHLORATE,7,AgClO3,,AgClO3,mp-775761,most_stable_guess_polymorph_unresolved,P2_13,AgClO3.cif
+Ag2CrO4,SILVER CHROMATE,8,Ag2CrO4,,Cr(AgO2)2,mp-542882,most_stable_guess_polymorph_unresolved,Pnma,Ag2CrO4.cif
+AgF,SILVER FLUORIDE,8,AgF,,AgF,mp-7592,most_stable_guess_polymorph_unresolved,Fm-3m,AgF.cif
+Agl,SILVER IODIDE,10,AgI,,AgI,mp-580941,most_stable_guess_polymorph_unresolved,P6_3mc,Agl.cif
+AgNO3,SILVER NITRATE,11,AgNO3,,AgNO3,mp-552185,most_stable_guess_polymorph_unresolved,R3c,AgNO3.cif
+Ag2O,SILVER OXIDE,12,Ag2O,,Ag2O,mp-353,most_stable_guess_polymorph_unresolved,Pn-3m,Ag2O.cif
+AgP2,SILVER DIPHOSPHIDE,12,AgP2,,AgP2,mp-8200,most_stable_guess_polymorph_unresolved,P2_1/c,AgP2.cif
+Ag2S,SILVER SULFIDE,13,Ag2S,,Ag2S,mp-1537871,most_stable_guess_polymorph_unresolved,Cmcm,Ag2S.cif
+Ag2SO4,SILVER SULFATE,14,Ag2SO4,,Ag2SO4,mp-5625,most_stable_guess_polymorph_unresolved,Fddd,Ag2SO4.cif
+Ag2Se,SILVER SELENIDE,15,Ag2Se,,Ag2Se,mp-2047939,most_stable_guess_polymorph_unresolved,P2_12_12_1,Ag2Se.cif
+Ag2Te,SILVER TELLURIDE,16,Ag2Te,,Ag2Te,mp-1592,most_stable_guess_polymorph_unresolved,P2_1/c,Ag2Te.cif
+Ag2WO4,SILVER TUNGSTATE,16,Ag2WO4,,Ag2WO4,mp-504466,most_stable_guess_polymorph_unresolved,Pnnm,Ag2WO4.cif
+Al,ALUMINIUM,17,Al,,Al,mp-134,most_stable_guess_polymorph_unresolved,Fm-3m,Al.cif
+AlAs,ALUMINIUM ARSENIDE,19,AlAs,,AlAs,mp-2172,most_stable_guess_polymorph_unresolved,F-43m,AlAs.cif
+AlAsO4,ALUMINIUM ARSENATE,19,AlAsO4,,AlAsO4,mp-5189,most_stable_guess_polymorph_unresolved,P3_121,AlAsO4.cif
+AlB2,ALUMINIUM DIBORIDE,20,AlB2,,AlB2,mp-944,most_stable_guess_polymorph_unresolved,P6/mmm,AlB2.cif
+AlBr3,ALUMINIUM BROMIDE,23,AlBr3,,AlBr3,mp-23288,most_stable_guess_polymorph_unresolved,P2_1/c,AlBr3.cif
+Al4C3,TETRAALUMINIUM TRICARBIDE,26,Al4C3,,Al4C3,mp-1591,most_stable_guess_polymorph_unresolved,R-3m,Al4C3.cif
+Al2Ca,2-ALUMINIUM CALCIUM,27,Al2Ca,,CaAl2,mp-2404,most_stable_guess_polymorph_unresolved,Fd-3m,Al2Ca.cif
+Al4Ca,4-ALUMINIUM CALCIUM,27,Al4Ca,,CaAl4,mp-1749,single_candidate,I4/mmm,Al4Ca.cif
+Al2Ce,2-ALUMINIUM CERIUM,28,Al2Ce,,CeAl2,mp-2088,most_stable_guess_polymorph_unresolved,Fd-3m,Al2Ce.cif
+Al4Ce,4-ALUMINIUM CERIUM,28,Al4Ce,,CeAl4,mp-2289,most_stable_guess_polymorph_unresolved,I4/mmm,Al4Ce.cif
+AlCl3,ALUMINIUM CHLORIDE,30,AlCl3,,AlCl3,mp-25469,most_stable_guess_polymorph_unresolved,C2/m,AlCl3.cif
+AlCl3*6H2O,ALUMINIUM CHLORIDE HEXAHYDRATE,32,AlCl3*6H2O,,AlH12(ClO2)3,mp-23743,single_candidate,R-3c,AlCl3_hyd_6H2O.cif
+AlCo,ALUMINIUM COBALT,33,AlCo,,AlCo,mp-284,most_stable_guess_polymorph_unresolved,Pm-3m,AlCo.cif
+Al5Co2,5-ALUMINIUM 2-COBALT,33,Al5Co2,,Al5Co2,mp-196,single_candidate,P6_3/mmc,Al5Co2.cif
+AlF3,ALUMINIUM FLUORIDE,36,AlF3,,AlF3,mp-468,most_stable_guess_polymorph_unresolved,R-3c,AlF3.cif
+AlH3,ALUMINIUM HYDRIDE (HEXAGONAL),38,AlH3,,AlH3,mp-23933,most_stable_guess_polymorph_unresolved,R-3c,AlH3.cif
+All3,ALUMINIUM IODIDE,39,AlI3,,AlI3,mp-30930,most_stable_guess_polymorph_unresolved,P2_1/c,All3.cif
+Al2La,2-ALUMINIUM LANTHANUM,41,Al2La,,LaAl2,mp-2694,single_candidate,Fd-3m,Al2La.cif
+AlLi,ALUMINIUM LITHIUM,41,AlLi,,LiAl,mp-1067,most_stable_guess_polymorph_unresolved,Fd-3m,AlLi.cif
+AlN,ALUMINIUM NITRIDE,42,AlN,,AlN,mp-661,most_stable_guess_polymorph_unresolved,P6_3mc,AlN.cif
+AlNi,ALUMINIUM NICKEL,42,AlNi,,AlNi,mp-1487,most_stable_guess_polymorph_unresolved,Pm-3m,AlNi.cif
+AlNi3,ALUMINIUM 3-NICKEL,43,AlNi3,,AlNi3,mp-2593,most_stable_guess_polymorph_unresolved,Pm-3m,AlNi3.cif
+Al3Ni,3-ALUMINIUM NICKEL,43,Al3Ni,,Al3Ni,mp-622209,most_stable_guess_polymorph_unresolved,Pnma,Al3Ni.cif
+Al3Ni2,3-ALUMINIUM 2-NICKEL,44,Al3Ni2,,Al3Ni2,mp-1057,most_stable_guess_polymorph_unresolved,P-3m1,Al3Ni2.cif
+Al2O3,"ALUMINIUM OXIDE (ALPHA,CORUNDUM)",48,Al2O3,,Al2O3,mp-1143,most_stable_guess_polymorph_unresolved,R-3c,Al2O3.cif
+Al2O3[C],ALUMINIUM OXIDE (GAMMA),49,Al2O3,C,Al2O3,mp-1143,most_stable_guess_polymorph_unresolved,R-3c,Al2O3[C].cif
+Al2O3[D],ALUMINUIM OXIDE (DELTA),50,Al2O3,D,Al2O3,mp-1143,most_stable_guess_polymorph_unresolved,R-3c,Al2O3[D].cif
+Al2O3[K],ALUMINIUM OXIDE (KAPPA),51,Al2O3,K,Al2O3,mp-1143,most_stable_guess_polymorph_unresolved,R-3c,Al2O3[K].cif
+Al4B209,4-ALUMINIUM 2-BORON 9-OXIDE,52,Al4B2O9,,Al4B2O9,mp-1229135,most_stable_guess_polymorph_unresolved,C2/m,Al4B209.cif
+AlOCl,ALUMINIUM CHLORIDE OXIDE,53,AlOCl,,AlClO,mp-27863,most_stable_guess_polymorph_unresolved,Pmmn,AlOCl.cif
+Al(OH)3,ALUMINIUM HYDROXIDE (AMORPHOUS),55,Al(OH)3,,Al(HO)3,mp-27540,most_stable_guess_polymorph_unresolved,P2_1/c,Al_OH_3.cif
+Al2O3*H2O,DIASPORE,56,Al2O3*H2O,,AlHO2,mp-625152,most_stable_guess_polymorph_unresolved,Pnma,Al2O3_hyd_H2O.cif
+Al2O3*H2O[B],BOEHMITE,56,Al2O3*H2O,B,AlHO2,mp-625152,most_stable_guess_polymorph_unresolved,Pnma,Al2O3_hyd_H2O[B].cif
+Al2O3*3H2O,GIBBSITE,57,Al2O3*3H2O,,Al(HO)3,mp-27540,most_stable_guess_polymorph_unresolved,P2_1/c,Al2O3_hyd_3H2O.cif
+Al4Mg2Si5O18,CORDIERITE,57,Al4Mg2Si5O18,,Mg2Al4Si5O18,mp-6174,most_stable_guess_polymorph_unresolved,Cccm,Al4Mg2Si5O18.cif
+Al2SiO5,ALUMINIUM SILICATE (KYANITE),58,Al2SiO5,,Al2SiO5,mp-5065,most_stable_guess_polymorph_unresolved,P-1,Al2SiO5.cif
+Al2SiO5[A],ALUMINIUM SILICATE (ANDALUSITE),59,Al2SiO5,A,Al2SiO5,mp-5065,most_stable_guess_polymorph_unresolved,P-1,Al2SiO5[A].cif
+Al2SiO5[S],ALUMINIUM SILICATE (SILLIMANITE),60,Al2SiO5,S,Al2SiO5,mp-5065,most_stable_guess_polymorph_unresolved,P-1,Al2SiO5[S].cif
+Al2Si2O7*2H2O,KAOLINITE,61,Al2Si2O7*2H2O,,Al2Si2H4O9,mp-721216,most_stable_guess_polymorph_unresolved,Cc,Al2Si2O7_hyd_2H2O.cif
+Al2Si2O7*2H2O[D],DICKITE,62,Al2Si2O7*2H2O,D,Al2Si2H4O9,mp-721216,most_stable_guess_polymorph_unresolved,Cc,Al2Si2O7_hyd_2H2O[D].cif
+Al2Si2O7*2H2O[H],HALLOYSITE,62,Al2Si2O7*2H2O,H,Al2Si2H4O9,mp-721216,most_stable_guess_polymorph_unresolved,Cc,Al2Si2O7_hyd_2H2O[H].cif
+Al2TiO5,DIALUMINIUM TITANIUM PENTAOXIDE,63,Al2TiO5,,TiAl2O5,mp-4930,most_stable_guess_polymorph_unresolved,Cmcm,Al2TiO5.cif
+AlP,ALUMINIUM PHOSPHIDE,64,AlP,,AlP,mp-1550,most_stable_guess_polymorph_unresolved,F-43m,AlP.cif
+AlPO4,ALUMINIUM PHOSPHATE,65,AlPO4,,AlPO4,mp-5331,most_stable_guess_polymorph_unresolved,P3_121,AlPO4.cif
+Al2S3,ALUMINIUM SULFIDE,67,Al2S3,,Al2S3,mp-1228491,most_stable_guess_polymorph_unresolved,Cc,Al2S3.cif
+Al2(SO4)3,ALUMINIUM SULFATE,67,Al2(SO4)3,,Al2(SO4)3,mp-4417,most_stable_guess_polymorph_unresolved,R-3,Al2_SO4_3.cif
+AlSb,ALUMINIUM ANTIMONY,68,AlSb,,AlSb,mp-2624,most_stable_guess_polymorph_unresolved,F-43m,AlSb.cif
+Al2Se3,ALUMINIUM SELENIDE,69,Al2Se3,,Al2Se3,mp-11674,most_stable_guess_polymorph_unresolved,Cc,Al2Se3.cif
+Al2Te3,ALUMINIUM TELLURIDE,70,Al2Te3,,Al2Te3,mp-29502,most_stable_guess_polymorph_unresolved,P2_1/c,Al2Te3.cif
+Al3Th,3-ALUMINIUM THORIUM,71,Al3Th,,ThAl3,mp-1306,most_stable_guess_polymorph_unresolved,P6_3/mmc,Al3Th.cif
+AlTi,ALUMINIUM TITANIUM,71,AlTi,,TiAl,mp-1953,most_stable_guess_polymorph_unresolved,P4/mmm,AlTi.cif
+Al3Ti,3-ALUMINIUM TITANIUM,72,Al3Ti,,TiAl3,mp-542915,most_stable_guess_polymorph_unresolved,I4/mmm,Al3Ti.cif
+Al2U,2-ALUMINIUM URANIUM,72,Al2U,,UAl2,mp-569744,most_stable_guess_polymorph_unresolved,P6_3/mmc,Al2U.cif
+Al3U,3-ALUMINIUM URANIUM,73,Al3U,,UAl3,mp-1723,most_stable_guess_polymorph_unresolved,Pm-3m,Al3U.cif
+Al4U,4-ALUMINIUM URANIUM,73,Al4U,,UAl4,mp-574122,single_candidate,Imma,Al4U.cif
+As,ARSENIC,77,As,,As,mp-158,most_stable_guess_polymorph_unresolved,Cmce,As.cif
+AsCl3,ARSENIC CHLORIDE,80,AsCl3,,AsCl3,mp-23280,most_stable_guess_polymorph_unresolved,P2_12_12_1,AsCl3.cif
+AsF3,ARSENIC FLUORIDE,81,AsF3,,AsF3,mp-28027,most_stable_guess_polymorph_unresolved,Pna2_1,AsF3.cif
+AsI3,ARSENIC IODIDE,83,AsI3,,AsI3,mp-23218,most_stable_guess_polymorph_unresolved,R-3,AsI3.cif
+As2O3,ARSENIC OXIDE (CLAUDETITE),85,As2O3,,As2O3,mp-1582,most_stable_guess_polymorph_unresolved,P2_1/c,As2O3.cif
+As2O3[A],ARSENIC OXIDE (ARSENOLITE),85,As2O3,A,As2O3,mp-2184,spacegroup_hint,Fd-3m,As2O3[A].cif
+As2O5,DIARSENIC PENTAOXIDE,86,As2O5,,As2O5,mp-1788,most_stable_guess_polymorph_unresolved,P2_12_12_1,As2O5.cif
+As2S2,DIARSENIC DISULFIDE,87,As2S2,,AsS,mp-542810,most_stable_guess_polymorph_unresolved,P2_1/c,As2S2.cif
+As2S3,ARSENIC SULFIDE,88,As2S3,,As2S3,mp-1189572,most_stable_guess_polymorph_unresolved,P-1,As2S3.cif
+As4S4,TETRAARSENIC TETRASULFIDE,88,As4S4,,AsS,mp-542810,most_stable_guess_polymorph_unresolved,P2_1/c,As4S4.cif
+As4S4[R],TETRAARSENIC TETRASULFIDE (REALGAR),89,As4S4,R,AsS,mp-542810,most_stable_guess_polymorph_unresolved,P2_1/c,As4S4[R].cif
+As2Se3,ARSENIC SELENIDE,90,As2Se3,,As2Se3,mp-909,most_stable_guess_polymorph_unresolved,P2_1/c,As2Se3.cif
+As2Te3,ARSENIC TELLURIDE,91,As2Te3,,Te3As2,mp-484,most_stable_guess_polymorph_unresolved,C2/m,As2Te3.cif
+Au,GOLD,92,Au,,Au,mp-81,most_stable_guess_polymorph_unresolved,Fm-3m,Au.cif
+AuBr,GOLD MONOBROMIDE,94,AuBr,,AuBr,mp-505366,most_stable_guess_polymorph_unresolved,P4_2/ncm,AuBr.cif
+AuCd,GOLD CADMIUM,95,AuCd,,CdAu,mp-16886,most_stable_guess_polymorph_unresolved,P31m,AuCd.cif
+AuCl,GOLD MONOCHLORIDE,95,AuCl,,AuCl,mp-32780,most_stable_guess_polymorph_unresolved,I4_1/amd,AuCl.cif
+AuCl3,GOLD TRICHLORIDE,96,AuCl3,,AuCl3,mp-27647,most_stable_guess_polymorph_unresolved,P2_1/c,AuCl3.cif
+AuCu,GOLD COPPER,96,AuCu,,CuAu,mp-522,most_stable_guess_polymorph_unresolved,P4/mmm,AuCu.cif
+AuCu3,GOLD 3-COPPER,97,AuCu3,,Cu3Au,mp-2258,most_stable_guess_polymorph_unresolved,Pm-3m,AuCu3.cif
+AuF3,GOLD TRIFLUORIDE,97,AuF3,,AuF3,mp-942,most_stable_guess_polymorph_unresolved,P6_122,AuF3.cif
+Aul,GOLD MONOIODIDE,98,AuI,,AuI,mp-27725,most_stable_guess_polymorph_unresolved,P4_2/ncm,Aul.cif
+Au2O3,DIGOLD TRIOXIDE,98,Au2O3,,Au2O3,mp-27253,most_stable_guess_polymorph_unresolved,Fdd2,Au2O3.cif
+Au2P3,DIGOLD TRIPHOSPHIDE,99,Au2P3,,P3Au2,mp-27258,most_stable_guess_polymorph_unresolved,C2/m,Au2P3.cif
+AuSb2,GOLD 2-ANTIMONY,100,AuSb2,,Sb2Au,mp-738,most_stable_guess_polymorph_unresolved,Pa-3,AuSb2.cif
+AuSe,GOLD MONOSELENIDE (ALPHA),101,AuSe,,AuSe,mp-2793,most_stable_guess_polymorph_unresolved,C2/m,AuSe.cif
+AuSe[B],GOLD MONOSELENIDE (BETA),101,AuSe,B,AuSe,mp-2793,most_stable_guess_polymorph_unresolved,C2/m,AuSe[B].cif
+AuSn,GOLD TIN,102,AuSn,,SnAu,mp-1775,most_stable_guess_polymorph_unresolved,P6_3/mmc,AuSn.cif
+AuSn2,GOLD 2-TIN,102,AuSn2,,Sn2Au,mp-1462,most_stable_guess_polymorph_unresolved,Pbca,AuSn2.cif
+AuSn4,GOLD 4-TIN,103,AuSn4,,Sn4Au,mp-1393,single_candidate,Ccce,AuSn4.cif
+AuTe2,GOLD DITELLURIDE,103,AuTe2,,Te2Au,mp-20123,most_stable_guess_polymorph_unresolved,Pma2,AuTe2.cif
+B,BORON (BETA),104,B,,B,mp-160,most_stable_guess_polymorph_unresolved,R-3m,B.cif
+BBr3,BORON TRIBROMIDE,108,BBr3,,BBr3,mp-23225,most_stable_guess_polymorph_unresolved,P6_3/m,BBr3.cif
+B4C,TETRABORON MONOCARBIDE,110,B4C,,B4C,mp-1238815,most_stable_guess_polymorph_unresolved,Cm,B4C.cif
+BN,BORON NITRIDE,121,BN,,BN,mp-604884,most_stable_guess_polymorph_unresolved,P-6m2,BN.cif
+B2O3,BORON OXIDE,122,B2O3,,B2O3,mp-306,most_stable_guess_polymorph_unresolved,P3_121,B2O3.cif
+BP,BORON MONOPHOSPHIDE,125,BP,,BP,mp-1479,most_stable_guess_polymorph_unresolved,F-43m,BP.cif
+B2S3,DIBORON TRISULFIDE,126,B2S3,,B2S3,mp-1199451,most_stable_guess_polymorph_unresolved,I4_1/a,B2S3.cif
+Ba,BARIUM,127,Ba,,Ba,mp-122,most_stable_guess_polymorph_unresolved,Im-3m,Ba.cif
+Ba3(AsO4)2,BARIUM ARSENATE,129,Ba3(AsO4)2,,Ba3(AsO4)2,mp-9783,most_stable_guess_polymorph_unresolved,R-3m,Ba3_AsO4_2.cif
+BaBr2,BARIUM BROMIDE,130,BaBr2,,BaBr2,mp-27456,most_stable_guess_polymorph_unresolved,Pnma,BaBr2.cif
+BaC2,BARIUM DICARBIDE,132,BaC2,,BaC2,mp-10293,most_stable_guess_polymorph_unresolved,C2/c,BaC2.cif
+BaCO3,BARIUM CARBONATE,133,BaCO3,,BaCO3,mp-5504,most_stable_guess_polymorph_unresolved,Pnma,BaCO3.cif
+BaCl2,BARIUM CHLORIDE,135,BaCl2,,BaCl2,mp-568662,most_stable_guess_polymorph_unresolved,Fm-3m,BaCl2.cif
+BaCrO4,BARIUM CHROMATE,137,BaCrO4,,BaCrO4,mp-18571,most_stable_guess_polymorph_unresolved,Pnma,BaCrO4.cif
+BaF2,BARIUM FLUORIDE,139,BaF2,,BaF2,mp-1029,most_stable_guess_polymorph_unresolved,Fm-3m,BaF2.cif
+BaH2,BARIUM HYDRIDE,142,BaH2,,BaH2,mp-23715,most_stable_guess_polymorph_unresolved,Pnma,BaH2.cif
+BaI2,BARIUM IODIDE,144,BaI2,,BaI2,mp-23260,most_stable_guess_polymorph_unresolved,Pnma,BaI2.cif
+BaMoO4,BARIUM MOLYBDATE,146,BaMoO4,,BaMoO4,mp-19276,most_stable_guess_polymorph_unresolved,I4_1/a,BaMoO4.cif
+Ba3N2,TRIBARIUM DINITRIDE,146,Ba3N2,,Ba3N2,mp-1214623,most_stable_guess_polymorph_unresolved,Ia-3,Ba3N2.cif
+Ba(NO3)2,BARIUM NITRATE,147,Ba(NO3)2,,Ba(NO3)2,mp-4396,most_stable_guess_polymorph_unresolved,Pa-3,Ba_NO3_2.cif
+BaO,BARIUM OXIDE,148,BaO,,BaO,mp-1342,most_stable_guess_polymorph_unresolved,Fm-3m,BaO.cif
+BaO2,BARIUM PEROXIDE,149,BaO2,,BaO2,mp-1105,most_stable_guess_polymorph_unresolved,I4/mmm,BaO2.cif
+BaAl2O4,BARIUM DIALUMINIUM TETRAOXIDE,149,BaAl2O4,,BaAl2O4,mp-4202,most_stable_guess_polymorph_unresolved,P6_3,BaAl2O4.cif
+Ba(OH)2,BARIUM HYDROXIDE,151,Ba(OH)2,,Ba(HO)2,mp-626973,most_stable_guess_polymorph_unresolved,P2_1/c,Ba_OH_2.cif
+BaHfO3,BARIUM HAFNIUM TRIOXIDE,152,BaHfO3,,BaHfO3,mp-998552,most_stable_guess_polymorph_unresolved,Pm-3m,BaHfO3.cif
+BaSiO3,BARIUM METASILICATE,153,BaSiO3,,BaSiO3,mp-776084,most_stable_guess_polymorph_unresolved,C2/c,BaSiO3.cif
+BaSi2O5,BARIUM DISILICATE,154,BaSi2O5,,BaSi2O5,mp-3031,most_stable_guess_polymorph_unresolved,Pnma,BaSi2O5.cif
+Ba2SiO4,BARIUM ORTHOSILICATE,155,Ba2SiO4,,Ba2SiO4,mp-17612,most_stable_guess_polymorph_unresolved,Pnma,Ba2SiO4.cif
+Ba2Si3O8,DIBARIUM TRISILICATE,156,Ba2Si3O8,,Ba2Si3O8,mp-29222,most_stable_guess_polymorph_unresolved,P2_1/c,Ba2Si3O8.cif
+BaTiO3,BARIUM TITANIUM TRIOXIDE,157,BaTiO3,,BaTiO3,mp-5777,most_stable_guess_polymorph_unresolved,Amm2,BaTiO3.cif
+Ba2TiO4,DIBARIUM TITANIUM TETRAOXIDE,158,Ba2TiO4,,Ba2TiO4,mp-3397,most_stable_guess_polymorph_unresolved,P2_1/c,Ba2TiO4.cif
+BaUO4,BARIUM URANATE,158,BaUO4,,BaUO4,mp-5611,most_stable_guess_polymorph_unresolved,Pbcm,BaUO4.cif
+BaZrO3,BARIUM ZIRCONIUM TRIOXIDE,159,BaZrO3,,BaZrO3,mp-1019544,most_stable_guess_polymorph_unresolved,I4/mcm,BaZrO3.cif
+BaS,BARIUM SULFIDE,160,BaS,,BaS,mp-1500,most_stable_guess_polymorph_unresolved,Fm-3m,BaS.cif
+BaSO4,BARIUM SULFATE,161,BaSO4,,BaSO4,mp-3164,most_stable_guess_polymorph_unresolved,Pnma,BaSO4.cif
+Ba2Sn,2-BARIUM TIN,161,Ba2Sn,,Ba2Sn,mp-1981,most_stable_guess_polymorph_unresolved,Pnma,Ba2Sn.cif
+BaTe,BARIUM TELLURIDE,162,BaTe,,BaTe,mp-1000,most_stable_guess_polymorph_unresolved,Fm-3m,BaTe.cif
+BaWO4,BARIUM TUNGSTATE,162,BaWO4,,BaWO4,mp-19048,most_stable_guess_polymorph_unresolved,I4_1/a,BaWO4.cif
+Be,BERYLLIUM,163,Be,,Be,mp-87,most_stable_guess_polymorph_unresolved,P6_3/mmc,Be.cif
+BeBr2,BERYLLIUM BROMIDE,166,BeBr2,,BeBr2,mp-30139,most_stable_guess_polymorph_unresolved,Ibam,BeBr2.cif
+Be2C,DIBERYLLIUM CARBIDE,167,Be2C,,Be2C,mp-1569,most_stable_guess_polymorph_unresolved,Fm-3m,Be2C.cif
+BeCl2,BERYLLIUM CHLORIDE,169,BeCl2,,BeCl2,mp-570974,most_stable_guess_polymorph_unresolved,I4_1/acd,BeCl2.cif
+BeF2,BERYLLIUM FLUORIDE,173,BeF2,,BeF2,mp-561543,most_stable_guess_polymorph_unresolved,I-43m,BeF2.cif
+Bel2,BERYLLIUM IODIDE,176,BeI2,,BeI2,mp-30140,most_stable_guess_polymorph_unresolved,I4_1/acd,Bel2.cif
+Be3N2,ALPHA BERYLLIUM NITRIDE,178,Be3N2,,Be3N2,mp-18337,most_stable_guess_polymorph_unresolved,Ia-3,Be3N2.cif
+BeO,BERYLLIUM OXIDE,179,BeO,,BeO,mp-2542,most_stable_guess_polymorph_unresolved,P6_3mc,BeO.cif
+BeAl204,BERYLLIUM DIALUMINIUM TETRAOXIDE,180,BeAl2O4,,BeAl2O4,mp-3081,most_stable_guess_polymorph_unresolved,Pnma,BeAl204.cif
+BeAl6O10,BERYLLIUM HEXAALUMINIUM DECAOXIDE,181,BeAl6O10,,BeAl6O10,mp-560974,single_candidate,P2_1/c,BeAl6O10.cif
+Be(OH)2,BERYLLIUM HYDROXIDE (ALPHA},183,Be(OH)2,,Be(HO)2,mp-697136,most_stable_guess_polymorph_unresolved,P2_12_12_1,Be_OH_2.cif
+Be(OH)2[B],BERYLLIUM HYDROXIDE (BETA),184,Be(OH)2,B,Be(HO)2,mp-697136,most_stable_guess_polymorph_unresolved,P2_12_12_1,Be_OH_2[B].cif
+Be2Si04,BERYLLIUM SILICATE (PHENACITE),185,Be2SiO4,,Be2SiO4,mp-3347,most_stable_guess_polymorph_unresolved,R-3,Be2Si04.cif
+BeS,BERYLLIUM SULFIDE,186,BeS,,BeS,mp-422,most_stable_guess_polymorph_unresolved,F-43m,BeS.cif
+BeSO4,BERYLLIUM SULFATE,188,BeSO4,,BeSO4,mp-5046,most_stable_guess_polymorph_unresolved,I-4,BeSO4.cif
+BeSO4*4H2O,BERYLLIUM SULFATE TETRAHYDRATE,189,BeSO4*4H2O,,BeH8SO8,mp-23996,most_stable_guess_polymorph_unresolved,I-4c2,BeSO4_hyd_4H2O.cif
+Bi,BISMUTH,190,Bi,,Bi,mp-23152,most_stable_guess_polymorph_unresolved,R-3m,Bi.cif
+BiAsO4,BISMUTH ARSENATE,192,BiAsO4,,BiAsO4,mp-561068,most_stable_guess_polymorph_unresolved,I4_1/a,BiAsO4.cif
+BiBr3,BISMUTH BROMIDE,194,BiBr3,,BiBr3,mp-2913080,most_stable_guess_polymorph_unresolved,P2_1/c,BiBr3.cif
+BiCl3,BISMUTH CHLORIDE,195,BiCl3,,BiCl3,mp-22908,most_stable_guess_polymorph_unresolved,Pnma,BiCl3.cif
+BiF3,BISMUTH FLUORIDE,197,BiF3,,BiF3,mp-23237,most_stable_guess_polymorph_unresolved,Pnma,BiF3.cif
+Bil,BISMUTH MONOIODIDE,198,BiI,,BiI,mp-568388,most_stable_guess_polymorph_unresolved,C2/m,Bil.cif
+Bil3,BISMUTH IODIDE,199,BiI3,,BiI3,mp-22849,most_stable_guess_polymorph_unresolved,R-3,Bil3.cif
+BiK3,BISMUTH 3-POTASSIUM,200,BiK3,,K3Bi,mp-31286,most_stable_guess_polymorph_unresolved,P6_3cm,BiK3.cif
+BiMn,BISMUTH MANGANESE,200,BiMn,,MnBi,mp-568382,most_stable_guess_polymorph_unresolved,P6_3/mmc,BiMn.cif
+BiNi,BISMUTH NICKEL,201,BiNi,,NiBi,mp-999318,most_stable_guess_polymorph_unresolved,P6_3/mmc,BiNi.cif
+Bi2O3,BISMUTH OXIDE,202,Bi2O3,,Bi2O3,mp-23262,most_stable_guess_polymorph_unresolved,P2_1/c,Bi2O3.cif
+BiOCI,BISMUTH CHLORIDE OXIDE,202,BiOCl,,BiClO,mp-22939,most_stable_guess_polymorph_unresolved,P4/nmm,BiOCI.cif
+Bi2S3,BISMUTH SULFIDE,203,Bi2S3,,Bi2S3,mp-22856,most_stable_guess_polymorph_unresolved,Pnma,Bi2S3.cif
+Bi2(SO4)3,BISMUTH SULFATE,203,Bi2(SO4)3,,Bi2(SO4)3,mp-1195213,most_stable_guess_polymorph_unresolved,C2/c,Bi2_SO4_3.cif
+Bi2Se3,BISMUTH SELENIDE,204,Bi2Se3,,Bi2Se3,mp-541837,most_stable_guess_polymorph_unresolved,R-3m,Bi2Se3.cif
+Bi2Te3,BISMUTH TELLURIDE,204,Bi2Te3,,Bi2Te3,mp-34202,most_stable_guess_polymorph_unresolved,R-3m,Bi2Te3.cif
+BiU,BISMUTH URANIUM,205,BiU,,UBi,mp-1018042,most_stable_guess_polymorph_unresolved,Pm-3m,BiU.cif
+Bi2U,2-BISMUTH URANIUM,205,Bi2U,,UBi2,mp-569858,most_stable_guess_polymorph_unresolved,P4/nmm,Bi2U.cif
+Bi4U3,4-BISMUTH 3-URANIUM,206,Bi4U3,,U3Bi4,mp-23196,single_candidate,I-43d,Bi4U3.cif
+Br2,BROMINE,207,Br2,,Br,mp-23154,most_stable_guess_polymorph_unresolved,Cmce,Br2.cif
+C,CARBON (GRAPHITE),209,C,,C,mp-3347313,most_stable_guess_polymorph_unresolved,C2/m,C.cif
+CCI4,TETRACHLOROMETHANE,224,CCl4,,CCl4,mp-1004532,single_candidate,C2/c,CCI4.cif
+C6H6,BENZENE,296,C6H6,,HC,mp-1096986,most_stable_guess_polymorph_unresolved,P-3m1,C6H6.cif
+C6H12,CYCLOHEXANE,298,C6H12,,H2C,mp-985782,most_stable_guess_polymorph_unresolved,Pnma,C6H12.cif
+C6H12[M],METHYLCYCLOPENTANE,299,C6H12,M,H2C,mp-985782,most_stable_guess_polymorph_unresolved,Pnma,C6H12[M].cif
+C7H14,CYCLOHEPTANE,302,C7H14,,H2C,mp-985782,most_stable_guess_polymorph_unresolved,Pnma,C7H14.cif
+C8Hi6,ETHYLCYCLOHEXANE,308,C8H16,,H2C,mp-985782,most_stable_guess_polymorph_unresolved,Pnma,C8Hi6.cif
+CH2O2,FORMIC ACID,382,CH2O2,,H2CO2,mp-558412,most_stable_guess_polymorph_unresolved,Pna2_1,CH2O2.cif
+C2H4O2,ACETIC ACID,387,C2H4O2,,H2CO,mp-625082,most_stable_guess_polymorph_unresolved,P2_12_12_1,C2H4O2.cif
+CH2S3,CARBONOTRITHIONIC ACID,393,CH2S3,,H2CS3,mp-709098,most_stable_guess_polymorph_unresolved,P2_1/c,CH2S3.cif
+Ca,CALCIUM,416,Ca,,Ca,mp-45,most_stable_guess_polymorph_unresolved,Fm-3m,Ca.cif
+Ca3(AsO4)2,CALCIUM ARSENATE,418,Ca3(AsO4)2,,Ca3(AsO4)2,mp-530449,most_stable_guess_polymorph_unresolved,R3,Ca3_AsO4_2.cif
+CaBr2,CALCIUM BROMIDE,420,CaBr2,,CaBr2,mp-22888,most_stable_guess_polymorph_unresolved,Pnnm,CaBr2.cif
+CaC2,CALCIUM DICARBIDE,422,CaC2,,CaC2,mp-1575,most_stable_guess_polymorph_unresolved,C2/c,CaC2.cif
+CaCN2,CALCIUM CYANAMIDE,423,CaCN2,,CaCN2,mp-4124,most_stable_guess_polymorph_unresolved,R-3m,CaCN2.cif
+CaCO3,CALCIUM CARBONATE (CALCITE),423,CaCO3,,CaCO3,mp-3953,most_stable_guess_polymorph_unresolved,R-3c,CaCO3.cif
+CaCO3[A],CALCIUM CARBONATE (ARAGONITE),424,CaCO3,A,CaCO3,mp-4626,spacegroup_hint,Pnma,CaCO3[A].cif
+CaMg(CO3)2,DOLOMITE,424,CaMg(CO3)2,,CaMg(CO3)2,mp-6459,most_stable_guess_polymorph_unresolved,R-3,CaMg_CO3_2.cif
+CaCl2,CALCIUM CHLORIDE,426,CaCl2,,CaCl2,mp-571642,most_stable_guess_polymorph_unresolved,Pbcn,CaCl2.cif
+CaF2,CALCIUM FLUORIDE,429,CaF2,,CaF2,mp-2741,most_stable_guess_polymorph_unresolved,Fm-3m,CaF2.cif
+CaH2,CALCIUM HYDRIDE,432,CaH2,,CaH2,mp-23713,most_stable_guess_polymorph_unresolved,Pnma,CaH2.cif
+CaHPO4,CALCIUM HYDROGEN PHOSPHATE,433,CaHPO4,,CaPHO4,mp-24390,most_stable_guess_polymorph_unresolved,P1,CaHPO4.cif
+CaHPO4*2H20,CALCIUM HYDROGEN PHOS. DIHYDRATE,433,CaHPO4*2H2O,,CaPH5O6,mp-24389,single_candidate,Cc,CaHPO4_hyd_2H20.cif
+Cal2,CALCIUM IODIDE,435,CaI2,,CaI2,mp-30031,most_stable_guess_polymorph_unresolved,P-3m1,Cal2.cif
+CaMg2,CALCIUM 2-MAGNESIUM,436,CaMg2,,CaMg2,mp-1183430,most_stable_guess_polymorph_unresolved,Fd-3m,CaMg2.cif
+CaMoO4,CALCIUM MOLYBDATE,437,CaMoO4,,CaMoO4,mp-19330,most_stable_guess_polymorph_unresolved,I4_1/a,CaMoO4.cif
+Ca3N2,TRICALCIUM DINITRIDE,437,Ca3N2,,Ca3N2,mp-844,most_stable_guess_polymorph_unresolved,Ia-3,Ca3N2.cif
+Ca(NO3)2,CALCIUM NITRATE,438,Ca(NO3)2,,Ca(NO3)2,mp-3142,most_stable_guess_polymorph_unresolved,Pa-3,Ca_NO3_2.cif
+Ca(NO3)2*4H2O,CALCIUM NITRATE TETRAHYDRATE,439,Ca(NO3)2*4H2O,,CaH8(NO5)2,mp-1202729,most_stable_guess_polymorph_unresolved,P2_1/c,Ca_NO3_2_hyd_4H2O.cif
+CaO,CALCIUM OXIDE,440,CaO,,CaO,mp-2605,most_stable_guess_polymorph_unresolved,Fm-3m,CaO.cif
+CaO2,CALCIUM PEROXIDE,442,CaO2,,CaO2,mp-634859,most_stable_guess_polymorph_unresolved,I4/mmm,CaO2.cif
+CaAl2O4,CALCIUM 2-ALUMINIUM 4-OXIDE,442,CaAl2O4,,CaAl2O4,mp-2963,most_stable_guess_polymorph_unresolved,P2_1/c,CaAl2O4.cif
+CaAl4O7,CALCIUM 4-ALUMINIUM 7-OXIDE,443,CaAl4O7,,CaAl4O7,mp-4867,single_candidate,C2/c,CaAl4O7.cif
+Ca2Al2O5,2-CALCIUM 2-ALUMINIUM 5-OXIDE,444,Ca2Al2O5,,Ca2Al2O5,mp-10444,most_stable_guess_polymorph_unresolved,Ima2,Ca2Al2O5.cif
+Ca3Al2O6,3-CALCIUM 2-ALUMINIUM 6-OXIDE,445,Ca3Al2O6,,Ca3Al2O6,mp-12147,most_stable_guess_polymorph_unresolved,Pa-3,Ca3Al2O6.cif
+Ca12Al14O33,12-CALCIUM 14-ALUMINIUM 33-OXIDE,445,Ca12Al14O33,,Ca12Al14O33,mp-532016,most_stable_guess_polymorph_unresolved,P1,Ca12Al14O33.cif
+CaAl2SiO6,PYROXENE,446,CaAl2SiO6,,CaAl2SiO6,mp-1019584,most_stable_guess_polymorph_unresolved,P2/c,CaAl2SiO6.cif
+CaAl2Si2O8,ANORTHITE,447,CaAl2Si2O8,,CaAl2(SiO4)2,mp-1227323,most_stable_guess_polymorph_unresolved,P-3c1,CaAl2Si2O8.cif
+Ca2Al2SiO7,GEHLENITE,448,Ca2Al2SiO7,,Ca2Al2SiO7,mp-1227499,most_stable_guess_polymorph_unresolved,P2_1,Ca2Al2SiO7.cif
+CaAl2Si2O8*2H2O,LAWSONITE,449,CaAl2Si2O8*2H2O,,CaAl2Si2(H2O5)2,mp-24603,most_stable_guess_polymorph_unresolved,Pna2_1,CaAl2Si2O8_hyd_2H2O.cif
+CaB2O4,CALCIUM DIBORATE,449,CaB2O4,,Ca(BO2)2,mp-8056,most_stable_guess_polymorph_unresolved,Pccn,CaB2O4.cif
+CaB4O7,CALCIUM TETRABORATE,450,CaB4O7,,CaB4O7,mp-556214,most_stable_guess_polymorph_unresolved,P2_1/c,CaB4O7.cif
+Ca2B2O5,DICALCIUM DIBORATE,451,Ca2B2O5,,Ca2B2O5,mp-1019560,most_stable_guess_polymorph_unresolved,P2_12_12_1,Ca2B2O5.cif
+Ca3B2O6,TRICALCIUM DIBORATE,452,Ca3B2O6,,Ca3(BO3)2,mp-3575,single_candidate,R-3c,Ca3B2O6.cif
+CaFe2O4,CALCIUM DIIRON TETRAOXIDE,453,CaFe2O4,,Ca(FeO2)2,mp-1271060,most_stable_guess_polymorph_unresolved,Pmmn,CaFe2O4.cif
+Ca2Fe2O5,DICALCIUM DIIRON PENTAOXIDE,453,Ca2Fe2O5,,Ca2Fe2O5,mp-22113,most_stable_guess_polymorph_unresolved,Pnma,Ca2Fe2O5.cif
+Ca(OH)2,CALCIUM HYDROXIDE,455,Ca(OH)2,,Ca(HO)2,mp-23879,most_stable_guess_polymorph_unresolved,P-3m1,Ca_OH_2.cif
+CaHfO3,CALCIUM HAFNIUM TRIOXIDE,455,CaHfO3,,CaHfO3,mp-754853,most_stable_guess_polymorph_unresolved,Pnma,CaHfO3.cif
+CaMgSiO4,MONTICELLITE,457,CaMgSiO4,,CaMgSiO4,mp-6493,most_stable_guess_polymorph_unresolved,Pnma,CaMgSiO4.cif
+CaMgSi2O6,DIOPSIDE,458,CaMgSi2O6,,CaMg(SiO3)2,mp-6766,most_stable_guess_polymorph_unresolved,C2/c,CaMgSi2O6.cif
+Ca2MgSi2O7,AKERMANITE,459,Ca2MgSi2O7,,Ca2MgSi2O7,mp-6094,most_stable_guess_polymorph_unresolved,P-42_1m,Ca2MgSi2O7.cif
+Ca3MgSi2O8,MERWINITE,460,Ca3MgSi2O8,,Ca3Mg(SiO4)2,mp-558209,most_stable_guess_polymorph_unresolved,P2_1/c,Ca3MgSi2O8.cif
+Ca2Mg5Si8O23*H2O,TREMOLITE,460,Ca2Mg5Si8O23*H2O,,Ca2Mg5Si8(HO12)2,mp-1196550,single_candidate,C2/m,Ca2Mg5Si8O23_hyd_H2O.cif
+CaSiO3,WOLLASTONITE,461,CaSiO3,,CaSiO3,mp-4429,most_stable_guess_polymorph_unresolved,P-1,CaSiO3.cif
+CaSiO3[B],PSEUDOWOLLASTONITE,462,CaSiO3,B,CaSiO3,mp-4429,most_stable_guess_polymorph_unresolved,P-1,CaSiO3[B].cif
+Ca2SiO4,OLIVINE,463,Ca2SiO4,,Ca2SiO4,mp-4481,most_stable_guess_polymorph_unresolved,Pnma,Ca2SiO4.cif
+Ca2SiO4[B],LARNITE,464,Ca2SiO4,B,Ca2SiO4,mp-4481,most_stable_guess_polymorph_unresolved,Pnma,Ca2SiO4[B].cif
+Ca3SiO5,TRICALCIUM SILICATE,464,Ca3SiO5,,Ca3SiO5,mp-641754,most_stable_guess_polymorph_unresolved,P-1,Ca3SiO5.cif
+Ca3Si2O7,TRICALCIUM DISILICATE (RANKINITE),465,Ca3Si2O7,,Ca3Si2O7,mp-585516,most_stable_guess_polymorph_unresolved,Ima2,Ca3Si2O7.cif
+Ca3Si2O7*3H2O,TRICALCIUM DISILICATE TRIHYDRATE,467,Ca3Si2O7*3H2O,,Ca3Si2(H3O5)2,mp-696156,single_candidate,Cc,Ca3Si2O7_hyd_3H2O.cif
+Ca6Si6O18*H2O,6-CALCIUM 6-SILICATE HYDRATE,469,Ca6Si6O18*H2O,,Ca6Si6H2O19,mp-1183664,single_candidate,P-1,Ca6Si6O18_hyd_H2O.cif
+CaTiO3,CALCIUM TITAN. TRIOXIDE (PEROVSKITE),470,CaTiO3,,CaTiO3,mp-4019,most_stable_guess_polymorph_unresolved,Pnma,CaTiO3.cif
+Ca4Ti3O10,4-CALCIUM 3-TITANIUM 10-OXIDE,472,Ca4Ti3O10,,Ca4Ti3O10,mp-15315,single_candidate,Pbca,Ca4Ti3O10.cif
+CaTiSiO5,SPHENE,473,CaTiSiO5,,CaTiSiO5,mp-6109,most_stable_guess_polymorph_unresolved,P2_1/c,CaTiSiO5.cif
+CaUO4,CALCIUM URANATE,474,CaUO4,,CaUO4,mp-3960,most_stable_guess_polymorph_unresolved,R-3m,CaUO4.cif
+CaZrO3,CALCIUM ZIRCONIUM TRIOXIDE,475,CaZrO3,,CaZrO3,mp-4571,most_stable_guess_polymorph_unresolved,Pnma,CaZrO3.cif
+Ca3P2,TRICALCIUM DIPHOSPHIDE,476,Ca3P2,,Ca3P2,mp-1013547,most_stable_guess_polymorph_unresolved,Pm-3m,Ca3P2.cif
+Ca2P2O7,CALCIUM PYROPHOSPHATE,477,Ca2P2O7,,Ca2P2O7,mp-17922,most_stable_guess_polymorph_unresolved,P2_1/c,Ca2P2O7.cif
+Ca3(PO4)2,CALCIUM PHOSPHATE,478,Ca3(PO4)2,,Ca3(PO4)2,mp-1197377,most_stable_guess_polymorph_unresolved,P2_1/c,Ca3_PO4_2.cif
+CaPb,CALCIUM LEAD,479,CaPb,,CaPb,mp-20034,most_stable_guess_polymorph_unresolved,P4/mmm,CaPb.cif
+Ca2Pb,2-CALCIUM LEAD,479,Ca2Pb,,Ca2Pb,mp-30478,most_stable_guess_polymorph_unresolved,Pnma,Ca2Pb.cif
+CaS,CALCIUM SULFIDE,480,CaS,,CaS,mp-1672,most_stable_guess_polymorph_unresolved,Fm-3m,CaS.cif
+CaSO4,CALCIUM SULFATE,483,CaSO4,,CaSO4,mp-4406,most_stable_guess_polymorph_unresolved,Cmcm,CaSO4.cif
+Ca3Sb2,3-CALCIUM 2-ANTIMONY,485,Ca3Sb2,,Ca3Sb2,mp-1013546,most_stable_guess_polymorph_unresolved,Pm-3m,Ca3Sb2.cif
+CaSO4*2H2O,CALCIUM SULFATE DIHYDRATE (GYPSUM),485,CaSO4*2H2O,,CaH4SO6,mp-23690,most_stable_guess_polymorph_unresolved,C2/c,CaSO4_hyd_2H2O.cif
+CaSe,CALCIUM SELENIDE,486,CaSe,,CaSe,mp-1415,most_stable_guess_polymorph_unresolved,Fm-3m,CaSe.cif
+CaSi,CALCIUM SILICON,486,CaSi,,CaSi,mp-1563,most_stable_guess_polymorph_unresolved,Cmcm,CaSi.cif
+CaSi2,CALCIUM 2-SILICON,487,CaSi2,,CaSi2,mp-2699,most_stable_guess_polymorph_unresolved,R-3m,CaSi2.cif
+Ca2Si,2-CALCIUM SILICON,487,Ca2Si,,Ca2Si,mp-1009733,most_stable_guess_polymorph_unresolved,Fm-3m,Ca2Si.cif
+CaSn,CALCIUM TIN,488,CaSn,,CaSn,mp-2450,most_stable_guess_polymorph_unresolved,Cmcm,CaSn.cif
+Ca2Sn,2-CALCIUM TIN,488,Ca2Sn,,Ca2Sn,mp-22735,most_stable_guess_polymorph_unresolved,Pnma,Ca2Sn.cif
+CaTe,CALCIUM TELLURIDE,489,CaTe,,CaTe,mp-1519,most_stable_guess_polymorph_unresolved,Fm-3m,CaTe.cif
+Ca(VO3)2,CALCIUM METAVANADATE,489,Ca(VO3)2,,CaV2O6,mp-27624,most_stable_guess_polymorph_unresolved,C2/m,Ca_VO3_2.cif
+Ca2V2O7,CALCIUM PYROVANADATE,490,Ca2V2O7,,Ca2V2O7,mp-27614,most_stable_guess_polymorph_unresolved,P-1,Ca2V2O7.cif
+Ca3(VO4)2,CALCIUM ORTHOVANADATE,490,Ca3(VO4)2,,Ca3V2O8,mp-532028,most_stable_guess_polymorph_unresolved,R3,Ca3_VO4_2.cif
+CaWO4,CALCIUM TUNGSTATE,491,CaWO4,,CaWO4,mp-19426,most_stable_guess_polymorph_unresolved,I4_1/a,CaWO4.cif
+Ca3WO6,CALCIUM ORTHOTUNGSTATE,491,Ca3WO6,,Ca3WO6,mp-781505,most_stable_guess_polymorph_unresolved,R-3,Ca3WO6.cif
+CaZn,CALCIUM ZINC,492,CaZn,,CaZn,mp-30483,most_stable_guess_polymorph_unresolved,Cmcm,CaZn.cif
+CaZn2,CALCIUM 2-ZINC,492,CaZn2,,CaZn2,mp-1725,most_stable_guess_polymorph_unresolved,Imma,CaZn2.cif
+Cd,CADMIUM,493,Cd,,Cd,mp-94,most_stable_guess_polymorph_unresolved,P6_3/mmc,Cd.cif
+Cd3As2,CADMIUM ARSENIDE,494,Cd3As2,,Cd3As2,mp-570634,most_stable_guess_polymorph_unresolved,I4_1/acd,Cd3As2.cif
+Cd3(AsO4)2,CADMIUM ARSENATE,494,Cd3(AsO4)2,,Cd3(AsO4)2,mp-13602,most_stable_guess_polymorph_unresolved,P2_1/c,Cd3_AsO4_2.cif
+CdBr2,CADMIUM BROMIDE,495,CdBr2,,CdBr2,mp-568722,most_stable_guess_polymorph_unresolved,R-3m,CdBr2.cif
+CdCO3,CADMIUM CARBONATE,495,CdCO3,,CdCO3,mp-4385,most_stable_guess_polymorph_unresolved,R-3c,CdCO3.cif
+CdCl2,CADMIUM CHLORIDE,496,CdCl2,,CdCl2,mp-22881,most_stable_guess_polymorph_unresolved,R-3m,CdCl2.cif
+CdF2,CADMIUM FLUORIDE,497,CdF2,,CdF2,mp-241,most_stable_guess_polymorph_unresolved,Fm-3m,CdF2.cif
+CdI2,CADMIUM IODIDE,498,CdI2,,CdI2,mp-570437,most_stable_guess_polymorph_unresolved,P3m1,CdI2.cif
+CdO,CADMIUM OXIDE,498,CdO,,CdO,mp-1132,most_stable_guess_polymorph_unresolved,Fm-3m,CdO.cif
+CdAl2O4,CADMIUM DIALUMINIUM TETRAOXIDE,499,CdAl2O4,,Al2CdO4,mp-36866,most_stable_guess_polymorph_unresolved,Fd-3m,CdAl2O4.cif
+CdGa2O4,CADMIUM DIGALLIUM TETRAOXIDE,500,CdGa2O4,,Cd(GaO2)2,mp-3443,most_stable_guess_polymorph_unresolved,Fd-3m,CdGa2O4.cif
+Cd(OH)2,CADMIUM HYDROXIDE,500,Cd(OH)2,,Cd(HO)2,mp-2051619,most_stable_guess_polymorph_unresolved,Cm,Cd_OH_2.cif
+CdSiO3,CADMIUM METASILICATE,501,CdSiO3,,CdSiO3,mp-560560,most_stable_guess_polymorph_unresolved,P2_1/c,CdSiO3.cif
+CdTiO3,CADMIUM TITANIUM TRIOXIDE,501,CdTiO3,,TiCdO3,mp-13641,most_stable_guess_polymorph_unresolved,R-3,CdTiO3.cif
+CdS,CADMIUM SULFIDE,502,CdS,,CdS,mp-672,most_stable_guess_polymorph_unresolved,P6_3mc,CdS.cif
+CdSO4,CADMIUM SULFATE,503,CdSO4,,CdSO4,mp-8459,most_stable_guess_polymorph_unresolved,Cmcm,CdSO4.cif
+CdSb,CADMIUM ANTIMONY,504,CdSb,,CdSb,mp-1321,most_stable_guess_polymorph_unresolved,Pbca,CdSb.cif
+CdSe,CADMIUM SELENIDE,504,CdSe,,CdSe,mp-1070,most_stable_guess_polymorph_unresolved,P6_3mc,CdSe.cif
+CdSeO3,CADMIUM SELENITE,505,CdSeO3,,CdSeO3,mp-9186,most_stable_guess_polymorph_unresolved,Pnma,CdSeO3.cif
+CdTe,CADMIUM TELLURIDE,505,CdTe,,CdTe,mp-406,most_stable_guess_polymorph_unresolved,F-43m,CdTe.cif
+CdWO4,CADMIUM TUNGSTATE,506,CdWO4,,CdWO4,mp-19387,most_stable_guess_polymorph_unresolved,P2/c,CdWO4.cif
+Ce,CERIUM,507,Ce,,Ce,mp-28,most_stable_guess_polymorph_unresolved,Fm-3m,Ce.cif
+CeB6,CERIUM HEXABORIDE,509,CeB6,,CeB6,mp-21343,single_candidate,Pm-3m,CeB6.cif
+CeBr3,CERIUM BROMIDE,510,CeBr3,,CeBr3,mp-569850,most_stable_guess_polymorph_unresolved,P6_3/m,CeBr3.cif
+CeC2,CERIUM DICARBIDE,511,CeC2,,CeC2,mp-2839,most_stable_guess_polymorph_unresolved,I4/mmm,CeC2.cif
+Ce2C3,DICERIUM TRICARBIDE,512,Ce2C3,,Ce2C3,mp-20181,most_stable_guess_polymorph_unresolved,I-43d,Ce2C3.cif
+CeCl3,CERIUM CHLORIDE,512,CeCl3,,CeCl3,mp-582011,most_stable_guess_polymorph_unresolved,P6_3/m,CeCl3.cif
+CeF3,CERIUM FLUORIDE,514,CeF3,,CeF3,mp-510560,most_stable_guess_polymorph_unresolved,P-3c1,CeF3.cif
+CeH2,CERIUM DIHYDRIDE,515,CeH2,,CeH2,mp-505569,most_stable_guess_polymorph_unresolved,Fm-3m,CeH2.cif
+Cel3,CERIUM IODIDE,516,CeI3,,CeI3,mp-1545417,most_stable_guess_polymorph_unresolved,P2_1/m,Cel3.cif
+CeMg,CERIUM MAGNESIUM,517,CeMg,,CeMg,mp-1038816,most_stable_guess_polymorph_unresolved,C2/m,CeMg.cif
+CeN,CERIUM NITRIDE,518,CeN,,CeN,mp-2493,most_stable_guess_polymorph_unresolved,Fm-3m,CeN.cif
+CeO2,CERIUM DIOXIDE,519,CeO2,,CeO2,mp-20194,most_stable_guess_polymorph_unresolved,Fm-3m,CeO2.cif
+Ce2O3,CERIUM OXIDE,519,Ce2O3,,Ce2O3,mp-542313,most_stable_guess_polymorph_unresolved,Ia-3,Ce2O3.cif
+CeAlO3,CERIUM ALUMINIUM TRIOXIDE,520,CeAlO3,,CeAlO3,mp-19843,most_stable_guess_polymorph_unresolved,Imma,CeAlO3.cif
+CeCrO3,CERIUM CHROMIUM TRIOXIDE,520,CeCrO3,,CeCrO3,mp-780712,most_stable_guess_polymorph_unresolved,Pnma,CeCrO3.cif
+CeS,CERIUM MONOSULFIDE,521,CeS,,CeS,mp-1096,most_stable_guess_polymorph_unresolved,Fm-3m,CeS.cif
+Ce2S3,CERIUM SULFIDE,522,Ce2S3,,Ce2S3,mp-20973,most_stable_guess_polymorph_unresolved,Pnma,Ce2S3.cif
+Ce3S4,TRICERIUM TETRASULFIDE,522,Ce3S4,,Ce3S4,mp-1382,single_candidate,I-43d,Ce3S4.cif
+Co,COBALT,531,Co,,Co,mp-102,most_stable_guess_polymorph_unresolved,Fm-3m,Co.cif
+Co3(AsO4)2,COBALT ARSENATE,533,Co3(AsO4)2,,Co3(AsO4)2,mp-562111,most_stable_guess_polymorph_unresolved,P2_1/c,Co3_AsO4_2.cif
+CoB,COBALT MONOBORIDE,533,CoB,,CoB,mp-20857,most_stable_guess_polymorph_unresolved,Pnma,CoB.cif
+Co2B,DICOBALT BORIDE,534,Co2B,,Co2B,mp-493,most_stable_guess_polymorph_unresolved,I4/mcm,Co2B.cif
+CoBr2,COBALT DIBROMIDE,534,CoBr2,,CoBr2,mp-30033,most_stable_guess_polymorph_unresolved,P-3m1,CoBr2.cif
+CoCO3,COBALT CARBONATE,535,CoCO3,,CoCO3,mp-21434,most_stable_guess_polymorph_unresolved,R-3c,CoCO3.cif
+CoCl2,COBALT DICHLORIDE,536,CoCl2,,CoCl2,mp-23240,most_stable_guess_polymorph_unresolved,R-3m,CoCl2.cif
+CoF2,COBALT DIFLUORIDE,540,CoF2,,CoF2,mp-555908,most_stable_guess_polymorph_unresolved,P4_2/mnm,CoF2.cif
+CoF3,COBALT TRIFLUORIDE,541,CoF3,,CoF3,mp-1271079,most_stable_guess_polymorph_unresolved,I4/mcm,CoF3.cif
+Col2,COBALT DIIODIDE,542,CoI2,,CoI2,mp-569610,most_stable_guess_polymorph_unresolved,P-3m1,Col2.cif
+Co3N,TRICOBALT NITRIDE,542,Co3N,,Co3N,mp-1205986,most_stable_guess_polymorph_unresolved,P6_322,Co3N.cif
+CoO,COBALT MONOXIDE,543,CoO,,CoO,mp-22408,most_stable_guess_polymorph_unresolved,F-43m,CoO.cif
+Co3O4,TRICOBALT TETRAOXIDE,544,Co3O4,,Co3O4,mp-1271793,most_stable_guess_polymorph_unresolved,R-3m,Co3O4.cif
+CoCr2O4,COBALT DICHROMIUM TETRAOXIDE,544,CoCr2O4,,Cr2CoO4,mp-20758,most_stable_guess_polymorph_unresolved,Fd-3m,CoCr2O4.cif
+CoFe2O4,COBALT DIIRON TETRAOXIDE,545,CoFe2O4,,Fe2CoO4,mp-753222,most_stable_guess_polymorph_unresolved,Fd-3m,CoFe2O4.cif
+Co(OH)2,COBALT HYDROXIDE (PRECIPITATED),545,Co(OH)2,,Co(HO)2,mp-1273062,most_stable_guess_polymorph_unresolved,C2/m,Co_OH_2.cif
+Co2SiO4,DICOBALT SILICATE,546,Co2SiO4,,Co2SiO4,mp-21856,most_stable_guess_polymorph_unresolved,Pnma,Co2SiO4.cif
+CoTiO3,COBALT TITANIUM TRIOXIDE,547,CoTiO3,,TiCoO3,mp-19424,most_stable_guess_polymorph_unresolved,R-3,CoTiO3.cif
+Co2TiO4,DICOBALT TITANIUM TETRAOXIDE,548,Co2TiO4,,Ti(CoO2)2,mp-36765,most_stable_guess_polymorph_unresolved,Imma,Co2TiO4.cif
+CoP,COBALT MONOPHOSPHIDE,548,CoP,,CoP,mp-22270,most_stable_guess_polymorph_unresolved,Pnma,CoP.cif
+CoP3,COBALT TRIPHOSPHIDE,549,CoP3,,CoP3,mp-1944,most_stable_guess_polymorph_unresolved,Im-3,CoP3.cif
+Co2P,DICOBALT PHOSPHIDE,549,Co2P,,Co2P,mp-22204,most_stable_guess_polymorph_unresolved,Pnma,Co2P.cif
+CoS2,COBALT DISULFIDE,550,CoS2,,CoS2,mp-2070,most_stable_guess_polymorph_unresolved,Pa-3,CoS2.cif
+Co3S4,TRICOBALT TETRASULFIDE,551,Co3S4,,Co3S4,mp-943,single_candidate,Fd-3m,Co3S4.cif
+CoSO4,COBALT SULFATE,551,CoSO4,,CoSO4,mp-19379,most_stable_guess_polymorph_unresolved,Pnma,CoSO4.cif
+CoSb2,COBALT 2-ANTIMONY,552,CoSb2,,CoSb2,mp-755,most_stable_guess_polymorph_unresolved,P2_1/c,CoSb2.cif
+CoSb3,COBALT 3-ANTIMONY,553,CoSb3,,CoSb3,mp-1317,most_stable_guess_polymorph_unresolved,Im-3,CoSb3.cif
+CoSe03,COBALT SELENITE,553,CoSeO3,,CoSeO3,mp-562826,most_stable_guess_polymorph_unresolved,C2/c,CoSe03.cif
+CoSn,COBALT TIN,554,CoSn,,CoSn,mp-20536,most_stable_guess_polymorph_unresolved,P6/mmm,CoSn.cif
+CoWO4,COBALT TUNGSTATE,554,CoWO4,,CoWO4,mp-19092,most_stable_guess_polymorph_unresolved,P2/c,CoWO4.cif
+Cr,CHROMIUM,555,Cr,,Cr,mp-90,most_stable_guess_polymorph_unresolved,Im-3m,Cr.cif
+CrAsO4,CHROMIUM ARSENATE,557,CrAsO4,,CrAsO4,mp-1204934,most_stable_guess_polymorph_unresolved,Imma,CrAsO4.cif
+CrB,CHROMIUM MONOBORIDE,558,CrB,,CrB,mp-1080664,most_stable_guess_polymorph_unresolved,I4_1/amd,CrB.cif
+CrB2,CHROMIUM DIBORIDE,558,CrB2,,CrB2,mp-374,most_stable_guess_polymorph_unresolved,P6/mmm,CrB2.cif
+CrBr2,CHROMIUM DIBROMIDE,559,CrBr2,,CrBr2,mp-567624,most_stable_guess_polymorph_unresolved,C2/m,CrBr2.cif
+CrBr3,CHROMIUM TRIBROMIDE,559,CrBr3,,CrBr3,mp-27734,most_stable_guess_polymorph_unresolved,R-3,CrBr3.cif
+Cr3C2,3-CHROMIUM 2-CARBIDE,560,Cr3C2,,Cr3C2,mp-20937,most_stable_guess_polymorph_unresolved,Pnma,Cr3C2.cif
+Cr7C3,7-CHROMIUM 3-CARBIDE,561,Cr7C3,,Cr7C3,mp-1196316,most_stable_guess_polymorph_unresolved,P6_3mc,Cr7C3.cif
+Cr2306,23-CHROMIUM 6-CARBIDE,562,Cr23C6,,Cr23C6,mp-723,single_candidate,Fm-3m,Cr2306.cif
+Cr(CO)6,CHROMIUM HEXACARBONYL,562,Cr(CO)6,,Cr(CO)6,mp-647812,most_stable_guess_polymorph_unresolved,Pnma,Cr_CO_6.cif
+CrCl2,CHROMIUM DICHLORIDE,563,CrCl2,,CrCl2,mp-22857,most_stable_guess_polymorph_unresolved,Pnnm,CrCl2.cif
+CrCl3,CHROMIUM TRICHLORIDE,563,CrCl3,,CrCl3,mp-567504,most_stable_guess_polymorph_unresolved,R-3,CrCl3.cif
+CrF2,CHROMIUM DIFLUORIDE,564,CrF2,,CrF2,mp-554340,most_stable_guess_polymorph_unresolved,P2_1/c,CrF2.cif
+CrF3,CHROMIUM TRIFLUORIDE,565,CrF3,,CrF3,mp-560338,most_stable_guess_polymorph_unresolved,R-3c,CrF3.cif
+CrF4,CHROMIUM TETRAFLUORIDE,565,CrF4,,CrF4,mp-554855,most_stable_guess_polymorph_unresolved,C2/c,CrF4.cif
+CrI2,CHROMIUM DIIODIDE,566,CrI2,,CrI2,mp-27215,most_stable_guess_polymorph_unresolved,C2/m,CrI2.cif
+CrI3,CHROMIUM TRIIODIDE,566,CrI3,,CrI3,mp-1213805,most_stable_guess_polymorph_unresolved,P3_112,CrI3.cif
+CrN,CHROMIUM NITRIDE,567,CrN,,CrN,mp-1232890,most_stable_guess_polymorph_unresolved,Pmmn,CrN.cif
+Cr2N,DICHROMIUM NITRIDE,567,Cr2N,,Cr2N,mp-8780,most_stable_guess_polymorph_unresolved,P-31m,Cr2N.cif
+Cr2Nb,2-CHROMIUM NIOBIUM,568,Cr2Nb,,NbCr2,mp-548,most_stable_guess_polymorph_unresolved,Fd-3m,Cr2Nb.cif
+CrO2,CHROMIUM DIOXIDE,570,CrO2,,CrO2,mp-19177,most_stable_guess_polymorph_unresolved,P4_2/mnm,CrO2.cif
+CrO3,CHROMIUM TRIOXIDE,571,CrO3,,CrO3,mp-510421,most_stable_guess_polymorph_unresolved,Ama2,CrO3.cif
+Cr2O3,DICHROMIUM TRIOXIDE,573,Cr2O3,,Cr2O3,mp-19399,most_stable_guess_polymorph_unresolved,R-3c,Cr2O3.cif
+Cr2FeO4,DICHROMIUM IRON TETRAOXIDE,575,Cr2FeO4,,Cr2FeO4,mp-1104680,most_stable_guess_polymorph_unresolved,I4_1/amd,Cr2FeO4.cif
+Cr2MgO4,DICHROMIUM MAGNESIUM TETRAOXIDE,576,Cr2MgO4,,MgCr2O4,mp-19202,most_stable_guess_polymorph_unresolved,Fd-3m,Cr2MgO4.cif
+Cr2NiO4,DICHROMIUM NICKEL TETRAOXIDE,577,Cr2NiO4,,Cr2NiO4,mp-1974686,most_stable_guess_polymorph_unresolved,R-3m,Cr2NiO4.cif
+CrNaO2,CHROMIUM SODIUM DIOXIDE,577,CrNaO2,,NaCrO2,mp-578604,most_stable_guess_polymorph_unresolved,R-3m,CrNaO2.cif
+CrS,CHROMIUM MONOSULFIDE,578,CrS,,CrS,mp-523,most_stable_guess_polymorph_unresolved,P6_3/mmc,CrS.cif
+Cr2(SO4)3,CHROMIUM SULFATE,579,Cr2(SO4)3,,Cr2(SO4)3,mp-19361,most_stable_guess_polymorph_unresolved,R-3,Cr2_SO4_3.cif
+CrSi,CHROMIUM SILICON,580,CrSi,,CrSi,mp-7576,most_stable_guess_polymorph_unresolved,P2_13,CrSi.cif
+CrSi2,CHROMIUM 2-SILICON,580,CrSi2,,CrSi2,mp-8937,most_stable_guess_polymorph_unresolved,I4/mmm,CrSi2.cif
+Cr3Si,3-CHROMIUM SILICON,581,Cr3Si,,Cr3Si,mp-729,most_stable_guess_polymorph_unresolved,Pm-3n,Cr3Si.cif
+Cr5Si3,5-CHROMIUM 3-SILICON,582,Cr5Si3,,Cr5Si3,mp-7506,single_candidate,I4/mcm,Cr5Si3.cif
+Cr2Ta,2-CHROMIUM TANTALUM,583,Cr2Ta,,TaCr2,mp-2385,most_stable_guess_polymorph_unresolved,Fd-3m,Cr2Ta.cif
+Cs,CESIUM,583,Cs,,Cs,mp-1949606,most_stable_guess_polymorph_unresolved,I4/mmm,Cs.cif
+Cs3AsO4,CESIUM ARSENATE,585,Cs3AsO4,,Cs3AsO4,mp-30119,most_stable_guess_polymorph_unresolved,Pnma,Cs3AsO4.cif
+CsBr,CESIUM BROMIDE,586,CsBr,,CsBr,mp-22906,most_stable_guess_polymorph_unresolved,Pm-3m,CsBr.cif
+Cs2CO3,CESIUM CARBONATE,587,Cs2CO3,,Cs2CO3,mp-616458,most_stable_guess_polymorph_unresolved,P2_1/c,Cs2CO3.cif
+CsCl,CESIUM CHLORIDE,588,CsCl,,CsCl,mp-22865,most_stable_guess_polymorph_unresolved,Pm-3m,CsCl.cif
+CsF,CESIUM FLUORIDE,591,CsF,,CsF,mp-1784,most_stable_guess_polymorph_unresolved,Fm-3m,CsF.cif
+CsI,CESIUM IODIDE,594,CsI,,CsI,mp-614603,most_stable_guess_polymorph_unresolved,Fm-3m,CsI.cif
+CsO2,CESIUM DIOXIDE,596,CsO2,,CsO2,mp-2037681,most_stable_guess_polymorph_unresolved,Immm,CsO2.cif
+Cs2O,CESIUM OXIDE,597,Cs2O,,Cs2O,mp-7988,most_stable_guess_polymorph_unresolved,R-3m,Cs2O.cif
+Cs2O3,DICESIUM TRIOXIDE,598,Cs2O3,,Cs2O3,mp-1213719,most_stable_guess_polymorph_unresolved,I-43d,Cs2O3.cif
+CsOH,CESIUM HYDROXIDE,598,CsOH,,CsHO,mp-625136,most_stable_guess_polymorph_unresolved,Cmc2_1,CsOH.cif
+Cs2SO4,CESIUM SULFATE,601,Cs2SO4,,Cs2SO4,mp-505782,most_stable_guess_polymorph_unresolved,Pnma,Cs2SO4.cif
+Cu,COPPER,602,Cu,,Cu,mp-30,most_stable_guess_polymorph_unresolved,Fm-3m,Cu.cif
+Cu3As,TRICOPPER ARSENIDE,604,Cu3As,,Cu3As,mp-1966,most_stable_guess_polymorph_unresolved,I-43d,Cu3As.cif
+Cu3(AsO4)2,TRICOPPER DIARSENATE,605,Cu3(AsO4)2,,Cu3(AsO4)2,mp-554614,most_stable_guess_polymorph_unresolved,P2_1/c,Cu3_AsO4_2.cif
+CuBr,COPPER MONOBROMIDE,606,CuBr,,CuBr,mp-22913,most_stable_guess_polymorph_unresolved,F-43m,CuBr.cif
+CuBr2,COPPER DIBROMIDE,607,CuBr2,,CuBr2,mp-2360071,most_stable_guess_polymorph_unresolved,C2/m,CuBr2.cif
+CuCN,COPPER CYANIDE,608,CuCN,,CuCN,mp-35308,most_stable_guess_polymorph_unresolved,R3m,CuCN.cif
+CuCl,COPPER MONOCHLORIDE,609,CuCl,,CuCl,mp-22914,most_stable_guess_polymorph_unresolved,F-43m,CuCl.cif
+CuCl2,COPPER DICHLORIDE,610,CuCl2,,CuCl2,mp-30999,most_stable_guess_polymorph_unresolved,C2/m,CuCl2.cif
+CuF,COPPER MONOFLUORIDE,611,CuF,,CuF,mp-10634,most_stable_guess_polymorph_unresolved,F-43m,CuF.cif
+CuF2,COPPER DIFLUORIDE,613,CuF2,,CuF2,mp-1229,most_stable_guess_polymorph_unresolved,P2_1/c,CuF2.cif
+CuFeS2,COPPER IRON DISULFIDE,615,CuFeS2,,FeCuS2,mp-3497,most_stable_guess_polymorph_unresolved,I-42d,CuFeS2.cif
+Cu5FeS4,PENTACOPPER IRON TETRASULFIDE,616,Cu5FeS4,,FeCu5S4,mp-675830,most_stable_guess_polymorph_unresolved,Pm,Cu5FeS4.cif
+Cul,COPPER MONOIODIDE,617,CuI,,CuI,mp-570081,most_stable_guess_polymorph_unresolved,P-3m1,Cul.cif
+CuMg2,1-COPPER 2-MAGNESIUM,619,CuMg2,,Mg2Cu,mp-2481,most_stable_guess_polymorph_unresolved,Fddd,CuMg2.cif
+Cu2Mg,2-COPPER 1-MAGNESIUM,619,Cu2Mg,,MgCu2,mp-1038,most_stable_guess_polymorph_unresolved,Fd-3m,Cu2Mg.cif
+CuMoO4,COPPER MOLYBDATE,620,CuMoO4,,CuMoO4,mp-619545,most_stable_guess_polymorph_unresolved,P-1,CuMoO4.cif
+CuO,COPPER MONOXIDE,620,CuO,,CuO,mp-1692,most_stable_guess_polymorph_unresolved,P4_2/mmc,CuO.cif
+Cu2O,DICOPPER OXIDE,622,Cu2O,,Cu2O,mp-361,most_stable_guess_polymorph_unresolved,Pn-3m,Cu2O.cif
+CuFeO2,COPPER IRON DIOXIDE,623,CuFeO2,,FeCuO2,mp-510281,most_stable_guess_polymorph_unresolved,R-3m,CuFeO2.cif
+CuFe2O4,COPPER DIIRON TETRAOXIDE,624,CuFe2O4,,Fe2CuO4,mp-770107,most_stable_guess_polymorph_unresolved,Fd-3m,CuFe2O4.cif
+Cu(OH)2,COPPER HYDROXIDE,624,Cu(OH)2,,Cu(HO)2,mp-505105,most_stable_guess_polymorph_unresolved,Cmc2_1,Cu_OH_2.cif
+Cu2OSO4,DICOPPER OXIDE SULFATE,625,Cu2OSO4,,Cu2SO5,mp-4386,single_candidate,C2/m,Cu2OSO4.cif
+CuP2,COPPER DIPHOSPHIDE,625,CuP2,,CuP2,mp-927,most_stable_guess_polymorph_unresolved,P2_1/c,CuP2.cif
+Cu3P,TRICOPPER PHOSPHIDE,626,Cu3P,,Cu3P,mp-7463,most_stable_guess_polymorph_unresolved,P6_3cm,Cu3P.cif
+CuS,COPPER SULFIDE,626,CuS,,CuS,mp-555599,most_stable_guess_polymorph_unresolved,Cmcm,CuS.cif
+Cu2S,DICOPPER SULFIDE,628,Cu2S,,Cu2S,mp-581212,most_stable_guess_polymorph_unresolved,P2_1/c,Cu2S.cif
+CuSO4,COPPER SULFATE,629,CuSO4,,CuSO4,mp-20525,most_stable_guess_polymorph_unresolved,Pnma,CuSO4.cif
+Cu2SO4,DICOPPER SULFATE,629,Cu2SO4,,Cu2SO4,mp-28491,most_stable_guess_polymorph_unresolved,Fddd,Cu2SO4.cif
+CuSO4*H2O,COPPER SULFATE MONOHYDRATE,630,CuSO4*H2O,,CuH2SO5,mp-24522,single_candidate,P-1,CuSO4_hyd_H2O.cif
+CuSO4*3H2O,COPPER SULFATE TRIHYDRATE,630,CuSO4*3H2O,,CuH6SO7,mp-1192826,most_stable_guess_polymorph_unresolved,Cc,CuSO4_hyd_3H2O.cif
+CuSO4*5H2O,COPPER SULFATE PENTAHYDRATE,631,CuSO4*5H2O,,CuH10SO9,mp-1196039,most_stable_guess_polymorph_unresolved,P-1,CuSO4_hyd_5H2O.cif
+Cu2Sb,2-COPPER ANTIMONY,631,Cu2Sb,,Cu2Sb,mp-1825,most_stable_guess_polymorph_unresolved,P4/nmm,Cu2Sb.cif
+CuSe,COPPER SELENIDE,632,CuSe,,CuSe,mp-571486,most_stable_guess_polymorph_unresolved,Cmcm,CuSe.cif
+Cu2Se[B],DICOPPER SELENIDE,632,Cu2Se,B,Cu2Se,mp-1097707,most_stable_guess_polymorph_unresolved,P2_1/c,Cu2Se[B].cif
+CuSeO3,COPPER SELENITE,633,CuSeO3,,CuSeO3,mp-560049,most_stable_guess_polymorph_unresolved,P-1,CuSeO3.cif
+CuTe,COPPER TELLURIDE,633,CuTe,,CuTe,mp-20826,most_stable_guess_polymorph_unresolved,Pmmn,CuTe.cif
+Cu2Te,DICOPPER TELLURIDE,634,Cu2Te,,Cu2Te,mp-1861,most_stable_guess_polymorph_unresolved,P6/mmm,Cu2Te.cif
+D2O,WATER-D2,640,D2O,,H2O,mp-697111,most_stable_guess_polymorph_unresolved,Cmc2_1,D2O.cif
+Dy,DYSPROSIUM,644,Dy,,Dy,mp-88,most_stable_guess_polymorph_unresolved,P6_3/mmc,Dy.cif
+DyCI3,DYSPROSIUM CHLORIDE,646,DyCl3,,DyCl3,mp-28448,most_stable_guess_polymorph_unresolved,Cmcm,DyCI3.cif
+DyF3,DYSPROSIUM FLUORIDE,648,DyF3,,DyF3,mp-1212843,most_stable_guess_polymorph_unresolved,Pnma,DyF3.cif
+Dy2O3,DYSPROSIUM OXIDE,651,Dy2O3,,Dy2O3,mp-2345,most_stable_guess_polymorph_unresolved,Ia-3,Dy2O3.cif
+Er,ERBIUM,652,Er,,Er,mp-1184115,most_stable_guess_polymorph_unresolved,R-3m,Er.cif
+ErCl3,ERBIUM CHLORIDE,655,ErCl3,,ErCl3,mp-863029,most_stable_guess_polymorph_unresolved,P6_3/mmc,ErCl3.cif
+ErF3,ERBIUM FLUORIDE,657,ErF3,,ErF3,mp-9371,most_stable_guess_polymorph_unresolved,Pnma,ErF3.cif
+Er2O3,ERBIUM OXIDE (CUBIC),660,Er2O3,,Er2O3,mp-679,most_stable_guess_polymorph_unresolved,Ia-3,Er2O3.cif
+Eu,EUROPIUM,661,Eu,,Eu,mp-21462,most_stable_guess_polymorph_unresolved,P6_3/mmc,Eu.cif
+EuBr2,EUROPIUM DIBROMIDE,663,EuBr2,,EuBr2,mp-23311,most_stable_guess_polymorph_unresolved,P4/n,EuBr2.cif
+EuBr3,EUROPIUM BROMIDE,664,EuBr3,,EuBr3,mp-1205810,most_stable_guess_polymorph_unresolved,Cmcm,EuBr3.cif
+EuCl3,EUROPIUM CHLORIDE,664,EuCl3,,EuCl3,mp-569895,most_stable_guess_polymorph_unresolved,P6_3/m,EuCl3.cif
+EuF3,EUROPIUM FLUORIDE,666,EuF3,,EuF3,mp-19908,most_stable_guess_polymorph_unresolved,Pnma,EuF3.cif
+Eu2O3,EUROPIUM OXIDE (CUBIC),667,Eu2O3,,Eu2O3,mp-1017564,most_stable_guess_polymorph_unresolved,P-3m1,Eu2O3.cif
+Eu2O3[M],EUROPIUM OXIDE (MONOCLINIC),668,Eu2O3,M,Eu2O3,mp-1017564,most_stable_guess_polymorph_unresolved,P-3m1,Eu2O3[M].cif
+EuS,EUROPIUM MONOSULFIDE,669,EuS,,EuS,mp-20587,most_stable_guess_polymorph_unresolved,Fm-3m,EuS.cif
+Fe,IRON,675,Fe,,Fe,mp-13,most_stable_guess_polymorph_unresolved,Im-3m,Fe.cif
+Fe3(AsO4)2,TRIIRON DIARSENATE,677,Fe3(AsO4)2,,Fe3(AsO4)2,mp-1212748,most_stable_guess_polymorph_unresolved,C2/m,Fe3_AsO4_2.cif
+FeAsO4,IRON ARSENATE,677,FeAsO4,,FeAsO4,mp-21016,most_stable_guess_polymorph_unresolved,P2_1/c,FeAsO4.cif
+FeB,IRON MONOBORIDE,678,FeB,,FeB,mp-1007881,most_stable_guess_polymorph_unresolved,Cmcm,FeB.cif
+Fe2B,DIIRON BORIDE,679,Fe2B,,Fe2B,mp-1915,most_stable_guess_polymorph_unresolved,I4/mcm,Fe2B.cif
+FeBr2,IRON DIBROMIDE,680,FeBr2,,FeBr2,mp-22880,most_stable_guess_polymorph_unresolved,P-3m1,FeBr2.cif
+FeBr3,IRON TRIBROMIDE,681,FeBr3,,FeBr3,mp-23232,most_stable_guess_polymorph_unresolved,R-3,FeBr3.cif
+Fe3C,TRIIRON CARBIDE,683,Fe3C,,Fe3C,mp-13154,most_stable_guess_polymorph_unresolved,P6_322,Fe3C.cif
+FeCO3,IRON CARBONATE,683,FeCO3,,FeCO3,mp-18969,most_stable_guess_polymorph_unresolved,R-3c,FeCO3.cif
+Fe(CO)5,IRON PENTACARBONYL,684,Fe(CO)5,,Fe(CO)5,mp-616561,most_stable_guess_polymorph_unresolved,C2/c,Fe_CO_5.cif
+FeCl2,IRON DICHLORIDE,686,FeCl2,,FeCl2,mp-571096,most_stable_guess_polymorph_unresolved,P-3m1,FeCl2.cif
+FeCl3,IRON TRICHLORIDE,687,FeCl3,,FeCl3,mp-1049060,most_stable_guess_polymorph_unresolved,P1,FeCl3.cif
+FeF2,IRON DIFLUORIDE,691,FeF2,,FeF2,mp-556911,most_stable_guess_polymorph_unresolved,P4_2/mnm,FeF2.cif
+FeF3,IRON TRIFLUORIDE,692,FeF3,,FeF3,mp-22398,most_stable_guess_polymorph_unresolved,R-3c,FeF3.cif
+Fel2,IRON DIIODIDE,694,FeI2,,FeI2,mp-571122,most_stable_guess_polymorph_unresolved,P-3m1,Fel2.cif
+FeMoO4,IRON MOLYBDATE,697,FeMoO4,,FeMoO4,mp-505526,most_stable_guess_polymorph_unresolved,C2/m,FeMoO4.cif
+Fe4N,TETRAIRON NITRIDE,698,Fe4N,,Fe4N,mp-535,most_stable_guess_polymorph_unresolved,Pm-3m,Fe4N.cif
+FeO,IRON MONOXIDE,700,FeO,,FeO,mp-1274279,most_stable_guess_polymorph_unresolved,C2/m,FeO.cif
+Fe2O3,HEMATITE,702,Fe2O3,,Fe2O3,mp-19770,most_stable_guess_polymorph_unresolved,R-3c,Fe2O3.cif
+Fe3O4,MAGNETITE,703,Fe3O4,,Fe3O4,mp-19306,most_stable_guess_polymorph_unresolved,Fd-3m,Fe3O4.cif
+FeAl2O4,IRON DIALUMINIUM TETRAOXIDE,704,FeAl2O4,,Al2FeO4,mp-30084,most_stable_guess_polymorph_unresolved,Fd-3m,FeAl2O4.cif
+FeOCl,IRON CHLORIDE OXIDE,704,FeOCl,,FeClO,mp-540828,most_stable_guess_polymorph_unresolved,Pmmn,FeOCl.cif
+Fe(OH)2,IRON DIHYDROXIDE,705,Fe(OH)2,,Fe(HO)2,mp-626680,most_stable_guess_polymorph_unresolved,P-3m1,Fe_OH_2.cif
+Fe2O3*H2O,IRON TRIOXIDE HYDRATE (GOETHITE),706,Fe2O3*H2O,,FeHO2,mp-605437,most_stable_guess_polymorph_unresolved,Pnma,Fe2O3_hyd_H2O.cif
+Fe2MgO4,DIIRON MAGNESIUM TETRAOXIDE,706,Fe2MgO4,,Mg(FeO2)2,mp-608016,most_stable_guess_polymorph_unresolved,Fd-3m,Fe2MgO4.cif
+Fe2MnO4,DIIRON MANGANESE TETRAOXIDE,707,Fe2MnO4,,Mn(FeO2)2,mp-18750,most_stable_guess_polymorph_unresolved,Fd-3m,Fe2MnO4.cif
+FeNaO2,IRON SODIUM DIOXIDE,708,FeNaO2,,NaFeO2,mp-19359,most_stable_guess_polymorph_unresolved,R-3m,FeNaO2.cif
+Fe2NiO4,DIIRON NICKEL TETRAOXIDE,709,Fe2NiO4,,Fe2NiO4,mp-35596,most_stable_guess_polymorph_unresolved,Imma,Fe2NiO4.cif
+FePO4,IRON PHOSPHATE,710,FePO4,,FePO4,mp-753395,most_stable_guess_polymorph_unresolved,P-1,FePO4.cif
+FePO4*2H2O,IRON PHOSPHATE DIHYDRATE (STRENGITE),711,FePO4*2H2O,,FeP(H2O3)2,mp-510510,most_stable_guess_polymorph_unresolved,Pbca,FePO4_hyd_2H2O.cif
+FeSiO3,IRON METASILICATE,712,FeSiO3,,FeSiO3,mp-21939,most_stable_guess_polymorph_unresolved,Pbca,FeSiO3.cif
+Fe2SiO4,IRON ORTHOSILICATE (FAYALITE),713,Fe2SiO4,,Fe2SiO4,mp-20313,most_stable_guess_polymorph_unresolved,Pnma,Fe2SiO4.cif
+FeTiO3,IRON TITANIUM TRIOXIDE (ILMENITE),714,FeTiO3,,TiFeO3,mp-1277107,most_stable_guess_polymorph_unresolved,P-1,FeTiO3.cif
+Fe2TiO4,DIIRON TITANIUM TETROXIDE,715,Fe2TiO4,,Ti(FeO2)2,mp-780585,most_stable_guess_polymorph_unresolved,C2/c,Fe2TiO4.cif
+FeV2O4,IRON DIVANADIUM TETRAOXIDE,716,FeV2O4,,V2FeO4,mp-1274785,most_stable_guess_polymorph_unresolved,C2/c,FeV2O4.cif
+Fe2ZnO4,DIIRON ZINC TETRAOXIDE,716,Fe2ZnO4,,Zn(FeO2)2,mp-19313,most_stable_guess_polymorph_unresolved,Fd-3m,Fe2ZnO4.cif
+FeS,IRON MONOSULFIDE,718,FeS,,FeS,mp-505531,most_stable_guess_polymorph_unresolved,P4/nmm,FeS.cif
+FeS2,IRON DISULFIDE,720,FeS2,,FeS2,mp-1522,most_stable_guess_polymorph_unresolved,Pnnm,FeS2.cif
+FeSO4,IRON SULFATE,720,FeSO4,,FeSO4,mp-19254,most_stable_guess_polymorph_unresolved,Pnma,FeSO4.cif
+Fe2(SO4)3,DIIRON TRISULFATE,721,Fe2(SO4)3,,Fe2(SO4)3,mp-540767,most_stable_guess_polymorph_unresolved,R-3,Fe2_SO4_3.cif
+FeSi,IRON SILICON,722,FeSi,,FeSi,mp-871,most_stable_guess_polymorph_unresolved,P2_13,FeSi.cif
+FeSi2,LEBOITE (BETA),722,FeSi2,,FeSi2,mp-1714,most_stable_guess_polymorph_unresolved,Cmce,FeSi2.cif
+Fe2Ta,2-IRON TANTALUM,723,Fe2Ta,,TaFe2,mp-568077,most_stable_guess_polymorph_unresolved,P6_3/mmc,Fe2Ta.cif
+FeTe2,IRON DITELLURIDE,724,FeTe2,,FeTe2,mp-19880,most_stable_guess_polymorph_unresolved,Pnnm,FeTe2.cif
+FeTi,IRON TITANIUM,725,FeTi,,TiFe,mp-305,most_stable_guess_polymorph_unresolved,Pm-3m,FeTi.cif
+Fe2U,2-IRON URANIUM,726,Fe2U,,UFe2,mp-21050,most_stable_guess_polymorph_unresolved,Fd-3m,Fe2U.cif
+Fe(VO3)2,IRON VANADATE,726,Fe(VO3)2,,V2FeO6,mp-1312206,most_stable_guess_polymorph_unresolved,P-1,Fe_VO3_2.cif
+FeWO4,IRON TUNGSTATE,727,FeWO4,,FeWO4,mp-19421,most_stable_guess_polymorph_unresolved,P2/c,FeWO4.cif
+Ga,GALLIUM,728,Ga,,Ga,mp-142,most_stable_guess_polymorph_unresolved,Cmce,Ga.cif
+GaAs,GALLIUM ARSENIDE,730,GaAs,,GaAs,mp-2534,most_stable_guess_polymorph_unresolved,F-43m,GaAs.cif
+GaAsO4,GALLIUM ARSENATE,730,GaAsO4,,GaAsO4,mp-3996,most_stable_guess_polymorph_unresolved,P3_121,GaAsO4.cif
+GaBr3,GALLIUM BROMIDE,731,GaBr3,,GaBr3,mp-30953,most_stable_guess_polymorph_unresolved,P2_1/c,GaBr3.cif
+GaCl3,GALLIUM CHLORIDE,732,GaCl3,,GaCl3,mp-30952,most_stable_guess_polymorph_unresolved,C2/m,GaCl3.cif
+GaF3,GALLIUM FLUORIDE,737,GaF3,,GaF3,mp-588,most_stable_guess_polymorph_unresolved,R-3c,GaF3.cif
+Gal3,GALLIUM IODIDE,738,GaI3,,GaI3,mp-30954,most_stable_guess_polymorph_unresolved,P2_1/c,Gal3.cif
+GaN,GALLIUM NITRIDE,739,GaN,,GaN,mp-804,most_stable_guess_polymorph_unresolved,P6_3mc,GaN.cif
+Ga2O3,GALLIUM OXIDE,742,Ga2O3,,Ga2O3,mp-886,most_stable_guess_polymorph_unresolved,C2/m,Ga2O3.cif
+GaP,GALLIUM PHOSPHIDE,743,GaP,,GaP,mp-2490,most_stable_guess_polymorph_unresolved,F-43m,GaP.cif
+GaS,GALLIUM MONOSULFIDE,743,GaS,,GaS,mp-2507,most_stable_guess_polymorph_unresolved,P6_3/mmc,GaS.cif
+Ga2S3,DIGALLIUM TRISULFIDE,744,Ga2S3,,Ga2S3,mp-539,most_stable_guess_polymorph_unresolved,Cc,Ga2S3.cif
+GaSb,GALLIUM ANTIMONY,745,GaSb,,GaSb,mp-1156,most_stable_guess_polymorph_unresolved,F-43m,GaSb.cif
+GaSe,GALLIUM MONOSELENIDE,745,GaSe,,GaSe,mp-568263,most_stable_guess_polymorph_unresolved,P6_3mc,GaSe.cif
+Ga2Se3,DIGALLIUM TRISELENIDE,746,Ga2Se3,,Ga2Se3,mp-1340,most_stable_guess_polymorph_unresolved,Cc,Ga2Se3.cif
+GaTe,GALLIUM MONOTELLURIDE,747,GaTe,,GaTe,mp-542812,most_stable_guess_polymorph_unresolved,C2/m,GaTe.cif
+Ga2Te3,DIGALLIUM TRITELLURIDE,747,Ga2Te3,,Ga2Te3,mp-38970,most_stable_guess_polymorph_unresolved,Cc,Ga2Te3.cif
+Gd,GADOLINIUM,748,Gd,,Gd,mp-155,most_stable_guess_polymorph_unresolved,P6_3/mmc,Gd.cif
+GdBr3,GADOLINIUM BROMIDE,750,GdBr3,,GdBr3,mp-27182,most_stable_guess_polymorph_unresolved,C2/m,GdBr3.cif
+GdCl3,GADOLINIUM CHLORIDE,752,GdCl3,,GdCl3,mp-23265,most_stable_guess_polymorph_unresolved,P6_3/m,GdCl3.cif
+GdF3,GADOLINIUM FLUORIDE,754,GdF3,,GdF3,mp-972965,most_stable_guess_polymorph_unresolved,Fm-3m,GdF3.cif
+Gd2O3,GADOLINIUM OXIDE (CUBIC),758,Gd2O3,,Gd2O3,mp-504886,most_stable_guess_polymorph_unresolved,Ia-3,Gd2O3.cif
+Gd2O3[M],GADOLINIUM OXIDE (MONOCLINIC),759,Gd2O3,M,Gd2O3,mp-504886,most_stable_guess_polymorph_unresolved,Ia-3,Gd2O3[M].cif
+GdOCl,GADOLINIUM CHLORIDE OXIDE,759,GdOCl,,GdClO,mp-23050,most_stable_guess_polymorph_unresolved,P4/nmm,GdOCl.cif
+Ge,GERMANIUM,760,Ge,,Ge,mp-32,most_stable_guess_polymorph_unresolved,Fd-3m,Ge.cif
+GeMg2,GERMANIUM 2-MAGNESIUM,771,GeMg2,,Mg2Ge,mp-408,most_stable_guess_polymorph_unresolved,Fm-3m,GeMg2.cif
+GeNi2,GERMANIUM 2-NICKEL,771,GeNi2,,Ni2Ge,mp-17383,most_stable_guess_polymorph_unresolved,Pnma,GeNi2.cif
+GeO2,GERMANIUM DIOXIDE,773,GeO2,,GeO2,mp-470,most_stable_guess_polymorph_unresolved,P4_2/mnm,GeO2.cif
+GeP,GERMANIUM PHOSPHIDE,774,GeP,,GeP,mp-1095275,most_stable_guess_polymorph_unresolved,C2/m,GeP.cif
+GeS,GERMANIUM MONOSULFIDE,774,GeS,,GeS,mp-2242,most_stable_guess_polymorph_unresolved,Pnma,GeS.cif
+GeS2,GERMANIUM DISULFIDE,776,GeS2,,GeS2,mp-572892,most_stable_guess_polymorph_unresolved,P2_1/c,GeS2.cif
+GeSe,GERMANIUM MONOSELENIDE,776,GeSe,,GeSe,mp-700,most_stable_guess_polymorph_unresolved,Pnma,GeSe.cif
+GeSe2,GERMANIUM DISELENIDE,777,GeSe2,,GeSe2,mp-540625,most_stable_guess_polymorph_unresolved,P2_1/c,GeSe2.cif
+GeTe,GERMANIUM MONOTELLURIDE,778,GeTe,,GeTe,mp-938,most_stable_guess_polymorph_unresolved,R3m,GeTe.cif
+Ge2U,2-GERMANIUM URANIUM,779,Ge2U,,UGe2,mp-1237,most_stable_guess_polymorph_unresolved,Cmmm,Ge2U.cif
+Ge3U,3-GERMANIUM URANIUM,779,Ge3U,,UGe3,mp-2607,most_stable_guess_polymorph_unresolved,Pm-3m,Ge3U.cif
+Ge3U5,3-GERMANIUM 5-URANIUM,780,Ge3U5,,U5Ge3,mp-622345,single_candidate,P6_3/mcm,Ge3U5.cif
+HBO2,METABORIC ACID,783,HBO2,,BHO2,mp-1198592,most_stable_guess_polymorph_unresolved,P2_1/c,HBO2.cif
+H3BO3,BORIC ACID,784,H3BO3,,B(HO)3,mp-23791,most_stable_guess_polymorph_unresolved,P-1,H3BO3.cif
+H2O,WATER,795,H2O,,H2O,mp-697111,most_stable_guess_polymorph_unresolved,Cmc2_1,H2O.cif
+H2O2,HYDROGEN PEROXIDE,797,H2O2,,H2O2,mp-28015,most_stable_guess_polymorph_unresolved,P4_12_12,H2O2.cif
+H3PO4,PHOSPHORIC ACID,799,H3PO4,,PH3O4,mp-23902,most_stable_guess_polymorph_unresolved,P2_1/c,H3PO4.cif
+H2SO4,SULFURIC ACID,802,H2SO4,,H2SO4,mp-690733,most_stable_guess_polymorph_unresolved,C2/c,H2SO4.cif
+H2WO4,TUNGSTIC ACID,804,H2WO4,,H2WO4,mp-29530,most_stable_guess_polymorph_unresolved,Pnma,H2WO4.cif
+Hf,HAFNIUM,807,Hf,,Hf,mp-103,most_stable_guess_polymorph_unresolved,P6_3/mmc,Hf.cif
+HfB2,HAFNIUM DIBORIDE,810,HfB2,,HfB2,mp-1994,most_stable_guess_polymorph_unresolved,P6/mmm,HfB2.cif
+HfBr4,HAFNIUM TETRABROMIDE,810,HfBr4,,HfBr4,mp-1212517,single_candidate,Pa-3,HfBr4.cif
+HfC,HAFNIUM CARBIDE,812,HfC,,HfC,mp-21075,most_stable_guess_polymorph_unresolved,Fm-3m,HfC.cif
+HfCI4,HAFNIUM TETRACHLORIDE,814,HfCl4,,HfCl4,mp-29422,single_candidate,P2/c,HfCI4.cif
+HfF4,HAFNIUM TETRAFLUORIDE,815,HfF4,,HfF4,mp-31033,single_candidate,C2/c,HfF4.cif
+Hfl4,HAFNIUM TETRAIODIDE,816,HfI4,,HfI4,mp-569059,most_stable_guess_polymorph_unresolved,C2/c,Hfl4.cif
+HfN,HAFNIUM NITRIDE,817,HfN,,HfN,mp-2828,most_stable_guess_polymorph_unresolved,Fm-3m,HfN.cif
+HfO2,HAFNIUM DIOXIDE,818,HfO2,,HfO2,mp-352,most_stable_guess_polymorph_unresolved,P2_1/c,HfO2.cif
+HfSrO3,HAFNIUM STRONTIUM TRIOXIDE,819,HfSrO3,,SrHfO3,mp-3378,most_stable_guess_polymorph_unresolved,Pnma,HfSrO3.cif
+Hg,MERCURY,819,Hg,,Hg,mp-2629196,most_stable_guess_polymorph_unresolved,R-3m,Hg.cif
+Hg3(AsO4)2,TRIMERCURY DIARSENATE,820,Hg3(AsO4)2,,Hg3(AsO4)2,mp-8975,most_stable_guess_polymorph_unresolved,P2_1/c,Hg3_AsO4_2.cif
+HgBr2,MERCURY DIBROMIDE,821,HgBr2,,HgBr2,mp-23292,most_stable_guess_polymorph_unresolved,Cmc2_1,HgBr2.cif
+Hg2Br2,DIMERCURY DIBROMIDE,822,Hg2Br2,,HgBr,mp-23177,most_stable_guess_polymorph_unresolved,I4/mmm,Hg2Br2.cif
+HgCl2,MERCURY DICHLORIDE,823,HgCl2,,HgCl2,mp-22855,most_stable_guess_polymorph_unresolved,Pnma,HgCl2.cif
+Hg2Cl2,DIMERCURY DICHLORIDE,824,Hg2Cl2,,HgCl,mp-22897,most_stable_guess_polymorph_unresolved,I4/mmm,Hg2Cl2.cif
+HgF2,MERCURY DIFLUORIDE,825,HgF2,,HgF2,mp-8177,most_stable_guess_polymorph_unresolved,Fm-3m,HgF2.cif
+Hg2F2,DIMERCURY DIFLUORIDE,826,Hg2F2,,HgF,mp-706,most_stable_guess_polymorph_unresolved,I4/mmm,Hg2F2.cif
+Hgl2,MERCURY DIIODIDE,828,HgI2,,HgI2,mp-23192,most_stable_guess_polymorph_unresolved,P4_2/nmc,Hgl2.cif
+Hg2l2,DIMERCURY DIIODIDE,829,Hg2I2,,HgI,mp-22859,most_stable_guess_polymorph_unresolved,I4/mmm,Hg2l2.cif
+HgO,MERCURY OXIDE (RED),830,HgO,,HgO,mp-1224,most_stable_guess_polymorph_unresolved,Pnma,HgO.cif
+HgS,MERCURY SULFIDE (RED.),831,HgS,,HgS,mp-1123,most_stable_guess_polymorph_unresolved,F-43m,HgS.cif
+HgSO4,MERCURY SULFATE,832,HgSO4,,HgSO4,mp-3228,most_stable_guess_polymorph_unresolved,Pmn2_1,HgSO4.cif
+Hg2SO4,DIMERCURY SULFATE,832,Hg2SO4,,Hg2SO4,mp-7461,most_stable_guess_polymorph_unresolved,P2/c,Hg2SO4.cif
+HgSe,MERCURY SELENIDE,833,HgSe,,HgSe,mp-1018722,most_stable_guess_polymorph_unresolved,P3_221,HgSe.cif
+HgSeO3,MERCURY SELENITE,834,HgSeO3,,HgSeO3,mp-9228,most_stable_guess_polymorph_unresolved,Pnma,HgSeO3.cif
+HgTe,MERCURY TELLURIDE,834,HgTe,,HgTe,mp-2730,most_stable_guess_polymorph_unresolved,F-43m,HgTe.cif
+Ho,HOLMIUM,836,Ho,,Ho,mp-144,most_stable_guess_polymorph_unresolved,P6_3/mmc,Ho.cif
+HoBr3,HOLMIUM BROMIDE,838,HoBr3,,HoBr3,mp-977375,most_stable_guess_polymorph_unresolved,P6_3/mmc,HoBr3.cif
+HoCl3,HOLMIUM CHLORIDE,840,HoCl3,,HoCl3,mp-864662,most_stable_guess_polymorph_unresolved,P6_3/mmc,HoCl3.cif
+HoF3,HOLMIUM FLUORIDE,842,HoF3,,HoF3,mp-561877,most_stable_guess_polymorph_unresolved,Pnma,HoF3.cif
+Ho2O3,HOLMIUM OXIDE,843,Ho2O3,,Ho2O3,mp-812,most_stable_guess_polymorph_unresolved,Ia-3,Ho2O3.cif
+l2,IODINE,845,I2,,I,mp-23153,most_stable_guess_polymorph_unresolved,Cmce,l2.cif
+In,INDIUM,846,In,,In,mp-85,most_stable_guess_polymorph_unresolved,Fm-3m,In.cif
+InAs,INDIUM ARSENIDE,848,InAs,,InAs,mp-20305,most_stable_guess_polymorph_unresolved,F-43m,InAs.cif
+InBr,INDIUM MONOBROMIDE,849,InBr,,InBr,mp-22870,most_stable_guess_polymorph_unresolved,Cmcm,InBr.cif
+InBr3,INDIUM TRIBROMIDE,850,InBr3,,InBr3,mp-570219,most_stable_guess_polymorph_unresolved,C2/m,InBr3.cif
+InCl,INDIUM MONOCHLORIDE,850,InCl,,InCl,mp-23276,most_stable_guess_polymorph_unresolved,P2_13,InCl.cif
+InCl2,INDIUM DICHLORIDE,851,InCl2,,InCl2,mp-1212122,most_stable_guess_polymorph_unresolved,Pnna,InCl2.cif
+InCl3,INDIUM TRICHLORIDE,852,InCl3,,InCl3,mp-862983,most_stable_guess_polymorph_unresolved,P6_3/mmc,InCl3.cif
+InF3,INDIUM TRIFLUORIDE,857,InF3,,InF3,mp-6949,most_stable_guess_polymorph_unresolved,R-3c,InF3.cif
+Inl,INDIUM MONOIODIDE,858,InI,,InI,mp-23202,most_stable_guess_polymorph_unresolved,Cmcm,Inl.cif
+Inl3,INDIUM TRIIODIDE,860,InI3,,InI3,mp-567789,most_stable_guess_polymorph_unresolved,P2_1/c,Inl3.cif
+InN,INDIUM NITRIDE,861,InN,,InN,mp-22205,most_stable_guess_polymorph_unresolved,P6_3mc,InN.cif
+In2O3,DIINDIUM TRIOXIDE,863,In2O3,,In2O3,mp-22598,most_stable_guess_polymorph_unresolved,Ia-3,In2O3.cif
+InP,INDIUM PHOSPHIDE,864,InP,,InP,mp-20351,most_stable_guess_polymorph_unresolved,F-43m,InP.cif
+InS,INDIUM MONOSULFIDE,865,InS,,InS,mp-19795,most_stable_guess_polymorph_unresolved,Pnnm,InS.cif
+In2S3,DIINDIUM TRISULFIDE,867,In2S3,,In2S3,mp-22216,most_stable_guess_polymorph_unresolved,I4_1/amd,In2S3.cif
+In2(SO4)3,DIINDIUM TRISULFATE,868,In2(SO4)3,,In2(SO4)3,mp-541450,most_stable_guess_polymorph_unresolved,R-3,In2_SO4_3.cif
+InSb,INDIUM ANTIMONY,868,InSb,,InSb,mp-20012,most_stable_guess_polymorph_unresolved,F-43m,InSb.cif
+InSe,INDIUM MONOSELENIDE,869,InSe,,InSe,mp-20485,most_stable_guess_polymorph_unresolved,P6_3/mmc,InSe.cif
+In2Se3,DIINDIUM TRISELENIDE,870,In2Se3,,In2Se3,mp-612740,most_stable_guess_polymorph_unresolved,P6_1,In2Se3.cif
+InTe,INDIUM MONOTELLURIDE,871,InTe,,InTe,mp-2597,most_stable_guess_polymorph_unresolved,Fm-3m,InTe.cif
+In2Te3,DIINDIUM TRITELLURIDE,872,In2Te3,,In2Te3,mp-1223866,most_stable_guess_polymorph_unresolved,Imm2,In2Te3.cif
+Ir,IRIDIUM,873,Ir,,Ir,mp-101,most_stable_guess_polymorph_unresolved,Fm-3m,Ir.cif
+IrBr3,IRIDIUM TRIBROMIDE,875,IrBr3,,IrBr3,mp-27397,most_stable_guess_polymorph_unresolved,C2/m,IrBr3.cif
+IrCl3,IRIDIUM TRICHLORIDE,875,IrCl3,,IrCl3,mp-568208,most_stable_guess_polymorph_unresolved,Fddd,IrCl3.cif
+IrI,IRIDIUM MONOIODIDE,876,IrI,,IrI,mp-1184756,most_stable_guess_polymorph_unresolved,P6_3mc,IrI.cif
+IrO2,IRIDIUM DIOXIDE,877,IrO2,,IrO2,mp-2723,most_stable_guess_polymorph_unresolved,P4_2/mnm,IrO2.cif
+IrS2,IRIDIUM DISULFIDE,879,IrS2,,IrS2,mp-2833,most_stable_guess_polymorph_unresolved,Pnma,IrS2.cif
+Ir2S3,DIIRIDIUM TRISULFIDE,880,Ir2S3,,Ir2S3,mp-1188655,most_stable_guess_polymorph_unresolved,Pbcn,Ir2S3.cif
+K,POTASSIUM,880,K,,K,mp-1184804,most_stable_guess_polymorph_unresolved,Cmce,K.cif
+KAICI4,POTASSIUM TETRACHLOROALUMINATE,882,KAlCl4,,KAlCl4,mp-27755,most_stable_guess_polymorph_unresolved,P2_1,KAICI4.cif
+K3AICI6,TRIPOTASSIUM HEXACHLOROALUMINATE,883,K3AlCl6,,K3AlCl6,mp-1111502,single_candidate,Fm-3m,K3AICI6.cif
+K3AIF6,TRIPOTASSIUM HEXAFLUOROALUMINATE,883,K3AlF6,,K3AlF6,mp-1201513,most_stable_guess_polymorph_unresolved,I4/m,K3AIF6.cif
+KAl(SO4)2,POTASSIUM ALUMINIUM SULFATE,884,KAl(SO4)2,,KAl(SO4)2,mp-7645,most_stable_guess_polymorph_unresolved,P-3m1,KAl_SO4_2.cif
+K3AsO4,POTASSIUM ARSENATE,885,K3AsO4,,K3AsO4,mp-680301,single_candidate,Cccm,K3AsO4.cif
+KBO2,POTASSIUM METABORATE,886,KBO2,,KBO2,mp-3919,single_candidate,R-3c,KBO2.cif
+KBr,POTASSIUM BROMIDE,888,KBr,,KBr,mp-23251,most_stable_guess_polymorph_unresolved,Fm-3m,KBr.cif
+KCN,POTASSIUM CYANIDE,891,KCN,,KCN,mp-1077078,most_stable_guess_polymorph_unresolved,Cc,KCN.cif
+K2CO3,POTASSIUM CARBONATE,894,K2CO3,,K2CO3,mp-3963,most_stable_guess_polymorph_unresolved,P2_1/c,K2CO3.cif
+KCl,POTASSIUM CHLORIDE,895,KCl,,KCl,mp-23193,most_stable_guess_polymorph_unresolved,Fm-3m,KCl.cif
+KCIO4,POTASSIUM PERCHLORATE,897,KClO4,,KClO4,mp-23526,most_stable_guess_polymorph_unresolved,Pnma,KCIO4.cif
+K2CrO4,POTASSIUM CHROMATE,898,K2CrO4,,K2CrO4,mp-2767744,most_stable_guess_polymorph_unresolved,P2_1/c,K2CrO4.cif
+KF,POTASSIUM FLUORIDE,899,KF,,KF,mp-463,most_stable_guess_polymorph_unresolved,Fm-3m,KF.cif
+KH,POTASSIUM HYDRIDE,901,KH,,KH,mp-24084,single_candidate,Fm-3m,KH.cif
+KH2PO4,POTASSIUM DIHYDROGEN PHOSPHATE,903,KH2PO4,,KP(HO2)2,mp-23959,most_stable_guess_polymorph_unresolved,Fdd2,KH2PO4.cif
+K2HPO4,DIPOTASSIUM HYDROGEN PHOSPHATE,903,K2HPO4,,K2PHO4,mp-733468,most_stable_guess_polymorph_unresolved,Pna2_1,K2HPO4.cif
+Kl,POTASSIUM IODIDE,904,KI,,KI,mp-22898,most_stable_guess_polymorph_unresolved,Fm-3m,Kl.cif
+KNO3,POTASSIUM NITRATE,906,KNO3,,KNO3,mp-5158,most_stable_guess_polymorph_unresolved,Pnma,KNO3.cif
+KO2,POTASSIUM DIOXIDE,907,KO2,,KO2,mp-2035026,most_stable_guess_polymorph_unresolved,Immm,KO2.cif
+K2O,POTASSIUM OXIDE,908,K2O,,K2O,mp-971,most_stable_guess_polymorph_unresolved,Fm-3m,K2O.cif
+K2O2,DIPOTASSIUM PEROXIDE,908,K2O2,,K2O2,mp-2672,most_stable_guess_polymorph_unresolved,Cmce,K2O2.cif
+KAISiO4,KALIOPHILITE,909,KAlSiO4,,KAlSiO4,mp-680374,most_stable_guess_polymorph_unresolved,P6_3,KAISiO4.cif
+KAISi2O6,LEUCITE,909,KAlSi2O6,,KAl(SiO3)2,mp-554433,most_stable_guess_polymorph_unresolved,I4_1/a,KAISi2O6.cif
+KAlSi3O8,MICROCLINE,910,KAlSi3O8,,KAlSi3O8,mp-697670,most_stable_guess_polymorph_unresolved,P-1,KAlSi3O8.cif
+KAISi3O8[A],ADULARIA,910,KAlSi3O8,A,KAlSi3O8,mp-697670,most_stable_guess_polymorph_unresolved,P-1,KAISi3O8[A].cif
+KAISi3O8[S],SANIDINE,911,KAlSi3O8,S,KAlSi3O8,mp-697670,most_stable_guess_polymorph_unresolved,P-1,KAISi3O8[S].cif
+KAI3Si3O10(OH)2,MUSCOVITE,912,KAl3Si3O10(OH)2,,KAl3Si3(HO6)2,mp-1200795,most_stable_guess_polymorph_unresolved,P2/c,KAI3Si3O10_OH_2.cif
+K2B4O7,DIPOTASSIUM TETRABORATE,913,K2B4O7,,K2B4O7,mp-17166,most_stable_guess_polymorph_unresolved,P-1,K2B4O7.cif
+K2B6O10,DIPOTASSIUM HEXABORATE,913,K2B6O10,,KB3O5,mp-559636,most_stable_guess_polymorph_unresolved,P2_1/c,K2B6O10.cif
+KOH,POTASSIUM HYDROXIDE,915,KOH,,KHO,mp-626785,most_stable_guess_polymorph_unresolved,Cmc2_1,KOH.cif
+K2SiO3,POTASSIUM METASILICATE,918,K2SiO3,,K2SiO3,mp-15379,single_candidate,P2_1/c,K2SiO3.cif
+K2Si2O5,POTASSIUM DISILICATE,919,K2Si2O5,,K2Si2O5,mp-29825,single_candidate,Cc,K2Si2O5.cif
+K2Si4O9,POTASSIUM TETRASILICATE,920,K2Si4O9,,K2Si4O9,mp-558603,most_stable_guess_polymorph_unresolved,P-1,K2Si4O9.cif
+K3PO4,POTASSIUM PHOSPHATE,920,K3PO4,,K3PO4,mp-557753,single_candidate,Pnma,K3PO4.cif
+K2S,POTASSIUM SULFIDE,921,K2S,,K2S,mp-1022,most_stable_guess_polymorph_unresolved,Fm-3m,K2S.cif
+K2SO3,POTASSIUM SULFITE,922,K2SO3,,K2SO3,mp-8483,most_stable_guess_polymorph_unresolved,P-3m1,K2SO3.cif
+K2SO4,POTASSIUM SULFATE,923,K2SO4,,K2SO4,mp-4529,most_stable_guess_polymorph_unresolved,Pnma,K2SO4.cif
+La,LANTHANUM,925,La,,La,mp-26,most_stable_guess_polymorph_unresolved,P6_3/mmc,La.cif
+LaAsO4,LANTHANUM ARSENATE,927,LaAsO4,,LaAsO4,mp-4917,most_stable_guess_polymorph_unresolved,P2_1/c,LaAsO4.cif
+LaBr3,LANTHANUM BROMIDE,927,LaBr3,,LaBr3,mp-23263,single_candidate,P6_3/m,LaBr3.cif
+LaCl3,LANTHANUM CHLORIDE,929,LaCl3,,LaCl3,mp-22896,single_candidate,P6_3/m,LaCl3.cif
+LaF3,LANTHANUM FLUORIDE,931,LaF3,,LaF3,mp-905,most_stable_guess_polymorph_unresolved,P-3c1,LaF3.cif
+LaH2,LANTHANUM DIHYDRIDE,932,LaH2,,LaH2,mp-24153,single_candidate,Fm-3m,LaH2.cif
+Lal3,LANTHANUM IODIDE,933,LaI3,,LaI3,mp-27979,single_candidate,Cmcm,Lal3.cif
+LaMg,LANTHANUM MAGNESIUM,934,LaMg,,LaMg,mp-1094739,most_stable_guess_polymorph_unresolved,Pmma,LaMg.cif
+LaN,LANTHANUM NITRIDE,935,LaN,,LaN,mp-256,most_stable_guess_polymorph_unresolved,Fm-3m,LaN.cif
+La2O3,LANTHANUM OXIDE,936,La2O3,,La2O3,mp-1968,most_stable_guess_polymorph_unresolved,P-3m1,La2O3.cif
+LaOCl,LANTHANUM CHLORIDE OXIDE,936,LaOCl,,LaClO,mp-23025,single_candidate,P4/nmm,LaOCl.cif
+LaS,LANTHANUM MONOSULFIDE,937,LaS,,LaS,mp-2350,most_stable_guess_polymorph_unresolved,Fm-3m,LaS.cif
+La2S3,LANTHANUM SULFIDE,938,La2S3,,La2S3,mp-7475,most_stable_guess_polymorph_unresolved,Pnma,La2S3.cif
+LaSe,LANTHANUM MONOSELENIDE,939,LaSe,,LaSe,mp-1161,most_stable_guess_polymorph_unresolved,Fm-3m,LaSe.cif
+La2Se3,LANTHANUM SELENIDE,941,La2Se3,,La2Se3,mp-32798,single_candidate,I-42d,La2Se3.cif
+La2Te3,LANTHANUM TELLURIDE,942,La2Te3,,La2Te3,mp-32755,single_candidate,I-42d,La2Te3.cif
+Li,LITHIUM,943,Li,,Li,mp-1018134,most_stable_guess_polymorph_unresolved,R-3m,Li.cif
+LiSAIF6,TRILITHIUM HEXAFLUOROALUMINATE,947,Li3AlF6,,Li3AlF6,mp-15254,most_stable_guess_polymorph_unresolved,C2/c,LiSAIF6.cif
+Li3AsO4,LITHIUM ARSENATE,948,Li3AsO4,,Li3AsO4,mp-9197,most_stable_guess_polymorph_unresolved,Pmn2_1,Li3AsO4.cif
+LiBO2,LITHIUM METABORATE,948,LiBO2,,LiBO2,mp-14232,most_stable_guess_polymorph_unresolved,I-42d,LiBO2.cif
+Li2BeF4,DILITHIUM TETRAFLUOROBERYLLATE,951,Li2BeF4,,Li2BeF4,mp-4622,single_candidate,R-3,Li2BeF4.cif
+LiBr,LITHIUM BROMIDE,952,LiBr,,LiBr,mp-976280,most_stable_guess_polymorph_unresolved,P6_3mc,LiBr.cif
+Li2CO3,LITHIUM CARBONATE,955,Li2CO3,,Li2CO3,mp-3054,most_stable_guess_polymorph_unresolved,C2/c,Li2CO3.cif
+LiCl,LITHIUM CHLORIDE,956,LiCl,,LiCl,mp-1185319,most_stable_guess_polymorph_unresolved,P6_3mc,LiCl.cif
+LiCIO4,LITHIUM PERCHLORATE,960,LiClO4,,LiClO4,mp-30301,single_candidate,Pnma,LiCIO4.cif
+LiF,LITHIUM FLUORIDE,961,LiF,,LiF,mp-1138,most_stable_guess_polymorph_unresolved,Fm-3m,LiF.cif
+LiH,LITHIUM HYDRIDE,966,LiH,,LiH,mp-23703,single_candidate,Fm-3m,LiH.cif
+Lil,LITHIUM IODIDE,968,LiI,,LiI,mp-570935,most_stable_guess_polymorph_unresolved,P6_3mc,Lil.cif
+Li3N,TRILITHIUM NITRIDE,970,Li3N,,Li3N,mp-2251,most_stable_guess_polymorph_unresolved,P6/mmm,Li3N.cif
+Li2O,LITHIUM OXIDE,972,Li2O,,Li2O,mp-1960,most_stable_guess_polymorph_unresolved,Fm-3m,Li2O.cif
+Li2O2,DILITHIUM PEROXIDE,973,Li2O2,,Li2O2,mp-841,most_stable_guess_polymorph_unresolved,P6_3/mmc,Li2O2.cif
+LiAlO2,LITHIUM ALUMINATE,975,LiAlO2,,LiAlO2,mp-8001,most_stable_guess_polymorph_unresolved,R-3m,LiAlO2.cif
+LiAISiO4,EUCRYPTITE,976,LiAlSiO4,,LiAlSiO4,mp-18220,most_stable_guess_polymorph_unresolved,R3,LiAISiO4.cif
+LiAISi206,ALPHA-SPODUMENE,976,LiAlSi2O6,,LiAl(SiO3)2,mp-1222469,most_stable_guess_polymorph_unresolved,C222,LiAISi206.cif
+LiAISi2O6[B],BETA-SPODUMENE,977,LiAlSi2O6,B,LiAl(SiO3)2,mp-1222469,most_stable_guess_polymorph_unresolved,C222,LiAISi2O6[B].cif
+Li2B407,DILITHIUM TETRABORATE,978,Li2B4O7,,Li2B4O7,mp-4779,most_stable_guess_polymorph_unresolved,I4_1cd,Li2B407.cif
+Li2B6O10,DILITHIUM HEXABORATE,979,Li2B6O10,,LiB3O5,mp-3660,most_stable_guess_polymorph_unresolved,Pna2_1,Li2B6O10.cif
+LiFeO2,LITHIUM IRON DIOXIDE,979,LiFeO2,,LiFeO2,mp-757614,most_stable_guess_polymorph_unresolved,Pmmn,LiFeO2.cif
+LiOH,LITHIUM HYDROXIDE,980,LiOH,,LiHO,mp-23856,most_stable_guess_polymorph_unresolved,P4/nmm,LiOH.cif
+Li2SiO3,LITHIUM METASILICATE,983,Li2SiO3,,Li2SiO3,mp-5012,single_candidate,Cmc2_1,Li2SiO3.cif
+Li2Si2O5,LITHIUM DISILICATE,984,Li2Si2O5,,Li2Si2O5,mp-4117,most_stable_guess_polymorph_unresolved,Ccc2,Li2Si2O5.cif
+Li4SiO4,LITHIUM ORTHOSILICATE,985,Li4SiO4,,Li4SiO4,mp-11737,most_stable_guess_polymorph_unresolved,P-1,Li4SiO4.cif
+Li2TiO3,DILITHIUM TITANIUM TRIOXIDE,986,Li2TiO3,,Li2TiO3,mp-2931,most_stable_guess_polymorph_unresolved,C2/c,Li2TiO3.cif
+Li2S,LITHIUM SULFIDE,987,Li2S,,Li2S,mp-1153,most_stable_guess_polymorph_unresolved,Fm-3m,Li2S.cif
+Li2ZrO3,DILITHIUM ZIRCONIUM TRIOXIDE,987,Li2ZrO3,,Li2ZrO3,mp-4156,single_candidate,C2/c,Li2ZrO3.cif
+Li2Se,LITHIUM SELENIDE,988,Li2Se,,Li2Se,mp-2286,single_candidate,Fm-3m,Li2Se.cif
+Li2SO4,LITHIUM SULFATE,988,Li2SO4,,Li2SO4,mp-4556,most_stable_guess_polymorph_unresolved,P2_1/c,Li2SO4.cif
+Li2Te,LITHIUM TELLURIDE,989,Li2Te,,Li2Te,mp-2530,single_candidate,Fm-3m,Li2Te.cif
+Lu,LUTETIUM,990,Lu,,Lu,mp-973571,most_stable_guess_polymorph_unresolved,R-3m,Lu.cif
+Lu2O3,LUTETIUM OXIDE,992,Lu2O3,,Lu2O3,mp-1427,most_stable_guess_polymorph_unresolved,Ia-3,Lu2O3.cif
+Mg,MAGNESIUM,993,Mg,,Mg,mp-153,most_stable_guess_polymorph_unresolved,P6_3/mmc,Mg.cif
+Mg3(AsO4)2,MAGNESIUM ARSENATE,994,Mg3(AsO4)2,,Mg3(AsO4)2,mp-758196,most_stable_guess_polymorph_unresolved,I-4,Mg3_AsO4_2.cif
+MgB2,MAGNESIUM DIBORIDE,995,MgB2,,MgB2,mp-763,most_stable_guess_polymorph_unresolved,P6/mmm,MgB2.cif
+MgB4,MAGNESIUM TETRABORIDE,995,MgB4,,MgB4,mp-365,single_candidate,Pnma,MgB4.cif
+MgBr2,MAGNESIUM BROMIDE,997,MgBr2,,MgBr2,mp-30034,most_stable_guess_polymorph_unresolved,P-3m1,MgBr2.cif
+MgC2,MAGNESIUM DICARBIDE,1000,MgC2,,MgC2,mp-29771,most_stable_guess_polymorph_unresolved,P4_2/mnm,MgC2.cif
+Mg2C3,DIMAGNESIUM TRICARBIDE,1001,Mg2C3,,Mg2C3,mp-28793,single_candidate,Pnnm,Mg2C3.cif
+MgCO3,MAGNESIUM CARBONATE,1001,MgCO3,,MgCO3,mp-5348,most_stable_guess_polymorph_unresolved,R-3c,MgCO3.cif
+MgCl2,MAGNESIUM CHLORIDE,1003,MgCl2,,MgCl2,mp-23210,most_stable_guess_polymorph_unresolved,R-3m,MgCl2.cif
+MgF2,MAGNESIUM FLUORIDE,1006,MgF2,,MgF2,mp-1249,most_stable_guess_polymorph_unresolved,P4_2/mnm,MgF2.cif
+MgH2,MAGNESIUM HYDRIDE,1008,MgH2,,MgH2,mp-23710,most_stable_guess_polymorph_unresolved,P4_2/mnm,MgH2.cif
+Mgl2,MAGNESIUM IODIDE,1010,MgI2,,MgI2,mp-23205,most_stable_guess_polymorph_unresolved,P-3m1,Mgl2.cif
+MgMoO4,MAGNESIUM MOLYBDATE,1011,MgMoO4,,MgMoO4,mp-19047,most_stable_guess_polymorph_unresolved,C2/m,MgMoO4.cif
+Mg3N2,TRIMAGNESIUM DINITRIDE,1012,Mg3N2,,Mg3N2,mp-1559,single_candidate,Ia-3,Mg3N2.cif
+Mg(NO3)2,MAGNESIUM NITRATE,1012,Mg(NO3)2,,Mg(NO3)2,mp-1020058,most_stable_guess_polymorph_unresolved,R-3,Mg_NO3_2.cif
+MgNi2,MAGNESIUM 2-NICKEL,1013,MgNi2,,MgNi2,mp-2675,most_stable_guess_polymorph_unresolved,P6_3/mmc,MgNi2.cif
+MgO,MAGNESIUM OXIDE,1014,MgO,,MgO,mp-1265,most_stable_guess_polymorph_unresolved,Fm-3m,MgO.cif
+MgAl2O4,MAGNESIUM DIALUMINIUM TETRAOXIDE,1015,MgAl2O4,,MgAl2O4,mp-3536,most_stable_guess_polymorph_unresolved,Fd-3m,MgAl2O4.cif
+Mg(OH)2,MAGNESIUM HYDROXIDE,1017,Mg(OH)2,,Mg(HO)2,mp-30247,most_stable_guess_polymorph_unresolved,P-3m1,Mg_OH_2.cif
+MgSiO3,MAGNESIUM METASILICATE,1018,MgSiO3,,MgSiO3,mp-3470,most_stable_guess_polymorph_unresolved,P2_1/c,MgSiO3.cif
+Mg2SiO4,MAGNESIUM ORTHOSILICATE,1019,Mg2SiO4,,Mg2SiO4,mp-2895,most_stable_guess_polymorph_unresolved,Pnma,Mg2SiO4.cif
+Mg3Si2O5(OH)4,CHRYSOTILE,1020,Mg3Si2O5(OH)4,,Mg3Si2H4O9,mp-24097,most_stable_guess_polymorph_unresolved,P6_3cm,Mg3Si2O5_OH_4.cif
+Mg3Si4O10(OH)2,TALC,1020,Mg3Si4O10(OH)2,,Mg3Si4(HO6)2,mp-696497,single_candidate,P-1,Mg3Si4O10_OH_2.cif
+MgTiO3,MAGNESIUM TITANIUM TRIOXIDE,1022,MgTiO3,,MgTiO3,mp-3771,most_stable_guess_polymorph_unresolved,R-3,MgTiO3.cif
+MgTi2O5,MAGNESIUM DITITANIUM PENTOXIDE,1023,MgTi2O5,,MgTi2O5,mp-28232,most_stable_guess_polymorph_unresolved,Cmcm,MgTi2O5.cif
+Mg2TiO4,DIMAGNESIUM TITANIUM TETRAOXIDE,1024,Mg2TiO4,,Mg2TiO4,mp-757031,most_stable_guess_polymorph_unresolved,P4_122,Mg2TiO4.cif
+Mg3(PO4)2,MAGNESIUM ORTHOPHOSPHATE,1025,Mg3(PO4)2,,Mg3(PO4)2,mp-14396,most_stable_guess_polymorph_unresolved,P2_1/c,Mg3_PO4_2.cif
+Mg2Pb,2-MAGNESIUM LEAD,1025,Mg2Pb,,Mg2Pb,mp-20724,most_stable_guess_polymorph_unresolved,Fm-3m,Mg2Pb.cif
+MgS,MAGNESIUM SULFIDE,1026,MgS,,MgS,mp-1315,most_stable_guess_polymorph_unresolved,Fm-3m,MgS.cif
+MgSO4,MAGNESIUM SULFATE,1028,MgSO4,,MgSO4,mp-7572,most_stable_guess_polymorph_unresolved,Cmcm,MgSO4.cif
+MgSe,MAGNESIUM SELENIDE,1028,MgSe,,MgSe,mp-1018040,most_stable_guess_polymorph_unresolved,P6_3mc,MgSe.cif
+MgSeO3,MAGNESIUM SELENITE,1029,MgSeO3,,MgSeO3,mp-12271,most_stable_guess_polymorph_unresolved,Pnma,MgSeO3.cif
+Mg2Si,2-MAGNESIUM SILICON,1029,Mg2Si,,Mg2Si,mp-1367,most_stable_guess_polymorph_unresolved,Fm-3m,Mg2Si.cif
+MgTe,MAGNESIUM TELLURIDE,1030,MgTe,,MgTe,mp-13033,most_stable_guess_polymorph_unresolved,F-43m,MgTe.cif
+Mg2Th,2-MAGNESIUM THORIUM,1030,Mg2Th,,ThMg2,mp-745,most_stable_guess_polymorph_unresolved,Fd-3m,Mg2Th.cif
+Mg(VO3)2,MAGNESIUM METAVANADATE,1031,Mg(VO3)2,,MgV2O6,mp-504510,most_stable_guess_polymorph_unresolved,C2/m,Mg_VO3_2.cif
+Mg2V207,MAGNESIUM PYROVANADATE,1031,Mg2V2O7,,Mg2V2O7,mp-27150,most_stable_guess_polymorph_unresolved,P-1,Mg2V207.cif
+MgWO4,MAGNESIUM TUNGSTATE,1032,MgWO4,,MgWO4,mp-18875,most_stable_guess_polymorph_unresolved,P2/c,MgWO4.cif
+Mn,MANGANESE,1033,Mn,,Mn,mp-35,most_stable_guess_polymorph_unresolved,I-43m,Mn.cif
+MnAs,MANGANESE ARSENIDE,1035,MnAs,,MnAs,mp-22240,most_stable_guess_polymorph_unresolved,Pnma,MnAs.cif
+MnB,MANGANESE MONOBORIDE,1036,MnB,,MnB,mp-8365,most_stable_guess_polymorph_unresolved,Pnma,MnB.cif
+MnB2,MANGANESE DIBORIDE,1036,MnB2,,MnB2,mp-585,most_stable_guess_polymorph_unresolved,P6/mmm,MnB2.cif
+MnBr2,MANGANESE DIBROMIDE,1037,MnBr2,,MnBr2,mp-28306,most_stable_guess_polymorph_unresolved,P-3m1,MnBr2.cif
+Mn3C,TRIMANGANESE CARBIDE,1038,Mn3C,,Mn3C,mp-1188188,most_stable_guess_polymorph_unresolved,Pnma,Mn3C.cif
+Mn7C3,HEPTAMANGANESE TRICARBIDE,1039,Mn7C3,,Mn7C3,mp-21256,single_candidate,Pnma,Mn7C3.cif
+MnCO3,MANGANESE CARBONATE,1040,MnCO3,,MnCO3,mp-18814,most_stable_guess_polymorph_unresolved,R-3c,MnCO3.cif
+MnCl2,MANGANESE DICHLORIDE,1040,MnCl2,,MnCl2,mp-28233,most_stable_guess_polymorph_unresolved,R-3m,MnCl2.cif
+MnF2,MANGANESE DIFLUORIDE,1042,MnF2,,MnF2,mp-556585,most_stable_guess_polymorph_unresolved,Pbcn,MnF2.cif
+MnF3,MANGANESE TRIFLUORIDE,1043,MnF3,,MnF3,mp-556560,most_stable_guess_polymorph_unresolved,C2/c,MnF3.cif
+MnI2,MANGANESE DIIODIDE,1043,MnI2,,MnI2,mp-28013,most_stable_guess_polymorph_unresolved,P-3m1,MnI2.cif
+MnMoO4,MANGANESE MOLYBDATE,1044,MnMoO4,,MnMoO4,mp-19455,most_stable_guess_polymorph_unresolved,P2/c,MnMoO4.cif
+Mn4N,TETRAMANGANESE MONONITRIDE,1044,Mn4N,,Mn4N,mp-505622,most_stable_guess_polymorph_unresolved,Pm-3m,Mn4N.cif
+MnO,MANGANESE OXIDE,1046,MnO,,MnO,mp-1232659,most_stable_guess_polymorph_unresolved,Pmmn,MnO.cif
+MnO2,MANGANESE DIOXIDE,1047,MnO2,,MnO2,mp-644514,most_stable_guess_polymorph_unresolved,C2/m,MnO2.cif
+Mn2O3,DIMANGANESE TRIOXIDE,1047,Mn2O3,,Mn2O3,mp-1172875,most_stable_guess_polymorph_unresolved,Pbca,Mn2O3.cif
+Mn3O4,TRIMANGANESE TETRAOXIDE,1048,Mn3O4,,Mn3O4,mp-18759,most_stable_guess_polymorph_unresolved,I4_1/amd,Mn3O4.cif
+MnAl2O4,MANGANESE DIALUMINIUM TETRAOXIDE,1049,MnAl2O4,,MnAl2O4,mp-755882,most_stable_guess_polymorph_unresolved,Fd-3m,MnAl2O4.cif
+MnSiO3,RHODONITE,1050,MnSiO3,,MnSiO3,mp-5945,most_stable_guess_polymorph_unresolved,P-1,MnSiO3.cif
+Mn2SiO4,TEPHROITE,1051,Mn2SiO4,,Mn2SiO4,mp-18928,most_stable_guess_polymorph_unresolved,Pnma,Mn2SiO4.cif
+MnTiO3,MANGANESE TITANIUM TRIOXIDE,1052,MnTiO3,,TiMnO3,mp-19082,most_stable_guess_polymorph_unresolved,R-3,MnTiO3.cif
+Mn2TiO4,DIMANGANESE TITANIUM TETRAOXIDE,1052,Mn2TiO4,,TiMn2O4,mp-540763,most_stable_guess_polymorph_unresolved,P4_322,Mn2TiO4.cif
+MnP,MANGANESE MONOPHOSPHIDE,1053,MnP,,MnP,mp-2662,most_stable_guess_polymorph_unresolved,Pnma,MnP.cif
+Mn2P,DIMANGANESE PHOSPHIDE,1054,Mn2P,,Mn2P,mp-1849,most_stable_guess_polymorph_unresolved,P-62m,Mn2P.cif
+MnS,MANGANESE MONOSULFIDE (GREEN),1055,MnS,,MnS,mp-2065,most_stable_guess_polymorph_unresolved,Fm-3m,MnS.cif
+MnS2,MANGANESE DISULFIDE,1055,MnS2,,MnS2,mp-1422029,most_stable_guess_polymorph_unresolved,R-3m,MnS2.cif
+MnSO4,MANGANESE SULFATE,1056,MnSO4,,MnSO4,mp-22554,most_stable_guess_polymorph_unresolved,Cmcm,MnSO4.cif
+MnSb,MANGANESE ANTIMONY,1056,MnSb,,MnSb,mp-786,most_stable_guess_polymorph_unresolved,P6_3/mmc,MnSb.cif
+Mn2Sb,2-MANGANESE ANTIMONY,1057,Mn2Sb,,Mn2Sb,mp-20664,most_stable_guess_polymorph_unresolved,P4/nmm,Mn2Sb.cif
+MnSe,MANGANESE SELENIDE,1057,MnSe,,MnSe,mp-999540,most_stable_guess_polymorph_unresolved,P6_3mc,MnSe.cif
+MnSi,MANGANESE SILICON,1058,MnSi,,MnSi,mp-1431,most_stable_guess_polymorph_unresolved,P2_13,MnSi.cif
+Mn3Si,3-MANGANESE SILICON,1059,Mn3Si,,Mn3Si,mp-20211,most_stable_guess_polymorph_unresolved,Fm-3m,Mn3Si.cif
+Mn5Si3,5-MANGANESE 3-SILICON,1060,Mn5Si3,,Mn5Si3,mp-1111,most_stable_guess_polymorph_unresolved,P6_3/mcm,Mn5Si3.cif
+MnSn2,MANGANESE 2-TIN,1060,MnSn2,,MnSn2,mp-20086,most_stable_guess_polymorph_unresolved,I4/mcm,MnSn2.cif
+MnTe,MANGANESE TELLURIDE,1061,MnTe,,MnTe,mp-1009222,most_stable_guess_polymorph_unresolved,F-43m,MnTe.cif
+MnTe2,MANGANESE DITELLURIDE,1061,MnTe2,,MnTe2,mp-21893,most_stable_guess_polymorph_unresolved,Pa-3,MnTe2.cif
+MnWO4,MANGANESE TUNGSTATE,1062,MnWO4,,MnWO4,mp-19407,most_stable_guess_polymorph_unresolved,P2/c,MnWO4.cif
+Mo,MOLYBDENUM,1063,Mo,,Mo,mp-129,most_stable_guess_polymorph_unresolved,Im-3m,Mo.cif
+MoC,MOLYBDENUM MONOCARBIDE (GAMMA),1066,MoC,,MoC,mp-2305,most_stable_guess_polymorph_unresolved,P-6m2,MoC.cif
+Mo2C,DIMOLYBDENUM CARBIDE,1067,Mo2C,,Mo2C,mp-1552,most_stable_guess_polymorph_unresolved,Pbcn,Mo2C.cif
+Mo(CO)6,MOLYBDENUM HEXACARBONYL,1067,Mo(CO)6,,Mo(CO)6,mp-25082,single_candidate,Pnma,Mo_CO_6.cif
+Mo2N,DIMOLYBDENUM NITRIDE,1068,Mo2N,,Mo2N,mp-27953,most_stable_guess_polymorph_unresolved,I4_1/amd,Mo2N.cif
+MoO2,MOLYBDENUM DIOXIDE,1070,MoO2,,MoO2,mp-510536,most_stable_guess_polymorph_unresolved,P4_2/mnm,MoO2.cif
+MoO3,MOLYBDENUM TRIOXIDE,1072,MoO3,,MoO3,mp-715584,most_stable_guess_polymorph_unresolved,Pc,MoO3.cif
+MoS2,MOLYBDENUM DISULFIDE,1075,MoS2,,MoS2,mp-1434,most_stable_guess_polymorph_unresolved,R3m,MoS2.cif
+MoS3,MOLYBDENUM TRISULFIDE,1075,MoS3,,MoS3,mp-1239169,most_stable_guess_polymorph_unresolved,P2_1/m,MoS3.cif
+Mo2S3,MOLYBDENUM SESQUISULFIDE,1076,Mo2S3,,Mo2S3,mp-1627,most_stable_guess_polymorph_unresolved,P2_1/m,Mo2S3.cif
+MoSi2,MOLYBDENUM 2-SILICON,1077,MoSi2,,Si2Mo,mp-2592,most_stable_guess_polymorph_unresolved,I4/mmm,MoSi2.cif
+Mo3Si,3-MOLYBDENUM SILICON,1078,Mo3Si,,SiMo3,mp-1275,most_stable_guess_polymorph_unresolved,Pm-3n,Mo3Si.cif
+Mo5Si3,5-MOLYBDENUM 3-SILICON,1079,Mo5Si3,,Si3Mo5,mp-1332,most_stable_guess_polymorph_unresolved,I4/mcm,Mo5Si3.cif
+NH4Cl,AMMONIUM CHLORIDE,1089,NH4Cl,,H4NCl,mp-34337,most_stable_guess_polymorph_unresolved,P-43m,NH4Cl.cif
+NH4CIO4,AMMONIUM PERCHLORATE,1090,NH4ClO4,,H4NClO4,mp-706586,most_stable_guess_polymorph_unresolved,Pnma,NH4CIO4.cif
+NH4I,AMMONIUM IODIDE,1090,NH4I,,H4IN,mp-643062,most_stable_guess_polymorph_unresolved,P4/nmm,NH4I.cif
+(NH4)2SO4,AMMONIUM SULFATE,1091,(NH4)2SO4,,H8S(NO2)2,mp-24468,most_stable_guess_polymorph_unresolved,Pna2_1,_NH4_2SO4.cif
+N2O4,DINITROGEN TETRAOXIDE,1096,N2O4,,NO2,mp-2789,most_stable_guess_polymorph_unresolved,Im-3,N2O4.cif
+Na,SODIUM,1102,Na,,Na,mp-10172,most_stable_guess_polymorph_unresolved,P6_3/mmc,Na.cif
+NaAlCl4,SODIUM TETRACHLOROALUMINATE,1104,NaAlCl4,,NaAlCl4,mp-23363,most_stable_guess_polymorph_unresolved,P2_12_12_1,NaAlCl4.cif
+Na3AlCl6,TRISODIUM HEXACHLOROALUMINATE,1105,Na3AlCl6,,Na3AlCl6,mp-1111450,most_stable_guess_polymorph_unresolved,Fm-3m,Na3AlCl6.cif
+Na3AlF6,CRYOLITE,1106,Na3AlF6,,Na3AlF6,mp-3416,most_stable_guess_polymorph_unresolved,P2_1/c,Na3AlF6.cif
+Na3As,TRISODIUM ARSENIDE,1107,Na3As,,Na3As,mp-655,most_stable_guess_polymorph_unresolved,P6_3cm,Na3As.cif
+Na3AsO4,SODIUM ARSENATE,1107,Na3AsO4,,Na3AsO4,mp-756044,most_stable_guess_polymorph_unresolved,Pmn2_1,Na3AsO4.cif
+NaBO2,SODIUM METABORATE,1108,NaBO2,,NaBO2,mp-3889,most_stable_guess_polymorph_unresolved,R-3c,NaBO2.cif
+NaB3O5,SODIUM TRIBORATE,1110,NaB3O5,,NaB3O5,mp-557406,most_stable_guess_polymorph_unresolved,P2_1/c,NaB3O5.cif
+Na2B4O7,DISODIUM TETRABORATE,1110,Na2B4O7,,Na2B4O7,mp-17941,most_stable_guess_polymorph_unresolved,P-1,Na2B4O7.cif
+NaBr,SODIUM BROMIDE,1111,NaBr,,NaBr,mp-22916,most_stable_guess_polymorph_unresolved,Fm-3m,NaBr.cif
+NaCN,SODIUM CYANIDE,1114,NaCN,,NaCN,mp-30053,most_stable_guess_polymorph_unresolved,Pmmn,NaCN.cif
+Na2CO3,SODIUM CARBONATE,1117,Na2CO3,,Na2CO3,mp-1201027,most_stable_guess_polymorph_unresolved,P2_1/c,Na2CO3.cif
+NaCl,SODIUM CHLORIDE,1118,NaCl,,NaCl,mp-22862,most_stable_guess_polymorph_unresolved,Fm-3m,NaCl.cif
+NaClO4,SODIUM PERCHLORATE,1120,NaClO4,,NaClO4,mp-22968,most_stable_guess_polymorph_unresolved,Cmcm,NaClO4.cif
+Na2CrO4,SODIUM CHROMATE,1121,Na2CrO4,,Na2CrO4,mp-18779,most_stable_guess_polymorph_unresolved,Cmcm,Na2CrO4.cif
+NaF,SODIUM FLUORIDE,1122,NaF,,NaF,mp-682,most_stable_guess_polymorph_unresolved,Fm-3m,NaF.cif
+NaH,SODIUM HYDRIDE,1124,NaH,,NaH,mp-23870,most_stable_guess_polymorph_unresolved,Fm-3m,NaH.cif
+NaHCO3,SODIUM HYDROGEN CARBONATE,1125,NaHCO3,,NaHCO3,mp-696396,most_stable_guess_polymorph_unresolved,P2_1/c,NaHCO3.cif
+Nal,SODIUM IODIDE,1126,NaI,,NaI,mp-23268,most_stable_guess_polymorph_unresolved,Fm-3m,Nal.cif
+Na2MoO4,SODIUM MOLYBDATE,1127,Na2MoO4,,Na2MoO4,mp-18852,most_stable_guess_polymorph_unresolved,Fd-3m,Na2MoO4.cif
+NaNO2,SODIUM NITRITE,1128,NaNO2,,NaNO2,mp-2964,most_stable_guess_polymorph_unresolved,Imm2,NaNO2.cif
+NaNO3,SODIUM NITRATE,1128,NaNO3,,NaNO3,mp-4531,most_stable_guess_polymorph_unresolved,R-3c,NaNO3.cif
+NaO2,SODIUM SUPEROXIDE,1129,NaO2,,NaO2,mp-1545216,most_stable_guess_polymorph_unresolved,P2_1/c,NaO2.cif
+Na2O,SODIUM OXIDE,1130,Na2O,,Na2O,mp-2352,most_stable_guess_polymorph_unresolved,Fm-3m,Na2O.cif
+Na2O2,DISODIUM PEROXIDE,1131,Na2O2,,Na2O2,mp-2340,most_stable_guess_polymorph_unresolved,P-62m,Na2O2.cif
+NaAlO2,SODIUM ALUMINATE,1132,NaAlO2,,NaAlO2,mp-9212,most_stable_guess_polymorph_unresolved,Pna2_1,NaAlO2.cif
+NaAlSiO4,NEPHELINE,1133,NaAlSiO4,,NaAlSiO4,mp-560334,most_stable_guess_polymorph_unresolved,Pca2_1,NaAlSiO4.cif
+NaAlSi2O6,JADEITE,1134,NaAlSi2O6,,NaAl(SiO3)2,mp-1020661,most_stable_guess_polymorph_unresolved,C2/c,NaAlSi2O6.cif
+NaAlSi2O6[D],DEHYDRATED ANALCITE,1134,NaAlSi2O6,D,NaAl(SiO3)2,mp-1020661,most_stable_guess_polymorph_unresolved,C2/c,NaAlSi2O6[D].cif
+NaAlSi3O8,ALBITE,1135,NaAlSi3O8,,NaAlSi3O8,mp-721988,most_stable_guess_polymorph_unresolved,P-1,NaAlSi3O8.cif
+NaAlSi3O8[A],ANALBITE,1135,NaAlSi3O8,A,NaAlSi3O8,mp-721988,most_stable_guess_polymorph_unresolved,P-1,NaAlSi3O8[A].cif
+NaAlSi2O6*H2O,ANALCITE,1136,NaAlSi2O6*H2O,,NaAlSi2H2O7,mp-676991,single_candidate,C2/c,NaAlSi2O6_hyd_H2O.cif
+NaOH,SODIUM HYDROXIDE,1136,NaOH,,NaHO,mp-626000,most_stable_guess_polymorph_unresolved,P2_1,NaOH.cif
+Na2SiO3,SODIUM METASILICATE,1139,Na2SiO3,,Na2SiO3,mp-4533,most_stable_guess_polymorph_unresolved,Cmc2_1,Na2SiO3.cif
+Na2Si2O5,SODIUM DISILICATE,1140,Na2Si2O5,,Na2Si2O5,mp-3193,most_stable_guess_polymorph_unresolved,P2_1/c,Na2Si2O5.cif
+Na4SiO4,SODIUM ORTHOSILICATE,1141,Na4SiO4,,Na4SiO4,mp-7500,most_stable_guess_polymorph_unresolved,P-1,Na4SiO4.cif
+Na6Si2O7,HEXASODIUM DISILICON HEPTAOXIDE,1141,Na6Si2O7,,Na6Si2O7,mp-1020179,single_candidate,P-1,Na6Si2O7.cif
+Na2TiO3,DISODIUM TITANIUM TRIOXIDE,1142,Na2TiO3,,Na2TiO3,mp-752423,most_stable_guess_polymorph_unresolved,C2/c,Na2TiO3.cif
+Na2Ti2O5,DISODIUM DITITANIUM PENTAOXIDE,1143,Na2Ti2O5,,Na2Ti2O5,mp-781948,most_stable_guess_polymorph_unresolved,Pbcn,Na2Ti2O5.cif
+Na2Ti3O7,DISODIUM TRITITANIUM HEPTAOXIDE,1144,Na2Ti3O7,,Na2Ti3O7,mp-3488,single_candidate,P2_1/m,Na2Ti3O7.cif
+Na3PO4,SODIUM PHOSPHATE,1144,Na3PO4,,Na3PO4,mp-674333,most_stable_guess_polymorph_unresolved,Pm,Na3PO4.cif
+Na2S,SODIUM SULFIDE,1145,Na2S,,Na2S,mp-648,most_stable_guess_polymorph_unresolved,Fm-3m,Na2S.cif
+Na2S2,DISODIUM DISULFIDE,1146,Na2S2,,NaS,mp-2400,most_stable_guess_polymorph_unresolved,P6_3/mmc,Na2S2.cif
+Na2S4,DISODIUM TETRASULFIDE,1147,Na2S4,,NaS2,mp-12180,most_stable_guess_polymorph_unresolved,I-42d,Na2S4.cif
+Na2SO3,SODIUM SULFITE,1148,Na2SO3,,Na2SO3,mp-21282,most_stable_guess_polymorph_unresolved,P-3,Na2SO3.cif
+Na2SO4,SODIUM SULFATE,1149,Na2SO4,,Na2SO4,mp-4770,most_stable_guess_polymorph_unresolved,Fddd,Na2SO4.cif
+Na2SO4[Ill],SODIUM SULFATE (III),1150,Na2SO4,III,Na2SO4,mp-4770,most_stable_guess_polymorph_unresolved,Fddd,Na2SO4[Ill].cif
+NaTe,SODIUM TELLURIDE,1150,NaTe,,NaTe,mp-28353,most_stable_guess_polymorph_unresolved,Pbcn,NaTe.cif
+NaTe3,SODIUM TRITELLURIDE,1151,NaTe3,,NaTe3,mp-28478,most_stable_guess_polymorph_unresolved,P-3c1,NaTe3.cif
+Na2Te,SODIUM TELLURIDE,1152,Na2Te,,Na2Te,mp-2784,most_stable_guess_polymorph_unresolved,Fm-3m,Na2Te.cif
+NaVO3,SODIUM METAVANADATE,1153,NaVO3,,NaVO3,mp-19083,most_stable_guess_polymorph_unresolved,C2/c,NaVO3.cif
+Na3VO4,SODIUM ORTHOVANADATE,1154,Na3VO4,,Na3VO4,mp-755436,most_stable_guess_polymorph_unresolved,Pmn2_1,Na3VO4.cif
+Na4V2O7,SODIUM PYROVANADATE,1154,Na4V2O7,,Na4V2O7,mp-648893,most_stable_guess_polymorph_unresolved,C2/c,Na4V2O7.cif
+Na2WO4,SODIUM TUNGSTATE,1155,Na2WO4,,Na2WO4,mp-18803,most_stable_guess_polymorph_unresolved,Fd-3m,Na2WO4.cif
+Nb,NIOBIUM,1156,Nb,,Nb,mp-75,most_stable_guess_polymorph_unresolved,Im-3m,Nb.cif
+NbB2,NIOBIUM DIBORIDE,1159,NbB2,,NbB2,mp-450,most_stable_guess_polymorph_unresolved,P6/mmm,NbB2.cif
+NbBr5,NIOBIUM PENTABROMIDE,1160,NbBr5,,NbBr5,mp-28601,most_stable_guess_polymorph_unresolved,Pnma,NbBr5.cif
+NbC,NIOBIUM CARBIDE,1163,NbC,,NbC,mp-910,most_stable_guess_polymorph_unresolved,Fm-3m,NbC.cif
+Nb2C,DINIOBIUM CARBIDE,1164,Nb2C,,Nb2C,mp-569989,most_stable_guess_polymorph_unresolved,Pnma,Nb2C.cif
+NbCl4,NIOBIUM TETRACHLORIDE,1167,NbCl4,,NbCl4,mp-31040,single_candidate,C2/m,NbCl4.cif
+NbCI5,NIOBIUM PENTACHLORIDE,1168,NbCl5,,NbCl5,mp-23307,most_stable_guess_polymorph_unresolved,C2/m,NbCI5.cif
+NbF5,NIOBIUM PENTAFLUORIDE,1169,NbF5,,NbF5,mp-18687,most_stable_guess_polymorph_unresolved,C2/m,NbF5.cif
+NbFe2,NIOBIUM 2-IRON,1170,NbFe2,,NbFe2,mp-1077790,most_stable_guess_polymorph_unresolved,Fd-3m,NbFe2.cif
+NbI5,NIOBIUM PENTAIODIDE,1170,NbI5,,NbI5,mp-569578,most_stable_guess_polymorph_unresolved,P-1,NbI5.cif
+NbN,NIOBIUM NITRIDE,1171,NbN,,NbN,mp-2634,most_stable_guess_polymorph_unresolved,P-6m2,NbN.cif
+Nb2N,DINOBIUM NITRIDE,1172,Nb2N,,Nb2N,mp-1079585,most_stable_guess_polymorph_unresolved,P-31m,Nb2N.cif
+NbO,NIOBIUM MONOXIDE,1173,NbO,,NbO,mp-2311,most_stable_guess_polymorph_unresolved,Pm-3m,NbO.cif
+NbO2,NIOBIUM DIOXIDE,1174,NbO2,,NbO2,mp-557057,most_stable_guess_polymorph_unresolved,I4_1/a,NbO2.cif
+Nb2O5,DINIOBIUM PENTAOXIDE,1175,Nb2O5,,Nb2O5,mp-581967,most_stable_guess_polymorph_unresolved,P2,Nb2O5.cif
+NbOCl2,NIOBIUM DICHLORIDE OXIDE,1176,NbOCl2,,NbCl2O,mp-1025567,most_stable_guess_polymorph_unresolved,C2,NbOCl2.cif
+NbOCI3,NIOBIUM TRICHLORIDE OXIDE,1176,NbOCl3,,NbCl3O,mp-556422,most_stable_guess_polymorph_unresolved,P-42_1m,NbOCI3.cif
+NbSi2,NIOBIUM 2-SILICON,1178,NbSi2,,NbSi2,mp-12104,most_stable_guess_polymorph_unresolved,P6_422,NbSi2.cif
+Nb5Si3,5-NIOBIUM 3-SILICON,1179,Nb5Si3,,Nb5Si3,mp-13686,most_stable_guess_polymorph_unresolved,I4/mcm,Nb5Si3.cif
+Nd,NEODYMIUM,1180,Nd,,Nd,mp-123,most_stable_guess_polymorph_unresolved,P6_3/mmc,Nd.cif
+NdBr3,NEODYMIUM BROMIDE,1182,NdBr3,,NdBr3,mp-27975,most_stable_guess_polymorph_unresolved,Cmcm,NdBr3.cif
+NdCl3,NEODYMIUM CHLORIDE,1184,NdCl3,,NdCl3,mp-23183,most_stable_guess_polymorph_unresolved,P6_3/m,NdCl3.cif
+NdF3,NEODYMIUM FLUORIDE,1186,NdF3,,NdF3,mp-254,most_stable_guess_polymorph_unresolved,P-3c1,NdF3.cif
+NdH2,NEODYMIUM DIHYDRIDE,1187,NdH2,,NdH2,mp-24096,most_stable_guess_polymorph_unresolved,Fm-3m,NdH2.cif
+Ndl3,NEODYMIUM IODIDE,1188,NdI3,,NdI3,mp-864617,most_stable_guess_polymorph_unresolved,P6_3/mmc,Ndl3.cif
+Nd2O3,NEODYMIUM OXIDE,1190,Nd2O3,,Nd2O3,mp-1045,most_stable_guess_polymorph_unresolved,Ia-3,Nd2O3.cif
+NdOCl,NEODYMIUM CHLORIDE OXIDE,1190,NdOCl,,NdClO,mp-23058,most_stable_guess_polymorph_unresolved,P4/nmm,NdOCl.cif
+Nd2Zr2O7,NEODYMIUM ZIRCONIUM HEPTAOXIDE,1191,Nd2Zr2O7,,Nd2Zr2O7,mp-5977,most_stable_guess_polymorph_unresolved,Fd-3m,Nd2Zr2O7.cif
+NdS,NEODYMIUM MONOSULFIDE,1191,NdS,,NdS,mp-1748,most_stable_guess_polymorph_unresolved,Fm-3m,NdS.cif
+Nd2S3,NEODYMIUM SULFIDE,1192,Nd2S3,,Nd2S3,mp-438,most_stable_guess_polymorph_unresolved,Pnma,Nd2S3.cif
+Nd2(SO4)3,NEODYMIUM SULFATE,1192,Nd2(SO4)3,,Nd2(SO4)3,mp-29265,single_candidate,C2/c,Nd2_SO4_3.cif
+NdSe,NEODYMIUM MONOSELENIDE,1193,NdSe,,NdSe,mp-1453,most_stable_guess_polymorph_unresolved,Fm-3m,NdSe.cif
+Nd2Se3,NEODYMIUM SELENIDE,1194,Nd2Se3,,Nd2Se3,mp-32688,most_stable_guess_polymorph_unresolved,I-42d,Nd2Se3.cif
+NdTe,NEODYMIUM MONOTELLURIDE,1195,NdTe,,NdTe,mp-570,most_stable_guess_polymorph_unresolved,Fm-3m,NdTe.cif
+Nd2Te3,NEODYMIUM TELLURIDE,1196,Nd2Te3,,Nd2Te3,mp-16380,most_stable_guess_polymorph_unresolved,Pnma,Nd2Te3.cif
+Ni,NICKEL,1198,Ni,,Ni,mp-23,most_stable_guess_polymorph_unresolved,Fm-3m,Ni.cif
+NiAs,NICKEL ARSENIDE,1200,NiAs,,NiAs,mp-590,most_stable_guess_polymorph_unresolved,P6_3/mmc,NiAs.cif
+Ni5As2,5-NICKEL 2-ARSENIDE,1200,Ni5As2,,Ni5As2,mp-941,single_candidate,P6_3cm,Ni5As2.cif
+Ni11As8,11-NICKEL 8-ARSENIDE,1201,Ni11As8,,Ni11As8,mp-28227,most_stable_guess_polymorph_unresolved,P4_12_12,Ni11As8.cif
+Ni3(AsO4)2,NICKEL ARSENATE,1201,Ni3(AsO4)2,,Ni3(AsO4)2,mp-504969,most_stable_guess_polymorph_unresolved,Cmce,Ni3_AsO4_2.cif
+NiB,NICKEL MONOBORIDE,1202,NiB,,NiB,mp-14019,most_stable_guess_polymorph_unresolved,Cmcm,NiB.cif
+Ni4B3,TETRANICKEL TRIBORIDE,1202,Ni4B3,,Ni4B3,mp-640067,most_stable_guess_polymorph_unresolved,Pnma,Ni4B3.cif
+NiBr2,NICKEL BROMIDE,1203,NiBr2,,NiBr2,mp-27637,most_stable_guess_polymorph_unresolved,R-3m,NiBr2.cif
+Ni3C,TRINICKEL CARBIDE,1204,Ni3C,,Ni3C,mp-7586,most_stable_guess_polymorph_unresolved,R-3c,Ni3C.cif
+NiCO3,NICKEL CARBONATE,1205,NiCO3,,NiCO3,mp-19147,most_stable_guess_polymorph_unresolved,R-3c,NiCO3.cif
+NiCl2,NICKEL CHLORIDE,1207,NiCl2,,NiCl2,mp-27396,most_stable_guess_polymorph_unresolved,R-3m,NiCl2.cif
+NiF2,NICKEL FLUORIDE,1210,NiF2,,NiF2,mp-559798,most_stable_guess_polymorph_unresolved,P4_2/mnm,NiF2.cif
+Nil2,NICKEL IODIDE,1212,NiI2,,NiI2,mp-27638,most_stable_guess_polymorph_unresolved,R-3m,Nil2.cif
+NiO,NICKEL OXIDE,1213,NiO,,NiO,mp-19009,most_stable_guess_polymorph_unresolved,Fm-3m,NiO.cif
+NiAI2O4,NICKEL DIALUMINIUM TETRAOXIDE,1215,NiAl2O4,,Al2NiO4,mp-37614,most_stable_guess_polymorph_unresolved,Imma,NiAI2O4.cif
+Ni2SiO4,DINICKEL ORTHOSILICATE,1216,Ni2SiO4,,Si(NiO2)2,mp-19072,most_stable_guess_polymorph_unresolved,Pnma,Ni2SiO4.cif
+NiTiO3,NICKEL TITANIUM TRIOXIDE,1217,NiTiO3,,TiNiO3,mp-18732,most_stable_guess_polymorph_unresolved,R-3,NiTiO3.cif
+Ni2P,DINICKEL PHOSPHIDE,1217,Ni2P,,Ni2P,mp-21167,most_stable_guess_polymorph_unresolved,P-62m,Ni2P.cif
+Ni3P,TRINICKEL PHOSPHIDE,1218,Ni3P,,Ni3P,mp-2296,most_stable_guess_polymorph_unresolved,I-4,Ni3P.cif
+Ni5P2,PENTANICKEL DIPHOSPHIDE,1218,Ni5P2,,Ni5P2,mp-1200923,single_candidate,P6_3cm,Ni5P2.cif
+NiS,NICKEL SULFIDE,1220,NiS,,NiS,mp-1547,most_stable_guess_polymorph_unresolved,R3m,NiS.cif
+NiS2,NICKEL DISULFIDE,1221,NiS2,,NiS2,mp-1180046,most_stable_guess_polymorph_unresolved,P2_1/c,NiS2.cif
+Ni3S2,TRINICKEL DISULFIDE,1222,Ni3S2,,Ni3S2,mp-362,most_stable_guess_polymorph_unresolved,R32,Ni3S2.cif
+Ni3S4,TRINICKEL TETRASULFIDE,1222,Ni3S4,,Ni3S4,mp-1050,single_candidate,Fd-3m,Ni3S4.cif
+NiSO4,NICKEL SULFATE,1223,NiSO4,,NiSO4,mp-18749,most_stable_guess_polymorph_unresolved,Cmcm,NiSO4.cif
+NiSb,NICKEL ANTIMONY,1223,NiSb,,NiSb,mp-810,most_stable_guess_polymorph_unresolved,P6_3/mmc,NiSb.cif
+NiSe2,NICKEL DISELENIDE,1225,NiSe2,,NiSe2,mp-20901,most_stable_guess_polymorph_unresolved,Pa-3,NiSe2.cif
+NiSeO3,NICKEL SELENITE,1226,NiSeO3,,NiSeO3,mp-20460,most_stable_guess_polymorph_unresolved,Pnma,NiSeO3.cif
+NiSi,NICKEL SILICON,1226,NiSi,,SiNi,mp-351,most_stable_guess_polymorph_unresolved,Pnma,NiSi.cif
+Ni3Sn,3-NICKEL TIN,1227,Ni3Sn,,Ni3Sn,mp-11522,most_stable_guess_polymorph_unresolved,Pm-3m,Ni3Sn.cif
+Ni3Sn2,3-NICKEL 2-TIN,1228,Ni3Sn2,,Ni3Sn2,mp-669720,most_stable_guess_polymorph_unresolved,Pnma,Ni3Sn2.cif
+NiTi,NICKEL TITANIUM,1229,NiTi,,TiNi,mp-1048,most_stable_guess_polymorph_unresolved,P2_1/m,NiTi.cif
+NiTi2,NICKEL 2-TITANIUM,1229,NiTi2,,Ti2Ni,mp-1808,most_stable_guess_polymorph_unresolved,Fd-3m,NiTi2.cif
+Ni3Ti,3-NICKEL TITANIUM,1230,Ni3Ti,,TiNi3,mp-1409,most_stable_guess_polymorph_unresolved,P6_3/mmc,Ni3Ti.cif
+NiWO4,NICKEL TUNGSTATE,1230,NiWO4,,NiWO4,mp-21179,most_stable_guess_polymorph_unresolved,P2/c,NiWO4.cif
+Np,NEPTUNIUM,1231,Np,,Np,mp-11534,most_stable_guess_polymorph_unresolved,Pnma,Np.cif
+NpCl3,NEPTUNIUM TRICHLORIDE,1234,NpCl3,,NpCl3,mp-23278,most_stable_guess_polymorph_unresolved,P6_3/m,NpCl3.cif
+NpCl4,NEPTUNIUM TETRACHLORIDE,1234,NpCl4,,NpCl4,mp-2752817,most_stable_guess_polymorph_unresolved,C2/c,NpCl4.cif
+NpF3,NEPTUNIUM TRIFLUORIDE,1235,NpF3,,NpF3,mp-14107,most_stable_guess_polymorph_unresolved,P6_3/mmc,NpF3.cif
+NpF6,NEPTUNIUM HEXAFLUORIDE,1235,NpF6,,NpF6,mp-1209816,single_candidate,Pnma,NpF6.cif
+NpO2,NEPTUNIUM DIOXIDE,1236,NpO2,,NpO2,mp-2616,most_stable_guess_polymorph_unresolved,Fm-3m,NpO2.cif
+Os,OSMIUM,1244,Os,,Os,mp-49,most_stable_guess_polymorph_unresolved,P6_3/mmc,Os.cif
+OsO2,OSMIUM DIOXIDE,1247,OsO2,,OsO2,mp-996,most_stable_guess_polymorph_unresolved,P4_2/mnm,OsO2.cif
+OsO4,OSMIUM TETRAOXIDE (YELLOW),1248,OsO4,,OsO4,mp-1524458,most_stable_guess_polymorph_unresolved,I-42m,OsO4.cif
+OsP2,OSMIUM DIPHOSPHIDE,1249,OsP2,,P2Os,mp-2319,most_stable_guess_polymorph_unresolved,Pnnm,OsP2.cif
+OsS2,OSMIUM DISULFIDE,1249,OsS2,,OsS2,mp-20905,most_stable_guess_polymorph_unresolved,Pa-3,OsS2.cif
+OsSe2,OSMIUM DISELENIDE,1250,OsSe2,,OsSe2,mp-2480,most_stable_guess_polymorph_unresolved,Pa-3,OsSe2.cif
+P,PHOSPHORUS (WHITE),1250,P,,P,mp-568348,most_stable_guess_polymorph_unresolved,P2/c,P.cif
+P[R],PHOSPHORUS (RED),1251,P,R,P,mp-568348,most_stable_guess_polymorph_unresolved,P2/c,P[R].cif
+P2O5,DIPHOSPHORUS PENTAOXIDE (LIQUID),1263,P2O5,,P2O5,mp-2173,most_stable_guess_polymorph_unresolved,Pnma,P2O5.cif
+P4O10,TETRAPHOSPHORUS DECAOXIDE,1264,P4O10,,P2O5,mp-2173,most_stable_guess_polymorph_unresolved,Pnma,P4O10.cif
+POCI3,PHOSPHORUS TRICHLORIDE OXIDE,1266,POCl3,,PCl3O,mp-2766955,most_stable_guess_polymorph_unresolved,Pna2_1,POCI3.cif
+P4S3,TETRAPHOSPHORUS TRISULFIDE,1268,P4S3,,P4S3,mp-1468,most_stable_guess_polymorph_unresolved,Pnma,P4S3.cif
+P4S5,TETRAPHOSPHORUS PENTASULFIDE,1269,P4S5,,P4S5,mp-690,most_stable_guess_polymorph_unresolved,P2_1,P4S5.cif
+P4S6,TETRAPHOSPHORUS HEXASULFIDE,1269,P4S6,,P2S3,mp-29014,most_stable_guess_polymorph_unresolved,P2_1/c,P4S6.cif
+P4S7,TETRAPHOSPHORUS HEPTASULFIDE,1270,P4S7,,P4S7,mp-2650,single_candidate,P2_1/c,P4S7.cif
+P4S10,TETRAPHOSPHORUS DECASULFIDE,1270,P4S10,,P2S5,mp-541788,single_candidate,P-1,P4S10.cif
+Pa,PROTACTINIUM,1271,Pa,,Pa,mp-62,most_stable_guess_polymorph_unresolved,I4/mmm,Pa.cif
+Pb,LEAD,1273,Pb,,Pb,mp-20483,most_stable_guess_polymorph_unresolved,Fm-3m,Pb.cif
+Pb3(AsO4)2,LEAD ARSENATE,1275,Pb3(AsO4)2,,As2Pb3O8,mp-505368,most_stable_guess_polymorph_unresolved,P2_1/c,Pb3_AsO4_2.cif
+PbBr2,LEAD DIBROMIDE,1277,PbBr2,,PbBr2,mp-2456335,most_stable_guess_polymorph_unresolved,Cmce,PbBr2.cif
+PbCO3,LEAD CARBONATE,1279,PbCO3,,PbCO3,mp-19893,most_stable_guess_polymorph_unresolved,Pnma,PbCO3.cif
+PbCl2,LEAD DICHLORIDE,1281,PbCl2,,PbCl2,mp-23291,most_stable_guess_polymorph_unresolved,Pnma,PbCl2.cif
+PbF2,LEAD DIFLUORIDE,1285,PbF2,,PbF2,mp-315,most_stable_guess_polymorph_unresolved,Fm-3m,PbF2.cif
+Pbl2,LEAD DIIODIDE,1290,PbI2,,PbI2,mp-567503,most_stable_guess_polymorph_unresolved,P6_3mc,Pbl2.cif
+PbMoO4,LEAD MOLYBDATE,1293,PbMoO4,,MoPbO4,mp-22169,most_stable_guess_polymorph_unresolved,I4_1/a,PbMoO4.cif
+PbO,"LEAD OXIDE (YELLOW, MASSICOT)",1294,PbO,,PbO,mp-19921,most_stable_guess_polymorph_unresolved,P4/nmm,PbO.cif
+PbO[R],LEAD OXIDE (RED),1295,PbO,R,PbO,mp-19921,spacegroup_hint,P4/nmm,PbO[R].cif
+PbO2,LEAD DIOXIDE,1296,PbO2,,PbO2,mp-20725,most_stable_guess_polymorph_unresolved,P4_2/mnm,PbO2.cif
+Pb3O4,TRILEAD TETRAOXIDE,1296,Pb3O4,,Pb3O4,mp-22633,most_stable_guess_polymorph_unresolved,P4_2/mbc,Pb3O4.cif
+PbB4O7,LEAD TETRABORATE,1297,PbB4O7,,B4PbO7,mp-9747,single_candidate,Pmn2_1,PbB4O7.cif
+PbO*PbCO3,DILEAD OXIDE CARBONATE,1298,PbO*PbCO3,,Pb2CO4,mp-505702,most_stable_guess_polymorph_unresolved,P2_12_12_1,PbO_hyd_PbCO3.cif
+PbO*PbSO4,DILEAD OXIDE SULFATE,1298,PbO*PbSO4,,Pb2SO5,mp-21497,single_candidate,C2/m,PbO_hyd_PbSO4.cif
+2PbO*PbSO4,TRILEAD DIOXIDE SULFATE,1299,2PbO*PbSO4,,Pb3SO6,mp-559143,most_stable_guess_polymorph_unresolved,P-1,2PbO_hyd_PbSO4.cif
+4PbO*PbS04,PENTALEAD TETRAOXIDE SULFATE,1300,4PbO*PbSO4,,Pb5SO8,mp-505603,single_candidate,P2_1/c,4PbO_hyd_PbS04.cif
+PbSiO3,LEAD METASILICATE,1300,PbSiO3,,SiPbO3,mp-21723,most_stable_guess_polymorph_unresolved,P2/c,PbSiO3.cif
+Pb2SiO4,DILEAD ORTHOSILICATE,1301,Pb2SiO4,,Si(PbO2)2,mp-555786,most_stable_guess_polymorph_unresolved,C2/c,Pb2SiO4.cif
+PbTiO3,LEAD TITANIUM TRIOXIDE,1303,PbTiO3,,TiPbO3,mp-20459,most_stable_guess_polymorph_unresolved,P4mm,PbTiO3.cif
+PbS,LEAD SULFIDE,1304,PbS,,PbS,mp-21276,most_stable_guess_polymorph_unresolved,Fm-3m,PbS.cif
+PbSO4,LEAD SULFATE,1306,PbSO4,,PbSO4,mp-3472,most_stable_guess_polymorph_unresolved,Pnma,PbSO4.cif
+PbSe,LEAD SELENIDE,1307,PbSe,,PbSe,mp-2201,most_stable_guess_polymorph_unresolved,Fm-3m,PbSe.cif
+PbSeO3,LEAD SELENITE,1308,PbSeO3,,PbSeO3,mp-630329,most_stable_guess_polymorph_unresolved,P2_1/c,PbSeO3.cif
+PbSeO4,LEAD SELENATE,1309,PbSeO4,,PbSeO4,mp-22342,most_stable_guess_polymorph_unresolved,P2_1/c,PbSeO4.cif
+PbTe,LEAD TELLURIDE,1309,PbTe,,TePb,mp-19717,most_stable_guess_polymorph_unresolved,Fm-3m,PbTe.cif
+PbWO4,LEAD TUNGSTATE,1310,PbWO4,,PbWO4,mp-504591,most_stable_guess_polymorph_unresolved,P2_1/c,PbWO4.cif
+Pd,PALLADIUM,1311,Pd,,Pd,mp-2,most_stable_guess_polymorph_unresolved,Fm-3m,Pd.cif
+PdCl2,PALLADIUM CHLORIDE,1313,PdCl2,,PdCl2,mp-29487,most_stable_guess_polymorph_unresolved,R-3,PdCl2.cif
+PdF2,PALLADIUM FLUORIDE,1313,PdF2,,PdF2,mp-1058,most_stable_guess_polymorph_unresolved,P4_2/mnm,PdF2.cif
+Pdl2,PALLADIUM IODIDE,1314,PdI2,,PdI2,mp-27747,most_stable_guess_polymorph_unresolved,P2_1/c,Pdl2.cif
+PdO,PALLADIUM OXIDE,1314,PdO,,PdO,mp-1336,most_stable_guess_polymorph_unresolved,P4_2/mmc,PdO.cif
+PdS,PALLADIUM SULFIDE,1315,PdS,,PdS,mp-20250,most_stable_guess_polymorph_unresolved,P4_2/m,PdS.cif
+PdS2,PALLADIUM DISULFIDE,1315,PdS2,,PdS2,mp-13682,most_stable_guess_polymorph_unresolved,Pbca,PdS2.cif
+Pd4S,TETRAPALLADIUM SULFIDE,1316,Pd4S,,Pd4S,mp-7819,single_candidate,P-42_1c,Pd4S.cif
+PdTe,PALLADIUM TELLURIDE,1316,PdTe,,TePd,mp-564,most_stable_guess_polymorph_unresolved,P6_3/mmc,PdTe.cif
+Pr,PRASEODYMIUM,1317,Pr,,Pr,mp-97,most_stable_guess_polymorph_unresolved,Fm-3m,Pr.cif
+PrBr3,PRASEODYMIUM BROMIDE,1319,PrBr3,,PrBr3,mp-23221,most_stable_guess_polymorph_unresolved,P6_3/m,PrBr3.cif
+PrCl3,PRASEODYMIUM CHLORIDE,1321,PrCl3,,PrCl3,mp-23211,most_stable_guess_polymorph_unresolved,P6_3/m,PrCl3.cif
+PrF3,PRASEODYMIUM FLUORIDE,1323,PrF3,,PrF3,mp-2651,most_stable_guess_polymorph_unresolved,P-3c1,PrF3.cif
+PrH2,PRASEODYMIUM DIHYDRIDE,1324,PrH2,,PrH2,mp-24095,most_stable_guess_polymorph_unresolved,Fm-3m,PrH2.cif
+PrI3,PRASEODYMIUM IODIDE,1325,PrI3,,PrI3,mp-862800,most_stable_guess_polymorph_unresolved,P6_3/mmc,PrI3.cif
+PrO2,PRASEODYMIUM DIOXIDE,1327,PrO2,,PrO2,mp-1302,most_stable_guess_polymorph_unresolved,Fm-3m,PrO2.cif
+Pr2O3,PRASEODYMIUM OXIDE,1327,Pr2O3,,Pr2O3,mp-16705,most_stable_guess_polymorph_unresolved,Ia-3,Pr2O3.cif
+Pr7O12,7-PRASEODYMIUM 12-OXIDE,1328,Pr7O12,,Pr7O12,mp-22671,most_stable_guess_polymorph_unresolved,R-3,Pr7O12.cif
+PrS,PRASEODYMIUM MONOSULFIDE,1328,PrS,,PrS,mp-2495,most_stable_guess_polymorph_unresolved,Fm-3m,PrS.cif
+Pr3S4,TRIPRASEODYMIUM TETRASULFIDE,1329,Pr3S4,,Pr3S4,mp-1449,single_candidate,I-43d,Pr3S4.cif
+Pt,PLATINUM,1330,Pt,,Pt,mp-126,most_stable_guess_polymorph_unresolved,Fm-3m,Pt.cif
+PtBr3,PLATINUM TRIBROMIDE,1332,PtBr3,,PtBr3,mp-23165,most_stable_guess_polymorph_unresolved,R-3,PtBr3.cif
+PrCl2,PLATINUM DICHLORIDE,1333,PtCl2,,PtCl2,mp-23290,most_stable_guess_polymorph_unresolved,R-3m,PrCl2.cif
+PICI3,PLATINUM TRICHLORIDE,1334,PtCl3,,PtCl3,mp-31134,most_stable_guess_polymorph_unresolved,R-3,PICI3.cif
+PtCl4,PLATINUM TETRACHLORIDE,1334,PtCl4,,PtCl4,mp-680506,single_candidate,Pa-3,PtCl4.cif
+Ptl4,PLATINUM TETRAIODIDE,1335,PtI4,,PtI4,mp-669496,single_candidate,Pbca,Ptl4.cif
+PtS,PLATINUM MONOSULFIDE,1336,PtS,,PtS,mp-288,most_stable_guess_polymorph_unresolved,P4_2/mmc,PtS.cif
+PtS2,PLATINUM DISULFIDE,1336,PtS2,,PtS2,mp-762,most_stable_guess_polymorph_unresolved,P-3m1,PtS2.cif
+Pt5Se4,PENTAPLATINUM TETRASELENIDE,1337,Pt5Se4,,Pt5Se4,mp-29767,single_candidate,P2_1/c,Pt5Se4.cif
+Pu,PLUTONIUM,1338,Pu,,Pu,mp-582819,most_stable_guess_polymorph_unresolved,P6_3/m,Pu.cif
+PuBr3,PLUTONIUM TRIBROMIDE,1341,PuBr3,,PuBr3,mp-27974,most_stable_guess_polymorph_unresolved,Cmcm,PuBr3.cif
+PuC2,PLUTONIUM DICARBIDE,1343,PuC2,,PuC2,mp-1206675,most_stable_guess_polymorph_unresolved,I4/mmm,PuC2.cif
+Pu2C3,DIPLUTONIUM TRICARBIDE,1344,Pu2C3,,Pu2C3,mp-19891,most_stable_guess_polymorph_unresolved,I-43d,Pu2C3.cif
+PuCl3,PLUTONIUM TRICHLORIDE,1345,PuCl3,,PuCl3,mp-22918,most_stable_guess_polymorph_unresolved,P6_3/m,PuCl3.cif
+PuF3,PLUTONIUM TRIFLUORIDE,1346,PuF3,,PuF3,mp-8033,most_stable_guess_polymorph_unresolved,P6_3/mmc,PuF3.cif
+PuF4,PLUTONIUM TETRAFLUORIDE,1347,PuF4,,PuF4,mp-1209625,single_candidate,C2/c,PuF4.cif
+PuH2,PLUTONIUM DIHYDRIDE,1348,PuH2,,PuH2,mp-24720,most_stable_guess_polymorph_unresolved,Fm-3m,PuH2.cif
+PuH3,PLUTONIUM TRIHYDRIDE,1349,PuH3,,PuH3,mp-23679,most_stable_guess_polymorph_unresolved,P6_3/mmc,PuH3.cif
+Pul3,PLUTONIUM TRIODIDE,1349,PuI3,,PuI3,mp-27978,most_stable_guess_polymorph_unresolved,Cmcm,Pul3.cif
+PuN,PLUTONIUM NITRIDE,1350,PuN,,PuN,mp-1719,most_stable_guess_polymorph_unresolved,Fm-3m,PuN.cif
+PuO,PLUTONIUM OXIDE,1351,PuO,,PuO,mp-806,most_stable_guess_polymorph_unresolved,Fm-3m,PuO.cif
+PuO2,PLUTONIUM DIOXIDE,1352,PuO2,,PuO2,mp-1959,most_stable_guess_polymorph_unresolved,Fm-3m,PuO2.cif
+Pu2O3,DIPLUTONIUM TRIOXIDE (ALPHA),1353,Pu2O3,,Pu2O3,mp-637224,most_stable_guess_polymorph_unresolved,Ia-3,Pu2O3.cif
+Pu2O3[B],DIPLUTONIUM TRIOXIDE (BETA),1354,Pu2O3,B,Pu2O3,mp-637224,most_stable_guess_polymorph_unresolved,Ia-3,Pu2O3[B].cif
+PuOBr,PLUTONIUM BROMIDE OXIDE,1354,PuOBr,,PuBrO,mp-27982,most_stable_guess_polymorph_unresolved,P4/nmm,PuOBr.cif
+PuOCl,PLUTONIUM CHLORIDE OXIDE,1355,PuOCl,,PuClO,mp-27981,most_stable_guess_polymorph_unresolved,P4/nmm,PuOCl.cif
+PuOF,PLUTONIUM FLUORIDE OXIDE,1355,PuOF,,PuOF,mp-20230,most_stable_guess_polymorph_unresolved,P4/nmm,PuOF.cif
+PuOl,PLUTONIUM IODIDE OXIDE,1356,PuOI,,PuIO,mp-647604,most_stable_guess_polymorph_unresolved,P4/nmm,PuOl.cif
+PuS,PLUTONIUM MONOSULFIDE,1357,PuS,,PuS,mp-2086,most_stable_guess_polymorph_unresolved,Fm-3m,PuS.cif
+Pu2S3,DIPLUTONIUM TRISULFIDE,1358,Pu2S3,,Pu2S3,mp-33239,most_stable_guess_polymorph_unresolved,I-42d,Pu2S3.cif
+Rb,RUBIDIUM,1359,Rb,,Rb,mp-1179656,most_stable_guess_polymorph_unresolved,C2/c,Rb.cif
+RbBr,RUBIDIUM BROMIDE,1362,RbBr,,RbBr,mp-22867,most_stable_guess_polymorph_unresolved,Fm-3m,RbBr.cif
+Rb2CO3,RUBIDIUM CARBONATE,1364,Rb2CO3,,Rb2CO3,mp-4138,most_stable_guess_polymorph_unresolved,P2_1/c,Rb2CO3.cif
+RbCl,RUBIDIUM CHLORIDE,1365,RbCl,,RbCl,mp-23295,most_stable_guess_polymorph_unresolved,Fm-3m,RbCl.cif
+RbF,RUBIDIUM FLUORIDE,1368,RbF,,RbF,mp-11718,most_stable_guess_polymorph_unresolved,Fm-3m,RbF.cif
+Rbl,RUBIDIUM IODIDE,1371,RbI,,RbI,mp-22903,most_stable_guess_polymorph_unresolved,Fm-3m,Rbl.cif
+RbO2,RUBIDIUM PEROXIDE,1373,RbO2,,RbO2,mp-12105,most_stable_guess_polymorph_unresolved,I4/mmm,RbO2.cif
+Rb2O,RUBIDIUM OXIDE,1374,Rb2O,,Rb2O,mp-753746,most_stable_guess_polymorph_unresolved,R-3m,Rb2O.cif
+Rb2SiO3,RUBIDIUM METASILICATE,1375,Rb2SiO3,,Rb2SiO3,mp-16194,most_stable_guess_polymorph_unresolved,P2_1/c,Rb2SiO3.cif
+Rb2Si2O5,RUBIDIUM DISILICATE,1376,Rb2Si2O5,,Rb2Si2O5,mp-28971,most_stable_guess_polymorph_unresolved,C2/c,Rb2Si2O5.cif
+Rb2SO4,RUBIDIUM SULFATE,1378,Rb2SO4,,Rb2SO4,mp-3372,most_stable_guess_polymorph_unresolved,Pnma,Rb2SO4.cif
+Re,RHENIUM,1379,Re,,Re,mp-1186901,most_stable_guess_polymorph_unresolved,P6_3/mmc,Re.cif
+Re3As7,TRIRHENIUM HEPTAARSENIDE,1382,Re3As7,,Re3As7,mp-2473,single_candidate,Im-3m,Re3As7.cif
+ReCl3,RHENIUM TRICHLORIDE,1384,ReCl3,,ReCl3,mp-23174,most_stable_guess_polymorph_unresolved,R-3m,ReCl3.cif
+ReO2,RHENIUM DIOXIDE,1384,ReO2,,ReO2,mp-7228,most_stable_guess_polymorph_unresolved,Pbcn,ReO2.cif
+ReO3,RHENIUM TRIOXIDE,1385,ReO3,,ReO3,mp-190,most_stable_guess_polymorph_unresolved,Pm-3m,ReO3.cif
+Re2O7,DIRHENIUM HEPTAOXIDE,1385,Re2O7,,Re2O7,mp-1016092,most_stable_guess_polymorph_unresolved,P2_12_12_1,Re2O7.cif
+ReS2,RHENIUM DISULFIDE,1386,ReS2,,ReS2,mp-572758,most_stable_guess_polymorph_unresolved,P-1,ReS2.cif
+ReSi,RHENIUM SILICON,1387,ReSi,,ReSi,mp-7948,most_stable_guess_polymorph_unresolved,P2_13,ReSi.cif
+ReSi2,RHENIUM 2-SILICON,1387,ReSi2,,ReSi2,mp-12605,most_stable_guess_polymorph_unresolved,I4/mmm,ReSi2.cif
+Re5Si3,5-RHENIUM 3-SILICON,1388,Re5Si3,,Re5Si3,mp-1105959,single_candidate,I4/mcm,Re5Si3.cif
+Re2Te5,DIRHENIUM PENTATELLURIDE,1388,Re2Te5,,Re2Te5,mp-583070,single_candidate,Pbca,Re2Te5.cif
+Re2Y,2-RHENIUM YTTRIUM,1389,Re2Y,,YRe2,mp-570923,most_stable_guess_polymorph_unresolved,P6_3/mmc,Re2Y.cif
+Rh,RHODIUM,1390,Rh,,Rh,mp-74,most_stable_guess_polymorph_unresolved,Fm-3m,Rh.cif
+RhCl3,RHODIUM TRICHLORIDE,1392,RhCl3,,RhCl3,mp-27770,most_stable_guess_polymorph_unresolved,C2/m,RhCl3.cif
+Rh2O3,DIRHODIUM TRIOXIDE,1394,Rh2O3,,Rh2O3,mp-1716,most_stable_guess_polymorph_unresolved,Pbcn,Rh2O3.cif
+Rh3U,3-RHODIUM URANIUM,1394,Rh3U,,URh3,mp-1150,most_stable_guess_polymorph_unresolved,Pm-3m,Rh3U.cif
+Ru,RUTHENIUM,1396,Ru,,Ru,mp-33,most_stable_guess_polymorph_unresolved,P6_3/mmc,Ru.cif
+RuCl3,RUTHENIUM TRICHLORIDE,1398,RuCl3,,RuCl3,mp-22850,most_stable_guess_polymorph_unresolved,P6_3/mcm,RuCl3.cif
+RuF5,RUTHENIUM PENTAFLUORIDE,1399,RuF5,,RuF5,mp-540829,single_candidate,P2_1/c,RuF5.cif
+RuO2,RUTHENIUM DIOXIDE,1400,RuO2,,RuO2,mp-825,most_stable_guess_polymorph_unresolved,P4_2/mnm,RuO2.cif
+RuS2,RUTHENIUM DISULFIDE,1401,RuS2,,RuS2,mp-2030,most_stable_guess_polymorph_unresolved,Pa-3,RuS2.cif
+RuSe2,RUTHENIUM DISELENIDE,1402,RuSe2,,RuSe2,mp-1922,most_stable_guess_polymorph_unresolved,Pa-3,RuSe2.cif
+Ru3U,3-RUTHENIUM URANIUM,1402,Ru3U,,URu3,mp-1263,most_stable_guess_polymorph_unresolved,Pm-3m,Ru3U.cif
+S,"SULFUR (RHOMBIC, MONOCLINIC)",1403,S,,S,mp-77,most_stable_guess_polymorph_unresolved,Fddd,S.cif
+S2Cl2,DISULFUR DICHLORIDE,1416,S2Cl2,,SCl,mp-28096,most_stable_guess_polymorph_unresolved,Fdd2,S2Cl2.cif
+Sb,ANTIMONY,1433,Sb,,Sb,mp-104,most_stable_guess_polymorph_unresolved,R-3m,Sb.cif
+SbBr3,ANTIMONY TRIBROMIDE,1436,SbBr3,,SbBr3,mp-570005,most_stable_guess_polymorph_unresolved,Pnma,SbBr3.cif
+SbCI3,ANTIMONY TRICHLORIDE,1438,SbCl3,,SbCl3,mp-22872,most_stable_guess_polymorph_unresolved,Pnma,SbCI3.cif
+SbF3,ANTIMONY TRIFLUORIDE,1440,SbF3,,SbF3,mp-1880,most_stable_guess_polymorph_unresolved,Ama2,SbF3.cif
+SbI3,ANTIMONY TRIIODIDE,1441,SbI3,,SbI3,mp-23281,most_stable_guess_polymorph_unresolved,R-3,SbI3.cif
+Sb2O3,DIANTIMONY TRIOXIDE (CUBIC),1443,Sb2O3,,Sb2O3,mp-2136,most_stable_guess_polymorph_unresolved,Pccn,Sb2O3.cif
+Sb2O3[O],DIANTIMONY TRIOXIDE (ORTHORHOMBIC),1444,Sb2O3,O,Sb2O3,mp-2136,most_stable_guess_polymorph_unresolved,Pccn,Sb2O3[O].cif
+Sb2O4,DIANTIMONY TETRAOXIDE,1444,Sb2O4,,SbO2,mp-1819,most_stable_guess_polymorph_unresolved,C2/c,Sb2O4.cif
+Sb2O5,DIANTIMONY PENTAOXIDE,1445,Sb2O5,,Sb2O5,mp-1705,most_stable_guess_polymorph_unresolved,C2/c,Sb2O5.cif
+SbOCl,ANTIMONY CHLORIDE OXIDE,1446,SbOCl,,SbClO,mp-504662,most_stable_guess_polymorph_unresolved,P2_1/c,SbOCl.cif
+Sb2S3,DIANTIMONY TRISULFIDE (BLACK),1447,Sb2S3,,Sb2S3,mp-2809,most_stable_guess_polymorph_unresolved,Pnma,Sb2S3.cif
+Sb2(SO4)3,DIANTIMONY TRISULFATE,1450,Sb2(SO4)3,,Sb2(SO4)3,mp-27339,most_stable_guess_polymorph_unresolved,P2_1/c,Sb2_SO4_3.cif
+Sb2Se3,DIANTIMONY TRISELENIDE,1451,Sb2Se3,,Sb2Se3,mp-2160,most_stable_guess_polymorph_unresolved,Pnma,Sb2Se3.cif
+Sb2Te3,DIANTIMONY TRITELLURIDE,1452,Sb2Te3,,Sb2Te3,mp-1201,most_stable_guess_polymorph_unresolved,R-3m,Sb2Te3.cif
+SbZn,ANTIMONY ZINC,1452,SbZn,,ZnSb,mp-753,most_stable_guess_polymorph_unresolved,Pbca,SbZn.cif
+Sc,SCANDIUM,1453,Sc,,Sc,mp-67,most_stable_guess_polymorph_unresolved,P6_3/mmc,Sc.cif
+ScAsO4,SCANDIUM ARSENATE,1455,ScAsO4,,ScAsO4,mp-546125,most_stable_guess_polymorph_unresolved,I4_1/amd,ScAsO4.cif
+ScBr3,SCANDIUM BROMIDE,1455,ScBr3,,ScBr3,mp-1186984,most_stable_guess_polymorph_unresolved,P6_3/mmc,ScBr3.cif
+ScCl3,SCANDIUM CHLORIDE,1456,ScCl3,,ScCl3,mp-23309,most_stable_guess_polymorph_unresolved,R-3,ScCl3.cif
+ScF3,SCANDIUM FLUORIDE,1457,ScF3,,ScF3,mp-1078300,most_stable_guess_polymorph_unresolved,R-3c,ScF3.cif
+ScN,SCANDIUM NITRIDE,1459,ScN,,ScN,mp-2857,most_stable_guess_polymorph_unresolved,Fm-3m,ScN.cif
+S2O3,SCANDIUM OXIDE,1460,Sc2O3,,Sc2O3,mp-216,most_stable_guess_polymorph_unresolved,Ia-3,S2O3.cif
+Se,SELENIUM,1461,Se,,Se,mp-570481,most_stable_guess_polymorph_unresolved,P2_1/c,Se.cif
+SeCl4,SELENIUM TETRACHLORIDE,1471,SeCl4,,SeCl4,mp-540675,most_stable_guess_polymorph_unresolved,C2/c,SeCl4.cif
+Se2Cl2,DISELENIUM DICHLORIDE,1472,Se2Cl2,,SeCl,mp-504825,most_stable_guess_polymorph_unresolved,P2_1/c,Se2Cl2.cif
+SeO2,SELENIUM DIOXIDE,1478,SeO2,,SeO2,mp-726,most_stable_guess_polymorph_unresolved,P4_2/mbc,SeO2.cif
+Si,SILICON,1480,Si,,Si,mp-149,most_stable_guess_polymorph_unresolved,Fd-3m,Si.cif
+SiBr4,SILICON TETRABROMIDE,1486,SiBr4,,SiBr4,mp-570285,most_stable_guess_polymorph_unresolved,Pa-3,SiBr4.cif
+SiC,SILICON CARBIDE (CUBIC),1488,SiC,,SiC,mp-1204356,most_stable_guess_polymorph_unresolved,R3m,SiC.cif
+Sil4,SILICON TETRAIODIDE,1501,SiI4,,SiI4,mp-635441,single_candidate,Pa-3,Sil4.cif
+Si3N4,TRISILICON TETRANITRIDE (ALPHA),1503,Si3N4,,Si3N4,mp-988,most_stable_guess_polymorph_unresolved,P6_3/m,Si3N4.cif
+SiO2,SILICON DIOXIDE,1505,SiO2,,SiO2,mp-7000,most_stable_guess_polymorph_unresolved,P3_121,SiO2.cif
+SiO2[CR],SILICON DIOXIDE (CRISTOBALITE),1506,SiO2,CR,SiO2,mp-6945,spacegroup_hint,P4_12_12,SiO2[CR].cif
+SiP,SILICON PHOSPHIDE,1507,SiP,,SiP,mp-2798,most_stable_guess_polymorph_unresolved,Cmc2_1,SiP.cif
+SiS2,SILICON DISULFIDE,1508,SiS2,,SiS2,mp-1602,most_stable_guess_polymorph_unresolved,Ibam,SiS2.cif
+SiTa2,SILICON 2-TANTALUM,1510,SiTa2,,Ta2Si,mp-2783,most_stable_guess_polymorph_unresolved,I4/mcm,SiTa2.cif
+Si2Ta,2-SILICON TANTALUM,1511,Si2Ta,,TaSi2,mp-11192,most_stable_guess_polymorph_unresolved,P6_422,Si2Ta.cif
+Si3Ta5,3-SILICON 5-TANTALUM,1512,Si3Ta5,,Ta5Si3,mp-1989,most_stable_guess_polymorph_unresolved,I4/mcm,Si3Ta5.cif
+SiTh,SILICON THORIUM,1513,SiTh,,ThSi,mp-21238,most_stable_guess_polymorph_unresolved,Pnma,SiTh.cif
+Si2Th,2-SILICON THORIUM,1514,Si2Th,,ThSi2,mp-7497,most_stable_guess_polymorph_unresolved,P6/mmm,Si2Th.cif
+Si2Th3,2-SILICON 3-THORIUM,1515,Si2Th3,,Th3Si2,mp-1079146,most_stable_guess_polymorph_unresolved,P4/mbm,Si2Th3.cif
+SiTi,SILICON TITANIUM,1517,SiTi,,TiSi,mp-7092,most_stable_guess_polymorph_unresolved,Pnma,SiTi.cif
+Si2Ti,2-SILICON TITANIUM,1518,Si2Ti,,TiSi2,mp-1077503,most_stable_guess_polymorph_unresolved,Cmcm,Si2Ti.cif
+Si3Ti5,3-SILICON 5-TITANIUM,1519,Si3Ti5,,Ti5Si3,mp-2108,single_candidate,P6_3/mcm,Si3Ti5.cif
+SiU,SILICON URANIUM,1520,SiU,,USi,mp-19715,most_stable_guess_polymorph_unresolved,Pnma,SiU.cif
+SiU3,SILICON 3-URANIUM,1520,SiU3,,U3Si,mp-1078858,most_stable_guess_polymorph_unresolved,I4/mmm,SiU3.cif
+Si2U,2-SILICON URANIUM,1521,Si2U,,USi2,mp-980,most_stable_guess_polymorph_unresolved,P6/mmm,Si2U.cif
+Si2U3,2-SILICON 3-URANIUM,1522,Si2U3,,U3Si2,mp-21346,most_stable_guess_polymorph_unresolved,P4/mbm,Si2U3.cif
+Si3U,3-SILICON URANIUM,1523,Si3U,,USi3,mp-2800,most_stable_guess_polymorph_unresolved,Pm-3m,Si3U.cif
+SiV3,SILICON 3-VANADIUM,1524,SiV3,,V3Si,mp-2567,most_stable_guess_polymorph_unresolved,Pm-3n,SiV3.cif
+Si2V,2-SILICON VANADIUM,1525,Si2V,,VSi2,mp-10711,most_stable_guess_polymorph_unresolved,P6_222,Si2V.cif
+Si3V5,3-SILICON 5-VANADIUM,1526,Si3V5,,V5Si3,mp-568671,most_stable_guess_polymorph_unresolved,I4/mcm,Si3V5.cif
+Si2W,2-SILICON TUNGSTEN,1527,Si2W,,Si2W,mp-1620,most_stable_guess_polymorph_unresolved,I4/mmm,Si2W.cif
+Si3W5,3-SILICON 5-TUNGSTEN,1528,Si3W5,,Si3W5,mp-31219,single_candidate,I4/mcm,Si3W5.cif
+SiZr,SILICON ZIRCONIUM,1529,SiZr,,ZrSi,mp-11322,most_stable_guess_polymorph_unresolved,Cmcm,SiZr.cif
+SiZr2,SILICON 2-ZIRCONIUM,1529,SiZr2,,Zr2Si,mp-1278,most_stable_guess_polymorph_unresolved,I4/mcm,SiZr2.cif
+Si2Zr,2-SILICON ZIRCONIUM,1530,Si2Zr,,ZrSi2,mp-1515,most_stable_guess_polymorph_unresolved,Cmcm,Si2Zr.cif
+Si3Zr5,3-SILICON 5-ZIRCONIUM,1530,Si3Zr5,,Zr5Si3,mp-568115,most_stable_guess_polymorph_unresolved,P6_3/mcm,Si3Zr5.cif
+Sm,SAMARIUM,1531,Sm,,Sm,mp-69,most_stable_guess_polymorph_unresolved,P6_3/mmc,Sm.cif
+SmC2,SAMARIUM DICARBIDE,1533,SmC2,,SmC2,mp-12764,most_stable_guess_polymorph_unresolved,I4/mmm,SmC2.cif
+SmCl2,SAMARIUM DICHLORIDE,1533,SmCl2,,SmCl2,mp-867134,most_stable_guess_polymorph_unresolved,P4_2/mnm,SmCl2.cif
+SmCl3,SAMARIUM TRICHLORIDE,1534,SmCl3,,SmCl3,mp-863026,most_stable_guess_polymorph_unresolved,P6_3/mmc,SmCl3.cif
+Sm2O3,DISAMARIUM TRIOXIDE (CUBIC),1534,Sm2O3,,Sm2O3,mp-218,most_stable_guess_polymorph_unresolved,Ia-3,Sm2O3.cif
+Sm2O3[M],DISAMARIUM TRIOXIDE (MONOCLINIC),1535,Sm2O3,M,Sm2O3,mp-218,most_stable_guess_polymorph_unresolved,Ia-3,Sm2O3[M].cif
+SmOF,SAMARIUM FLUORIDE OXIDE,1536,SmOF,,SmOF,mp-9488,most_stable_guess_polymorph_unresolved,R-3m,SmOF.cif
+Sm2Zr2O7,DISAMARIUM DIZIRCONIUM HEPTAOXIDE =,1537,Sm2Zr2O7,,Sm2Zr2O7,mp-4408,most_stable_guess_polymorph_unresolved,Fd-3m,Sm2Zr2O7.cif
+Sn,TIN (WHITE),1538,Sn,,Sn,mp-117,most_stable_guess_polymorph_unresolved,Fd-3m,Sn.cif
+SnBr2,TIN DIBROMIDE,1540,SnBr2,,SnBr2,mp-29862,most_stable_guess_polymorph_unresolved,Pnma,SnBr2.cif
+SnBr4,TIN TETRABROMIDE,1541,SnBr4,,SnBr4,mp-23216,single_candidate,P2_1/c,SnBr4.cif
+SnCl2,TIN DICHLORIDE,1542,SnCl2,,SnCl2,mp-29179,most_stable_guess_polymorph_unresolved,P2_1/c,SnCl2.cif
+SnCl4,TIN TETRACHLORIDE,1543,SnCl4,,SnCl4,mp-29866,single_candidate,P2_1/c,SnCl4.cif
+SnF2,TIN DIFLUORIDE,1545,SnF2,,SnF2,mp-2843,most_stable_guess_polymorph_unresolved,C2/c,SnF2.cif
+Snl2,TIN DIIODIDE,1546,SnI2,,SnI2,mp-27194,most_stable_guess_polymorph_unresolved,C2/m,Snl2.cif
+Snl4,TIN TETRAIODIDE,1547,SnI4,,SnI4,mp-23182,most_stable_guess_polymorph_unresolved,Pa-3,Snl4.cif
+SnO,TIN MONOXIDE,1549,SnO,,SnO,mp-2097,most_stable_guess_polymorph_unresolved,P4/nmm,SnO.cif
+SnO2,TIN DIOXIDE,1550,SnO2,,SnO2,mp-856,most_stable_guess_polymorph_unresolved,P4_2/mnm,SnO2.cif
+SnS,TIN MONOSULFIDE,1551,SnS,,SnS,mp-2231,most_stable_guess_polymorph_unresolved,Pnma,SnS.cif
+SnS2,TIN DISULFIDE,1552,SnS2,,SnS2,mp-1170,most_stable_guess_polymorph_unresolved,P-3m1,SnS2.cif
+Sn2S3,DITIN TRISULFIDE,1553,Sn2S3,,Sn2S3,mp-1509,most_stable_guess_polymorph_unresolved,Pnma,Sn2S3.cif
+SnSO4,TIN MONOSULFATE,1554,SnSO4,,SnSO4,mp-542967,most_stable_guess_polymorph_unresolved,Pnma,SnSO4.cif
+Sn(SO4)2,TIN DISULFATE,1554,Sn(SO4)2,,Sn(SO4)2,mp-759223,single_candidate,Pbca,Sn_SO4_2.cif
+SnSe,TIN MONOSELENIDE,1555,SnSe,,SnSe,mp-691,most_stable_guess_polymorph_unresolved,Pnma,SnSe.cif
+SnSe2,TIN DISELENIDE,1556,SnSe2,,SnSe2,mp-665,most_stable_guess_polymorph_unresolved,P-3m1,SnSe2.cif
+SnTe,TIN MONOTELLURIDE,1556,SnTe,,SnTe,mp-1883,most_stable_guess_polymorph_unresolved,Fm-3m,SnTe.cif
+Sr,STRONTIUM,1558,Sr,,Sr,mp-139,most_stable_guess_polymorph_unresolved,P6_3/mmc,Sr.cif
+Sr3(AsO4)2,STRONTIUM ARSENATE,1560,Sr3(AsO4)2,,Sr3(AsO4)2,mp-755082,most_stable_guess_polymorph_unresolved,R-3m,Sr3_AsO4_2.cif
+SrBr2,STRONTIUM BROMIDE,1562,SrBr2,,SrBr2,mp-32711,most_stable_guess_polymorph_unresolved,P4/n,SrBr2.cif
+SrC2,STRONTIUM DICARBIDE,1564,SrC2,,SrC2,mp-10497,most_stable_guess_polymorph_unresolved,C2/c,SrC2.cif
+SrCO3,STRONTIUM CARBONATE,1564,SrCO3,,SrCO3,mp-3822,most_stable_guess_polymorph_unresolved,Pnma,SrCO3.cif
+SrCl2,STRONTIUM CHLORIDE,1566,SrCl2,,SrCl2,mp-23209,most_stable_guess_polymorph_unresolved,Fm-3m,SrCl2.cif
+SrF2,STRONTIUM FLUORIDE,1568,SrF2,,SrF2,mp-981,most_stable_guess_polymorph_unresolved,Fm-3m,SrF2.cif
+SrH2,STRONTIUM HYDRIDE,1569,SrH2,,SrH2,mp-23714,most_stable_guess_polymorph_unresolved,Pnma,SrH2.cif
+Srl2,STRONTIUM IODIDE,1570,SrI2,,SrI2,mp-568284,most_stable_guess_polymorph_unresolved,Pnma,Srl2.cif
+SrMoO4,STRONTIUM MOLYBDATE,1572,SrMoO4,,SrMoO4,mp-18834,most_stable_guess_polymorph_unresolved,I4_1/a,SrMoO4.cif
+Sr3N2,TRISTRONTIUM DINITRIDE,1572,Sr3N2,,Sr3N2,mp-986716,most_stable_guess_polymorph_unresolved,Ia-3,Sr3N2.cif
+SrO,STRONTIUM OXIDE,1573,SrO,,SrO,mp-2472,most_stable_guess_polymorph_unresolved,Fm-3m,SrO.cif
+SrO2,STRONTIUM PEROXIDE,1574,SrO2,,SrO2,mp-2697,most_stable_guess_polymorph_unresolved,I4/mmm,SrO2.cif
+SrAl2O4,STRONTIUM DIALUMINIUM TETRAOXIDE,1574,SrAl2O4,,SrAl2O4,mp-3094,most_stable_guess_polymorph_unresolved,P2_1,SrAl2O4.cif
+Sr(OH)2,STRONTIUM HYDROXIDE,1576,Sr(OH)2,,Sr(HO)2,mp-27425,most_stable_guess_polymorph_unresolved,Pnma,Sr_OH_2.cif
+SrSiO3,STRONTIUM METASILICATE,1578,SrSiO3,,SrSiO3,mp-3978,most_stable_guess_polymorph_unresolved,C2/c,SrSiO3.cif
+Sr2SiO4,STRONTIUM ORTHOSILICATE,1578,Sr2SiO4,,Sr2SiO4,mp-18510,most_stable_guess_polymorph_unresolved,P2_1/c,Sr2SiO4.cif
+SrTiO3,STRONTIUM TITANIUM TRIOXIDE,1579,SrTiO3,,SrTiO3,mp-4651,most_stable_guess_polymorph_unresolved,I4/mcm,SrTiO3.cif
+Sr2TiO4,DISTRONTIUM TITANIUM TETRAOXIDE,1580,Sr2TiO4,,Sr2TiO4,mp-5532,most_stable_guess_polymorph_unresolved,I4/mmm,Sr2TiO4.cif
+Sr4Ti3O10,TETRASTRONTIUM TRITITANIUM DECAOXIDE,1581,Sr4Ti3O10,,Sr4Ti3O10,mp-31213,single_candidate,I4/mmm,Sr4Ti3O10.cif
+SrZrO3,STRONTIUM ZIRCONIUM TRIOXIDE,1582,SrZrO3,,SrZrO3,mp-4387,most_stable_guess_polymorph_unresolved,Pnma,SrZrO3.cif
+SrS,STRONTIUM SULFIDE,1583,SrS,,SrS,mp-1087,most_stable_guess_polymorph_unresolved,Fm-3m,SrS.cif
+SrSO4,STRONTIUM SULFATE,1585,SrSO4,,SrSO4,mp-5285,most_stable_guess_polymorph_unresolved,Pnma,SrSO4.cif
+SrWO4,STRONTIUM TUNGSTATE,1586,SrWO4,,SrWO4,mp-19163,most_stable_guess_polymorph_unresolved,I4_1/a,SrWO4.cif
+Ta,TANTALUM,1587,Ta,,Ta,mp-569794,most_stable_guess_polymorph_unresolved,P4_2/mnm,Ta.cif
+TaB2,TANTALUM DIBORIDE,1591,TaB2,,TaB2,mp-1108,most_stable_guess_polymorph_unresolved,P6/mmm,TaB2.cif
+TaBr5,TANTALUM PENTABROMIDE,1592,TaBr5,,TaBr5,mp-568846,most_stable_guess_polymorph_unresolved,Pnma,TaBr5.cif
+TaC,TANTALUM MONOCARBIDE,1593,TaC,,TaC,mp-1086,most_stable_guess_polymorph_unresolved,Fm-3m,TaC.cif
+Ta2C,DITANTALUM CARBIDE,1594,Ta2C,,Ta2C,mp-7088,most_stable_guess_polymorph_unresolved,P-3m1,Ta2C.cif
+TaCl3,TANTALUM TRICHLORIDE,1596,TaCl3,,TaCl3,mp-727406,most_stable_guess_polymorph_unresolved,Fd-3m,TaCl3.cif
+TaCl4,TANTALUM TETRACHLORIDE,1597,TaCl4,,TaCl4,mp-29465,single_candidate,C2/m,TaCl4.cif
+TaCl5,TANTALUM PENTACHLORIDE,1598,TaCl5,,TaCl5,mp-29831,single_candidate,C2/m,TaCl5.cif
+TaF5,TANTALUM PENTAFLUORIDE,1599,TaF5,,TaF5,mp-561197,most_stable_guess_polymorph_unresolved,C2/m,TaF5.cif
+Tal5,TANTALUM PENTAIODIDE,1600,TaI5,,TaI5,mp-570679,single_candidate,Pnma,Tal5.cif
+TaN,TANTALUM MONONITRIDE,1602,TaN,,TaN,mp-1279,most_stable_guess_polymorph_unresolved,P-62m,TaN.cif
+Ta2N,DITANTALUM NITRIDE,1603,Ta2N,,Ta2N,mp-1079438,most_stable_guess_polymorph_unresolved,P-31m,Ta2N.cif
+Ta2O5,DITANTALUM PENTOXIDE,1606,Ta2O5,,Ta2O5,mp-10390,most_stable_guess_polymorph_unresolved,C2/c,Ta2O5.cif
+TaOCl3,TANTALUM TRICHLORIDE OXIDE,1607,TaOCl3,,TaCl3O,mp-1208583,most_stable_guess_polymorph_unresolved,P4_2/mnm,TaOCl3.cif
+TaS2,TANTALUM DISULFIDE,1609,TaS2,,TaS2,mp-10014,most_stable_guess_polymorph_unresolved,R3m,TaS2.cif
+Tb,TERBIUM,1610,Tb,,Tb,mp-18,most_stable_guess_polymorph_unresolved,P6_3/mmc,Tb.cif
+TbCl3,TERBIUM TRICHLORIDE,1613,TbCl3,,TbCl3,mp-23293,most_stable_guess_polymorph_unresolved,Cmcm,TbCl3.cif
+TbO2,TERBIUM DIOXIDE,1615,TbO2,,TbO2,mp-2458,most_stable_guess_polymorph_unresolved,Fm-3m,TbO2.cif
+Tb2O3,DITERBIUM TRIOXIDE,1616,Tb2O3,,Tb2O3,mp-1056,most_stable_guess_polymorph_unresolved,Ia-3,Tb2O3.cif
+Tc,TECHNETIUM,1620,Tc,,Tc,mp-113,most_stable_guess_polymorph_unresolved,P6_3/mmc,Tc.cif
+TcO2,TECHNETIUM DIOXIDE,1623,TcO2,,TcO2,mp-33137,most_stable_guess_polymorph_unresolved,P2_1/c,TcO2.cif
+Tc2O7,DITECHNETIUM HEPTAOXIDE,1624,Tc2O7,,Tc2O7,mp-27485,single_candidate,Pbca,Tc2O7.cif
+Te,TELLURIUM,1625,Te,,Te,mp-19,most_stable_guess_polymorph_unresolved,P3_121,Te.cif
+TeBr4,TELLURIUM TETRABROMIDE,1627,TeBr4,,TeBr4,mp-1208424,single_candidate,C2/c,TeBr4.cif
+TeCl4,TELLURIUM TETRACHLORIDE,1628,TeCl4,,TeCl4,mp-569561,single_candidate,C2/c,TeCl4.cif
+TeO2,TELLURIUM DIOXIDE,1636,TeO2,,TeO2,mp-8377,most_stable_guess_polymorph_unresolved,P2_12_12_1,TeO2.cif
+Th,THORIUM,1639,Th,,Th,mp-37,most_stable_guess_polymorph_unresolved,Fm-3m,Th.cif
+ThBr4,THORIUM TETRABROMIDE,1642,ThBr4,,ThBr4,mp-570229,most_stable_guess_polymorph_unresolved,I4_1/a,ThBr4.cif
+ThCl4,THORIUM TETRACHLORIDE,1645,ThCl4,,ThCl4,mp-567431,most_stable_guess_polymorph_unresolved,I4_1/a,ThCl4.cif
+ThF4,THORIUM TETRAFLUORIDE,1649,ThF4,,ThF4,mp-31034,most_stable_guess_polymorph_unresolved,C2/c,ThF4.cif
+ThH2,THORIUM DIHYDRIDE,1650,ThH2,,ThH2,mp-24291,most_stable_guess_polymorph_unresolved,I4/mmm,ThH2.cif
+ThI4,THORIUM TETRAIODIDE,1651,ThI4,,ThI4,mp-27697,single_candidate,P2_1/c,ThI4.cif
+ThN,THORIUM MONONITRIDE,1653,ThN,,ThN,mp-834,most_stable_guess_polymorph_unresolved,Fm-3m,ThN.cif
+Th3N4,TRITHORIUM TETRANITRIDE,1654,Th3N4,,Th3N4,mp-467,single_candidate,R-3m,Th3N4.cif
+Th2N2O,DITHORIUM DINITRIDE MONOXIDE,1655,Th2N2O,,Th2N2O,mp-1206128,most_stable_guess_polymorph_unresolved,P-3m1,Th2N2O.cif
+ThO2,THORIUM DIOXIDE,1657,ThO2,,ThO2,mp-643,most_stable_guess_polymorph_unresolved,Fm-3m,ThO2.cif
+ThP,THORIUM MONOPHOSPHIDE,1661,ThP,,ThP,mp-931,most_stable_guess_polymorph_unresolved,Fm-3m,ThP.cif
+Th3P4,TRITHORIUM TETRAPHOSPHIDE,1662,Th3P4,,Th3P4,mp-1347,single_candidate,I-43d,Th3P4.cif
+ThRe2,THORIUM 2-RHENIUM,1663,ThRe2,,ThRe2,mp-1659,most_stable_guess_polymorph_unresolved,P6_3/mmc,ThRe2.cif
+ThS,THORIUM MONOSULFIDE,1663,ThS,,ThS,mp-503,most_stable_guess_polymorph_unresolved,Fm-3m,ThS.cif
+ThS2,THORIUM DISULFIDE,1664,ThS2,,ThS2,mp-1146,most_stable_guess_polymorph_unresolved,Pnma,ThS2.cif
+Th2S3,DITHORIUM TRISULFIDE,1665,Th2S3,,Th2S3,mp-20163,most_stable_guess_polymorph_unresolved,Pnma,Th2S3.cif
+Th(SO4)2,THORIUM DISULFATE,1665,Th(SO4)2,,Th(SO4)2,mp-1202893,single_candidate,Pbca,Th_SO4_2.cif
+Ti,TITANIUM,1666,Ti,,Ti,mp-72,most_stable_guess_polymorph_unresolved,P6/mmm,Ti.cif
+TiB,TITANIUM MONOBORIDE,1668,TiB,,TiB,mp-7857,most_stable_guess_polymorph_unresolved,Pnma,TiB.cif
+TiB2,TITANIUM DIBORIDE,1669,TiB2,,TiB2,mp-1145,most_stable_guess_polymorph_unresolved,P6/mmm,TiB2.cif
+TiBr2,TITANIUM DIBROMIDE,1670,TiBr2,,TiBr2,mp-27785,most_stable_guess_polymorph_unresolved,P-3m1,TiBr2.cif
+TiBr3,TITANIUM TRIBROMIDE,1671,TiBr3,,TiBr3,mp-28214,most_stable_guess_polymorph_unresolved,P-1,TiBr3.cif
+TiBr4,TITANIUM TETRABROMIDE,1672,TiBr4,,TiBr4,mp-569814,most_stable_guess_polymorph_unresolved,Pa-3,TiBr4.cif
+TiC,TITANIUM MONOCARBIDE,1674,TiC,,TiC,mp-631,most_stable_guess_polymorph_unresolved,Fm-3m,TiC.cif
+TiCl2,TITANIUM DICHLORIDE,1676,TiCl2,,TiCl2,mp-28116,most_stable_guess_polymorph_unresolved,P-3m1,TiCl2.cif
+TiCl3,TITANIUM TRICHLORIDE,1677,TiCl3,,TiCl3,mp-2017901,most_stable_guess_polymorph_unresolved,Cc,TiCl3.cif
+TiCl4,TITANIUM TETRACHLORIDE,1678,TiCl4,,TiCl4,mp-30092,single_candidate,P2_1/c,TiCl4.cif
+TiF3,TITANIUM TRIFLUORIDE,1681,TiF3,,TiF3,mp-246,most_stable_guess_polymorph_unresolved,Pm-3m,TiF3.cif
+TiF4,TITANIUM TETRAFLUORIDE,1682,TiF4,,TiF4,mp-28974,most_stable_guess_polymorph_unresolved,Pnma,TiF4.cif
+TiH2,TITANIUM DIHYDRIDE,1684,TiH2,,TiH2,mp-24726,most_stable_guess_polymorph_unresolved,I4/mmm,TiH2.cif
+TiI2,TITANIUM DIIODIDE,1685,TiI2,,TiI2,mp-1207060,most_stable_guess_polymorph_unresolved,P-3m1,TiI2.cif
+TiI3,TITANIUM TRIIODIDE,1686,TiI3,,TiI3,mp-23264,most_stable_guess_polymorph_unresolved,Pmmn,TiI3.cif
+TiI4,TITANIUM TETRAIODIDE,1687,TiI4,,TiI4,mp-541013,single_candidate,C2/c,TiI4.cif
+TiN,TITANIUM MONONITRIDE,1689,TiN,,TiN,mp-492,most_stable_guess_polymorph_unresolved,Fm-3m,TiN.cif
+TiO,TITANIUM MONOXIDE,1690,TiO,,TiO,mp-1071163,most_stable_guess_polymorph_unresolved,P-62m,TiO.cif
+TiO2,TITANIUM DIOXIDE (RUTILE),1692,TiO2,,TiO2,mp-390,most_stable_guess_polymorph_unresolved,I4_1/amd,TiO2.cif
+TiO2[A],TITANIUM DIOXIDE (ANATASE),1693,TiO2,A,TiO2,mp-390,spacegroup_hint,I4_1/amd,TiO2[A].cif
+Ti2O3,DITITANIUM TRIOXIDE,1694,Ti2O3,,Ti2O3,mp-458,most_stable_guess_polymorph_unresolved,R-3c,Ti2O3.cif
+Ti3O5,TRITITANIUM PENTOXIDE,1695,Ti3O5,,Ti3O5,mp-8057,most_stable_guess_polymorph_unresolved,Cmcm,Ti3O5.cif
+Ti4O7,TETRATITANIUM HEPTAOXIDE,1696,Ti4O7,,Ti4O7,mp-12205,most_stable_guess_polymorph_unresolved,P-1,Ti4O7.cif
+TiS,TITANIUM MONOSULFIDE,1701,TiS,,TiS,mp-1018028,most_stable_guess_polymorph_unresolved,P-6m2,TiS.cif
+TiS2,TITANIUM DISULFIDE,1703,TiS2,,TiS2,mp-2156,most_stable_guess_polymorph_unresolved,P-3m1,TiS2.cif
+Tl,THALLIUM,1704,Tl,,Tl,mp-82,most_stable_guess_polymorph_unresolved,P6_3/mmc,Tl.cif
+TlAsO4,THALLIUM ARSENATE,1705,TlAsO4,,TlAsO4,mp-754214,most_stable_guess_polymorph_unresolved,I4_1/a,TlAsO4.cif
+TlBr,THALLIUM BROMIDE,1706,TlBr,,TlBr,mp-568949,most_stable_guess_polymorph_unresolved,Cmcm,TlBr.cif
+TlCl,THALLIUM CHLORIDE,1706,TlCl,,TlCl,mp-571079,most_stable_guess_polymorph_unresolved,Cmcm,TlCl.cif
+TlCl3,THALLIUM TRICHLORIDE,1707,TlCl3,,TlCl3,mp-1206058,most_stable_guess_polymorph_unresolved,C2/m,TlCl3.cif
+TlF,THALLIUM FLUORIDE,1708,TlF,,TlF,mp-720,most_stable_guess_polymorph_unresolved,Pbcm,TlF.cif
+TlI,THALLIUM IODIDE,1711,TlI,,TlI,mp-571102,most_stable_guess_polymorph_unresolved,Fm-3m,TlI.cif
+Tl2O,THALLIUM OXIDE,1712,Tl2O,,Tl2O,mp-27484,most_stable_guess_polymorph_unresolved,R-3m,Tl2O.cif
+Tl2O3,DITHALLIUM TRIOXIDE,1713,Tl2O3,,Tl2O3,mp-1658,most_stable_guess_polymorph_unresolved,Ia-3,Tl2O3.cif
+Tl2S,THALLIUM SULFIDE,1714,Tl2S,,Tl2S,mp-556516,most_stable_guess_polymorph_unresolved,R3,Tl2S.cif
+Tl2SO4,THALLIUM SULFATE,1715,Tl2SO4,,Tl2SO4,mp-4112,most_stable_guess_polymorph_unresolved,Pnma,Tl2SO4.cif
+TlSe,THALLIUM SELENIDE,1716,TlSe,,TlSe,mp-1836,most_stable_guess_polymorph_unresolved,I4/mcm,TlSe.cif
+Tl2Te,THALLIUM TELLURIDE,1717,Tl2Te,,Tl2Te,mp-582753,most_stable_guess_polymorph_unresolved,C2/c,Tl2Te.cif
+Tm,THULIUM,1717,Tm,,Tm,mp-143,most_stable_guess_polymorph_unresolved,P6_3/mmc,Tm.cif
+TmCl3,THULIUM TRICHLORIDE,1719,TmCl3,,TmCl3,mp-28044,most_stable_guess_polymorph_unresolved,R-3c,TmCl3.cif
+TmF3,THULIUM TRIFLUORIDE,1721,TmF3,,TmF3,mp-865194,most_stable_guess_polymorph_unresolved,I4/mmm,TmF3.cif
+Tm2O3,DITHULIUM TRIOXIDE,1724,Tm2O3,,Tm2O3,mp-1767,most_stable_guess_polymorph_unresolved,Ia-3,Tm2O3.cif
+U,URANIUM,1725,U,,U,mp-44,most_stable_guess_polymorph_unresolved,Cmcm,U.cif
+UB2,URANIUM DIBORIDE,1728,UB2,,UB2,mp-1514,most_stable_guess_polymorph_unresolved,P6/mmm,UB2.cif
+UB4,URANIUM TETRABORIDE,1728,UB4,,UB4,mp-619,single_candidate,P4/mbm,UB4.cif
+UB12,URANIUM DODECABORIDE,1729,UB12,,UB12,mp-22319,single_candidate,Fm-3m,UB12.cif
+UBr3,URANIUM TRIBROMIDE,1729,UBr3,,UBr3,mp-23255,most_stable_guess_polymorph_unresolved,P6_3/m,UBr3.cif
+UBr4,URANIUM TETRABROMIDE,1730,UBr4,,UBr4,mp-27153,single_candidate,C2/m,UBr4.cif
+UBr5,URANIUM PENTABROMIDE,1731,UBr5,,UBr5,mp-29263,most_stable_guess_polymorph_unresolved,P-1,UBr5.cif
+UC,URANIUM MONOCARBIDE,1731,UC,,UC,mp-2489,most_stable_guess_polymorph_unresolved,Fm-3m,UC.cif
+U2C3,DIURANIUM TRICARBIDE,1733,U2C3,,U2C3,mp-2625,most_stable_guess_polymorph_unresolved,I-43d,U2C3.cif
+UCl3,URANIUM TRICHLORIDE,1734,UCl3,,UCl3,mp-23208,most_stable_guess_polymorph_unresolved,P6_3/m,UCl3.cif
+UCl4,URANIUM TETRACHLORIDE,1735,UCl4,,UCl4,mp-23235,single_candidate,I4_1/amd,UCl4.cif
+UCl5,URANIUM PENTACHLORIDE,1736,UCl5,,UCl5,mp-570989,most_stable_guess_polymorph_unresolved,P2_1/c,UCl5.cif
+UCl6,URANIUM HEXACHLORIDE,1737,UCl6,,UCl6,mp-23250,single_candidate,P-3m1,UCl6.cif
+UF3,URANIUM TRIFLUORIDE,1738,UF3,,UF3,mp-18299,most_stable_guess_polymorph_unresolved,P6_3cm,UF3.cif
+UF4,URANIUM TETRAFLUORIDE,1739,UF4,,UF4,mp-287,single_candidate,C2/c,UF4.cif
+UF5,URANIUM PENTAFLUORIDE,1741,UF5,,UF5,mp-1852,most_stable_guess_polymorph_unresolved,I4/m,UF5.cif
+UF6,URANIUM HEXAFLUORIDE,1742,UF6,,UF6,mp-2275,most_stable_guess_polymorph_unresolved,Pnma,UF6.cif
+UH3[B],URANIUM TRIHYDRIDE (BETA),1743,UH3,B,UH3,mp-504970,most_stable_guess_polymorph_unresolved,Pm-3n,UH3[B].cif
+UI3,URANIUM TRIIODIDE,1743,UI3,,UI3,mp-23244,most_stable_guess_polymorph_unresolved,Cmcm,UI3.cif
+Ul4,URANIUM TETRAIODIDE,1744,UI4,,UI4,mp-655360,most_stable_guess_polymorph_unresolved,C2/c,Ul4.cif
+UN,URANIUM NITRIDE,1745,UN,,UN,mp-1865,most_stable_guess_polymorph_unresolved,Fm-3m,UN.cif
+UO2,URANIUM DIOXIDE,1746,UO2,,UO2,mp-1597,most_stable_guess_polymorph_unresolved,Fm-3m,UO2.cif
+UO3,URANIUM TRIOXIDE (ORTHORHOMBIC),1747,UO3,,UO3,mp-375,most_stable_guess_polymorph_unresolved,Pm-3m,UO3.cif
+U3O8,TRIURAN. OCTAOXIDE (ORTHORHOMBIC),1747,U3O8,,U3O8,mp-560402,most_stable_guess_polymorph_unresolved,Cmcm,U3O8.cif
+UOCl2,URANIUM DICHLORIDE OXIDE,1750,UOCl2,,UCl2O,mp-640563,most_stable_guess_polymorph_unresolved,Pbam,UOCl2.cif
+UO2Cl2,URANIUM DICHLORIDE DIOXIDE,1751,UO2Cl2,,U(ClO)2,mp-23013,most_stable_guess_polymorph_unresolved,Pnma,UO2Cl2.cif
+UO2F2,URANIUM DIFLUORIDE DIOXIDE,1752,UO2F2,,U(OF)2,mp-27980,most_stable_guess_polymorph_unresolved,R-3m,UO2F2.cif
+UO3*H2O,URANIUM TRIOXIDE MONOHYDRATE,1752,UO3*H2O,,U(HO2)2,mp-510128,most_stable_guess_polymorph_unresolved,Pbca,UO3_hyd_H2O.cif
+UO2(NO3)2,URANIUM DINITRATE DIOXIDE,1753,UO2(NO3)2,,U(NO4)2,mp-1103907,single_candidate,P-1,UO2_NO3_2.cif
+UO2SO4,URANIUM SULFATE DIOXIDE,1754,UO2SO4,,USO6,mp-17637,most_stable_guess_polymorph_unresolved,P2_1/c,UO2SO4.cif
+US,URANIUM SULFIDE,1754,US,,US,mp-2423,most_stable_guess_polymorph_unresolved,Fm-3m,US.cif
+US2,URANIUM DISULFIDE,1756,US2,,US2,mp-2849,most_stable_guess_polymorph_unresolved,P-62m,US2.cif
+U2S3,DIURANIUM TRISULFIDE,1757,U2S3,,U2S3,mp-22126,most_stable_guess_polymorph_unresolved,Pnma,U2S3.cif
+U(SO4)2,URANIUM DISULFATE,1757,U(SO4)2,,U(SO4)2,mp-1200785,single_candidate,Pbca,U_SO4_2.cif
+USe,URANIUM SELENIDE,1758,USe,,USe,mp-2143,most_stable_guess_polymorph_unresolved,Fm-3m,USe.cif
+V,VANADIUM,1759,V,,V,mp-146,most_stable_guess_polymorph_unresolved,Im-3m,V.cif
+VB,VANADIUM BORIDE,1761,VB,,VB,mp-9973,most_stable_guess_polymorph_unresolved,Cmcm,VB.cif
+VB2,VANADIUM DIBORIDE,1762,VB2,,VB2,mp-1491,most_stable_guess_polymorph_unresolved,P6/mmm,VB2.cif
+V3B2,TRIVANADIUM DIBORIDE,1763,V3B2,,V3B2,mp-2091,most_stable_guess_polymorph_unresolved,P4/mbm,V3B2.cif
+V3B4,TRIVANADIUM TETRABORIDE,1764,V3B4,,V3B4,mp-569270,single_candidate,Immm,V3B4.cif
+VBr2,VANADIUM DIBROMIDE,1764,VBr2,,VBr2,mp-971787,most_stable_guess_polymorph_unresolved,P-3m1,VBr2.cif
+VBr3,VANADIUM TRIBROMIDE,1765,VBr3,,VBr3,mp-865473,most_stable_guess_polymorph_unresolved,P6_3/mmc,VBr3.cif
+V2C,DIVANADIUM CARBIDE,1767,V2C,,V2C,mp-20648,most_stable_guess_polymorph_unresolved,Pbcn,V2C.cif
+VCl2,VANADIUM DICHLORIDE,1767,VCl2,,VCl2,mp-22877,most_stable_guess_polymorph_unresolved,P-3m1,VCl2.cif
+VCl3,VANADIUM TRICHLORIDE,1768,VCl3,,VCl3,mp-28117,most_stable_guess_polymorph_unresolved,R-3,VCl3.cif
+VCl4,VANADIUM TETRACHLORIDE,1769,VCl4,,VCl4,mp-1205372,most_stable_guess_polymorph_unresolved,P2_1/c,VCl4.cif
+VF3,VANADIUM TRIFLUORIDE,1770,VF3,,VF3,mp-559931,most_stable_guess_polymorph_unresolved,R-3c,VF3.cif
+VF4,VANADIUM TETRAFLUORIDE,1770,VF4,,VF4,mp-554799,most_stable_guess_polymorph_unresolved,P2_1/c,VF4.cif
+VI2,VANADIUM DIIODIDE,1771,VI2,,VI2,mp-1018138,most_stable_guess_polymorph_unresolved,P-3m1,VI2.cif
+VI3,VANADIUM TRIIODIDE,1772,VI3,,VI3,mp-865493,most_stable_guess_polymorph_unresolved,P6_3/mmc,VI3.cif
+VN,VANADIUM NITRIDE,1774,VN,,VN,mp-1018027,most_stable_guess_polymorph_unresolved,P-6m2,VN.cif
+VO,VANADIUM OXIDE,1775,VO,,VO,mp-19184,most_stable_guess_polymorph_unresolved,Fm-3m,VO.cif
+V2O3,DIVANADIUM TRIOXIDE,1778,V2O3,,V2O3,mp-21579,most_stable_guess_polymorph_unresolved,Ia-3,V2O3.cif
+V2O4,DIVANADIUM TETRAOXIDE,1779,V2O4,,VO2,mp-541404,most_stable_guess_polymorph_unresolved,C2/m,V2O4.cif
+V2O5,DIVANADIUM PENTAOXIDE,1780,V2O5,,V2O5,mp-25279,most_stable_guess_polymorph_unresolved,Pmmn,V2O5.cif
+VOCl3,VANADIUM TRICHLORIDE OXIDE,1780,VOCl3,,VCl3O,mp-22938,most_stable_guess_polymorph_unresolved,Pnma,VOCl3.cif
+W,TUNGSTEN,1782,W,,W,mp-91,most_stable_guess_polymorph_unresolved,Im-3m,W.cif
+WBr5,TUNGSTEN PENTABROMIDE,1786,WBr5,,WBr5,mp-1095321,most_stable_guess_polymorph_unresolved,P-1,WBr5.cif
+WBr6,TUNGSTEN HEXABROMIDE,1787,WBr6,,WBr6,mp-28483,single_candidate,R-3,WBr6.cif
+WC,TUNGSTEN CARBIDE,1788,WC,,WC,mp-1894,most_stable_guess_polymorph_unresolved,P-6m2,WC.cif
+W2C,DITUNGSTEN CARBIDE,1789,W2C,,W2C,mp-2034,most_stable_guess_polymorph_unresolved,Pbcn,W2C.cif
+W(CO)6,TUNGSTEN HEXACARBONYL,1789,W(CO)6,,W(CO)6,mp-541695,single_candidate,Pnma,W_CO_6.cif
+WCl2,TUNGSTEN DICHLORIDE,1792,WCl2,,WCl2,mp-1207828,most_stable_guess_polymorph_unresolved,Cmce,WCl2.cif
+WCl4,TUNGSTEN TETRACHLORIDE,1793,WCl4,,WCl4,mp-980949,single_candidate,C2/m,WCl4.cif
+WCl5,TUNGSTEN PENTACHLORIDE,1794,WCl5,,WCl5,mp-27160,single_candidate,C2/m,WCl5.cif
+WCl6,TUNGSTEN HEXACHLORIDE,1795,WCl6,,WCl6,mp-571518,most_stable_guess_polymorph_unresolved,R-3,WCl6.cif
+WO2,TUNGSTEN DIOXIDE,1801,WO2,,WO2,mp-19372,most_stable_guess_polymorph_unresolved,P4_2/mnm,WO2.cif
+WO3,TUNGSTEN TRIOXIDE,1806,WO3,,WO3,mp-2383161,most_stable_guess_polymorph_unresolved,Pbcn,WO3.cif
+WOCl4,TUNGSTEN TETRACHLORIDE OXIDE,1811,WOCl4,,WCl4O,mp-27754,most_stable_guess_polymorph_unresolved,I4,WOCl4.cif
+WO2Cl2,TUNGSTEN DICHLORIDE DIOXIDE,1812,WO2Cl2,,W(ClO)2,mp-32539,most_stable_guess_polymorph_unresolved,Pmc2_1,WO2Cl2.cif
+WOF4,TUNGSTEN TETRAFLUORIDE OXIDE,1813,WOF4,,WOF4,mp-752955,most_stable_guess_polymorph_unresolved,I4,WOF4.cif
+WS2,TUNGSTEN DISULFIDE,1815,WS2,,WS2,mp-224,most_stable_guess_polymorph_unresolved,P6_3/mmc,WS2.cif
+Y,YTTRIUM,1816,Y,,Y,mp-112,most_stable_guess_polymorph_unresolved,P6_3/mmc,Y.cif
+YAsO4,YTTRIUM ARSENATE,1818,YAsO4,,YAsO4,mp-8058,most_stable_guess_polymorph_unresolved,I4_1/amd,YAsO4.cif
+YCl3,YTTRIUM TRICHLORIDE,1818,YCl3,,YCl3,mp-27455,most_stable_guess_polymorph_unresolved,C2/m,YCl3.cif
+YF3,YTTRIUM TRIFLUORIDE,1819,YF3,,YF3,mp-2416,most_stable_guess_polymorph_unresolved,Pnma,YF3.cif
+YI3,YTTRIUM TRIIODIDE,1820,YI3,,YI3,mp-571442,most_stable_guess_polymorph_unresolved,R-3,YI3.cif
+YN,YTTRIUM NITRIDE,1820,YN,,YN,mp-2114,most_stable_guess_polymorph_unresolved,Fm-3m,YN.cif
+Y2O3,DIYTTRIUM TRIOXIDE,1821,Y2O3,,Y2O3,mp-2652,most_stable_guess_polymorph_unresolved,Ia-3,Y2O3.cif
+Y2Zr2O7,DIYTTRIUM DIZIRCONIUM HEPTAOXIDE,1822,Y2Zr2O7,,Y2Zr2O7,mp-558411,most_stable_guess_polymorph_unresolved,Fd-3m,Y2Zr2O7.cif
+Yb,YTTERBIUM,1823,Yb,,Yb,mp-71,most_stable_guess_polymorph_unresolved,Im-3m,Yb.cif
+YbCl2,YTTERBIUM DICHLORIDE,1824,YbCl2,,YbCl2,mp-865716,most_stable_guess_polymorph_unresolved,P4_2/mnm,YbCl2.cif
+YbCl3,YTTERBIUM TRICHLORIDE,1825,YbCl3,,YbCl3,mp-1025400,most_stable_guess_polymorph_unresolved,Cmcm,YbCl3.cif
+Yb2O3,DIYTTERBIUM TRIOXIDE,1826,Yb2O3,,Yb2O3,mp-2814,most_stable_guess_polymorph_unresolved,Ia-3,Yb2O3.cif
+Zn,ZINC,1827,Zn,,Zn,mp-79,most_stable_guess_polymorph_unresolved,P6_3/mmc,Zn.cif
+Zn3As2,ZINC ARSENIDE,1829,Zn3As2,,Zn3As2,mp-680580,most_stable_guess_polymorph_unresolved,P4_2/nbc,Zn3As2.cif
+Zn3(AsO4)2,ZINC ARSENATE,1830,Zn3(AsO4)2,,Zn3(AsO4)2,mp-16834,most_stable_guess_polymorph_unresolved,P2_1/c,Zn3_AsO4_2.cif
+ZnBr2,ZINC BROMIDE,1830,ZnBr2,,ZnBr2,mp-647579,most_stable_guess_polymorph_unresolved,I4_1/acd,ZnBr2.cif
+ZnCO3,ZINC CARBONATE,1831,ZnCO3,,ZnCO3,mp-9812,most_stable_guess_polymorph_unresolved,R-3c,ZnCO3.cif
+ZnCl2,ZINC CHLORIDE,1832,ZnCl2,,ZnCl2,mp-22909,most_stable_guess_polymorph_unresolved,I-42d,ZnCl2.cif
+ZnF2,ZINC FLUORIDE,1833,ZnF2,,ZnF2,mp-1873,most_stable_guess_polymorph_unresolved,P4_2/mnm,ZnF2.cif
+Znl2,ZINC IODIDE,1834,ZnI2,,ZnI2,mp-27161,most_stable_guess_polymorph_unresolved,I4_1/acd,Znl2.cif
+Zn3N2,ZINC NITRIDE,1835,Zn3N2,,Zn3N2,mp-9460,most_stable_guess_polymorph_unresolved,Ia-3,Zn3N2.cif
+ZnO,ZINC OXIDE,1836,ZnO,,ZnO,mp-2133,most_stable_guess_polymorph_unresolved,P6_3mc,ZnO.cif
+Zn3O(SO4)2,TRIZINC DISULFATE OXIDE,1837,Zn3O(SO4)2,,Zn3S2O9,mp-30986,single_candidate,P2_1/m,Zn3O_SO4_2.cif
+ZnSiO3,ZINC METASILICATE,1837,ZnSiO3,,ZnSiO3,mp-1178612,most_stable_guess_polymorph_unresolved,Ibam,ZnSiO3.cif
+Zn2SiO4,ZINC ORTHOSILICATE (WILLEMITE),1838,Zn2SiO4,,Zn2SiO4,mp-3789,most_stable_guess_polymorph_unresolved,R-3,Zn2SiO4.cif
+Zn2TiO4,DIZINC TITANIUM TETRAOXIDE,1839,Zn2TiO4,,TiZn2O4,mp-542737,most_stable_guess_polymorph_unresolved,P4_122,Zn2TiO4.cif
+ZnP2,ZINC DIPHOSPHIDE,1840,ZnP2,,ZnP2,mp-11025,most_stable_guess_polymorph_unresolved,P4_32_12,ZnP2.cif
+Zn3P2,TRIZINC DIPHOSPHIDE,1841,Zn3P2,,Zn3P2,mp-2071,most_stable_guess_polymorph_unresolved,P4_2/nmc,Zn3P2.cif
+Zn3(PO4)2,ZINC PHOSPHATE,1842,Zn3(PO4)2,,Zn3(PO4)2,mp-557920,most_stable_guess_polymorph_unresolved,C2/c,Zn3_PO4_2.cif
+ZnS,ZINC SULFIDE (WURTZITE),1843,ZnS,,ZnS,mp-554820,most_stable_guess_polymorph_unresolved,P3m1,ZnS.cif
+ZnS[S],ZINC SULFIDE (SPHALERITE),1844,ZnS,S,ZnS,mp-10695,spacegroup_hint,F-43m,ZnS[S].cif
+ZnSO4,ZINC SULFATE,1845,ZnSO4,,ZnSO4,mp-5126,most_stable_guess_polymorph_unresolved,Pnma,ZnSO4.cif
+ZnSO4*H2O,ZINC SULFATE MONOHYDRATE,1845,ZnSO4*H2O,,ZnH2SO5,mp-643066,single_candidate,C2/c,ZnSO4_hyd_H2O.cif
+ZnSO4*7H2O,ZINC SULFATE HEPTAHYDRATE,1847,ZnSO4*7H2O,,ZnH14SO11,mp-1197739,single_candidate,P2_12_12_1,ZnSO4_hyd_7H2O.cif
+ZnSe,ZINC SELENIDE,1847,ZnSe,,ZnSe,mp-1190,most_stable_guess_polymorph_unresolved,F-43m,ZnSe.cif
+ZnSeO3,ZINC SELENITE,1848,ZnSeO3,,ZnSeO3,mp-5338,most_stable_guess_polymorph_unresolved,Pbca,ZnSeO3.cif
+ZnTe,ZINC TELLURIDE,1849,ZnTe,,ZnTe,mp-2176,most_stable_guess_polymorph_unresolved,F-43m,ZnTe.cif
+ZnWO4,ZINC TUNGSTATE,1850,ZnWO4,,ZnWO4,mp-18918,most_stable_guess_polymorph_unresolved,P2/c,ZnWO4.cif
+Zr,ZIRCONIUM,1851,Zr,,Zr,mp-131,most_stable_guess_polymorph_unresolved,P6_3/mmc,Zr.cif
+ZrB2,ZIRCONIUM DIBORIDE,1854,ZrB2,,ZrB2,mp-1472,most_stable_guess_polymorph_unresolved,P6/mmm,ZrB2.cif
+ZrBr2,ZIRCONIUM DIBROMIDE,1856,ZrBr2,,ZrBr2,mp-28495,most_stable_guess_polymorph_unresolved,R-3,ZrBr2.cif
+ZrBr3,ZIRCONIUM TRIBROMIDE,1857,ZrBr3,,ZrBr3,mp-23247,most_stable_guess_polymorph_unresolved,P6_3/mcm,ZrBr3.cif
+ZrBr4,ZIRCONIUM TETRABROMIDE,1858,ZrBr4,,ZrBr4,mp-1207486,single_candidate,Pa-3,ZrBr4.cif
+ZrC,ZIRCONIUM CARBIDE,1860,ZrC,,ZrC,mp-2795,most_stable_guess_polymorph_unresolved,Fm-3m,ZrC.cif
+2rCl2,ZIRCONIUM DICHLORIDE,1862,ZrCl2,,ZrCl2,mp-23162,most_stable_guess_polymorph_unresolved,R3m,2rCl2.cif
+ZrCl3,ZIRCONIUM TRICHLORIDE,1863,ZrCl3,,ZrCl3,mp-1100795,most_stable_guess_polymorph_unresolved,P-1,ZrCl3.cif
+ZrCl4,ZIRCONIUM TETRACHLORIDE,1864,ZrCl4,,ZrCl4,mp-569175,single_candidate,P2/c,ZrCl4.cif
+ZrF4,ZIRCONIUM TETRAFLUORIDE,1870,ZrF4,,ZrF4,mp-1105223,most_stable_guess_polymorph_unresolved,P2_1/c,ZrF4.cif
+ZrI2,ZIRCONIUM DIIODIDE,1874,ZrI2,,ZrI2,mp-570506,most_stable_guess_polymorph_unresolved,Pmn2_1,ZrI2.cif
+ZrI3,ZIRCONIUM TRIIODIDE,1875,ZrI3,,ZrI3,mp-570188,most_stable_guess_polymorph_unresolved,Pmmn,ZrI3.cif
+ZrI4,ZIRCONIUM TETRAIODIDE,1876,ZrI4,,ZrI4,mp-571235,most_stable_guess_polymorph_unresolved,P2/c,ZrI4.cif
+ZrN,ZIRCONIUM NITRIDE,1878,ZrN,,ZrN,mp-1352,most_stable_guess_polymorph_unresolved,Fm-3m,ZrN.cif
+ZrO2,ZIRCONIUM DIOXIDE,1880,ZrO2,,ZrO2,mp-2858,most_stable_guess_polymorph_unresolved,P2_1/c,ZrO2.cif
+ZrSiO4,ZIRCONIUM ORTHOSILICATE,1882,ZrSiO4,,ZrSiO4,mp-4820,most_stable_guess_polymorph_unresolved,I4_1/amd,ZrSiO4.cif
+ZrS2,ZIRCONIUM DISULFIDE,1884,ZrS2,,ZrS2,mp-1186,most_stable_guess_polymorph_unresolved,P-3m1,ZrS2.cif

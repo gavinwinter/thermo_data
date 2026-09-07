@@ -1,0 +1,45 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-09 20:42:54 +0200 (Tue, 09 Feb 2016) $
+#$Revision: 176292 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/6/00/05/6000563.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_6000563
+loop_
+_publ_author_name
+'Zhang, J.'
+'von Dreele, R. B.'
+'Eyring, L.'
+_publ_section_title
+;
+ Structures in the oxygen-deficient fluorite-related R(n)O(2n-2)
+ homologous series: Pr12O22
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              53
+_journal_page_last               58
+_journal_paper_doi               10.1006/jssc.1996.0081
+_journal_volume                  122
+_journal_year                    1996
+_chemical_formula_sum            'O22 Pr12'
+_space_group_name_H-M_alt        'P 1 21/c 1'
+_cell_angle_alpha                90.000
+_cell_angle_beta                 99.974
+_cell_angle_gamma                90.000
+_cell_length_a                   6.6850
+_cell_length_b                   11.6004
+_cell_length_c                   12.8271
+_cell_volume                     979.69
+_cod_database_code               6000563
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+? ? ? ?

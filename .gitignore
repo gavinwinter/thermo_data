@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+barin_json_data_og/
+barin_json_data/*
+!barin_json_data/.gitkeep
+cifs_barin_og/
+thermochemical_data_barin_og/
+barin_jpg_data/*
+!barin_jpg_data/.gitkeep
+read_all_thermodata_pdf.ipynb
+Thermochemical_Data_of_Pure_Substances___1995___Barin.pdf

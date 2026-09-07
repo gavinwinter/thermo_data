@@ -1,0 +1,69 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-01-01 12:58:25 +0200 (Fri, 01 Jan 2016) $
+#$Revision: 171952 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/54/08/1540819.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1540819
+loop_
+_publ_author_name
+'Venables, J.D.'
+'Kahn, D.'
+'Lye, R.G.'
+_publ_section_title
+;
+ Structure of the ordered compound V6 C5
+;
+_journal_name_full               'Philosophical Magazine, Serie 6 (1901-1925)'
+_journal_page_first              177
+_journal_page_last               192
+_journal_volume                  18
+_journal_year                    1968
+_chemical_formula_sum            'C5 V6'
+_chemical_name_systematic        'V6 C5'
+_space_group_IT_number           144
+_symmetry_space_group_name_Hall  'P 31'
+_symmetry_space_group_name_H-M   'P 31'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   5.09
+_cell_length_b                   5.09
+_cell_length_c                   14.4
+_cell_volume                     323.094
+_citation_journal_id_ASTM        PHMAA4
+_cod_data_source_file            Venables_PHMAA4_1968_425.cif
+_cod_data_source_block           C5V6
+_cod_original_cell_volume        323.0939
+_cod_database_code               1540819
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z+1/3
+-x+y,-x,z+2/3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+C5 C 0.444 0.556 0.167 1 0.0
+V3 V 0.111 0.222 0.25 1 0.0
+V1 V 0.444 0.889 0.25 1 0.0
+V6 V 0.111 0.556 0.083 1 0.0
+C2 C 0.778 0.889 0.333 1 0.0
+V2 V 0.778 0.556 0.25 1 0.0
+C4 C 0.778 0.222 0.167 1 0.0
+V5 V 0.444 0.222 0.083 1 0.0
+C1 C 0.111 0.555 0.333 1 0.0
+V4 V 0.778 0.889 0.083 1 0.0
+C3 C 0.444 0.222 0.333 1 0.0

@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Ti3O5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.77145261
+_cell_length_b   5.26389427
+_cell_length_c   10.01151384
+_cell_angle_alpha   89.99976343
+_cell_angle_beta   89.99978833
+_cell_angle_gamma   111.00604882
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ti3O5
+_chemical_formula_sum   'Ti6 O10'
+_cell_volume   185.54518944
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ti  Ti0  1  0.30071156  0.60129938  0.24998441  1.0
+  Ti  Ti1  1  0.69928944  0.39870062  0.75001559  1.0
+  Ti  Ti2  1  0.63011082  0.26042830  0.05809173  1.0
+  Ti  Ti3  1  0.36988918  0.73957170  0.94190827  1.0
+  Ti  Ti4  1  0.36989855  0.73959301  0.55809392  1.0
+  Ti  Ti5  1  0.63010145  0.26040699  0.44190608  1.0
+  O  O6  1  0.27090936  0.54186656  0.75003584  1.0
+  O  O7  1  0.72909064  0.45813344  0.24996416  1.0
+  O  O8  1  0.55205096  0.10424290  0.87741181  1.0
+  O  O9  1  0.44794904  0.89575710  0.12258819  1.0
+  O  O10  1  0.44792671  0.89569968  0.37741848  1.0
+  O  O11  1  0.55207329  0.10430032  0.62258152  1.0
+  O  O12  1  0.18274553  0.36554207  0.43223848  1.0
+  O  O13  1  0.81725447  0.63445793  0.56776152  1.0
+  O  O14  1  0.81726801  0.63447924  0.93228947  1.0
+  O  O15  1  0.18273199  0.36552076  0.06771053  1.0

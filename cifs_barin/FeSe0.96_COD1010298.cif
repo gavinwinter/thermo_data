@@ -1,0 +1,91 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-15 03:23:08 +0300 (Sun, 15 Oct 2017) $
+#$Revision: 202022 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/01/02/1010298.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1010298
+loop_
+_publ_author_name
+'Haegg, G'
+'Kindstroem, A L'
+_publ_section_title
+;
+Roentgenuntersuchungen am System Eisen - Selen.
+;
+_journal_coden_ASTM              ZPCBAL
+_journal_name_full
+;
+Zeitschrift fuer Physikalische Chemie, Abteilung B: Chemie der
+Elementarprozesse, Aufbau der Materie
+;
+_journal_page_first              453
+_journal_page_last               464
+_journal_volume                  22
+_journal_year                    1933
+_chemical_formula_structural     'Fe Se'
+_chemical_formula_sum            'Fe Se'
+_chemical_name_systematic        'Iron selenide'
+_space_group_IT_number           129
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  'P 4ab 2ab -1ab'
+_symmetry_space_group_name_H-M   'P 4/n m m :1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   3.765
+_cell_length_b                   3.765
+_cell_length_c                   5.518
+_cell_volume                     78.2
+_cod_original_sg_symbol_H-M      'P 4/n m m S'
+_cod_database_code               1010298
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+1/2+x,1/2+y,-z
+1/2-x,1/2-y,-z
+-x,y,z
+x,-y,z
+1/2-x,1/2+y,-z
+1/2+x,1/2-y,-z
+-y,x,-z
+y,-x,-z
+1/2-y,1/2+x,z
+1/2+y,1/2-x,z
+y,x,-z
+-y,-x,-z
+1/2+y,1/2+x,z
+1/2-y,1/2-x,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Fe1 Fe2+ 2 a 0. 0. 0. 1. 0 d
+Se1 Se2- 2 c 0. 0.5 0.26 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Fe2+ 2.000
+Se2- -2.000
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 MPOD 1000066
+2 MPOD 1000067
+3 MPOD 1000313

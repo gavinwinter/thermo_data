@@ -1,0 +1,155 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-10-07 18:06:55 +0300 (Wed, 07 Oct 2015) $
+#$Revision: 160770 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/53/42/1534240.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1534240
+loop_
+_publ_author_name
+'Bauer, D.'
+'von Schnering, H.G.'
+_publ_section_title
+;
+ Die Struktur der Tantalhalogenide Ta6 Cl15 und Ta6 Br15
+;
+_journal_name_full
+'Zeitschrift fuer Anorganische und Allgemeine Chemie'
+_journal_page_first              259
+_journal_page_last               276
+_journal_volume                  361
+_journal_year                    1968
+_chemical_formula_sum            'Cl15 Ta6'
+_chemical_name_systematic        'Ta6 Cl15'
+_space_group_IT_number           230
+_symmetry_space_group_name_Hall  '-I 4bd 2c 3'
+_symmetry_space_group_name_H-M   'I a -3 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            16
+_cell_length_a                   20.286
+_cell_length_b                   20.286
+_cell_length_c                   20.286
+_cell_volume                     8348.131
+_citation_journal_id_ASTM        ZAACAB
+_cod_data_source_file            Bauer_ZAACAB_1968_1095.cif
+_cod_data_source_block           Cl15Ta6
+_cod_original_cell_volume        8348.13
+_cod_database_code               1534240
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y+1/4,x+3/4,z+1/4
+-x+1/2,-y,z+1/2
+y+1/4,-x+1/4,z+3/4
+x,-y,-z+1/2
+y+1/4,x+3/4,-z+3/4
+-x+1/2,y,-z
+-y+1/4,-x+1/4,-z+1/4
+z,x,y
+-x+1/4,z+3/4,y+1/4
+-z+1/2,-x,y+1/2
+x+1/4,-z+1/4,y+3/4
+z,-x,-y+1/2
+x+1/4,z+3/4,-y+3/4
+-z+1/2,x,-y
+-x+1/4,-z+1/4,-y+1/4
+y,z,x
+y+1/2,-z+1/2,-x
+z+3/4,y+1/4,-x+1/4
+-y,z+1/2,-x+1/2
+-z+1/4,-y+1/4,-x+1/4
+-y+1/2,-z,x+1/2
+z+3/4,-y+3/4,x+1/4
+-z+3/4,y+1/4,x+3/4
+-x,-y,-z
+y-1/4,-x-3/4,-z-1/4
+x-1/2,y,-z-1/2
+-y-1/4,x-1/4,-z-3/4
+-x,y,z-1/2
+-y-1/4,-x-3/4,z-3/4
+x-1/2,-y,z
+y-1/4,x-1/4,z-1/4
+-z,-x,-y
+x-1/4,-z-3/4,-y-1/4
+z-1/2,x,-y-1/2
+-x-1/4,z-1/4,-y-3/4
+-z,x,y-1/2
+-x-1/4,-z-3/4,y-3/4
+z-1/2,-x,y
+x-1/4,z-1/4,y-1/4
+-y,-z,-x
+-y-1/2,z-1/2,x
+-z-3/4,-y-1/4,x-1/4
+y,-z-1/2,x-1/2
+z-1/4,y-1/4,x-1/4
+y-1/2,z,-x-1/2
+-z-3/4,y-3/4,-x-1/4
+z-3/4,-y-1/4,-x-3/4
+x+1/2,y+1/2,z+1/2
+-y+3/4,x+5/4,z+3/4
+-x+1,-y+1/2,z+1
+y+3/4,-x+3/4,z+5/4
+x+1/2,-y+1/2,-z+1
+y+3/4,x+5/4,-z+5/4
+-x+1,y+1/2,-z+1/2
+-y+3/4,-x+3/4,-z+3/4
+z+1/2,x+1/2,y+1/2
+-x+3/4,z+5/4,y+3/4
+-z+1,-x+1/2,y+1
+x+3/4,-z+3/4,y+5/4
+z+1/2,-x+1/2,-y+1
+x+3/4,z+5/4,-y+5/4
+-z+1,x+1/2,-y+1/2
+-x+3/4,-z+3/4,-y+3/4
+y+1/2,z+1/2,x+1/2
+y+1,-z+1,-x+1/2
+z+5/4,y+3/4,-x+3/4
+-y+1/2,z+1,-x+1
+-z+3/4,-y+3/4,-x+3/4
+-y+1,-z+1/2,x+1
+z+5/4,-y+5/4,x+3/4
+-z+5/4,y+3/4,x+5/4
+-x+1/2,-y+1/2,-z+1/2
+y+1/4,-x-1/4,-z+1/4
+x,y+1/2,-z
+-y+1/4,x+1/4,-z-1/4
+-x+1/2,y+1/2,z
+-y+1/4,-x-1/4,z-1/4
+x,-y+1/2,z+1/2
+y+1/4,x+1/4,z+1/4
+-z+1/2,-x+1/2,-y+1/2
+x+1/4,-z-1/4,-y+1/4
+z,x+1/2,-y
+-x+1/4,z+1/4,-y-1/4
+-z+1/2,x+1/2,y
+-x+1/4,-z-1/4,y-1/4
+z,-x+1/2,y+1/2
+x+1/4,z+1/4,y+1/4
+-y+1/2,-z+1/2,-x+1/2
+-y,z,x+1/2
+-z-1/4,-y+1/4,x+1/4
+y+1/2,-z,x
+z+1/4,y+1/4,x+1/4
+y,z+1/2,-x
+-z-1/4,y-1/4,-x+1/4
+z-1/4,-y+1/4,-x-1/4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Cl1 Cl-1 0.1583 0.0268 0.04933 1 0.0
+Cl2 Cl-1 0.1116 -0.12434 0.01718 1 0.0
+Ta1 Ta+2 0.05839 -0.03298 0.07679 1 0.0
+Cl3 Cl-1 0.5739 -0.3239 0.125 1 0.0

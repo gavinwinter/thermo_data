@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_SrMoO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.40821274
+_cell_length_b   5.40845311
+_cell_length_c   7.10673468
+_cell_angle_alpha   112.35764567
+_cell_angle_beta   112.36163889
+_cell_angle_gamma   90.00773808
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SrMoO4
+_chemical_formula_sum   'Sr2 Mo2 O8'
+_cell_volume   175.22101163
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.37508113  0.62509009  0.75017929  1.0
+  Sr  Sr1  1  0.62491917  0.37491001  0.24982032  1.0
+  Mo  Mo2  1  0.87477918  0.12477363  0.74950628  1.0
+  Mo  Mo3  1  0.12522106  0.87522621  0.25049381  1.0
+  O  O4  1  0.80763745  0.65545191  0.08723826  1.0
+  O  O5  1  0.72044876  0.06827695  0.91275775  1.0
+  O  O6  1  0.34505605  0.72065667  0.41352361  1.0
+  O  O7  1  0.06846005  0.19278058  0.41354638  1.0
+  O  O8  1  0.93154031  0.80721976  0.58645366  1.0
+  O  O9  1  0.19236145  0.34454756  0.91276130  1.0
+  O  O10  1  0.27955145  0.93172344  0.08724176  1.0
+  O  O11  1  0.65494395  0.27934219  0.58647659  1.0

@@ -1,0 +1,101 @@
+Non-gas toc rows: 1502
+Rows with amorphous tag (skipped, no CIF possible): 2
+Parseable formulas: 1500, unparseable: 0
+Querying Materials Project for candidates...
+Retrieving SummaryDoc documents:   0%|          | 0/555 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 555/555 [00:00<00:00, 15835637.55it/s]
+  queried 100 formulas, total candidates so far: 555
+Retrieving SummaryDoc documents:   0%|          | 0/404 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 404/404 [00:00<00:00, 10207824.19it/s]
+  queried 100 formulas, total candidates so far: 959
+Retrieving SummaryDoc documents:   0%|          | 0/476 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 476/476 [00:00<00:00, 13961459.47it/s]
+  queried 100 formulas, total candidates so far: 1435
+Retrieving SummaryDoc documents:   0%|          | 0/352 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 352/352 [00:00<00:00, 10545678.63it/s]
+  queried 100 formulas, total candidates so far: 1787
+Retrieving SummaryDoc documents:   0%|          | 0/479 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 479/479 [00:00<00:00, 16072572.93it/s]
+  queried 100 formulas, total candidates so far: 2266
+Retrieving SummaryDoc documents:   0%|          | 0/319 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 319/319 [00:00<00:00, 10535299.02it/s]
+  queried 100 formulas, total candidates so far: 2585
+Retrieving SummaryDoc documents:   0%|          | 0/36545 [00:00<?, ?it/s]Retrieving SummaryDoc documents:   5%|▌         | 2000/36545 [00:00<00:09, 3658.75it/s]Retrieving SummaryDoc documents:   8%|▊         | 3000/36545 [00:00<00:09, 3590.94it/s]Retrieving SummaryDoc documents:  16%|█▋        | 6000/36545 [00:01<00:04, 6351.32it/s]Retrieving SummaryDoc documents:  19%|█▉        | 7000/36545 [00:01<00:05, 5071.03it/s]Retrieving SummaryDoc documents:  22%|██▏       | 8000/36545 [00:01<00:06, 4644.37it/s]Retrieving SummaryDoc documents:  30%|███       | 11000/36545 [00:02<00:04, 6358.56it/s]Retrieving SummaryDoc documents:  33%|███▎      | 12000/36545 [00:02<00:06, 4011.27it/s]Retrieving SummaryDoc documents:  38%|███▊      | 14000/36545 [00:02<00:04, 5566.67it/s]Retrieving SummaryDoc documents:  44%|████▍     | 16000/36545 [00:03<00:04, 4657.15it/s]Retrieving SummaryDoc documents:  47%|████▋     | 17000/36545 [00:03<00:03, 5036.19it/s]Retrieving SummaryDoc documents:  52%|█████▏    | 19000/36545 [00:03<00:02, 6854.27it/s]Retrieving SummaryDoc documents:  57%|█████▋    | 21000/36545 [00:04<00:03, 4934.77it/s]Retrieving SummaryDoc documents:  63%|██████▎   | 23000/36545 [00:04<00:02, 6392.61it/s]Retrieving SummaryDoc documents:  68%|██████▊   | 25000/36545 [00:05<00:03, 3666.91it/s]Retrieving SummaryDoc documents:  77%|███████▋  | 28000/36545 [00:06<00:02, 3943.19it/s]Retrieving SummaryDoc documents:  79%|███████▉  | 29000/36545 [00:06<00:01, 4108.71it/s]Retrieving SummaryDoc documents:  85%|████████▍ | 31000/36545 [00:06<00:01, 5397.83it/s]Retrieving SummaryDoc documents:  88%|████████▊ | 32000/36545 [00:06<00:01, 4045.41it/s]Retrieving SummaryDoc documents:  90%|█████████ | 33000/36545 [00:07<00:00, 4067.49it/s]Retrieving SummaryDoc documents:  93%|█████████▎| 34000/36545 [00:07<00:00, 4573.95it/s]Retrieving SummaryDoc documents:  99%|█████████▊| 36000/36545 [00:07<00:00, 4371.73it/s]Retrieving SummaryDoc documents: 100%|██████████| 36545/36545 [00:07<00:00, 4570.43it/s]
+  queried 100 formulas, total candidates so far: 39130
+Retrieving SummaryDoc documents:   0%|          | 0/478 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 478/478 [00:00<00:00, 9412569.54it/s]
+  queried 100 formulas, total candidates so far: 39608
+Retrieving SummaryDoc documents:   0%|          | 0/244 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 244/244 [00:00<00:00, 9137590.86it/s]
+  queried 100 formulas, total candidates so far: 39852
+Retrieving SummaryDoc documents:   0%|          | 0/285 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 285/285 [00:00<00:00, 11605598.45it/s]
+  queried 100 formulas, total candidates so far: 40137
+Retrieving SummaryDoc documents:   0%|          | 0/720 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 720/720 [00:00<00:00, 22369621.33it/s]
+  queried 100 formulas, total candidates so far: 40857
+Retrieving SummaryDoc documents:   0%|          | 0/352 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 352/352 [00:00<00:00, 13670324.15it/s]
+  queried 100 formulas, total candidates so far: 41209
+Retrieving SummaryDoc documents:   0%|          | 0/343 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 343/343 [00:00<00:00, 13078602.47it/s]
+  queried 100 formulas, total candidates so far: 41552
+Retrieving SummaryDoc documents:   0%|          | 0/411 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 411/411 [00:00<00:00, 14860852.97it/s]
+  queried 100 formulas, total candidates so far: 41963
+Retrieving SummaryDoc documents:   0%|          | 0/359 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 359/359 [00:00<00:00, 9410969.60it/s]
+  queried 61 formulas, total candidates so far: 42322
+Matched 1352 / 1500 parseable rows to an MP material_id
+Fetching structures for selected material_ids...
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1286596.32it/s]
+  fetched 50 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1823610.43it/s]
+  fetched 100 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1466539.86it/s]
+  fetched 150 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1941807.41it/s]
+  fetched 200 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 2118335.35it/s]
+  fetched 250 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1978445.28it/s]
+  fetched 300 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1941807.41it/s]
+  fetched 350 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 2016492.31it/s]
+  fetched 400 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1446311.72it/s]
+  fetched 450 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 2036069.90it/s]
+  fetched 500 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1839607.02it/s]
+  fetched 550 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1959955.14it/s]
+  fetched 600 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1205259.77it/s]
+  fetched 650 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1997287.62it/s]
+  fetched 700 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1233618.82it/s]
+  fetched 750 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 2016492.31it/s]
+  fetched 800 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1959955.14it/s]
+  fetched 850 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1906501.82it/s]
+  fetched 900 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1872457.14it/s]
+  fetched 950 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1705001.63it/s]
+  fetched 1000 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1889326.13it/s]
+  fetched 1050 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1941807.41it/s]
+  fetched 1100 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1906501.82it/s]
+  fetched 1150 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1691251.61it/s]
+  fetched 1200 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 1889326.13it/s]
+  fetched 1250 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/50 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 50/50 [00:00<00:00, 2118335.35it/s]
+  fetched 1300 / 1318 structures
+Retrieving SummaryDoc documents:   0%|          | 0/18 [00:00<?, ?it/s]Retrieving SummaryDoc documents: 100%|██████████| 18/18 [00:00<00:00, 668119.22it/s]
+  fetched 1318 / 1318 structures
+
+Done.
+  CIFs written: 1352 -> /home/gridsan/gawinter/projects/thermo_data/cifs_barin
+  Match summary: /home/gridsan/gawinter/projects/thermo_data/cif_match_summary.csv
+  Unmatched (need ICSD / manual lookup): 148 -> /home/gridsan/gawinter/projects/thermo_data/cif_unmatched_for_icsd.csv
+match_method
+most_stable_guess                         1098
+single_candidate                           220
+most_stable_guess_polymorph_unresolved      28
+spacegroup_hint                              6
+Name: count, dtype: int64

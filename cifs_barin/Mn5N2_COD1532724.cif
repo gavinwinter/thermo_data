@@ -1,0 +1,72 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/53/27/1532724.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1532724
+loop_
+_publ_author_name
+'Leineweber, A.'
+'Jacobs, H.'
+'Kockelmann, W.'
+_publ_section_title
+;
+ Nitrogen ordering in zeta-(manganese nitrides) with hcp arrangement of Mn
+ - Mn Ny with 0.39 < y < 0.48 - determined by neutron diffraction
+;
+_journal_name_full               'Journal of Alloys Compd.'
+_journal_page_first              229
+_journal_page_last               247
+_journal_volume                  368
+_journal_year                    2004
+_chemical_formula_sum            'Mn N0.421'
+_space_group_IT_number           182
+_symmetry_space_group_name_Hall  'P 6c 2c'
+_symmetry_space_group_name_H-M   'P 63 2 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            6
+_cell_length_a                   4.8859
+_cell_length_b                   4.8859
+_cell_length_c                   4.5396
+_cell_volume                     93.851
+_citation_journal_id_ASTM        JALCEU
+_cod_data_source_file            Leineweber_JALCEU_2004_1427.cif
+_cod_data_source_block           Mn1N0.421
+_cod_original_cell_volume        93.85067
+_cod_original_formula_sum        'Mn1 N0.421'
+_cod_database_code               1532724
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x-y,x,z+1/2
+-y,x-y,z
+-x,-y,z+1/2
+-x+y,-x,z
+y,-x+y,z+1/2
+-y,-x,-z+1/2
+x-y,-y,-z
+x,x-y,-z+1/2
+y,x,-z
+-x+y,y,-z+1/2
+-x,-x+y,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+N2 N 0 0 0.25 0.421 0.0
+Mn1 Mn 0.3333 0 0 1 0.0
+N1 N 0.3333 0.6667 0.25 0.725 0.0
+N3 N 0.6667 0.3333 0.25 0.117 0.0

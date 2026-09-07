@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Na2SiO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.78317068
+_cell_length_b   6.05644892
+_cell_length_c   6.05749411
+_cell_angle_alpha   119.99430252
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na2SiO3
+_chemical_formula_sum   'Na4 Si2 O6'
+_cell_volume   151.97862117
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.50084602  0.50370094  0.33077354  1.0
+  Na  Na1  1  0.50084602  0.17292639  0.66922646  1.0
+  Na  Na2  1  0.00084602  0.49629906  0.66922646  1.0
+  Na  Na3  1  0.00084602  0.82707361  0.33077354  1.0
+  Si  Si4  1  0.53991620  0.84142108  1.00000000  1.0
+  Si  Si5  1  0.03991620  0.15857892  0.00000000  1.0
+  O  O6  1  0.37926615  0.08637405  1.00000000  1.0
+  O  O7  1  0.87926615  0.91362595  0.00000000  1.0
+  O  O8  1  0.48286280  0.58073125  0.73957626  1.0
+  O  O9  1  0.98286280  0.41926875  0.26042374  1.0
+  O  O10  1  0.48286280  0.84115500  0.26042374  1.0
+  O  O11  1  0.98286280  0.15884500  0.73957626  1.0
