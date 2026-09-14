@@ -1,0 +1,48 @@
+# Source: Materials Project mp-1196550 (https://materialsproject.org/materials/mp-1196550)
+# generated using pymatgen
+data_Ca2Mg5Si8(HO12)2
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   9.85323321
+_cell_length_b   18.02886726
+_cell_length_c   5.27978827
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   104.72400028
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Ca2Mg5Si8(HO12)2
+_chemical_formula_sum   'Ca4 Mg10 Si16 H4 O48'
+_cell_volume   907.11563667
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  4  0.00000000  0.27815498  0.50000000  1.0
+  Mg  Mg1  4  0.00000000  0.08798414  0.50000000  1.0
+  Mg  Mg2  4  0.00000000  0.17660583  0.00000000  1.0
+  Mg  Mg3  2  0.00000000  0.00000000  0.00000000  1.0
+  Si  Si4  8  0.21214423  0.32844507  0.19613079  1.0
+  Si  Si5  8  0.22040023  0.41574038  0.70389593  1.0
+  H  H6  4  0.21142419  0.00000000  0.76644840  1.0
+  O  O7  8  0.11121911  0.08613449  0.21732977  1.0
+  O  O8  8  0.11825980  0.17153305  0.72394072  1.0
+  O  O9  8  0.13475681  0.25151463  0.20804117  1.0
+  O  O10  8  0.15410003  0.36524488  0.90041817  1.0
+  O  O11  8  0.15683305  0.38142679  0.41080638  1.0
+  O  O12  4  0.11040506  0.00000000  0.71550226  1.0
+  O  O13  4  0.16352286  0.50000000  0.70995430  1.0

@@ -1,21 +1,29 @@
+# Source: Materials Project mp-567624 (https://materialsproject.org/materials/mp-567624)
 # generated using pymatgen
 data_CrBr2
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.16836999
-_cell_length_b   4.16836999
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   7.48933800
+_cell_length_b   3.66211000
 _cell_length_c   6.50667075
-_cell_angle_alpha   84.24048873
-_cell_angle_beta   84.24048873
-_cell_angle_gamma   52.11508967
-_symmetry_Int_Tables_number   1
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   96.41378210
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
 _chemical_formula_structural   CrBr2
-_chemical_formula_sum   'Cr1 Br2'
-_cell_volume   88.67003787
-_cell_formula_units_Z   1
+_chemical_formula_sum   'Cr2 Br4'
+_cell_volume   177.34007574
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,6 +32,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Cr  Cr0  1  0.00000000  0.00000000  0.00000000  1.0
-  Br  Br1  1  0.35422600  0.35422600  0.23322800  1.0
-  Br  Br2  1  0.64577400  0.64577400  0.76677200  1.0
+  Cr  Cr0  2  0.00000000  0.00000000  0.00000000  1.0
+  Br  Br1  4  0.14577400  0.50000000  0.23322800  1.0

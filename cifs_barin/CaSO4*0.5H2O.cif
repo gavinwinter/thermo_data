@@ -1,0 +1,54 @@
+# Source: Materials Project mp-698074 (https://materialsproject.org/materials/mp-698074)
+# generated using pymatgen
+data_Ca2H2S2O9
+_symmetry_space_group_name_H-M   C2
+_cell_length_a   17.38572643
+_cell_length_b   6.90106336
+_cell_length_c   11.98580938
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   133.34415497
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   5
+_chemical_formula_structural   Ca2H2S2O9
+_chemical_formula_sum   'Ca12 H12 S12 O54'
+_cell_volume   1045.81864287
+_cell_formula_units_Z   6
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, y, -z'
+  3  'x+1/2, y+1/2, z'
+  4  '-x+1/2, y+1/2, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  4  0.16171440  0.82367936  0.44527181  1.0
+  Ca  Ca1  4  0.16432672  0.27653498  0.92900507  1.0
+  Ca  Ca2  2  0.00000000  0.47703176  0.50000000  1.0
+  Ca  Ca3  2  0.00000000  0.98533732  0.00000000  1.0
+  H  H4  4  0.02871004  0.55895758  0.08570178  1.0
+  H  H5  4  0.17615339  0.97183169  0.70247113  1.0
+  H  H6  4  0.23811552  0.11000279  0.68453260  1.0
+  S  S7  4  0.07957312  0.31537526  0.30407717  1.0
+  S  S8  4  0.08638704  0.79496163  0.80953590  1.0
+  S  S9  4  0.24704498  0.47942196  0.74618355  1.0
+  O  O10  4  0.00940683  0.26944314  0.13879360  1.0
+  O  O11  4  0.01151081  0.30936357  0.33704336  1.0
+  O  O12  4  0.01351452  0.87677829  0.82020636  1.0
+  O  O13  4  0.02206962  0.73990337  0.64871111  1.0
+  O  O14  4  0.12712634  0.50668056  0.33487917  1.0
+  O  O15  4  0.14739191  0.63055025  0.91475482  1.0
+  O  O16  4  0.16533380  0.17177783  0.39948648  1.0
+  O  O17  4  0.16579515  0.94481629  0.85584386  1.0
+  O  O18  4  0.17045842  0.59481604  0.60646754  1.0
+  O  O19  4  0.17962563  0.10406539  0.11703669  1.0
+  O  O20  4  0.18369713  0.35690569  0.75885406  1.0
+  O  O21  4  0.18790032  0.85732378  0.26321324  1.0
+  O  O22  4  0.19380769  0.99521190  0.64249502  1.0
+  O  O23  2  0.00000000  0.64282822  0.00000000  1.0

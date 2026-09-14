@@ -1,13 +1,14 @@
+# Source: Materials Project mp-1058 (https://materialsproject.org/materials/mp-1058)
 # generated using pymatgen
 data_PdF2
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.42817199
+_symmetry_space_group_name_H-M   P4_2/mnm
+_cell_length_a   4.97598395
 _cell_length_b   4.97598395
-_cell_length_c   4.97598395
-_cell_angle_alpha   90.00050963
+_cell_length_c   3.42817199
+_cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   136
 _chemical_formula_structural   PdF2
 _chemical_formula_sum   'Pd2 F4'
 _cell_volume   84.88296552
@@ -16,6 +17,21 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y+1/2, x+1/2, z+1/2'
+  4  'y+1/2, -x+1/2, -z+1/2'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y+1/2, -x+1/2, z+1/2'
+  8  '-y+1/2, x+1/2, -z+1/2'
+  9  'x+1/2, -y+1/2, -z+1/2'
+  10  '-x+1/2, y+1/2, z+1/2'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x+1/2, y+1/2, -z+1/2'
+  14  'x+1/2, -y+1/2, z+1/2'
+  15  'y, x, -z'
+  16  '-y, -x, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,9 +40,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Pd  Pd0  1  0.50000000  0.50000000  0.50000000  1.0
-  Pd  Pd1  1  0.00000000  -0.00000000  0.00000000  1.0
-  F  F2  1  0.00000000  0.69252266  0.69252266  1.0
-  F  F3  1  0.50000000  0.80747781  0.19252219  1.0
-  F  F4  1  0.00000000  0.30747734  0.30747734  1.0
-  F  F5  1  0.50000000  0.19252219  0.80747781  1.0
+  Pd  Pd0  2  0.00000000  0.00000000  0.00000000  1.0
+  F  F1  4  0.19252266  0.80747734  0.50000000  1.0

@@ -1,21 +1,29 @@
+# Source: Materials Project mp-27182 (https://materialsproject.org/materials/mp-27182)
 # generated using pymatgen
 data_GdBr3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.96713257
-_cell_length_b   7.29662484
-_cell_length_c   7.29662592
-_cell_angle_alpha   119.98789115
-_cell_angle_beta   99.70840809
-_cell_angle_gamma   99.70839655
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   7.29796080
+_cell_length_b   12.63735477
+_cell_length_c   6.96713257
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   109.70674835
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
 _chemical_formula_structural   GdBr3
-_chemical_formula_sum   'Gd2 Br6'
-_cell_volume   302.46156968
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Gd4 Br12'
+_cell_volume   604.92313936
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Gd  Gd0  1  -0.00000000  0.83371279  0.16628721  1.0
-  Gd  Gd1  1  0.00000000  0.16628721  0.83371279  1.0
-  Br  Br2  1  0.75357446  0.78265575  0.78265575  1.0
-  Br  Br3  1  0.24642554  0.21734425  0.21734425  1.0
-  Br  Br4  1  0.24248171  0.57761051  0.93613417  1.0
-  Br  Br5  1  0.75751829  0.06386583  0.42238949  1.0
-  Br  Br6  1  0.75751829  0.42238949  0.06386583  1.0
-  Br  Br7  1  0.24248171  0.93613417  0.57761051  1.0
+  Gd  Gd0  4  0.00000000  0.16628721  0.00000000  1.0
+  Br  Br1  8  0.24312766  0.17926183  0.75751829  1.0
+  Br  Br2  4  0.21734425  0.00000000  0.24642554  1.0

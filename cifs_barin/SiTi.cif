@@ -1,13 +1,14 @@
+# Source: Materials Project mp-7092 (https://materialsproject.org/materials/mp-7092)
 # generated using pymatgen
 data_TiSi
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.63174164
-_cell_length_b   4.99348361
-_cell_length_c   6.51223075
+_symmetry_space_group_name_H-M   Pnma
+_cell_length_a   6.51223075
+_cell_length_b   3.63174164
+_cell_length_c   4.99348361
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   62
 _chemical_formula_structural   TiSi
 _chemical_formula_sum   'Ti4 Si4'
 _cell_volume   118.09958048
@@ -16,6 +17,13 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x, y+1/2, -z'
+  8  'x, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ti  Ti0  1  0.25000000  0.37178419  0.67568383  1.0
-  Ti  Ti1  1  0.75000000  0.62821581  0.32431617  1.0
-  Ti  Ti2  1  0.75000000  0.87178419  0.82431617  1.0
-  Ti  Ti3  1  0.25000000  0.12821581  0.17568383  1.0
-  Si  Si4  1  0.25000000  0.85539789  0.54392999  1.0
-  Si  Si5  1  0.75000000  0.14460211  0.45607001  1.0
-  Si  Si6  1  0.75000000  0.35539789  0.95607001  1.0
-  Si  Si7  1  0.25000000  0.64460211  0.04392999  1.0
+  Ti  Ti0  4  0.17568383  0.25000000  0.12821581  1.0
+  Si  Si1  4  0.04392999  0.25000000  0.64460211  1.0

@@ -1,21 +1,29 @@
+# Source: Materials Project mp-556560 (https://materialsproject.org/materials/mp-556560)
 # generated using pymatgen
 data_MnF3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.34122196
-_cell_length_b   5.34122196
+_symmetry_space_group_name_H-M   C2/c
+_cell_length_a   9.16387800
+_cell_length_b   5.48980400
 _cell_length_c   5.46799294
-_cell_angle_alpha   61.32162454
-_cell_angle_beta   61.32162454
-_cell_angle_gamma   61.84911689
-_symmetry_Int_Tables_number   1
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   124.01544847
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   15
 _chemical_formula_structural   MnF3
-_chemical_formula_sum   'Mn2 F6'
-_cell_volume   114.00641645
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Mn4 F12'
+_cell_volume   228.01283290
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z+1/2'
+  4  'x, -y, z+1/2'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Mn  Mn0  1  0.00000000  0.50000000  0.00000000  1.0
-  Mn  Mn1  1  0.50000000  0.00000000  0.50000000  1.0
-  F  F2  1  0.67433300  0.32566700  0.25000000  1.0
-  F  F3  1  0.32566700  0.67433300  0.75000000  1.0
-  F  F4  1  0.83936200  0.73760700  0.23461800  1.0
-  F  F5  1  0.26239300  0.16063800  0.26538200  1.0
-  F  F6  1  0.16063800  0.26239300  0.76538200  1.0
-  F  F7  1  0.73760700  0.83936200  0.73461800  1.0
+  Mn  Mn0  4  0.25000000  0.25000000  0.00000000  1.0
+  F  F1  8  0.21151550  0.05087750  0.23461800  1.0
+  F  F2  4  0.00000000  0.32566700  0.75000000  1.0

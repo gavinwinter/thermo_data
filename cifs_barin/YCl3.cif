@@ -1,21 +1,29 @@
+# Source: Materials Project mp-27455 (https://materialsproject.org/materials/mp-27455)
 # generated using pymatgen
 data_YCl3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.58261304
-_cell_length_b   6.91014209
-_cell_length_c   6.91014359
-_cell_angle_alpha   119.93373655
-_cell_angle_beta   99.96943954
-_cell_angle_gamma   99.96944833
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   6.91706269
+_cell_length_b   11.96472064
+_cell_length_c   6.58261304
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   110.23671530
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
 _chemical_formula_structural   YCl3
-_chemical_formula_sum   'Y2 Cl6'
-_cell_volume   255.57664118
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Y4 Cl12'
+_cell_volume   511.15328236
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Y  Y0  1  0.00000000  0.16641887  0.83358213  1.0
-  Y  Y1  1  -0.00000000  0.83358213  0.16641887  1.0
-  Cl  Cl2  1  0.23767139  0.94316028  0.57835387  1.0
-  Cl  Cl3  1  0.76232861  0.42164613  0.05683972  1.0
-  Cl  Cl4  1  0.75845698  0.78974359  0.78974359  1.0
-  Cl  Cl5  1  0.24154302  0.21025641  0.21025641  1.0
-  Cl  Cl6  1  0.23767139  0.57835387  0.94316028  1.0
-  Cl  Cl7  1  0.76232861  0.05683972  0.42164613  1.0
+  Y  Y0  4  0.00000000  0.16641787  0.00000000  1.0
+  Cl  Cl1  8  0.23924342  0.18240270  0.76232861  1.0
+  Cl  Cl2  4  0.21025691  0.00000000  0.24154302  1.0

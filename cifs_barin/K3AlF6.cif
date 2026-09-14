@@ -1,0 +1,55 @@
+# Source: Materials Project mp-1201513 (https://materialsproject.org/materials/mp-1201513)
+# generated using pymatgen
+data_K3AlF6
+_symmetry_space_group_name_H-M   I4/m
+_cell_length_a   13.23939341
+_cell_length_b   13.23939341
+_cell_length_c   8.55969706
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   87
+_chemical_formula_structural   K3AlF6
+_chemical_formula_sum   'K30 Al10 F60'
+_cell_volume   1500.35686522
+_cell_formula_units_Z   10
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-x+1/2, -y+1/2, -z+1/2'
+  11  '-y+1/2, x+1/2, z+1/2'
+  12  'y+1/2, -x+1/2, -z+1/2'
+  13  '-x+1/2, -y+1/2, z+1/2'
+  14  'x+1/2, y+1/2, -z+1/2'
+  15  'y+1/2, -x+1/2, z+1/2'
+  16  '-y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  16  0.10635938  0.21481911  0.27398119  1.0
+  K  K1  8  0.08800710  0.73676970  0.00000000  1.0
+  K  K2  4  0.00000000  0.50000000  0.25000000  1.0
+  K  K3  2  0.00000000  0.00000000  0.50000000  1.0
+  Al  Al4  8  0.09269557  0.69571268  0.50000000  1.0
+  Al  Al5  2  0.00000000  0.00000000  0.00000000  1.0
+  F  F6  16  0.09415837  0.69763548  0.28739906  1.0
+  F  F7  8  0.03853143  0.34665728  0.50000000  1.0
+  F  F8  8  0.04794916  0.82356545  0.50000000  1.0
+  F  F9  8  0.06180163  0.12377329  0.00000000  1.0
+  F  F10  8  0.06823968  0.36467031  0.00000000  1.0
+  F  F11  8  0.22224615  0.74317016  0.50000000  1.0
+  F  F12  4  0.00000000  0.00000000  0.20982388  1.0

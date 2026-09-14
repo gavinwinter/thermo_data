@@ -1,0 +1,37 @@
+# Source: Materials Project mp-22872 (https://materialsproject.org/materials/mp-22872)
+# generated using pymatgen
+data_SbCl3
+_symmetry_space_group_name_H-M   Pnma
+_cell_length_a   8.28003096
+_cell_length_b   9.26096973
+_cell_length_c   6.44585618
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   62
+_chemical_formula_structural   SbCl3
+_chemical_formula_sum   'Sb4 Cl12'
+_cell_volume   494.27544600
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x, y+1/2, -z'
+  8  'x, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sb  Sb0  4  0.01274399  0.75000000  0.98126387  1.0
+  Cl  Cl1  8  0.17311270  0.06723912  0.12967108  1.0
+  Cl  Cl2  4  0.06977486  0.25000000  0.66743321  1.0

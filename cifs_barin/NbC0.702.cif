@@ -1,0 +1,41 @@
+# Source: Materials Project mp-32679 (https://materialsproject.org/materials/mp-32679)
+# generated using pymatgen
+data_Nb10C7
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   5.49998459
+_cell_length_b   15.72082390
+_cell_length_c   5.51453870
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   109.59184636
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Nb10C7
+_chemical_formula_sum   'Nb20 C14'
+_cell_volume   449.20580198
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nb  Nb0  8  0.24349021  0.30422198  0.76889195  1.0
+  Nb  Nb1  8  0.24900259  0.10240677  0.74014339  1.0
+  Nb  Nb2  4  0.23537211  0.00000000  0.26433730  1.0
+  C  C3  4  0.00000000  0.10118423  0.00000000  1.0
+  C  C4  4  0.00000000  0.30065204  0.00000000  1.0
+  C  C5  4  0.00000000  0.39905626  0.50000000  1.0
+  C  C6  2  0.00000000  0.00000000  0.50000000  1.0

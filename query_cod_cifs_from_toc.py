@@ -51,14 +51,6 @@ CIF_DIR.mkdir(exist_ok=True)
 
 RATIO_TOL = 0.02  # max per-element absolute deviation in fractional composition to accept a match
 
-# Room-temperature liquids/gases in Barin's table that don't have a
-# meaningful solid-state crystal structure to look up at all.
-ORGANIC_LIQUID_KEYWORDS = [
-    "CYCLOHEXENE", "HEXANE", "TOLUENE", "METHYLCYCLOHEXANE", "HEPTANE",
-    "XYLENE", "ETHYLBENZENE", "OCTANE", "NONANE", "DECANE", "METHANOL",
-    "ETHANOL", "ACETONE", "PHENOL",
-]
-
 
 def cod_search(elements):
     params = {"format": "json", "strictmin": str(len(elements)), "strictmax": str(len(elements))}
@@ -131,22 +123,52 @@ def best_candidate(target_comp, docs, tol=RATIO_TOL):
 
 
 def sanitize_filename(formula: str) -> str:
-    return re.sub(r"[^A-Za-z0-9_.\[\]-]", "_", formula.replace("*", "_hyd_"))
+    # '(' ')' are kept as-is (they're valid on every filesystem this repo
+    # runs on, just needing quotes in a shell command) so hydrate/complex
+    # formulas like 'Al2(SO4)3' read as themselves in the filename instead
+    # of becoming 'Al2_SO4_3'. '*' (Barin's hydrate separator, e.g.
+    # 'ZnSO4*7H2O') is kept as-is too, matching how read_all_thermodata_pdf.py
+    # names the corresponding .json -- so a hydrate's .cif and .json share
+    # the same base name instead of one saying '_hyd_' and the other '*'.
+    return re.sub(r"[^A-Za-z0-9_.()\[\]*-]", "_", formula)
 
 
-def is_organic_liquid(name: str) -> bool:
-    name = str(name).upper()
-    return any(k in name for k in ORGANIC_LIQUID_KEYWORDS)
+# Elements that appear in this dataset's actual organic entries (hydrocarbons,
+# alcohols, acids: C/H, plus the O/S/N/halogens in their functional groups). A
+# formula needs C and H *and* nothing outside this set to count as organic --
+# otherwise something like NaHCO3 (sodium bicarbonate, a genuine mineral with
+# Na present) would get misclassified as organic just because it contains
+# both C and H.
+_ORGANIC_ALLOWED_ELEMENTS = {"C", "H", "N", "O", "S", "P", "F", "Cl", "Br", "I"}
+
+
+def is_organic_liquid(bare_formula) -> bool:
+    """Contains both carbon and hydrogen, with no elements outside the
+    CHNOPS+halogens set -- these are the room-temperature organic
+    liquids/gases in Barin's table, none of which have a meaningful
+    solid-state crystal structure to look up (and, per query_mp_cifs_from_toc's
+    organic_ambiguous_isomers routing, can't be safely guessed by stoichiometry
+    anyway since isomers share a formula). Composition-based rather than a
+    hardcoded name-keyword list so it generalizes to every such entry, not
+    just the ones someone thought to list.
+    """
+    try:
+        comp = Composition(str(bare_formula))
+    except Exception:
+        return False
+    elements = {str(e) for e in comp.elements}
+    return "C" in elements and "H" in elements and elements <= _ORGANIC_ALLOWED_ELEMENTS
 
 
 def main():
     df = pd.read_csv(UNMATCHED_IN)
 
-    no_structure = df[df["Name"].apply(is_organic_liquid)]
+    is_organic = df["bare_formula"].apply(is_organic_liquid)
+    no_structure = df[is_organic]
     no_structure.to_csv(NO_STRUCTURE_CSV, index=False)
 
-    searchable = df[df["reduced_formula"].notna() & ~df["Name"].apply(is_organic_liquid)].copy()
-    unparseable = df[df["reduced_formula"].isna() & ~df["Name"].apply(is_organic_liquid)].copy()
+    searchable = df[df["reduced_formula"].notna() & ~is_organic].copy()
+    unparseable = df[df["reduced_formula"].isna() & ~is_organic].copy()
 
     print(f"Querying COD for {len(searchable)} formulas Materials Project didn't have...")
     results = []
@@ -158,19 +180,33 @@ def main():
         cand = best_candidate(target_comp, docs)
         time.sleep(0.3)
         if cand is None:
-            results.append({**row.to_dict(), "cod_id": None, "cod_sg": None, "cif_file": None})
+            results.append({
+                **row.to_dict(), "cod_id": None, "cod_sg": None, "phase_name_verified": None, "cif_file": None
+            })
             continue
         cod_id = cand["file"]
-        fname = f"{sanitize_filename(row['Formula'])}_COD{cod_id}.cif"
+        fname = f"{sanitize_filename(row['Formula'])}.cif"
+        # Unlike the MP pipeline's spacegroup-hint/remarks cross-checks, COD
+        # matching here is element-set + stoichiometry-ratio only -- there's
+        # no mechanism that confirms this candidate is the *specific* named
+        # polymorph/phase Barin tabulates, so this is always False for a
+        # match (never None, since a match with a CIF was in fact made).
         try:
             with urllib.request.urlopen(f"https://www.crystallography.net/cod/{cod_id}.cif", timeout=30) as resp:
                 cif_text = resp.read().decode("utf-8", errors="replace")
+            cif_text = f"# Source: Crystallography Open Database COD-{cod_id} (https://www.crystallography.net/cod/{cod_id}.html)\n" + cif_text
             (CIF_DIR / fname).write_text(cif_text)
             tqdm.write(f"  -> matched COD {cod_id} ({cand.get('sg')}), wrote {fname}")
-            results.append({**row.to_dict(), "cod_id": cod_id, "cod_sg": cand.get("sg"), "cif_file": fname})
+            results.append({
+                **row.to_dict(), "cod_id": cod_id, "cod_sg": cand.get("sg"),
+                "phase_name_verified": False, "cif_file": fname,
+            })
         except Exception as e:
             tqdm.write(f"  CIF download failed for {cod_id}: {e}")
-            results.append({**row.to_dict(), "cod_id": cod_id, "cod_sg": cand.get("sg"), "cif_file": None})
+            results.append({
+                **row.to_dict(), "cod_id": cod_id, "cod_sg": cand.get("sg"),
+                "phase_name_verified": False, "cif_file": None,
+            })
         time.sleep(0.3)
 
     res_df = pd.DataFrame(results)

@@ -1,21 +1,29 @@
+# Source: Materials Project mp-2793 (https://materialsproject.org/materials/mp-2793)
 # generated using pymatgen
 data_AuSe
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.69376625
-_cell_length_b   4.76700439
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   8.78939265
+_cell_length_b   3.69376625
 _cell_length_c   6.35935424
-_cell_angle_alpha   103.42217303
-_cell_angle_beta   89.99999966
-_cell_angle_gamma   112.79470698
-_symmetry_Int_Tables_number   1
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   104.58342227
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
 _chemical_formula_structural   AuSe
-_chemical_formula_sum   'Au2 Se2'
-_cell_volume   99.90537762
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Au4 Se4'
+_cell_volume   199.81075524
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,7 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Au  Au0  1  0.50000000  0.00000000  0.50000000  1.0
-  Au  Au1  1  0.00000000  0.00000000  0.00000000  1.0
-  Se  Se2  1  0.85080061  0.70160221  0.27314411  1.0
-  Se  Se3  1  0.14919939  0.29839779  0.72685589  1.0
+  Au  Au0  2  0.00000000  0.00000000  0.00000000  1.0
+  Au  Au1  2  0.00000000  0.50000000  0.50000000  1.0
+  Se  Se2  4  0.14919889  0.00000000  0.72685589  1.0

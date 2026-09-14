@@ -1,21 +1,25 @@
+# Source: Materials Project mp-568936 (https://materialsproject.org/materials/mp-568936)
 # generated using pymatgen
 data_Ag2Se
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.26546179
-_cell_length_b   6.88321134
-_cell_length_c   6.79806542
+_symmetry_space_group_name_H-M   P2_12_12_1
+_cell_length_a   4.44923146
+_cell_length_b   7.07636613
+_cell_length_c   7.66343481
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   19
 _chemical_formula_structural   Ag2Se
 _chemical_formula_sum   'Ag8 Se4'
-_cell_volume   246.38423133
+_cell_volume   241.27857649
 _cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x+1/2, -y, z+1/2'
+  3  'x+1/2, -y+1/2, -z'
+  4  '-x, y+1/2, -z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,15 +28,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ag  Ag0  1  0.63216041  0.33416645  0.46281893  1.0
-  Ag  Ag1  1  0.35255310  0.44659815  0.84280991  1.0
-  Ag  Ag2  1  0.14744690  0.55340185  0.34280991  1.0
-  Ag  Ag3  1  0.86783959  0.66583355  0.96281893  1.0
-  Ag  Ag4  1  0.13216041  0.16583355  0.53718107  1.0
-  Ag  Ag5  1  0.85255310  0.05340185  0.15719009  1.0
-  Ag  Ag6  1  0.64744690  0.94659815  0.65719009  1.0
-  Ag  Ag7  1  0.36783959  0.83416645  0.03718107  1.0
-  Se  Se8  1  0.17979467  0.78527658  0.68322672  1.0
-  Se  Se9  1  0.32020533  0.21472342  0.18322672  1.0
-  Se  Se10  1  0.67979367  0.71472342  0.31677328  1.0
-  Se  Se11  1  0.82020633  0.28527658  0.81677328  1.0
+  Ag  Ag0  4  0.01718622  0.23042118  0.87572678  1.0
+  Ag  Ag1  4  0.18992999  0.61928364  0.05603899  1.0
+  Se  Se2  4  0.12116189  0.99364383  0.16371276  1.0

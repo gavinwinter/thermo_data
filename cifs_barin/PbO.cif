@@ -1,21 +1,29 @@
+# Source: Materials Project mp-20878 (https://materialsproject.org/materials/mp-20878)
 # generated using pymatgen
 data_PbO
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.99951433
-_cell_length_b   3.99951433
-_cell_length_c   5.25981635
+_symmetry_space_group_name_H-M   Pbcm
+_cell_length_a   6.10138245
+_cell_length_b   5.62114724
+_cell_length_c   4.72826011
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   57
 _chemical_formula_structural   PbO
-_chemical_formula_sum   'Pb2 O2'
-_cell_volume   84.13662656
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Pb4 O4'
+_cell_volume   162.16404533
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z+1/2'
+  4  'x, y, -z+1/2'
+  5  'x, -y+1/2, -z'
+  6  '-x, y+1/2, z'
+  7  '-x, y+1/2, -z+1/2'
+  8  'x, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,7 +32,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Pb  Pb0  1  0.50000000  0.00000000  0.22597479  1.0
-  Pb  Pb1  1  0.00000000  0.50000000  0.77402521  1.0
-  O  O2  1  0.50000000  0.50000000  0.00000000  1.0
-  O  O3  1  -0.00000000  -0.00000000  -0.00000000  1.0
+  Pb  Pb0  4  0.22295123  0.01533653  0.75000000  1.0
+  O  O1  4  0.12849801  0.09500658  0.25000000  1.0

@@ -1,0 +1,45 @@
+# Source: Materials Project mp-23307 (https://materialsproject.org/materials/mp-23307)
+# generated using pymatgen
+data_NbCl5
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   18.96410289
+_cell_length_b   18.17769745
+_cell_length_c   6.00715078
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.46623258
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   NbCl5
+_chemical_formula_sum   'Nb12 Cl60'
+_cell_volume   2070.73883108
+_cell_formula_units_Z   12
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nb  Nb0  8  0.16670837  0.39008395  0.47739336  1.0
+  Nb  Nb1  4  0.00000000  0.10993693  0.00000000  1.0
+  Cl  Cl2  8  0.05459616  0.18901213  0.24014648  1.0
+  Cl  Cl3  8  0.06784665  0.40297699  0.24847733  1.0
+  Cl  Cl4  8  0.09907940  0.09694512  0.77727630  1.0
+  Cl  Cl5  8  0.11193187  0.31112926  0.71507778  1.0
+  Cl  Cl6  8  0.22151379  0.31105303  0.23989380  1.0
+  Cl  Cl7  8  0.23432007  0.09690801  0.29413961  1.0
+  Cl  Cl8  4  0.05031904  0.00000000  0.22086828  1.0
+  Cl  Cl9  4  0.11620731  0.50000000  0.69455627  1.0
+  Cl  Cl10  4  0.21703083  0.50000000  0.25976493  1.0

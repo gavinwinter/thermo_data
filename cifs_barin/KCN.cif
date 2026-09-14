@@ -1,21 +1,25 @@
+# Source: Materials Project mp-1077078 (https://materialsproject.org/materials/mp-1077078)
 # generated using pymatgen
 data_KCN
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.49356052
-_cell_length_b   4.49356052
+_symmetry_space_group_name_H-M   Cc
+_cell_length_a   7.65925000
+_cell_length_b   4.70151400
 _cell_length_c   8.21991542
-_cell_angle_alpha   73.92917851
-_cell_angle_beta   73.92917851
-_cell_angle_gamma   63.08609920
-_symmetry_Int_Tables_number   1
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   108.95455273
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   9
 _chemical_formula_structural   KCN
-_chemical_formula_sum   'K2 C2 N2'
-_cell_volume   139.97480141
-_cell_formula_units_Z   2
+_chemical_formula_sum   'K4 C4 N4'
+_cell_volume   279.94960281
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  'x, -y, z+1/2'
+  3  'x+1/2, y+1/2, z'
+  4  'x+1/2, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,9 +28,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  K  K0  1  0.45431300  0.06662400  0.45881400  1.0
-  K  K1  1  0.06662400  0.45431300  0.95881400  1.0
-  C  C2  1  0.68483900  0.37179100  0.66831700  1.0
-  C  C3  1  0.37179100  0.68483900  0.16831700  1.0
-  N  N4  1  0.83150600  0.14492700  0.76987000  1.0
-  N  N5  1  0.14492700  0.83150600  0.26987000  1.0
+  K  K0  4  0.23953150  0.30615550  0.95881400  1.0
+  C  C1  4  0.47168500  0.15652400  0.66831700  1.0
+  N  N2  4  0.01178350  0.15671050  0.26987000  1.0

@@ -1,21 +1,39 @@
+# Source: Materials Project mp-23218 (https://materialsproject.org/materials/mp-23218)
 # generated using pymatgen
 data_AsI3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   8.37099028
-_cell_length_b   8.37099028
-_cell_length_c   8.37099110
-_cell_angle_alpha   52.34517965
-_cell_angle_beta   52.34519748
-_cell_angle_gamma   52.34518608
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   R-3
+_cell_length_a   7.38449573
+_cell_length_b   7.38449573
+_cell_length_c   21.61177880
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   148
 _chemical_formula_structural   AsI3
-_chemical_formula_sum   'As2 I6'
-_cell_volume   340.20575808
-_cell_formula_units_Z   2
+_chemical_formula_sum   'As6 I18'
+_cell_volume   1020.61708118
+_cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-x+2/3, -y+1/3, -z+1/3'
+  9  '-y+2/3, x-y+1/3, z+1/3'
+  10  'y+2/3, -x+y+1/3, -z+1/3'
+  11  '-x+y+2/3, -x+1/3, z+1/3'
+  12  'x-y+2/3, x+1/3, -z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-x+1/3, -y+2/3, -z+2/3'
+  15  '-y+1/3, x-y+2/3, z+2/3'
+  16  'y+1/3, -x+y+2/3, -z+2/3'
+  17  '-x+y+1/3, -x+2/3, z+2/3'
+  18  'x-y+1/3, x+2/3, -z+2/3'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +42,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  As  As0  1  0.19012803  0.19012803  0.19012803  1.0
-  As  As1  1  0.80987197  0.80987197  0.80987197  1.0
-  I  I2  1  0.43572368  0.06025310  0.75699758  1.0
-  I  I3  1  0.75699758  0.43572368  0.06025310  1.0
-  I  I4  1  0.06025310  0.75699758  0.43572368  1.0
-  I  I5  1  0.56427632  0.93974690  0.24300242  1.0
-  I  I6  1  0.24300242  0.56427632  0.93974690  1.0
-  I  I7  1  0.93974690  0.24300242  0.56427632  1.0
+  As  As0  6  0.00000000  0.00000000  0.19012803  1.0
+  I  I1  18  0.00600613  0.69073835  0.75099145  1.0

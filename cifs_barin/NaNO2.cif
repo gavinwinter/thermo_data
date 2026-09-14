@@ -1,21 +1,29 @@
+# Source: Materials Project mp-2964 (https://materialsproject.org/materials/mp-2964)
 # generated using pymatgen
 data_NaNO2
-_symmetry_space_group_name_H-M   'P 1'
+_symmetry_space_group_name_H-M   Imm2
 _cell_length_a   3.47862728
-_cell_length_b   4.20456249
-_cell_length_c   4.20456121
-_cell_angle_alpha   79.16205093
-_cell_angle_beta   65.56421102
-_cell_angle_gamma   65.56420678
-_symmetry_Int_Tables_number   1
+_cell_length_b   5.35803113
+_cell_length_c   5.46845514
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   44
 _chemical_formula_structural   NaNO2
-_chemical_formula_sum   'Na1 N1 O2'
-_cell_volume   50.96215556
-_cell_formula_units_Z   1
+_chemical_formula_sum   'Na2 N2 O4'
+_cell_volume   101.92431112
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  '-x+1/2, y+1/2, z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,7 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Na  Na0  1  0.58675079  0.41324921  0.41324921  1.0
-  N  N1  1  0.12519484  0.87480516  0.87480516  1.0
-  O  O2  1  0.99957718  0.80212561  0.19872003  1.0
-  O  O3  1  0.99957718  0.19872003  0.80212561  1.0
+  Na  Na0  2  0.00000000  0.00000000  0.58675079  1.0
+  N  N1  2  0.00000000  0.00000000  0.12519484  1.0
+  O  O2  4  0.00000000  0.19829721  0.99957718  1.0

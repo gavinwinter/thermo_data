@@ -1,21 +1,39 @@
+# Source: Materials Project mp-18732 (https://materialsproject.org/materials/mp-18732)
 # generated using pymatgen
 data_TiNiO3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.41866629
-_cell_length_b   5.41869885
-_cell_length_c   5.41867290
-_cell_angle_alpha   55.29147001
-_cell_angle_beta   55.29143615
-_cell_angle_gamma   55.29128464
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   R-3
+_cell_length_a   5.02856672
+_cell_length_b   5.02856672
+_cell_length_c   13.72586644
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   148
 _chemical_formula_structural   TiNiO3
-_chemical_formula_sum   'Ti2 Ni2 O6'
-_cell_volume   100.19293107
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Ti6 Ni6 O18'
+_cell_volume   300.57913774
+_cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-x+2/3, -y+1/3, -z+1/3'
+  9  '-y+2/3, x-y+1/3, z+1/3'
+  10  'y+2/3, -x+y+1/3, -z+1/3'
+  11  '-x+y+2/3, -x+1/3, z+1/3'
+  12  'x-y+2/3, x+1/3, -z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-x+1/3, -y+2/3, -z+2/3'
+  15  '-y+1/3, x-y+2/3, z+2/3'
+  16  'y+1/3, -x+y+2/3, -z+2/3'
+  17  '-x+y+1/3, -x+2/3, z+2/3'
+  18  'x-y+1/3, x+2/3, -z+2/3'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,13 +42,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ti  Ti0  1  0.14383419  0.14383610  0.14383997  1.0
-  Ti  Ti1  1  0.85616341  0.85616284  0.85616314  1.0
-  Ni  Ni2  1  0.65055038  0.65055161  0.65055069  1.0
-  Ni  Ni3  1  0.34944510  0.34944910  0.34945261  1.0
-  O  O4  1  0.94682245  0.23413754  0.56116992  1.0
-  O  O5  1  0.56117230  0.94678507  0.23414697  1.0
-  O  O6  1  0.23415227  0.56115826  0.94679139  1.0
-  O  O7  1  0.05318151  0.76586149  0.43882647  1.0
-  O  O8  1  0.43883119  0.05321449  0.76585306  1.0
-  O  O9  1  0.76584819  0.43884449  0.05320678  1.0
+  Ti  Ti0  6  0.00000000  0.00000000  0.14383419  1.0
+  Ni  Ni1  6  0.00000000  0.00000000  0.34945167  1.0
+  O  O2  18  0.01323844  0.31379007  0.75262593  1.0

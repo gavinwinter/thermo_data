@@ -1,0 +1,50 @@
+# Source: Materials Project mp-1196039 (https://materialsproject.org/materials/mp-1196039)
+# generated using pymatgen
+data_CuH10SO9
+_symmetry_space_group_name_H-M   P-1
+_cell_length_a   5.97086600
+_cell_length_b   6.05717100
+_cell_length_c   10.83742682
+_cell_angle_alpha   77.61209110
+_cell_angle_beta   82.36121667
+_cell_angle_gamma   72.98278241
+_symmetry_Int_Tables_number   2
+_chemical_formula_structural   CuH10SO9
+_chemical_formula_sum   'Cu2 H20 S2 O18'
+_cell_volume   365.03157448
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu  Cu0  1  0.00000000  0.00000000  0.00000000  1.0
+  Cu  Cu1  1  0.00000000  0.50000000  0.50000000  1.0
+  H  H2  2  0.06464700  0.70287100  0.20279200  1.0
+  H  H3  2  0.12036900  0.80375400  0.59914700  1.0
+  H  H4  2  0.16438600  0.13907700  0.38078000  1.0
+  H  H5  2  0.23584800  0.28269500  0.00938700  1.0
+  H  H6  2  0.25434000  0.10046700  0.14186900  1.0
+  H  H7  2  0.30620200  0.40558100  0.80476700  1.0
+  H  H8  2  0.32262800  0.66730700  0.12729200  1.0
+  H  H9  2  0.33681300  0.60415400  0.86948800  1.0
+  H  H10  2  0.34306200  0.68317400  0.37660700  1.0
+  H  H11  2  0.43065500  0.39488900  0.39272900  1.0
+  S  S12  2  0.37712400  0.00811800  0.71504900  1.0
+  O  O13  2  0.01922300  0.24189400  0.41686100  1.0
+  O  O14  2  0.14842400  0.18837700  0.07450700  1.0
+  O  O15  2  0.14971000  0.70625100  0.11790300  1.0
+  O  O16  2  0.20460800  0.24364500  0.68977500  1.0
+  O  O17  2  0.29649500  0.53439100  0.40389100  1.0
+  O  O18  2  0.33607400  0.89129000  0.84822000  1.0
+  O  O19  2  0.36187100  0.85926800  0.62464500  1.0
+  O  O20  2  0.37392000  0.43004400  0.87720500  1.0
+  O  O21  2  0.37850700  0.95882700  0.30231500  1.0

@@ -1,21 +1,45 @@
+# Source: Materials Project mp-568115 (https://materialsproject.org/materials/mp-568115)
 # generated using pymatgen
 data_Zr5Si3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   7.99291966
-_cell_length_b   7.99291904
+_symmetry_space_group_name_H-M   P6_3/mcm
+_cell_length_a   7.99291935
+_cell_length_b   7.99291935
 _cell_length_c   5.57157151
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   119.99999405
-_symmetry_Int_Tables_number   1
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   193
 _chemical_formula_structural   Zr5Si3
 _chemical_formula_sum   'Zr10 Si6'
-_cell_volume   308.26145825
+_cell_volume   308.26143976
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  'x-y, x, z+1/2'
+  4  '-x+y, -x, -z+1/2'
+  5  '-y, x-y, z'
+  6  'y, -x+y, -z'
+  7  '-x, -y, z+1/2'
+  8  'x, y, -z+1/2'
+  9  '-x+y, -x, z'
+  10  'x-y, x, -z'
+  11  'y, -x+y, z+1/2'
+  12  '-y, x-y, -z+1/2'
+  13  '-y, -x, -z'
+  14  'y, x, z'
+  15  '-x, -x+y, -z+1/2'
+  16  'x, x-y, z+1/2'
+  17  '-x+y, y, -z'
+  18  'x-y, -y, z'
+  19  'y, x, -z+1/2'
+  20  '-y, -x, z+1/2'
+  21  'x, x-y, -z'
+  22  '-x, -x+y, z'
+  23  'x-y, -y, -z+1/2'
+  24  '-x+y, y, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,19 +48,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Zr  Zr0  1  0.74524632  0.74524632  0.25000000  1.0
-  Zr  Zr1  1  -0.00000000  0.25475368  0.25000000  1.0
-  Zr  Zr2  1  0.74524632  0.00000000  0.75000000  1.0
-  Zr  Zr3  1  0.33333300  0.66666700  0.50000000  1.0
-  Zr  Zr4  1  0.25475368  -0.00000000  0.25000000  1.0
-  Zr  Zr5  1  0.66666700  0.33333300  0.50000000  1.0
-  Zr  Zr6  1  0.00000000  0.74524632  0.75000000  1.0
-  Zr  Zr7  1  0.33333300  0.66666700  -0.00000000  1.0
-  Zr  Zr8  1  0.25475368  0.25475368  0.75000000  1.0
-  Zr  Zr9  1  0.66666700  0.33333300  -0.00000000  1.0
-  Si  Si10  1  0.61119636  0.61119636  0.75000000  1.0
-  Si  Si11  1  0.38880364  -0.00000000  0.75000000  1.0
-  Si  Si12  1  0.61119636  0.00000000  0.25000000  1.0
-  Si  Si13  1  -0.00000000  0.38880364  0.75000000  1.0
-  Si  Si14  1  0.38880364  0.38880364  0.25000000  1.0
-  Si  Si15  1  0.00000000  0.61119636  0.25000000  1.0
+  Zr  Zr0  6  0.00000000  0.25475368  0.25000000  1.0
+  Zr  Zr1  4  0.33333333  0.66666667  0.50000000  1.0
+  Si  Si2  6  0.00000000  0.38880364  0.75000000  1.0

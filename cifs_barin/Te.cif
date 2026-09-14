@@ -1,21 +1,27 @@
+# Source: Materials Project mp-19 (https://materialsproject.org/materials/mp-19)
 # generated using pymatgen
 data_Te
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.60135165
-_cell_length_b   4.60135339
+_symmetry_space_group_name_H-M   P3_121
+_cell_length_a   4.60135252
+_cell_length_b   4.60135252
 _cell_length_c   5.90006200
-_cell_angle_alpha   89.95522639
-_cell_angle_beta   90.04475441
-_cell_angle_gamma   119.99077115
-_symmetry_Int_Tables_number   1
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   152
 _chemical_formula_structural   Te
 _chemical_formula_sum   Te3
-_cell_volume   108.19281572
+_cell_volume   108.18280058
 _cell_formula_units_Z   3
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-y, x-y, z+1/3'
+  3  '-x+y, -x, z+2/3'
+  4  'y, x, -z'
+  5  'x-y, -y, -z+2/3'
+  6  '-x, -x+y, -z+1/3'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,6 +30,4 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Te  Te0  1  0.25671729  0.00001962  0.33367658  1.0
-  Te  Te1  1  0.00001962  0.25671629  0.66632342  1.0
-  Te  Te2  1  0.74326409  0.74326409  -0.00000000  1.0
+  Te  Te0  3  0.00000000  0.25669717  0.66666667  1.0

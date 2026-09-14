@@ -1,21 +1,27 @@
+# Source: Materials Project mp-569756 (https://materialsproject.org/materials/mp-569756)
 # generated using pymatgen
 data_TiCl3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.07471631
-_cell_length_b   6.06836646
-_cell_length_c   12.24861478
-_cell_angle_alpha   90.04532877
-_cell_angle_beta   89.88552138
-_cell_angle_gamma   120.02224237
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   P3_112
+_cell_length_a   6.07354780
+_cell_length_b   6.07354780
+_cell_length_c   18.36119628
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   151
 _chemical_formula_structural   TiCl3
-_chemical_formula_sum   'Ti4 Cl12'
-_cell_volume   390.94633641
-_cell_formula_units_Z   4
+_chemical_formula_sum   'Ti6 Cl18'
+_cell_volume   586.56549503
+_cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-y, x-y, z+1/3'
+  3  '-x+y, -x, z+2/3'
+  4  '-y, -x, -z+2/3'
+  5  '-x+y, y, -z+1/3'
+  6  'x, x-y, -z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,19 +30,8 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ti  Ti0  1  0.98468478  0.99312067  0.74990647  1.0
-  Ti  Ti1  1  0.68194378  0.34187211  0.74990565  1.0
-  Ti  Ti2  1  0.99145306  0.00693835  0.24995300  1.0
-  Ti  Ti3  1  0.34002226  0.65809456  0.24990709  1.0
-  Cl  Cl4  1  0.66543556  0.68070783  0.13300056  1.0
-  Cl  Cl5  1  0.01509405  0.33223417  0.13261491  1.0
-  Cl  Cl6  1  0.31968689  0.33702479  0.36654375  1.0
-  Cl  Cl7  1  0.33333381  0.01445479  0.64223587  1.0
-  Cl  Cl8  1  0.31870165  0.98561021  0.14222909  1.0
-  Cl  Cl9  1  0.33328789  0.32022155  0.85962241  1.0
-  Cl  Cl10  1  0.68278869  0.01250524  0.86616453  1.0
-  Cl  Cl11  1  0.98262345  0.66269774  0.86656683  1.0
-  Cl  Cl12  1  0.98474170  0.31941779  0.63294551  1.0
-  Cl  Cl13  1  0.67013742  0.98736923  0.36616320  1.0
-  Cl  Cl14  1  0.68297763  0.66795567  0.63261294  1.0
-  Cl  Cl15  1  0.01308737  0.67977730  0.35962719  1.0
+  Ti  Ti0  3  0.12809023  0.56404511  0.00000000  1.0
+  Ti  Ti1  3  0.43019988  0.21509994  0.00000000  1.0
+  Cl  Cl2  6  0.10546448  0.23515830  0.41116436  1.0
+  Cl  Cl3  6  0.11035348  0.54056127  0.25529104  1.0
+  Cl  Cl4  6  0.45811386  0.22066128  0.73862544  1.0

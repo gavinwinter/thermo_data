@@ -1,21 +1,39 @@
+# Source: Materials Project mp-1547 (https://materialsproject.org/materials/mp-1547)
 # generated using pymatgen
 data_NiS
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.58536353
-_cell_length_b   5.58539618
-_cell_length_c   5.58539650
-_cell_angle_alpha   116.60176392
-_cell_angle_beta   116.60061738
-_cell_angle_gamma   116.60062638
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   R3m
+_cell_length_a   9.50428171
+_cell_length_b   9.50428171
+_cell_length_c   3.12657681
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   160
 _chemical_formula_structural   NiS
-_chemical_formula_sum   'Ni3 S3'
-_cell_volume   81.52968414
-_cell_formula_units_Z   3
+_chemical_formula_sum   'Ni9 S9'
+_cell_volume   244.58979617
+_cell_formula_units_Z   9
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  '-y, -x, z'
+  5  '-x+y, y, z'
+  6  'x, x-y, z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-y+2/3, x-y+1/3, z+1/3'
+  9  '-x+y+2/3, -x+1/3, z+1/3'
+  10  '-y+2/3, -x+1/3, z+1/3'
+  11  '-x+y+2/3, y+1/3, z+1/3'
+  12  'x+2/3, x-y+1/3, z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-y+1/3, x-y+2/3, z+2/3'
+  15  '-x+y+1/3, -x+2/3, z+2/3'
+  16  '-y+1/3, -x+2/3, z+2/3'
+  17  '-x+y+1/3, y+2/3, z+2/3'
+  18  'x+1/3, x-y+2/3, z+2/3'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,9 +42,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ni  Ni0  1  0.65965952  0.39687861  0.39687861  1.0
-  Ni  Ni1  1  0.39687808  0.39685974  0.65963116  1.0
-  Ni  Ni2  1  0.39687808  0.65963116  0.39685974  1.0
-  S  S3  1  0.78351199  0.11925663  0.11925663  1.0
-  S  S4  1  0.11923767  0.11924664  0.78352921  1.0
-  S  S5  1  0.11923767  0.78352921  0.11924664  1.0
+  Ni  Ni0  9  0.17516208  0.08758104  0.48446908  1.0
+  S  S1  9  0.10947838  0.55473919  0.67400525  1.0

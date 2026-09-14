@@ -1,21 +1,33 @@
+# Source: Materials Project mp-8780 (https://materialsproject.org/materials/mp-8780)
 # generated using pymatgen
 data_Cr2N
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.75137275
-_cell_length_b   4.75136667
+_symmetry_space_group_name_H-M   P-31m
+_cell_length_a   4.75136971
+_cell_length_b   4.75136971
 _cell_length_c   4.37583802
-_cell_angle_alpha   90.00049796
-_cell_angle_beta   89.99976068
-_cell_angle_gamma   120.00007748
-_symmetry_Int_Tables_number   1
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   162
 _chemical_formula_structural   Cr2N
 _chemical_formula_sum   'Cr6 N3'
-_cell_volume   85.55180559
+_cell_volume   85.55187238
 _cell_formula_units_Z   3
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  '-y, -x, -z'
+  8  'y, x, z'
+  9  '-x+y, y, -z'
+  10  'x-y, -y, z'
+  11  'x, x-y, -z'
+  12  '-x, -x+y, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,12 +36,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Cr  Cr0  1  0.00000048  0.67398878  0.74719564  1.0
-  Cr  Cr1  1  0.67399250  0.00000161  0.74719827  1.0
-  Cr  Cr2  1  0.32600679  0.32600853  0.74719856  1.0
-  Cr  Cr3  1  0.67399271  0.67399217  0.25280197  1.0
-  Cr  Cr4  1  0.00000036  0.32600911  0.25280220  1.0
-  Cr  Cr5  1  0.32600700  -0.00000013  0.25280342  1.0
-  N  N6  1  -0.00000004  0.00000038  0.00000229  1.0
-  N  N7  1  0.66666971  0.33333518  0.50000037  1.0
-  N  N8  1  0.33333050  0.66666637  0.50000029  1.0
+  Cr  Cr0  6  0.00000000  0.32601186  0.25280436  1.0
+  N  N1  2  0.33333333  0.66666667  0.50000000  1.0
+  N  N2  1  0.00000000  0.00000000  0.00000000  1.0

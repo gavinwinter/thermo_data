@@ -1,21 +1,29 @@
+# Source: Materials Project mp-647924 (https://materialsproject.org/materials/mp-647924)
 # generated using pymatgen
 data_Eu2O3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.78829582
-_cell_length_b   3.78830376
-_cell_length_c   5.82083711
-_cell_angle_alpha   89.99975266
-_cell_angle_beta   90.00003304
-_cell_angle_gamma   119.99971530
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   14.16936741
+_cell_length_b   3.63121715
+_cell_length_c   8.84197454
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   100.05616142
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
 _chemical_formula_structural   Eu2O3
-_chemical_formula_sum   'Eu2 O3'
-_cell_volume   72.34458065
-_cell_formula_units_Z   1
+_chemical_formula_sum   'Eu12 O18'
+_cell_volume   447.94853927
+_cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,8 +32,11 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Eu  Eu0  1  0.66666372  0.33333110  0.75755591  1.0
-  Eu  Eu1  1  0.33333628  0.66666890  0.24244409  1.0
-  O  O2  1  -0.00000000  0.00000000  0.00000000  1.0
-  O  O3  1  0.66666938  0.33333417  0.34889643  1.0
-  O  O4  1  0.33333062  0.66666583  0.65110357  1.0
+  Eu  Eu0  4  0.03163936  0.00000000  0.81539156  1.0
+  Eu  Eu1  4  0.13606813  0.50000000  0.48942053  1.0
+  Eu  Eu2  4  0.19007599  0.50000000  0.13748856  1.0
+  O  O3  4  0.02866047  0.50000000  0.65764191  1.0
+  O  O4  4  0.12507800  0.00000000  0.28748515  1.0
+  O  O5  4  0.17329400  0.00000000  0.96928962  1.0
+  O  O6  4  0.20949219  0.00000000  0.62468166  1.0
+  O  O7  2  0.00000000  0.50000000  0.00000000  1.0

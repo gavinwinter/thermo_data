@@ -1,0 +1,43 @@
+# Source: Materials Project mp-24389 (https://materialsproject.org/materials/mp-24389)
+# generated using pymatgen
+data_CaPH5O6
+_symmetry_space_group_name_H-M   Cc
+_cell_length_a   6.43768400
+_cell_length_b   15.13877600
+_cell_length_c   5.89979607
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   119.39073678
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   9
+_chemical_formula_structural   CaPH5O6
+_chemical_formula_sum   'Ca4 P4 H20 O24'
+_cell_volume   500.98154333
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x, -y, z+1/2'
+  3  'x+1/2, y+1/2, z'
+  4  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  4  0.49394000  0.32845500  0.75055600  1.0
+  P  P1  4  0.01368400  0.32253600  0.76594500  1.0
+  H  H2  4  0.21040250  0.17246650  0.86529600  1.0
+  H  H3  4  0.22718150  0.01276650  0.99691500  1.0
+  H  H4  4  0.24478100  0.49176100  0.38821500  1.0
+  H  H5  4  0.25140200  0.41291400  0.21275900  1.0
+  H  H6  4  0.39337850  0.06680650  0.64640600  1.0
+  O  O7  4  0.11326150  0.25193250  0.65255700  1.0
+  O  O8  4  0.20429250  0.39400750  0.90176600  1.0
+  O  O9  4  0.22978000  0.05209800  0.51170200  1.0
+  O  O10  4  0.25065050  0.42625750  0.37845200  1.0
+  O  O11  4  0.28489700  0.13168500  0.02303500  1.0
+  O  O12  4  0.41774900  0.21842200  0.43349700  1.0

@@ -1,21 +1,29 @@
+# Source: Materials Project mp-2662 (https://materialsproject.org/materials/mp-2662)
 # generated using pymatgen
 data_MnP
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.21772565
-_cell_length_b   5.15499305
+_symmetry_space_group_name_H-M   Pnma
+_cell_length_a   5.15499305
+_cell_length_b   3.21772565
 _cell_length_c   5.79608814
-_cell_angle_alpha   90.00129266
+_cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   62
 _chemical_formula_structural   MnP
 _chemical_formula_sum   'Mn4 P4'
-_cell_volume   96.14176209
+_cell_volume   96.14176211
 _cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x, y+1/2, -z'
+  8  'x, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Mn  Mn0  1  0.25000000  0.50326560  0.30500809  1.0
-  Mn  Mn1  1  0.75000000  0.49673440  0.69499191  1.0
-  Mn  Mn2  1  0.25000000  0.00327919  0.19480286  1.0
-  Mn  Mn3  1  0.75000000  0.99672081  0.80519714  1.0
-  P  P4  1  0.25000000  0.68708253  0.92664255  1.0
-  P  P5  1  0.75000000  0.31291747  0.07335745  1.0
-  P  P6  1  0.25000000  0.18710413  0.57335141  1.0
-  P  P7  1  0.75000000  0.81289587  0.42664859  1.0
+  Mn  Mn0  4  0.00327239  0.25000000  0.69489738  1.0
+  P  P1  4  0.18708933  0.25000000  0.07326292  1.0

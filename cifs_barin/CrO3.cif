@@ -1,21 +1,29 @@
+# Source: Materials Project mp-510421 (https://materialsproject.org/materials/mp-510421)
 # generated using pymatgen
 data_CrO3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.71687371
-_cell_length_b   4.88108005
-_cell_length_c   5.70504865
+_symmetry_space_group_name_H-M   Ama2
+_cell_length_a   5.70504865
+_cell_length_b   8.55495287
+_cell_length_c   4.71687371
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   118.79641142
-_symmetry_Int_Tables_number   1
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   40
 _chemical_formula_structural   CrO3
-_chemical_formula_sum   'Cr2 O6'
-_cell_volume   115.10670089
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Cr4 O12'
+_cell_volume   230.21373031
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x+1/2, y, z'
+  4  'x+1/2, -y, z'
+  5  'x, y+1/2, z+1/2'
+  6  '-x, -y+1/2, z+1/2'
+  7  '-x+1/2, y+1/2, z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Cr  Cr0  1  0.59026076  0.19721755  0.25000000  1.0
-  Cr  Cr1  1  0.39335096  0.80294690  0.75000000  1.0
-  O  O2  1  0.71597870  0.78197229  0.75000000  1.0
-  O  O3  1  0.09763957  0.46047082  0.75000000  1.0
-  O  O4  1  0.63689256  0.54006001  0.25000000  1.0
-  O  O5  1  0.93320636  0.21688460  0.25000000  1.0
-  O  O6  1  0.37533504  0.00022392  0.00000227  1.0
-  O  O7  1  0.37533504  0.00022392  0.49999773  1.0
+  Cr  Cr0  4  0.25000000  0.40154510  0.99149811  1.0
+  O  O1  4  0.00000000  0.00000000  0.37506920  1.0
+  O  O2  4  0.25000000  0.23008154  0.86725029  1.0
+  O  O3  4  0.25000000  0.39083227  0.32483868  1.0

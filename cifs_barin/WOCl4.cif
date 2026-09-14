@@ -1,21 +1,29 @@
+# Source: Materials Project mp-27754 (https://materialsproject.org/materials/mp-27754)
 # generated using pymatgen
 data_WCl4O
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.90617600
-_cell_length_b   6.73122305
-_cell_length_c   6.73122305
-_cell_angle_alpha   85.17060573
-_cell_angle_beta   73.13285329
-_cell_angle_gamma   73.13285329
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   I4
+_cell_length_a   9.10986400
+_cell_length_b   9.10986400
+_cell_length_c   3.90617600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   79
 _chemical_formula_structural   WCl4O
-_chemical_formula_sum   'W1 Cl4 O1'
-_cell_volume   162.08603505
-_cell_formula_units_Z   1
+_chemical_formula_sum   'W2 Cl8 O2'
+_cell_volume   324.17207009
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-y, x, z'
+  3  '-x, -y, z'
+  4  'y, -x, z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-y+1/2, x+1/2, z+1/2'
+  7  '-x+1/2, -y+1/2, z+1/2'
+  8  'y+1/2, -x+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,9 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  W  W0  1  0.02336500  0.00000000  0.00000000  1.0
-  Cl  Cl1  1  0.14215100  0.69058300  0.18339700  1.0
-  Cl  Cl2  1  0.01613100  0.30941700  0.81660300  1.0
-  Cl  Cl3  1  0.32554800  0.81660300  0.69058300  1.0
-  Cl  Cl4  1  0.83273400  0.18339700  0.30941700  1.0
-  O  O5  1  0.56087100  0.00000000  0.00000000  1.0
+  W  W0  2  0.00000000  0.00000000  0.02336500  1.0
+  Cl  Cl1  8  0.06301000  0.75359300  0.07914100  1.0
+  O  O2  2  0.00000000  0.00000000  0.56087100  1.0

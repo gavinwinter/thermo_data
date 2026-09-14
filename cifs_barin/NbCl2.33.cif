@@ -1,0 +1,49 @@
+# Source: Materials Project mp-27880 (https://materialsproject.org/materials/mp-27880)
+# generated using pymatgen
+data_Nb3Cl7
+_symmetry_space_group_name_H-M   Cmce
+_cell_length_a   13.63642336
+_cell_length_b   12.57439190
+_cell_length_c   11.15199965
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   64
+_chemical_formula_structural   Nb3Cl7
+_chemical_formula_sum   'Nb24 Cl56'
+_cell_volume   1912.23038409
+_cell_formula_units_Z   8
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x+1/2, y, -z+1/2'
+  8  'x+1/2, -y, z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x, -y+1/2, z+1/2'
+  12  'x, y+1/2, -z+1/2'
+  13  'x+1/2, -y+1/2, -z'
+  14  '-x+1/2, y+1/2, z'
+  15  '-x, y+1/2, -z+1/2'
+  16  'x, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nb  Nb0  16  0.10866109  0.06228255  0.11190945  1.0
+  Nb  Nb1  8  0.00000000  0.13547374  0.90351301  1.0
+  Cl  Cl2  16  0.12419596  0.09213056  0.75288442  1.0
+  Cl  Cl3  16  0.12466446  0.23752548  0.01234887  1.0
+  Cl  Cl4  8  0.00000000  0.14844651  0.26685279  1.0
+  Cl  Cl5  8  0.24789719  0.00000000  0.50000000  1.0
+  Cl  Cl6  8  0.25000000  0.14291406  0.25000000  1.0

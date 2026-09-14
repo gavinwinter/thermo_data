@@ -1,21 +1,29 @@
+# Source: Materials Project mp-5046 (https://materialsproject.org/materials/mp-5046)
 # generated using pymatgen
 data_BeSO4
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.50670871
-_cell_length_b   4.50670899
-_cell_length_c   4.68802515
-_cell_angle_alpha   118.72863535
-_cell_angle_beta   118.72865908
-_cell_angle_gamma   89.99999591
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   I-4
+_cell_length_a   4.50670885
+_cell_length_b   4.50670885
+_cell_length_c   6.87673123
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   82
 _chemical_formula_structural   BeSO4
-_chemical_formula_sum   'Be1 S1 O4'
-_cell_volume   69.83466589
-_cell_formula_units_Z   1
+_chemical_formula_sum   'Be2 S2 O8'
+_cell_volume   139.66933178
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  'y+1/2, -x+1/2, -z+1/2'
+  7  '-x+1/2, -y+1/2, z+1/2'
+  8  '-y+1/2, x+1/2, -z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,9 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Be  Be0  1  0.25000000  0.75000000  0.50000000  1.0
-  S  S1  1  0.00000000  0.00000000  0.00000000  1.0
-  O  O2  1  0.25463612  0.35291453  0.24016457  1.0
-  O  O3  1  0.11274896  0.74536388  0.75983543  1.0
-  O  O4  1  0.64708547  0.01446955  0.75983543  1.0
-  O  O5  1  0.98553045  0.88725104  0.24016457  1.0
+  Be  Be0  2  0.00000000  0.50000000  0.75000000  1.0
+  S  S1  2  0.00000000  0.00000000  0.00000000  1.0
+  O  O2  8  0.13455384  0.23283224  0.87991771  1.0

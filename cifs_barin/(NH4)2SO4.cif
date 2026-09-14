@@ -1,0 +1,45 @@
+# Source: Materials Project mp-24468 (https://materialsproject.org/materials/mp-24468)
+# generated using pymatgen
+data_H8S(NO2)2
+_symmetry_space_group_name_H-M   Pna2_1
+_cell_length_a   7.94996618
+_cell_length_b   10.49063509
+_cell_length_c   5.93071333
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   33
+_chemical_formula_structural   H8S(NO2)2
+_chemical_formula_sum   'H32 S4 N8 O16'
+_cell_volume   494.62264370
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z+1/2'
+  3  '-x+1/2, y+1/2, z+1/2'
+  4  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  H  H0  4  0.01785860  0.20547397  0.76284721  1.0
+  H  H1  4  0.04147183  0.33758137  0.92164425  1.0
+  H  H2  4  0.05862410  0.13915919  0.19992074  1.0
+  H  H3  4  0.10244939  0.33759331  0.64832699  1.0
+  H  H4  4  0.10366017  0.66429552  0.22121034  1.0
+  H  H5  4  0.18830815  0.09537592  0.41372435  1.0
+  H  H6  4  0.20513582  0.02793859  0.15476985  1.0
+  H  H7  4  0.23656125  0.68116014  0.69424080  1.0
+  S  S8  4  0.24208322  0.42832335  0.24723857  1.0
+  N  N9  4  0.01469625  0.30274905  0.76188867  1.0
+  N  N10  4  0.17964913  0.11140531  0.24209586  1.0
+  O  O11  4  0.06284841  0.41232547  0.19444782  1.0
+  O  O12  4  0.15583509  0.84612963  0.59705085  1.0
+  O  O13  4  0.20645980  0.06363436  0.71455911  1.0
+  O  O14  4  0.22446899  0.89158224  0.98503457  1.0

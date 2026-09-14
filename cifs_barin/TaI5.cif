@@ -1,0 +1,41 @@
+# Source: Materials Project mp-570679 (https://materialsproject.org/materials/mp-570679)
+# generated using pymatgen
+data_TaI5
+_symmetry_space_group_name_H-M   Pnma
+_cell_length_a   14.46706261
+_cell_length_b   20.49354875
+_cell_length_c   6.83105347
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   62
+_chemical_formula_structural   TaI5
+_chemical_formula_sum   'Ta8 I40'
+_cell_volume   2025.28065740
+_cell_formula_units_Z   8
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x, y+1/2, -z'
+  8  'x, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ta  Ta0  8  0.12598440  0.14012860  0.49833183  1.0
+  I  I1  8  0.02658782  0.65083480  0.27184827  1.0
+  I  I2  8  0.04386836  0.05867948  0.25265749  1.0
+  I  I3  8  0.20762251  0.05850465  0.74464010  1.0
+  I  I4  8  0.22120338  0.65075393  0.76931451  1.0
+  I  I5  4  0.05052717  0.25000000  0.27395631  1.0
+  I  I6  4  0.20173106  0.25000000  0.72339070  1.0

@@ -1,0 +1,39 @@
+# Source: Materials Project mp-27425 (https://materialsproject.org/materials/mp-27425)
+# generated using pymatgen
+data_Sr(HO)2
+_symmetry_space_group_name_H-M   Pnma
+_cell_length_a   9.83839449
+_cell_length_b   3.91295568
+_cell_length_c   6.01056677
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   62
+_chemical_formula_structural   Sr(HO)2
+_chemical_formula_sum   'Sr4 H8 O8'
+_cell_volume   231.39000069
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x, y+1/2, -z'
+  8  'x, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  4  0.15952256  0.25000000  0.10242558  1.0
+  H  H1  4  0.02646804  0.75000000  0.37125670  1.0
+  H  H2  4  0.09207368  0.75000000  0.68493169  1.0
+  O  O3  4  0.10634611  0.75000000  0.84572506  1.0
+  O  O4  4  0.12480867  0.75000000  0.37307836  1.0

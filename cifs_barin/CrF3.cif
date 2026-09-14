@@ -1,21 +1,57 @@
+# Source: Materials Project mp-560338 (https://materialsproject.org/materials/mp-560338)
 # generated using pymatgen
 data_CrF3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.26583527
-_cell_length_b   5.26560293
-_cell_length_c   5.26382489
-_cell_angle_alpha   55.56722344
-_cell_angle_beta   55.57340824
-_cell_angle_gamma   55.57726545
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   R-3c
+_cell_length_a   4.90899707
+_cell_length_b   4.90899707
+_cell_length_c   13.31158111
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   167
 _chemical_formula_structural   CrF3
-_chemical_formula_sum   'Cr2 F6'
-_cell_volume   92.59954280
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Cr6 F18'
+_cell_volume   277.80868635
+_cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z+1/2'
+  8  '-y, -x, z+1/2'
+  9  'x-y, -y, -z+1/2'
+  10  '-x+y, y, z+1/2'
+  11  '-x, -x+y, -z+1/2'
+  12  'x, x-y, z+1/2'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y+2/3, x+1/3, -z+5/6'
+  20  '-y+2/3, -x+1/3, z+5/6'
+  21  'x-y+2/3, -y+1/3, -z+5/6'
+  22  '-x+y+2/3, y+1/3, z+5/6'
+  23  '-x+2/3, -x+y+1/3, -z+5/6'
+  24  'x+2/3, x-y+1/3, z+5/6'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+1/3, x+2/3, -z+1/6'
+  32  '-y+1/3, -x+2/3, z+1/6'
+  33  'x-y+1/3, -y+2/3, -z+1/6'
+  34  '-x+y+1/3, y+2/3, z+1/6'
+  35  '-x+1/3, -x+y+2/3, -z+1/6'
+  36  'x+1/3, x-y+2/3, z+1/6'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +60,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Cr  Cr0  1  -0.00001424  0.00003228  -0.00003097  1.0
-  Cr  Cr1  1  0.50002794  0.49998686  0.49997033  1.0
-  F  F2  1  0.11869180  0.38132940  0.75004582  1.0
-  F  F3  1  0.61847806  0.25013062  0.88157077  1.0
-  F  F4  1  0.38146067  0.74990080  0.11843732  1.0
-  F  F5  1  0.88132116  0.61867648  0.24998287  1.0
-  F  F6  1  0.24989644  0.88143791  0.61848744  1.0
-  F  F7  1  0.75013817  0.11850566  0.38153642  1.0
+  Cr  Cr0  6  0.00000000  0.00000000  0.00000000  1.0
+  F  F1  18  0.00000000  0.36870446  0.25000000  1.0

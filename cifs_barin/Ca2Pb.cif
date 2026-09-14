@@ -1,13 +1,14 @@
+# Source: Materials Project mp-30478 (https://materialsproject.org/materials/mp-30478)
 # generated using pymatgen
 data_Ca2Pb
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.12804421
-_cell_length_b   7.98962686
+_symmetry_space_group_name_H-M   Pnma
+_cell_length_a   7.98962686
+_cell_length_b   5.12804421
 _cell_length_c   9.57427268
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   62
 _chemical_formula_structural   Ca2Pb
 _chemical_formula_sum   'Ca8 Pb4'
 _cell_volume   392.26905555
@@ -16,6 +17,13 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x, y+1/2, -z'
+  8  'x, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,15 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ca  Ca0  1  0.75000000  0.34179327  0.92816761  1.0
-  Ca  Ca1  1  0.25000000  0.65820673  0.07183239  1.0
-  Ca  Ca2  1  0.75000000  0.84179327  0.57183239  1.0
-  Ca  Ca3  1  0.25000000  0.15820673  0.42816761  1.0
-  Ca  Ca4  1  0.75000000  0.47902790  0.31489886  1.0
-  Ca  Ca5  1  0.25000000  0.52097210  0.68510114  1.0
-  Ca  Ca6  1  0.75000000  0.97902790  0.18510114  1.0
-  Ca  Ca7  1  0.25000000  0.02097210  0.81489886  1.0
-  Pb  Pb8  1  0.75000000  0.74908155  0.89366904  1.0
-  Pb  Pb9  1  0.25000000  0.25091845  0.10633096  1.0
-  Pb  Pb10  1  0.75000000  0.24908155  0.60633096  1.0
-  Pb  Pb11  1  0.25000000  0.75091845  0.39366904  1.0
+  Ca  Ca0  4  0.02097210  0.25000000  0.18510114  1.0
+  Ca  Ca1  4  0.15820673  0.25000000  0.57183239  1.0
+  Pb  Pb2  4  0.24908155  0.75000000  0.39366904  1.0

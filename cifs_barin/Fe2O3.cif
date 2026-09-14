@@ -1,21 +1,57 @@
+# Source: Materials Project mp-19770 (https://materialsproject.org/materials/mp-19770)
 # generated using pymatgen
 data_Fe2O3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.09189364
-_cell_length_b   5.45203000
-_cell_length_c   5.09191045
-_cell_angle_alpha   62.16260544
-_cell_angle_beta   119.98513391
-_cell_angle_gamma   117.83716377
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   R-3c
+_cell_length_a   5.09190205
+_cell_length_b   5.09190205
+_cell_length_c   13.77429765
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   167
 _chemical_formula_structural   Fe2O3
-_chemical_formula_sum   'Fe4 O6'
-_cell_volume   103.11075302
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Fe12 O18'
+_cell_volume   309.28593927
+_cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z+1/2'
+  8  '-y, -x, z+1/2'
+  9  'x-y, -y, -z+1/2'
+  10  '-x+y, y, z+1/2'
+  11  '-x, -x+y, -z+1/2'
+  12  'x, x-y, z+1/2'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y+2/3, x+1/3, -z+5/6'
+  20  '-y+2/3, -x+1/3, z+5/6'
+  21  'x-y+2/3, -y+1/3, -z+5/6'
+  22  '-x+y+2/3, y+1/3, z+5/6'
+  23  '-x+2/3, -x+y+1/3, -z+5/6'
+  24  'x+2/3, x-y+1/3, z+5/6'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+1/3, x+2/3, -z+1/6'
+  32  '-y+1/3, -x+2/3, z+1/6'
+  33  'x-y+1/3, -y+2/3, -z+1/6'
+  34  '-x+y+1/3, y+2/3, z+1/6'
+  35  '-x+1/3, -x+y+2/3, -z+1/6'
+  36  'x+1/3, x-y+2/3, z+1/6'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,13 +60,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Fe  Fe0  1  0.35471223  0.06434118  0.64519388  1.0
-  Fe  Fe1  1  0.14519072  0.43565251  0.85471358  1.0
-  Fe  Fe2  1  0.64528296  0.93565173  0.35480774  1.0
-  Fe  Fe3  1  0.85480256  0.56433974  0.14528604  1.0
-  O  O4  1  0.55535593  0.75000405  0.05535199  1.0
-  O  O5  1  0.24997731  0.74996658  0.44458318  1.0
-  O  O6  1  0.05541939  0.24997195  0.25001683  1.0
-  O  O7  1  0.75002034  0.25003518  0.55541461  1.0
-  O  O8  1  0.44465124  0.25000320  0.94464964  1.0
-  O  O9  1  0.94458732  0.75003389  0.74998150  1.0
+  Fe  Fe0  12  0.00000000  0.00000000  0.14517717  1.0
+  O  O1  18  0.00000000  0.30540091  0.75000000  1.0

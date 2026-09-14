@@ -1,0 +1,37 @@
+# Source: Materials Project mp-1312206 (https://materialsproject.org/materials/mp-1312206)
+# generated using pymatgen
+data_V2FeO6
+_symmetry_space_group_name_H-M   P-1
+_cell_length_a   5.75879486
+_cell_length_b   6.66978608
+_cell_length_c   6.69067526
+_cell_angle_alpha   83.92276449
+_cell_angle_beta   74.86364504
+_cell_angle_gamma   75.18380100
+_symmetry_Int_Tables_number   2
+_chemical_formula_structural   V2FeO6
+_chemical_formula_sum   'V4 Fe2 O12'
+_cell_volume   239.61401325
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  V  V0  2  0.24519514  0.39051973  0.20464276  1.0
+  V  V1  2  0.25560796  0.79451840  0.61239415  1.0
+  Fe  Fe2  2  0.24578572  0.91666383  0.08935570  1.0
+  O  O3  2  0.05373159  0.62444799  0.65201140  1.0
+  O  O4  2  0.13998510  0.96643140  0.80759270  1.0
+  O  O5  2  0.23325649  0.62546009  0.08267954  1.0
+  O  O6  2  0.27095405  0.91182076  0.37689688  1.0
+  O  O7  2  0.36017897  0.19096453  0.03766620  1.0
+  O  O8  2  0.44324634  0.34939992  0.37384250  1.0

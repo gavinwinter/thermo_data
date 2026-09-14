@@ -1,21 +1,29 @@
+# Source: Materials Project mp-23292 (https://materialsproject.org/materials/mp-23292)
 # generated using pymatgen
 data_HgBr2
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.16402556
-_cell_length_b   4.16402590
+_symmetry_space_group_name_H-M   Cmc2_1
+_cell_length_a   4.73046057
+_cell_length_b   6.85413626
 _cell_length_c   12.78551768
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   110.77611688
-_symmetry_Int_Tables_number   1
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   36
 _chemical_formula_structural   HgBr2
-_chemical_formula_sum   'Hg2 Br4'
-_cell_volume   207.27383455
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Hg4 Br8'
+_cell_volume   414.54766910
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, z+1/2'
+  3  '-x, y, z'
+  4  'x, -y, z+1/2'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  '-x+1/2, y+1/2, z'
+  8  'x+1/2, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,9 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Hg  Hg0  1  0.66530802  0.33469198  0.49983768  1.0
-  Hg  Hg1  1  0.33469198  0.66530802  -0.00016232  1.0
-  Br  Br2  1  0.60896955  0.39103045  0.12714410  1.0
-  Br  Br3  1  0.39103045  0.60896955  0.62714410  1.0
-  Br  Br4  1  0.05958486  0.94041514  0.87301822  1.0
-  Br  Br5  1  0.94041514  0.05958486  0.37301822  1.0
+  Hg  Hg0  4  0.00000000  0.33469198  0.00016232  1.0
+  Br  Br1  4  0.00000000  0.05958486  0.12698178  1.0
+  Br  Br2  4  0.00000000  0.39103045  0.37285590  1.0

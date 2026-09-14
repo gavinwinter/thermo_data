@@ -1,21 +1,37 @@
+# Source: Materials Project mp-1852 (https://materialsproject.org/materials/mp-1852)
 # generated using pymatgen
 data_UF5
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.47794157
-_cell_length_b   5.05893112
-_cell_length_c   5.06057574
-_cell_angle_alpha   78.74749671
-_cell_angle_beta   63.74071693
-_cell_angle_gamma   63.73152627
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   I4/m
+_cell_length_a   6.41687021
+_cell_length_b   6.41687021
+_cell_length_c   4.47794157
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   87
 _chemical_formula_structural   UF5
-_chemical_formula_sum   'U1 F5'
-_cell_volume   92.19233694
-_cell_formula_units_Z   1
+_chemical_formula_sum   'U2 F10'
+_cell_volume   184.38472174
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-x+1/2, -y+1/2, -z+1/2'
+  11  '-y+1/2, x+1/2, z+1/2'
+  12  'y+1/2, -x+1/2, -z+1/2'
+  13  '-x+1/2, -y+1/2, z+1/2'
+  14  'x+1/2, y+1/2, -z+1/2'
+  15  'y+1/2, -x+1/2, z+1/2'
+  16  '-y+1/2, x+1/2, -z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,9 +40,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  U  U0  1  0.00000000  0.00000000  -0.00000000  1.0
-  F  F1  1  0.70636968  0.17979516  0.40746548  1.0
-  F  F2  1  0.50000000  0.00000000  -0.00000000  1.0
-  F  F3  1  0.29363032  0.82020484  0.59253452  1.0
-  F  F4  1  0.88634435  0.40734431  0.81996798  1.0
-  F  F5  1  0.11365565  0.59265569  0.18003202  1.0
+  U  U0  2  0.00000000  0.00000000  0.00000000  1.0
+  F  F1  8  0.11383516  0.70636968  0.00000000  1.0
+  F  F2  2  0.00000000  0.00000000  0.50000000  1.0

@@ -1,21 +1,33 @@
+# Source: Materials Project mp-1018040 (https://materialsproject.org/materials/mp-1018040)
 # generated using pymatgen
 data_MgSe
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.22160025
-_cell_length_b   4.22133418
+_symmetry_space_group_name_H-M   P6_3mc
+_cell_length_a   4.22146721
+_cell_length_b   4.22146721
 _cell_length_c   6.81671783
-_cell_angle_alpha   89.99999272
+_cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   120.00430264
-_symmetry_Int_Tables_number   1
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   186
 _chemical_formula_structural   MgSe
 _chemical_formula_sum   'Mg2 Se2'
-_cell_volume   105.19956857
+_cell_volume   105.20413022
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  'x-y, x, z+1/2'
+  3  '-y, x-y, z'
+  4  '-x, -y, z+1/2'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z+1/2'
+  7  'y, x, z+1/2'
+  8  'x, x-y, z'
+  9  'x-y, -y, z+1/2'
+  10  '-y, -x, z'
+  11  '-x, -x+y, z+1/2'
+  12  '-x+y, y, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,7 +36,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Mg  Mg0  1  0.66668051  0.33333630  0.49831224  1.0
-  Mg  Mg1  1  0.33331949  0.66666270  0.99831224  1.0
-  Se  Se2  1  0.66668165  0.33336723  0.87668776  1.0
-  Se  Se3  1  0.33331935  0.66663377  0.37668776  1.0
+  Mg  Mg0  2  0.33333333  0.66666667  0.99831224  1.0
+  Se  Se1  2  0.33333333  0.66666667  0.37668776  1.0

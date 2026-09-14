@@ -1,21 +1,37 @@
+# Source: Materials Project mp-1393 (https://materialsproject.org/materials/mp-1393)
 # generated using pymatgen
 data_Sn4Au
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.56703733
-_cell_length_b   6.49378065
-_cell_length_c   6.80705203
-_cell_angle_alpha   118.48895000
+_symmetry_space_group_name_H-M   Ccce
+_cell_length_a   6.49378065
+_cell_length_b   11.96556022
+_cell_length_c   6.56703733
+_cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   68
 _chemical_formula_structural   Sn4Au
-_chemical_formula_sum   'Sn8 Au2'
-_cell_volume   255.13505922
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Sn16 Au4'
+_cell_volume   510.27011844
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, -z'
+  4  '-x, y, -z'
+  5  '-x+1/2, -y, -z+1/2'
+  6  'x+1/2, y, -z+1/2'
+  7  '-x+1/2, y, z+1/2'
+  8  'x+1/2, -y, z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, z'
+  11  'x+1/2, -y+1/2, -z'
+  12  '-x+1/2, y+1/2, -z'
+  13  '-x, -y+1/2, -z+1/2'
+  14  'x, y+1/2, -z+1/2'
+  15  '-x, y+1/2, z+1/2'
+  16  'x, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,13 +40,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Sn  Sn0  1  0.16725768  0.52542667  0.72193826  1.0
-  Sn  Sn1  1  0.16728914  0.45854640  0.24589603  1.0
-  Sn  Sn2  1  0.33274232  0.02542667  0.72193826  1.0
-  Sn  Sn3  1  0.83274232  0.19651058  0.72193826  1.0
-  Sn  Sn4  1  0.66728914  0.28734963  0.24589603  1.0
-  Sn  Sn5  1  0.83271086  0.78734963  0.24589603  1.0
-  Sn  Sn6  1  0.66725768  0.69651058  0.72193826  1.0
-  Sn  Sn7  1  0.33271086  0.95854640  0.24589603  1.0
-  Au  Au8  1  -0.00000000  0.99196571  0.98393243  1.0
-  Au  Au9  1  0.50000000  0.49196571  0.98393243  1.0
+  Sn  Sn0  16  0.16445805  0.13099708  0.66725768  1.0
+  Au  Au1  4  0.00000000  0.00000000  0.00000000  1.0

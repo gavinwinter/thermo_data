@@ -1,13 +1,14 @@
+# Source: Materials Project mp-25279 (https://materialsproject.org/materials/mp-25279)
 # generated using pymatgen
 data_V2O5
-_symmetry_space_group_name_H-M   'P 1'
+_symmetry_space_group_name_H-M   Pmmn
 _cell_length_a   3.55174981
-_cell_length_b   4.26335779
-_cell_length_c   11.60441711
+_cell_length_b   11.60441711
+_cell_length_c   4.26335779
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   59
 _chemical_formula_structural   V2O5
 _chemical_formula_sum   'V4 O10'
 _cell_volume   175.71849612
@@ -16,6 +17,13 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x+1/2, -y+1/2, -z'
+  4  '-x+1/2, y+1/2, -z'
+  5  '-x+1/2, -y+1/2, -z'
+  6  'x+1/2, y+1/2, -z'
+  7  '-x, y, z'
+  8  'x, -y, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,17 +32,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  V  V0  1  0.00000000  0.11141296  0.14829965  1.0
-  V  V1  1  0.50000000  0.88858704  0.35170035  1.0
-  V  V2  1  0.50000000  0.88858704  0.64829965  1.0
-  V  V3  1  0.00000000  0.11141296  0.85170035  1.0
-  O  O4  1  -0.00000000  0.00635703  -0.00000000  1.0
-  O  O5  1  0.00000000  0.48600228  0.14668400  1.0
-  O  O6  1  0.50000000  0.00584244  0.18189999  1.0
-  O  O7  1  0.00000000  0.99415756  0.31810001  1.0
-  O  O8  1  0.50000000  0.51399772  0.35331600  1.0
-  O  O9  1  0.50000000  0.99364297  0.50000000  1.0
-  O  O10  1  0.50000000  0.51399772  0.64668400  1.0
-  O  O11  1  0.00000000  0.99415756  0.68189999  1.0
-  O  O12  1  0.50000000  0.00584244  0.81810001  1.0
-  O  O13  1  0.00000000  0.48600228  0.85331600  1.0
+  V  V0  4  0.00000000  0.14829965  0.88858704  1.0
+  O  O1  4  0.00000000  0.14668400  0.51399772  1.0
+  O  O2  4  0.00000000  0.31810001  0.00584244  1.0
+  O  O3  2  0.00000000  0.00000000  0.99364297  1.0

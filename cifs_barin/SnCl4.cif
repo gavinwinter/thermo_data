@@ -1,13 +1,14 @@
+# Source: Materials Project mp-29866 (https://materialsproject.org/materials/mp-29866)
 # generated using pymatgen
 data_SnCl4
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.78739399
-_cell_length_b   9.96769883
+_symmetry_space_group_name_H-M   P2_1/c
+_cell_length_a   9.96769883
+_cell_length_b   6.78739399
 _cell_length_c   10.08879218
-_cell_angle_alpha   102.99080308
-_cell_angle_beta   90.00000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   102.99080308
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   14
 _chemical_formula_structural   SnCl4
 _chemical_formula_sum   'Sn4 Cl16'
 _cell_volume   665.08501724
@@ -16,6 +17,9 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y+1/2, -z+1/2'
+  4  'x, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,23 +28,8 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Sn  Sn0  1  0.07591388  0.75190925  0.12885938  1.0
-  Sn  Sn1  1  0.57591388  0.24808975  0.37114062  1.0
-  Sn  Sn2  1  0.92408612  0.24808975  0.87114062  1.0
-  Sn  Sn3  1  0.42408612  0.75190925  0.62885938  1.0
-  Cl  Cl4  1  0.91624980  0.80854980  0.94832572  1.0
-  Cl  Cl5  1  0.41624980  0.19145020  0.55167428  1.0
-  Cl  Cl6  1  0.08375020  0.19145020  0.05167428  1.0
-  Cl  Cl7  1  0.58375020  0.80854980  0.44832572  1.0
-  Cl  Cl8  1  0.42719493  0.93787356  0.81120469  1.0
-  Cl  Cl9  1  0.92719493  0.06212644  0.68879531  1.0
-  Cl  Cl10  1  0.57280507  0.06212644  0.18879531  1.0
-  Cl  Cl11  1  0.07280507  0.93787356  0.31120469  1.0
-  Cl  Cl12  1  0.10482702  0.68939978  0.56954132  1.0
-  Cl  Cl13  1  0.60482702  0.31060022  0.93045868  1.0
-  Cl  Cl14  1  0.89517298  0.31060022  0.43045868  1.0
-  Cl  Cl15  1  0.39517298  0.68939978  0.06954132  1.0
-  Cl  Cl16  1  0.58439081  0.57110439  0.68909001  1.0
-  Cl  Cl17  1  0.08439081  0.42889561  0.81090999  1.0
-  Cl  Cl18  1  0.41560919  0.42889561  0.31090999  1.0
-  Cl  Cl19  1  0.91560919  0.57110439  0.18909001  1.0
+  Sn  Sn0  4  0.25190975  0.57591388  0.62885938  1.0
+  Cl  Cl1  4  0.07110489  0.08439081  0.18909001  1.0
+  Cl  Cl2  4  0.18940028  0.60482702  0.06954132  1.0
+  Cl  Cl3  4  0.30855030  0.08375020  0.94832572  1.0
+  Cl  Cl4  4  0.43787406  0.57280507  0.81120469  1.0

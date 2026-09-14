@@ -1,21 +1,37 @@
+# Source: Materials Project mp-571079 (https://materialsproject.org/materials/mp-571079)
 # generated using pymatgen
 data_TlCl
-_symmetry_space_group_name_H-M   'P 1'
+_symmetry_space_group_name_H-M   Cmcm
 _cell_length_a   4.27137629
-_cell_length_b   4.71706889
-_cell_length_c   6.47346015
+_cell_length_b   12.22203378
+_cell_length_c   4.71706889
 _cell_angle_alpha   90.00000000
-_cell_angle_beta   109.26357294
+_cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   63
 _chemical_formula_structural   TlCl
-_chemical_formula_sum   'Tl2 Cl2'
-_cell_volume   123.12706747
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Tl4 Cl4'
+_cell_volume   246.25413494
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z+1/2'
+  4  'x, y, -z+1/2'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z+1/2'
+  8  'x, -y, z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'x+1/2, y+1/2, -z+1/2'
+  13  'x+1/2, -y+1/2, -z'
+  14  '-x+1/2, y+1/2, z'
+  15  '-x+1/2, y+1/2, -z+1/2'
+  16  'x+1/2, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,7 +40,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Tl  Tl0  1  0.61314602  0.25000000  0.22629104  1.0
-  Tl  Tl1  1  0.38685398  0.75000000  0.77370896  1.0
-  Cl  Cl2  1  0.14349511  0.75000000  0.28699222  1.0
-  Cl  Cl3  1  0.85650489  0.25000000  0.71300778  1.0
+  Tl  Tl0  4  0.00000000  0.38685498  0.25000000  1.0
+  Cl  Cl1  4  0.00000000  0.14349561  0.25000000  1.0

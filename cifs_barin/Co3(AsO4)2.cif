@@ -1,0 +1,43 @@
+# Source: Materials Project mp-562111 (https://materialsproject.org/materials/mp-562111)
+# generated using pymatgen
+data_Co3(AsO4)2
+_symmetry_space_group_name_H-M   P2_1/c
+_cell_length_a   5.82764369
+_cell_length_b   9.65987516
+_cell_length_c   10.27500743
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   93.43665923
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   14
+_chemical_formula_structural   Co3(AsO4)2
+_chemical_formula_sum   'Co12 As8 O32'
+_cell_volume   577.38426549
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y+1/2, -z+1/2'
+  4  'x, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Co  Co0  4  0.11069390  0.13426603  0.46381151  1.0
+  Co  Co1  4  0.35082443  0.13924797  0.21600783  1.0
+  Co  Co2  4  0.35570922  0.62175998  0.55737991  1.0
+  As  As3  4  0.12707279  0.05476782  0.79498050  1.0
+  As  As4  4  0.36780935  0.65522755  0.88122665  1.0
+  O  O5  4  0.10968953  0.00690297  0.13292513  1.0
+  O  O6  4  0.11796665  0.00726780  0.63489176  1.0
+  O  O7  4  0.13138293  0.23136680  0.80560098  1.0
+  O  O8  4  0.15684548  0.73096700  0.96545183  1.0
+  O  O9  4  0.36733937  0.02022793  0.38127814  1.0
+  O  O10  4  0.37348272  0.51244598  0.37588273  1.0
+  O  O11  4  0.38561292  0.72211527  0.72817706  1.0
+  O  O12  4  0.39710916  0.24324583  0.54729590  1.0

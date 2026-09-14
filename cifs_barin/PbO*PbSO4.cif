@@ -1,0 +1,41 @@
+# Source: Materials Project mp-21497 (https://materialsproject.org/materials/mp-21497)
+# generated using pymatgen
+data_Pb2SO5
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   13.77446138
+_cell_length_b   5.69522624
+_cell_length_c   7.06995860
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   115.34267509
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Pb2SO5
+_chemical_formula_sum   'Pb8 S4 O20'
+_cell_volume   501.25360885
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pb  Pb0  4  0.02607907  0.50000000  0.27324827  1.0
+  Pb  Pb1  4  0.14641674  0.00000000  0.10373140  1.0
+  S  S2  4  0.16857388  0.00000000  0.65489933  1.0
+  O  O3  8  0.14323316  0.21174211  0.74696404  1.0
+  O  O4  4  0.00000000  0.25304382  0.00000000  1.0
+  O  O5  4  0.10512881  0.00000000  0.42518379  1.0
+  O  O6  4  0.21491743  0.50000000  0.29234606  1.0

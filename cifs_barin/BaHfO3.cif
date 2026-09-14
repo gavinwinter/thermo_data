@@ -1,21 +1,69 @@
+# Source: Materials Project mp-998552 (https://materialsproject.org/materials/mp-998552)
 # generated using pymatgen
 data_BaHfO3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.17004239
-_cell_length_b   4.16909121
-_cell_length_c   4.17037663
-_cell_angle_alpha   89.99946430
-_cell_angle_beta   89.99434031
-_cell_angle_gamma   89.99884047
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   Pm-3m
+_cell_length_a   4.16983674
+_cell_length_b   4.16983674
+_cell_length_c   4.16983674
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   221
 _chemical_formula_structural   BaHfO3
 _chemical_formula_sum   'Ba1 Hf1 O3'
-_cell_volume   72.50319462
+_cell_volume   72.50319684
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+  17  'z, x, y'
+  18  '-z, -x, -y'
+  19  'z, -y, x'
+  20  '-z, y, -x'
+  21  'z, -x, -y'
+  22  '-z, x, y'
+  23  'z, y, -x'
+  24  '-z, -y, x'
+  25  '-z, x, -y'
+  26  'z, -x, y'
+  27  '-z, -y, -x'
+  28  'z, y, x'
+  29  '-z, -x, y'
+  30  'z, x, -y'
+  31  '-z, y, x'
+  32  'z, -y, -x'
+  33  'y, z, x'
+  34  '-y, -z, -x'
+  35  'x, z, -y'
+  36  '-x, -z, y'
+  37  '-y, z, -x'
+  38  'y, -z, x'
+  39  '-x, z, y'
+  40  'x, -z, -y'
+  41  '-y, -z, x'
+  42  'y, z, -x'
+  43  '-x, -z, -y'
+  44  'x, z, y'
+  45  'y, -z, -x'
+  46  '-y, z, x'
+  47  'x, -z, y'
+  48  '-x, z, -y'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,8 +72,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ba  Ba0  1  0.98792422  0.99996520  0.99642496  1.0
-  Hf  Hf1  1  0.48800739  0.49998673  0.49787533  1.0
-  O  O2  1  0.48803115  0.00000820  0.49889014  1.0
-  O  O3  1  0.98799671  0.50002674  0.49886535  1.0
-  O  O4  1  0.48804153  0.50001213  0.99794122  1.0
+  Ba  Ba0  1  0.50000000  0.50000000  0.50000000  1.0
+  Hf  Hf1  1  0.00000000  0.00000000  0.00000000  1.0
+  O  O2  3  0.00000000  0.00000000  0.50000000  1.0

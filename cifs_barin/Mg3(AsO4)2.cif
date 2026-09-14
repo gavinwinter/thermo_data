@@ -1,0 +1,47 @@
+# Source: Materials Project mp-758196 (https://materialsproject.org/materials/mp-758196)
+# generated using pymatgen
+data_Mg3(AsO4)2
+_symmetry_space_group_name_H-M   I-4
+_cell_length_a   6.80819654
+_cell_length_b   6.80819654
+_cell_length_c   18.82706674
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   82
+_chemical_formula_structural   Mg3(AsO4)2
+_chemical_formula_sum   'Mg18 As12 O48'
+_cell_volume   872.66353949
+_cell_formula_units_Z   6
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  'y+1/2, -x+1/2, -z+1/2'
+  7  '-x+1/2, -y+1/2, z+1/2'
+  8  '-y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mg  Mg0  8  0.24378358  0.74759499  0.87611013  1.0
+  Mg  Mg1  4  0.00000000  0.00000000  0.22731766  1.0
+  Mg  Mg2  4  0.00000000  0.50000000  0.52115602  1.0
+  Mg  Mg3  2  0.00000000  0.50000000  0.25000000  1.0
+  As  As4  8  0.15422111  0.25138582  0.37568417  1.0
+  As  As5  2  0.00000000  0.00000000  0.00000000  1.0
+  As  As6  2  0.00000000  0.50000000  0.75000000  1.0
+  O  O7  8  0.00680756  0.77698680  0.30420791  1.0
+  O  O8  8  0.01081132  0.70358015  0.44074271  1.0
+  O  O9  8  0.04094771  0.77049466  0.15244773  1.0
+  O  O10  8  0.04669259  0.71845931  0.60596654  1.0
+  O  O11  8  0.05087538  0.79160152  0.95477995  1.0
+  O  O12  8  0.05997158  0.71039259  0.79314974  1.0

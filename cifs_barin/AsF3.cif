@@ -1,13 +1,14 @@
+# Source: Materials Project mp-28027 (https://materialsproject.org/materials/mp-28027)
 # generated using pymatgen
 data_AsF3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.06847827
-_cell_length_b   6.76293413
+_symmetry_space_group_name_H-M   Pna2_1
+_cell_length_a   6.76293413
+_cell_length_b   5.06847827
 _cell_length_c   7.15071229
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   33
 _chemical_formula_structural   AsF3
 _chemical_formula_sum   'As4 F12'
 _cell_volume   245.11057618
@@ -16,6 +17,9 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, z+1/2'
+  3  '-x+1/2, y+1/2, z+1/2'
+  4  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,19 +28,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  As  As0  1  0.46029721  0.20919620  0.24412830  1.0
-  As  As1  1  0.53970279  0.79080380  0.74412830  1.0
-  As  As2  1  0.03970279  0.70919620  0.24412830  1.0
-  As  As3  1  0.96029721  0.29080380  0.74412830  1.0
-  F  F4  1  0.18731848  0.31949315  0.35519522  1.0
-  F  F5  1  0.81268152  0.68050685  0.85519522  1.0
-  F  F6  1  0.31268152  0.81949315  0.35519522  1.0
-  F  F7  1  0.68731848  0.18050685  0.85519522  1.0
-  F  F8  1  0.09848772  0.06065915  0.68886495  1.0
-  F  F9  1  0.90151228  0.93934085  0.18886495  1.0
-  F  F10  1  0.40151228  0.56065915  0.68886495  1.0
-  F  F11  1  0.59848772  0.43934085  0.18886495  1.0
-  F  F12  1  0.13145397  0.30965621  0.95700953  1.0
-  F  F13  1  0.86854603  0.69034379  0.45700953  1.0
-  F  F14  1  0.36854603  0.80965621  0.95700953  1.0
-  F  F15  1  0.63145397  0.19034379  0.45700953  1.0
+  As  As0  4  0.20919620  0.46029721  0.75587170  1.0
+  F  F1  4  0.06065915  0.09848772  0.31113505  1.0
+  F  F2  4  0.18050685  0.68731848  0.14480478  1.0
+  F  F3  4  0.19034379  0.63145397  0.54299047  1.0

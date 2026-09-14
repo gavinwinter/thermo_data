@@ -1,21 +1,37 @@
+# Source: Materials Project mp-574122 (https://materialsproject.org/materials/mp-574122)
 # generated using pymatgen
 data_UAl4
-_symmetry_space_group_name_H-M   'P 1'
+_symmetry_space_group_name_H-M   Imma
 _cell_length_a   4.34121629
 _cell_length_b   6.28677087
-_cell_length_c   7.93405881
-_cell_angle_alpha   113.31351450
-_cell_angle_beta   105.87746176
-_cell_angle_gamma   89.99999965
-_symmetry_Int_Tables_number   1
+_cell_length_c   13.91088306
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   74
 _chemical_formula_structural   UAl4
-_chemical_formula_sum   'U2 Al8'
-_cell_volume   189.82950196
-_cell_formula_units_Z   2
+_chemical_formula_sum   'U4 Al16'
+_cell_volume   379.65904890
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y+1/2, z'
+  4  'x, y+1/2, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y+1/2, -z'
+  8  'x, -y+1/2, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-x+1/2, -y+1/2, -z+1/2'
+  11  '-x+1/2, -y, z+1/2'
+  12  'x+1/2, y, -z+1/2'
+  13  'x+1/2, -y+1/2, -z+1/2'
+  14  '-x+1/2, y+1/2, z+1/2'
+  15  '-x+1/2, y, -z+1/2'
+  16  'x+1/2, -y, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,13 +40,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  U  U0  1  0.11312512  0.36315372  0.22625024  1.0
-  U  U1  1  0.88687488  0.63684628  0.77374976  1.0
-  Al  Al2  1  0.30199051  0.26917274  0.60398103  1.0
-  Al  Al3  1  0.69802788  0.16495569  0.39605575  1.0
-  Al  Al4  1  0.30197212  0.83504431  0.60394425  1.0
-  Al  Al5  1  0.50000000  0.50000000  0.00000000  1.0
-  Al  Al6  1  0.69800949  0.73082726  0.39601897  1.0
-  Al  Al7  1  0.11325150  0.86324911  0.22650201  1.0
-  Al  Al8  1  0.88674850  0.13675089  0.77349799  1.0
-  Al  Al9  1  0.50000000  0.00000000  0.00000000  1.0
+  U  U0  4  0.00000000  0.25000000  0.11315372  1.0
+  Al  Al1  8  0.00000000  0.03284637  0.69798088  1.0
+  Al  Al2  4  0.00000000  0.00000000  0.50000000  1.0
+  Al  Al3  4  0.00000000  0.25000000  0.88672039  1.0

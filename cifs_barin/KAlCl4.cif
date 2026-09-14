@@ -1,0 +1,40 @@
+# Source: Materials Project mp-27755 (https://materialsproject.org/materials/mp-27755)
+# generated using pymatgen
+data_KAlCl4
+_symmetry_space_group_name_H-M   P2_1
+_cell_length_a   7.34367400
+_cell_length_b   10.68206000
+_cell_length_c   9.54325315
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   93.36585251
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   4
+_chemical_formula_structural   KAlCl4
+_chemical_formula_sum   'K4 Al4 Cl16'
+_cell_volume   747.33451491
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, y+1/2, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  2  0.05835500  0.80679500  0.55378500  1.0
+  K  K1  2  0.43678700  0.41633100  0.94961300  1.0
+  Al  Al2  2  0.00640400  0.16272400  0.93416200  1.0
+  Al  Al3  2  0.49103800  0.05801900  0.56693200  1.0
+  Cl  Cl4  2  0.02896000  0.32255100  0.79760200  1.0
+  Cl  Cl5  2  0.05252900  0.49279000  0.18065600  1.0
+  Cl  Cl6  2  0.21087400  0.69065100  0.92510100  1.0
+  Cl  Cl7  2  0.23430800  0.07244200  0.44369400  1.0
+  Cl  Cl8  2  0.26493200  0.14845800  0.05497200  1.0
+  Cl  Cl9  2  0.28833100  0.53298800  0.57140300  1.0
+  Cl  Cl10  2  0.45575900  0.72564100  0.31307000  1.0
+  Cl  Cl11  2  0.46752100  0.89540900  0.69947400  1.0

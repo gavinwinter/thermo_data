@@ -1,13 +1,14 @@
+# Source: Materials Project mp-29263 (https://materialsproject.org/materials/mp-29263)
 # generated using pymatgen
 data_UBr5
-_symmetry_space_group_name_H-M   'P 1'
+_symmetry_space_group_name_H-M   P-1
 _cell_length_a   6.90709243
 _cell_length_b   7.51736180
 _cell_length_c   10.35519967
 _cell_angle_alpha   108.49028179
 _cell_angle_beta   90.64379251
 _cell_angle_gamma   116.22675633
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   2
 _chemical_formula_structural   UBr5
 _chemical_formula_sum   'U2 Br10'
 _cell_volume   450.12241727
@@ -16,6 +17,7 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,15 +26,9 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  U  U0  1  0.10448351  0.21462649  0.21554947  1.0
-  U  U1  1  0.89551649  0.78537351  0.78445053  1.0
-  Br  Br2  1  0.92712182  0.18565688  0.43514166  1.0
-  Br  Br3  1  0.07287818  0.81434312  0.56485834  1.0
-  Br  Br4  1  0.24859605  0.18958967  0.95463413  1.0
-  Br  Br5  1  0.75140395  0.81041033  0.04536587  1.0
-  Br  Br6  1  0.11865093  0.60644400  0.84499777  1.0
-  Br  Br7  1  0.88134907  0.39355600  0.15500223  1.0
-  Br  Br8  1  0.68444431  0.98767887  0.74672035  1.0
-  Br  Br9  1  0.31555569  0.01232113  0.25327965  1.0
-  Br  Br10  1  0.55008763  0.41369464  0.66272630  1.0
-  Br  Br11  1  0.44991237  0.58630536  0.33727370  1.0
+  U  U0  2  0.10448351  0.21462649  0.21554947  1.0
+  Br  Br1  2  0.07287818  0.81434312  0.56485834  1.0
+  Br  Br2  2  0.11865093  0.60644400  0.84499777  1.0
+  Br  Br3  2  0.24859605  0.18958967  0.95463413  1.0
+  Br  Br4  2  0.31555569  0.01232113  0.25327965  1.0
+  Br  Br5  2  0.44991237  0.58630536  0.33727370  1.0

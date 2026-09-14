@@ -1,21 +1,33 @@
+# Source: Materials Project mp-1079438 (https://materialsproject.org/materials/mp-1079438)
 # generated using pymatgen
 data_Ta2N
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.93918257
-_cell_length_b   5.29658075
-_cell_length_c   5.29656335
-_cell_angle_alpha   119.99989834
-_cell_angle_beta   89.99919003
-_cell_angle_gamma   90.00037001
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   P-31m
+_cell_length_a   5.29657205
+_cell_length_b   5.29657205
+_cell_length_c   4.93918257
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   162
 _chemical_formula_structural   Ta2N
 _chemical_formula_sum   'Ta6 N3'
-_cell_volume   119.99852980
+_cell_volume   119.99840689
 _cell_formula_units_Z   3
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  '-y, -x, -z'
+  8  'y, x, z'
+  9  '-x+y, y, -z'
+  10  'x-y, -y, z'
+  11  'x, x-y, -z'
+  12  '-x, -x+y, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,12 +36,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ta  Ta0  1  0.24638174  0.33365577  0.33366287  1.0
-  Ta  Ta1  1  0.24638146  0.66634379  0.00000755  1.0
-  Ta  Ta2  1  0.24639401  0.00000044  0.66635779  1.0
-  Ta  Ta3  1  0.75361823  0.66634624  0.66633693  1.0
-  Ta  Ta4  1  0.75361852  0.33365424  0.99999021  1.0
-  Ta  Ta5  1  0.75360639  0.99999952  0.33364380  1.0
-  N  N6  1  0.49999940  0.66665743  0.33332905  1.0
-  N  N7  1  0.49999940  0.33334260  0.66667243  1.0
-  N  N8  1  0.00000084  -0.00000003  0.99999835  1.0
+  Ta  Ta0  6  0.00000000  0.33363833  0.75361826  1.0
+  N  N1  2  0.33333333  0.66666667  0.50000000  1.0
+  N  N2  1  0.00000000  0.00000000  0.00000000  1.0

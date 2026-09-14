@@ -1,0 +1,47 @@
+# Source: Materials Project mp-559771 (https://materialsproject.org/materials/mp-559771)
+# generated using pymatgen
+data_Pr6O11
+_symmetry_space_group_name_H-M   P2_1/c
+_cell_length_a   6.96751700
+_cell_length_b   12.15731000
+_cell_length_c   13.41809000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   100.36504037
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   14
+_chemical_formula_structural   Pr6O11
+_chemical_formula_sum   'Pr24 O44'
+_cell_volume   1118.04865284
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y+1/2, -z+1/2'
+  4  'x, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  4  0.12743800  0.14974400  0.37507700  1.0
+  Pr  Pr1  4  0.13592800  0.51418700  0.38367300  1.0
+  Pr  Pr2  4  0.13631800  0.67028300  0.89551400  1.0
+  Pr  Pr3  4  0.35944700  0.16582200  0.12261100  1.0
+  Pr  Pr4  4  0.37745000  0.00021300  0.63037600  1.0
+  Pr  Pr5  4  0.41497500  0.67035000  0.62362800  1.0
+  O  O6  4  0.04320000  0.17805700  0.19277600  1.0
+  O  O7  4  0.05182800  0.01992100  0.69948900  1.0
+  O  O8  4  0.18499900  0.51192700  0.57489300  1.0
+  O  O9  4  0.18901000  0.67248700  0.07944000  1.0
+  O  O10  4  0.19078600  0.16248300  0.56230300  1.0
+  O  O11  4  0.26598200  0.16860600  0.92819700  1.0
+  O  O12  4  0.31879500  0.50499300  0.94043400  1.0
+  O  O13  4  0.33672800  0.66907900  0.44311100  1.0
+  O  O14  4  0.41336800  0.66731800  0.80354000  1.0
+  O  O15  4  0.42421500  0.16248000  0.30658500  1.0
+  O  O16  4  0.43405800  0.50123800  0.31465500  1.0

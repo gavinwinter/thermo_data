@@ -1,21 +1,39 @@
+# Source: Materials Project mp-23309 (https://materialsproject.org/materials/mp-23309)
 # generated using pymatgen
 data_ScCl3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   7.12052400
-_cell_length_b   7.12052348
-_cell_length_c   7.12052309
-_cell_angle_alpha   53.48958099
-_cell_angle_beta   53.48959367
-_cell_angle_gamma   53.48960451
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   R-3
+_cell_length_a   6.40871890
+_cell_length_b   6.40871890
+_cell_length_c   18.25107376
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   148
 _chemical_formula_structural   ScCl3
-_chemical_formula_sum   'Sc2 Cl6'
-_cell_volume   216.39147043
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Sc6 Cl18'
+_cell_volume   649.17456866
+_cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-x+2/3, -y+1/3, -z+1/3'
+  9  '-y+2/3, x-y+1/3, z+1/3'
+  10  'y+2/3, -x+y+1/3, -z+1/3'
+  11  '-x+y+2/3, -x+1/3, z+1/3'
+  12  'x-y+2/3, x+1/3, -z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-x+1/3, -y+2/3, -z+2/3'
+  15  '-y+1/3, x-y+2/3, z+2/3'
+  16  'y+1/3, -x+y+2/3, -z+2/3'
+  17  '-x+y+1/3, -x+2/3, z+2/3'
+  18  'x-y+1/3, x+2/3, -z+2/3'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +42,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Sc  Sc0  1  0.66668387  0.66668387  0.66668387  1.0
-  Sc  Sc1  1  0.33331613  0.33331613  0.33331613  1.0
-  Cl  Cl2  1  0.56298571  0.28185254  0.92255133  1.0
-  Cl  Cl3  1  0.28185254  0.92255133  0.56298571  1.0
-  Cl  Cl4  1  0.07744867  0.43701429  0.71814746  1.0
-  Cl  Cl5  1  0.71814746  0.07744867  0.43701429  1.0
-  Cl  Cl6  1  0.43701429  0.71814746  0.07744867  1.0
-  Cl  Cl7  1  0.92255133  0.56298571  0.28185254  1.0
+  Sc  Sc0  6  0.00000000  0.00000000  0.33331613  1.0
+  Cl  Cl1  18  0.00008814  0.35947748  0.92246319  1.0

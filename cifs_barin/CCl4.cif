@@ -1,0 +1,54 @@
+# Source: Materials Project mp-1004532 (https://materialsproject.org/materials/mp-1004532)
+# generated using pymatgen
+data_CCl4
+_symmetry_space_group_name_H-M   C2/c
+_cell_length_a   20.29629772
+_cell_length_b   11.45013103
+_cell_length_c   19.91979922
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   111.23848192
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   15
+_chemical_formula_structural   CCl4
+_chemical_formula_sum   'C32 Cl128'
+_cell_volume   4314.85055533
+_cell_formula_units_Z   32
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z+1/2'
+  4  'x, -y, z+1/2'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  C  C0  8  0.09540055  0.03383296  0.37739726  1.0
+  C  C1  8  0.12044292  0.43644187  0.87775297  1.0
+  C  C2  8  0.12702655  0.31305874  0.12219817  1.0
+  C  C3  8  0.15819487  0.21467514  0.62615181  1.0
+  Cl  Cl4  8  0.02383937  0.02584087  0.89658723  1.0
+  Cl  Cl5  8  0.04169434  0.35532927  0.85857729  1.0
+  Cl  Cl6  8  0.05563825  0.41242255  0.10086528  1.0
+  Cl  Cl7  8  0.07836667  0.23269743  0.55122796  1.0
+  Cl  Cl8  8  0.08065384  0.18438267  0.35809004  1.0
+  Cl  Cl9  8  0.10357191  0.03843955  0.80216590  1.0
+  Cl  Cl10  8  0.11389087  0.47453418  0.30283937  1.0
+  Cl  Cl11  8  0.11455140  0.21883975  0.04817521  1.0
+  Cl  Cl12  8  0.13052545  0.22909620  0.19814615  1.0
+  Cl  Cl13  8  0.13369981  0.47359906  0.45382423  1.0
+  Cl  Cl14  8  0.15254286  0.29275357  0.70056166  1.0
+  Cl  Cl15  8  0.17158164  0.06474654  0.64807576  1.0
+  Cl  Cl16  8  0.17441513  0.01490258  0.45300420  1.0
+  Cl  Cl17  8  0.19284239  0.33989678  0.89566381  1.0
+  Cl  Cl18  8  0.20705112  0.39089261  0.14197236  1.0
+  Cl  Cl19  8  0.22936755  0.26928247  0.60424230  1.0

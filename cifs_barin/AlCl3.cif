@@ -1,21 +1,29 @@
+# Source: Materials Project mp-25469 (https://materialsproject.org/materials/mp-25469)
 # generated using pymatgen
 data_AlCl3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.95364891
-_cell_length_b   5.95364951
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   5.95620858
+_cell_length_b   10.31054484
 _cell_length_c   6.29212942
-_cell_angle_alpha   98.76475380
-_cell_angle_beta   98.76474558
-_cell_angle_gamma   119.97155710
-_symmetry_Int_Tables_number   1
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   107.73558508
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
 _chemical_formula_structural   AlCl3
-_chemical_formula_sum   'Al2 Cl6'
-_cell_volume   184.02278370
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Al4 Cl12'
+_cell_volume   368.04556741
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Al  Al0  1  0.83339891  0.16660109  0.00000000  1.0
-  Al  Al1  1  0.16660109  0.83339891  -0.00000000  1.0
-  Cl  Cl2  1  0.78881210  0.78881210  0.77849366  1.0
-  Cl  Cl3  1  0.21118790  0.21118790  0.22150634  1.0
-  Cl  Cl4  1  0.57096181  0.93030843  0.22057693  1.0
-  Cl  Cl5  1  0.06969157  0.42903819  0.77942307  1.0
-  Cl  Cl6  1  0.42903819  0.06969157  0.77942307  1.0
-  Cl  Cl7  1  0.93030843  0.57096181  0.22057693  1.0
+  Al  Al0  4  0.00000000  0.16660109  0.00000000  1.0
+  Cl  Cl1  8  0.24936488  0.17967331  0.77942307  1.0
+  Cl  Cl2  4  0.21118790  0.00000000  0.22150634  1.0

@@ -1,21 +1,29 @@
+# Source: Materials Project mp-570219 (https://materialsproject.org/materials/mp-570219)
 # generated using pymatgen
 data_InBr3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.90773092
-_cell_length_b   6.81126174
-_cell_length_c   6.80933246
-_cell_angle_alpha   59.99062334
-_cell_angle_beta   80.87746741
-_cell_angle_gamma   71.51821214
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   6.81126174
+_cell_length_b   11.79299526
+_cell_length_c   6.90773092
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   108.48178786
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
 _chemical_formula_structural   InBr3
-_chemical_formula_sum   'In2 Br6'
-_cell_volume   263.12363394
-_cell_formula_units_Z   2
+_chemical_formula_sum   'In4 Br12'
+_cell_volume   526.24726787
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  In  In0  1  0.00000000  0.83340557  0.33318986  1.0
-  In  In1  1  -0.00000000  0.16659443  0.66681014  1.0
-  Br  Br2  1  0.23756409  0.77566594  -0.00000000  1.0
-  Br  Br3  1  0.76394202  0.92712347  0.64905179  1.0
-  Br  Br4  1  0.76243591  0.22433406  0.00000000  1.0
-  Br  Br5  1  0.23605798  0.07287653  0.35094821  1.0
-  Br  Br6  1  0.76394202  0.57617525  0.35094821  1.0
-  Br  Br7  1  0.23605798  0.42382475  0.64905179  1.0
+  In  In0  4  0.00000000  0.16659543  0.00000000  1.0
+  Br  Br1  8  0.24835114  0.17547360  0.76394202  1.0
+  Br  Br2  4  0.22433456  0.00000000  0.23756409  1.0

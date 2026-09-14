@@ -1,13 +1,14 @@
+# Source: Materials Project mp-19880 (https://materialsproject.org/materials/mp-19880)
 # generated using pymatgen
 data_FeTe2
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.87445588
-_cell_length_b   5.24404811
-_cell_length_c   6.24276922
+_symmetry_space_group_name_H-M   Pnnm
+_cell_length_a   5.24404811
+_cell_length_b   6.24276922
+_cell_length_c   3.87445588
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   58
 _chemical_formula_structural   FeTe2
 _chemical_formula_sum   'Fe2 Te4'
 _cell_volume   126.83954269
@@ -16,6 +17,13 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x+1/2, y+1/2, -z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,9 +32,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Fe  Fe0  1  0.01463194  0.00000000  0.00000000  1.0
-  Fe  Fe1  1  0.51463194  0.50000000  0.50000000  1.0
-  Te  Te2  1  0.01448403  0.22433470  0.36279490  1.0
-  Te  Te3  1  0.01448403  0.77566530  0.63720510  1.0
-  Te  Te4  1  0.51448403  0.27566530  0.86279490  1.0
-  Te  Te5  1  0.51448403  0.72433470  0.13720510  1.0
+  Fe  Fe0  2  0.00000000  0.00000000  0.00000000  1.0
+  Te  Te1  4  0.22433470  0.36279490  0.00000000  1.0

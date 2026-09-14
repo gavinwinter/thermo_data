@@ -1,21 +1,45 @@
+# Source: Materials Project mp-5408 (https://materialsproject.org/materials/mp-5408)
 # generated using pymatgen
 data_Ag3AsO4
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.14178751
-_cell_length_b   6.14178751
-_cell_length_c   6.14178662
-_cell_angle_alpha   89.86669459
-_cell_angle_beta   89.86669459
-_cell_angle_gamma   89.86668280
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   P-43n
+_cell_length_a   6.14375471
+_cell_length_b   6.14375471
+_cell_length_c   6.14375471
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   218
 _chemical_formula_structural   Ag3AsO4
 _chemical_formula_sum   'Ag6 As2 O8'
-_cell_volume   231.67585648
+_cell_volume   231.90045693
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  'y+1/2, -x+1/2, -z+1/2'
+  3  '-x, -y, z'
+  4  '-y+1/2, x+1/2, -z+1/2'
+  5  'x, -y, -z'
+  6  'y+1/2, x+1/2, z+1/2'
+  7  '-x, y, -z'
+  8  '-y+1/2, -x+1/2, z+1/2'
+  9  'z, x, y'
+  10  '-z+1/2, y+1/2, -x+1/2'
+  11  'z, -x, -y'
+  12  '-z+1/2, -y+1/2, x+1/2'
+  13  '-z, x, -y'
+  14  'z+1/2, y+1/2, x+1/2'
+  15  '-z, -x, y'
+  16  'z+1/2, -y+1/2, -x+1/2'
+  17  'y, z, x'
+  18  '-x+1/2, -z+1/2, y+1/2'
+  19  '-y, z, -x'
+  20  'x+1/2, -z+1/2, -y+1/2'
+  21  '-y, -z, x'
+  22  'x+1/2, z+1/2, y+1/2'
+  23  'y, -z, -x'
+  24  '-x+1/2, z+1/2, -y+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,19 +48,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ag  Ag0  1  0.71268391  0.00369851  0.50161653  1.0
-  Ag  Ag1  1  0.00369851  0.50161653  0.71268391  1.0
-  Ag  Ag2  1  0.50161653  0.71268391  0.00369851  1.0
-  Ag  Ag3  1  0.21268391  0.00161653  0.50369851  1.0
-  Ag  Ag4  1  0.50369851  0.21268391  0.00161653  1.0
-  Ag  Ag5  1  0.00161653  0.50369851  0.21268391  1.0
-  As  As6  1  0.50128953  0.50128953  0.50128953  1.0
-  As  As7  1  0.00128953  0.00128953  0.00128953  1.0
-  O  O8  1  0.67429723  0.34266056  0.65277162  1.0
-  O  O9  1  0.65277162  0.67429723  0.34266056  1.0
-  O  O10  1  0.34208209  0.34208209  0.34208209  1.0
-  O  O11  1  0.34266056  0.65277162  0.67429723  1.0
-  O  O12  1  0.84208209  0.84208209  0.84208209  1.0
-  O  O13  1  0.17429723  0.15277162  0.84266056  1.0
-  O  O14  1  0.15277162  0.84266056  0.17429723  1.0
-  O  O15  1  0.84266056  0.17429723  0.15277162  1.0
+  Ag  Ag0  6  0.00000000  0.50000000  0.25000000  1.0
+  As  As1  2  0.00000000  0.00000000  0.00000000  1.0
+  O  O2  8  0.16080514  0.16080514  0.83919486  1.0

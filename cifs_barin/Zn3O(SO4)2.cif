@@ -1,0 +1,42 @@
+# Source: Materials Project mp-30986 (https://materialsproject.org/materials/mp-30986)
+# generated using pymatgen
+data_Zn3S2O9
+_symmetry_space_group_name_H-M   P2_1/m
+_cell_length_a   7.38889562
+_cell_length_b   6.65013089
+_cell_length_c   7.92430472
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   117.75894587
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   11
+_chemical_formula_structural   Zn3S2O9
+_chemical_formula_sum   'Zn6 S4 O18'
+_cell_volume   344.56599375
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y+1/2, -z'
+  4  'x, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zn  Zn0  2  0.00000000  0.00000000  0.00000000  1.0
+  Zn  Zn1  2  0.11811802  0.25000000  0.74313717  1.0
+  Zn  Zn2  2  0.38890390  0.25000000  0.22318534  1.0
+  S  S3  2  0.15811812  0.75000000  0.71421205  1.0
+  S  S4  2  0.45060208  0.75000000  0.29980488  1.0
+  O  O5  4  0.06888649  0.57079197  0.75816826  1.0
+  O  O6  4  0.32121428  0.57024344  0.21382374  1.0
+  O  O7  2  0.11358573  0.75000000  0.51368223  1.0
+  O  O8  2  0.12296495  0.25000000  0.99231298  1.0
+  O  O9  2  0.37941248  0.25000000  0.74554544  1.0
+  O  O10  2  0.38118863  0.75000000  0.83375339  1.0
+  O  O11  2  0.47081514  0.25000000  0.49467302  1.0

@@ -1,21 +1,29 @@
+# Source: Materials Project mp-30952 (https://materialsproject.org/materials/mp-30952)
 # generated using pymatgen
 data_GaCl3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.91577005
-_cell_length_b   7.05189772
-_cell_length_c   6.98492471
-_cell_angle_alpha   61.40454836
-_cell_angle_beta   60.35125191
-_cell_angle_gamma   60.69401951
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   12.14083905
+_cell_length_b   6.91577005
+_cell_length_c   7.16711068
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   125.39718868
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
 _chemical_formula_structural   GaCl3
-_chemical_formula_sum   'Ga2 Cl6'
-_cell_volume   245.26974899
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Ga4 Cl12'
+_cell_volume   490.53974807
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +32,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ga  Ga0  1  0.34218619  0.08732462  0.22787870  1.0
-  Ga  Ga1  1  0.65781094  0.91267568  0.77212149  1.0
-  Cl  Cl2  1  0.73596488  0.99992610  0.00043300  1.0
-  Cl  Cl3  1  0.26402975  0.00008799  0.99955526  1.0
-  Cl  Cl4  1  0.69593435  0.16779360  0.44142964  1.0
-  Cl  Cl5  1  0.30408040  0.83219277  0.55856163  1.0
-  Cl  Cl6  1  0.81469226  0.56020662  0.81025706  1.0
-  Cl  Cl7  1  0.18530023  0.43979062  0.18976322  1.0
+  Ga  Ga0  4  0.15739070  0.50000000  0.58732447  1.0
+  Cl  Cl1  4  0.00000000  0.26406653  0.50000000  1.0
+  Cl  Cl2  4  0.18502088  0.00000000  0.06020647  1.0
+  Cl  Cl3  4  0.19559934  0.50000000  0.33220655  1.0

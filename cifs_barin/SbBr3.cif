@@ -1,13 +1,14 @@
+# Source: Materials Project mp-570005 (https://materialsproject.org/materials/mp-570005)
 # generated using pymatgen
 data_SbBr3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.87425072
-_cell_length_b   8.48625387
-_cell_length_c   9.94369885
+_symmetry_space_group_name_H-M   Pnma
+_cell_length_a   8.48625387
+_cell_length_b   9.94369885
+_cell_length_c   6.87425072
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_symmetry_Int_Tables_number   62
 _chemical_formula_structural   SbBr3
 _chemical_formula_sum   'Sb4 Br12'
 _cell_volume   580.08194802
@@ -16,6 +17,13 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x, y+1/2, -z'
+  8  'x, -y+1/2, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,19 +32,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Sb  Sb0  1  0.47907390  0.49378261  0.25000000  1.0
-  Sb  Sb1  1  0.97907390  0.00621739  0.75000000  1.0
-  Sb  Sb2  1  0.52092610  0.50621739  0.75000000  1.0
-  Sb  Sb3  1  0.02092610  0.99378261  0.25000000  1.0
-  Br  Br4  1  0.63947152  0.32013263  0.93403469  1.0
-  Br  Br5  1  0.66709426  0.07685878  0.25000000  1.0
-  Br  Br6  1  0.13947152  0.17986737  0.06596531  1.0
-  Br  Br7  1  0.13947152  0.17986737  0.43403469  1.0
-  Br  Br8  1  0.16709426  0.42314122  0.75000000  1.0
-  Br  Br9  1  0.33290574  0.92314122  0.75000000  1.0
-  Br  Br10  1  0.36052848  0.67986737  0.06596531  1.0
-  Br  Br11  1  0.86052848  0.82013263  0.93403469  1.0
-  Br  Br12  1  0.36052848  0.67986737  0.43403469  1.0
-  Br  Br13  1  0.86052848  0.82013263  0.56596531  1.0
-  Br  Br14  1  0.63947152  0.32013263  0.56596531  1.0
-  Br  Br15  1  0.83290574  0.57685878  0.25000000  1.0
+  Sb  Sb0  4  0.00621739  0.75000000  0.97907390  1.0
+  Br  Br1  8  0.17986737  0.06596531  0.13947152  1.0
+  Br  Br2  4  0.07685878  0.25000000  0.66709426  1.0

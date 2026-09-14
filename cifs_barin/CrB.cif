@@ -1,21 +1,53 @@
+# Source: Materials Project mp-1080664 (https://materialsproject.org/materials/mp-1080664)
 # generated using pymatgen
 data_CrB
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   2.90046917
-_cell_length_b   2.90049441
-_cell_length_c   8.06683755
-_cell_angle_alpha   100.36195838
-_cell_angle_beta   100.36187020
-_cell_angle_gamma   89.99591205
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   I4_1/amd
+_cell_length_a   2.90048179
+_cell_length_b   2.90048179
+_cell_length_c   15.60303702
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   141
 _chemical_formula_structural   CrB
-_chemical_formula_sum   'Cr4 B4'
-_cell_volume   65.63257254
-_cell_formula_units_Z   4
+_chemical_formula_sum   'Cr8 B8'
+_cell_volume   131.26514619
+_cell_formula_units_Z   8
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-y, x+1/2, z+1/4'
+  3  '-x+1/2, -y+1/2, z+1/2'
+  4  'y+1/2, -x, z+3/4'
+  5  'x, -y+1/2, -z+1/4'
+  6  '-y, -x, -z'
+  7  '-x+1/2, y, -z+3/4'
+  8  'y+1/2, x+1/2, -z+1/2'
+  9  '-x, -y+1/2, -z+1/4'
+  10  'y, -x, -z'
+  11  'x+1/2, y, -z+3/4'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  '-x, y, z'
+  14  'y, x+1/2, z+1/4'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  '-y+1/2, -x, z+3/4'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-y+1/2, x, z+3/4'
+  19  '-x, -y, z'
+  20  'y, -x+1/2, z+1/4'
+  21  'x+1/2, -y, -z+3/4'
+  22  '-y+1/2, -x+1/2, -z+1/2'
+  23  '-x, y+1/2, -z+1/4'
+  24  'y, x, -z'
+  25  '-x+1/2, -y, -z+3/4'
+  26  'y+1/2, -x+1/2, -z+1/2'
+  27  'x, y+1/2, -z+1/4'
+  28  '-y, x, -z'
+  29  '-x+1/2, y+1/2, z+1/2'
+  30  'y+1/2, x, z+3/4'
+  31  'x, -y, z'
+  32  '-y, -x+1/2, z+1/4'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,11 +56,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Cr  Cr0  1  0.57260837  0.82259573  0.14517640  1.0
-  Cr  Cr1  1  0.82260045  0.57261428  0.64518823  1.0
-  Cr  Cr2  1  0.42742238  0.17743602  0.85488451  1.0
-  Cr  Cr3  1  0.17734458  0.42733299  0.35470694  1.0
-  B  B4  1  0.71727520  0.96724782  0.43458736  1.0
-  B  B5  1  0.96727501  0.71730113  0.93463442  1.0
-  B  B6  1  0.28271688  0.03274352  0.56540081  1.0
-  B  B7  1  0.03275614  0.28272850  0.06542133  1.0
+  Cr  Cr0  8  0.00000000  0.00000000  0.19756669  1.0
+  B  B1  8  0.00000000  0.00000000  0.34227217  1.0

@@ -49,6 +49,9 @@ import os
 import re
 import sys
 import time
+from fractions import Fraction
+from functools import reduce
+from math import gcd
 from pathlib import Path
 
 import pandas as pd
@@ -67,9 +70,13 @@ CIF_DIR.mkdir(exist_ok=True)
 # Known amorphous / non-crystalline entries: no CIF applies, don't bother querying.
 AMORPHOUS_TAGS = {"GL"}  # glass
 
-# Barin's toc was produced via OCR and has systematic character-confusion
-# errors. Most of them are caught and repaired automatically below by
-# cross-checking against the Name column, which almost always spells out
+# toc_barin.csv itself has been cleaned of the systematic OCR
+# character-confusion errors (Al/AI, Cl/CI, lowercase l or i misread as
+# capital I, malformed '[g]' tags, and a handful of individually-verified
+# one-off mid-string drops like Cr2306 -> Cr23C6) at the source, rather
+# than patched around here. What follows still guards against whatever a
+# *different* OCR pass over the same PDF might produce, by cross-checking
+# each formula against its Name column, which almost always spells out
 # the compound's elements (directly, via a compound-class suffix like
 # "...OXIDE"/"...SULFATE", or an explicit count like "4-CALCIUM
 # 3-TITANIUM 10-OXIDE"):
@@ -85,28 +92,6 @@ AMORPHOUS_TAGS = {"GL"}  # glass
 #     'Sc') -> fix_orphan_element_extension()
 #   - a formula collapsing to one element despite a long string, fixed by
 #     trying common trailing-character confusions -> repair_single_element_collapse()
-#
-# What's left here is the residual handful of genuinely irreducible cases:
-# a letter dropped from the *middle* of a digit run too long to safely
-# guess without exact stoichiometry (Cr2306), a count given only as a
-# Greek-numeral prefix rather than a named element (LiSAIF6's "TRI-"), a
-# missing element masked because it's already present via another part of
-# a multi-part formula (4PbO*PbS04), and formulas whose Name is a mineral
-# or organic name that doesn't spell out its own chemistry at all
-# (LiAISi206, C8Hi6, Ca5Si6O17*10.5w). Each was individually verified
-# against the Name column. Keyed by the exact raw Formula string as it
-# appears in toc_barin.csv.
-OCR_OVERRIDES = {
-    "Cr2306": "Cr23C6",              # 23-CHROMIUM 6-CARBIDE (mid-string 'C' dropped as '0')
-    "LiAISi206": "LiAlSi2O6",        # ALPHA-SPODUMENE (mineral name doesn't spell out O)
-    "4PbO*PbS04": "4PbO*PbSO4",      # PENTALEAD TETRAOXIDE SULFATE (O already present via the
-                                      # '4PbO' part masks the missing-element check on 'PbS04')
-    "Ca5Si6O17*10.5w": "Ca5Si6O17*10.5H2O",  # best-guess: truncated hydrate suffix
-    "C8Hi6": "C8H16",                # ETHYLCYCLOHEXANE ('1' misread as 'i')
-    "LiSAIF6": "Li3AlF6",            # TRILITHIUM HEXAFLUOROALUMINATE ('3' misread as 'S',
-                                      # a Greek-numeral-prefix count Name doesn't literally spell
-                                      # out as an element -- see module docstring)
-}
 
 # Full element symbol table, used to read the element(s) a Name column cell
 # actually claims to contain -- e.g. "COBALT SELENITE" implies {Co, Se}.
@@ -410,16 +395,6 @@ def repair_single_element_collapse(formula: str):
         return candidate
     return formula
 
-# A handful of rows have a Formula that was copy-duplicated from a nearby
-# row (an OCR/transcription artifact), independently identifiable by page
-# number and cross-checked against the Name column.
-# Keyed by (page, original Name) since a page can hold multiple rows and a
-# page-only key would clobber an unrelated row that happens to share a page.
-PAGE_OVERRIDES = {
-    (498, "Cdl2 CADMIUM IODIDE"): ("CdI2", "CADMIUM IODIDE"),  # leaked "Cdl2 " prefix
-    (512, "DICERIUM TRICARBIDE"): ("Ce2C3", None),  # Formula duplicated from a nearby Ce2O3 row
-}
-
 
 def fix_ocr_letters(formula: str) -> str:
     """Apply the systematic, low-risk OCR letter-confusion fixes:
@@ -441,7 +416,10 @@ def fix_ocr_letters(formula: str) -> str:
 # Left deliberately partial -- anything not listed here falls back to the
 # "most stable" pick and is flagged for manual review.
 POLYMORPH_SPACEGROUP_HINTS = {
-    ("Al2O3", "C"): "Fd-3m",       # gamma-Al2O3 (spinel-type)
+    ("Al2O3", "C"): "Fd-3m",       # gamma-Al2O3 (spinel-type) -- no current MP
+                                    # candidate actually has this symmetry, so
+                                    # this hint is presently a no-op; left in
+                                    # case MP adds one later
     ("As2O3", "A"): "Fd-3m",       # arsenolite
     ("C", "D"): "Fd-3m",           # diamond
     ("CaCO3", "A"): "Pnma",        # aragonite
@@ -449,7 +427,113 @@ POLYMORPH_SPACEGROUP_HINTS = {
     ("TiO2", "A"): "I4_1/amd",     # anatase
     ("ZnS", "S"): "F-43m",         # sphalerite
     ("PbO", "R"): "P4/nmm",        # litharge (red PbO)
+    ("Al2SiO5", "A"): "Pnnm",      # andalusite
+    ("Al2SiO5", "S"): "Pnma",      # sillimanite (Pbnm in some settings)
+    ("Ca2SiO4", "B"): "P2_1/c",    # larnite (beta-Ca2SiO4)
+    ("Sb2O3", "O"): "Pccn",        # valentinite (orthorhombic Sb2O3)
+    ("Eu2O3", "M"): "C2/m",        # B-type monoclinic Eu2O3
+    ("Gd2O3", "M"): "C2/m",        # B-type monoclinic Gd2O3
+    ("Sm2O3", "M"): "C2/m",        # B-type monoclinic Sm2O3
+    ("Al2O3*H2O", "B"): "Pmn2_1",  # boehmite -- the only other AlOOH
+                                    # candidate besides diaspore (Pnma, the
+                                    # untagged row's pick)
 }
+
+# Some rows carry their polymorph identity only as a Name parenthetical, e.g.
+# 'SODIUM SULFATE (III)' vs the [III]-tagged case above; specifically here, a
+# handful of untagged toc rows (bare_formula, phase_tag=None) whose Name says
+# e.g. '(WHITE)' or '(CUBIC)' -- meaning "most stable by DFT energy" is not
+# actually what that row represents. Verified against MP: for each of these,
+# the lowest-energy_above_hull experimental candidate is a *different*,
+# well-known named polymorph than the one the Name specifies.
+UNTAGGED_NAME_SPACEGROUP_HINTS = {
+    "Sn": "I4_1/amd",       # white/beta-Sn (body-centered tetragonal) -- the
+                             # lowest-energy candidate is gray/alpha-Sn (Fd-3m,
+                             # diamond-cubic), a different, colder-stable form
+    "Si3N4": "P31c",        # alpha-Si3N4 -- lowest-energy candidate is the
+                             # higher-symmetry beta form (P6_3/m)
+    "Sb2O3": "Fd-3m",       # senarmontite (cubic) -- lowest-energy candidate
+                             # is valentinite (Pccn, orthorhombic), which is
+                             # the *other* named Sb2O3 polymorph in this toc
+                             # (already correctly hinted via its own [O] tag)
+    "Pu2O3": "P-3m1",       # alpha-Pu2O3 (A-type hexagonal, by analogy with
+                             # the Ln2O3 A/B/C sesquioxide pattern) -- lowest-
+                             # energy candidate is the C-type cubic form (Ia-3)
+    "SiC": "F-43m",         # 3C-SiC (cubic zinc-blende) -- SiC has dozens of
+                             # near-degenerate hexagonal/rhombohedral polytype
+                             # candidates within noise of the DFT ground state,
+                             # so "lowest energy" is close to an arbitrary pick
+                             # among them; this pins it to the specifically
+                             # named cubic polytype instead
+    "TiO2": "P4_2/mnm",     # rutile (icsd_n=131, overwhelmingly the common
+                             # form) -- lowest-energy candidate is anatase
+                             # (I4_1/amd), the *other* named TiO2 polymorph in
+                             # this toc (already correctly hinted via [A])
+    "PbO": "Pbcm",          # massicot/yellow PbO -- lowest-energy candidate
+                             # is litharge/red PbO (P4/nmm), the *other* named
+                             # PbO polymorph in this toc (already correctly
+                             # hinted via [R])
+    "LiAlSi2O6": "C2/c",    # alpha-spodumene (pyroxene structure, icsd_n=17)
+                             # -- lowest-energy candidate is a weakly-supported
+                             # P1 structure (icsd_n=1), not a named polymorph
+    "Fe0.778S": "C2/c", 
+}
+
+# Elements that appear in this dataset's actual organic entries (hydrocarbons,
+# alcohols, acids: C/H, plus the O/S/N/halogens that show up in their
+# functional groups). A formula needs C and H *and* nothing outside this set
+# to count as organic here -- otherwise something like NaHCO3 (sodium
+# bicarbonate, a genuine mineral with Na present) would get misclassified as
+# organic just because it happens to contain both C and H.
+_ORGANIC_ALLOWED_ELEMENTS = {"C", "H", "N", "O", "S", "P", "F", "Cl", "Br", "I"}
+
+
+def is_organic_formula(bare_formula: str) -> bool:
+    """Contains both carbon and hydrogen, with no elements outside the
+    CHNOPS+halogens set (i.e. not an inorganic salt that happens to contain
+    both). Distinct organic molecules -- positional/substituent isomers
+    especially -- routinely share an empirical formula (e.g. cyclohexane and
+    methylcyclopentane are both C6H12), unlike most inorganic polymorphs of
+    the same reduced formula. So multiple MP candidates for an organic
+    formula can't be safely disambiguated by stoichiometry alone the way
+    select_candidate()'s fallback tiers do for inorganics.
+    """
+    comp = formula_to_composition(bare_formula)
+    if comp is None:
+        return False
+    elements = {str(e) for e in comp.elements}
+    return "C" in elements and "H" in elements and elements <= _ORGANIC_ALLOWED_ELEMENTS
+
+
+def is_whole_molecule_multiple(bare_formula: str, candidate_composition: str) -> bool:
+    """MP's formula= search matches by simplest-ratio (reduced formula), which
+    collapses every CnH2n cycloalkane/alkene onto the same search bucket --
+    C6H12 (cyclohexane), C6H12[M] (methylcyclopentane), and C7H14[M]
+    (methylcyclohexane) are all indistinguishable to it. A candidate can only
+    actually BE (some multiple of whole molecules of) the target if its exact
+    per-cell atom counts are an integer multiple of the target's own exact
+    formula -- e.g. a C4H8 unit cell can't be built from any number of whole
+    C6H12 molecules. This check catches that case even when there's only one
+    MP candidate (so select_candidate()'s single_candidate tier can't be
+    trusted blindly for organics either).
+    """
+    target = formula_to_composition(bare_formula)
+    if target is None:
+        return True  # can't check -- don't block on a formula we can't parse
+    try:
+        cand = Composition(candidate_composition)
+    except Exception:
+        return True
+    target_amts = target.get_el_amt_dict()
+    cand_amts = cand.get_el_amt_dict()
+    if set(target_amts) != set(cand_amts):
+        return False
+    ratios = [cand_amts[el] / target_amts[el] for el in target_amts]
+    k = round(ratios[0])
+    if k < 1:
+        return False
+    return all(abs(r - k) < 1e-2 for r in ratios)
+
 
 def strip_phase_tag(formula: str):
     """Return (bare_formula, tag) splitting off a trailing [TAG] annotation."""
@@ -457,6 +541,17 @@ def strip_phase_tag(formula: str):
     if not m:
         return formula, None
     return formula[: m.start()], m.group(1)
+
+
+def strip_all_tags(formula: str):
+    """Repeatedly strip trailing [TAG] groups -- some entries stack more than
+    one, e.g. 'C2F2Cl2[1,1][g]' (isomer tag, then gas tag)."""
+    cur = formula
+    while True:
+        bare, tag = strip_phase_tag(cur)
+        if tag is None:
+            return bare
+        cur = bare
 
 
 def parse_leading_coefficient(part: str) -> str:
@@ -488,6 +583,62 @@ def fix_hydrate_water(formula: str) -> str:
     return "*".join(fixed)
 
 
+def rationalize_composition(comp: Composition, max_denominator: int = 20) -> Composition:
+    """Approximate a composition with non-integer element amounts by the
+    nearest simple whole-number-ratio composition.
+
+    Barin includes non-stoichiometric defect compounds measured at an exact
+    fractional ratio (e.g. Fe0.877S for pyrrhotite, Fe0.947O for wuestite).
+    MP indexes and searches by whole-number formulas only, and the real MP
+    entry for a compound like this is a specific small-integer formula (e.g.
+    Fe7S8) rather than the literal measured decimal -- so searching MP with
+    the raw decimal formula returns nothing. This finds that nearby integer
+    formula for search purposes; composition_ratio_close() below re-verifies
+    the result against the true (non-integer) target ratio with tolerance,
+    since the rationalized formula is only an approximation.
+    """
+    amt_dict = comp.get_el_amt_dict()
+    fracs = {el: Fraction(amt).limit_denominator(max_denominator) for el, amt in amt_dict.items()}
+    denom_lcm = reduce(lambda a, b: a * b // gcd(a, b), (f.denominator for f in fracs.values()), 1)
+    int_amts = {el: round(f * denom_lcm) for el, f in fracs.items()}
+    common = reduce(gcd, [v for v in int_amts.values() if v > 0])
+    int_amts = {el: amt // common for el, amt in int_amts.items()}
+    return Composition(int_amts)
+
+
+def is_nonstoichiometric(comp: Composition) -> bool:
+    """True if any element amount is not a whole number."""
+    return any(abs(amt - round(amt)) > 1e-6 for amt in comp.get_el_amt_dict().values())
+
+
+def composition_ratio_close(target_bare_formula: str, candidate_composition: str, tol: float = 0.05) -> bool:
+    """For a non-stoichiometric target, verify a candidate's element ratios
+    are close to the *true* measured ratio (not the rationalized search
+    formula, which is only an approximant) -- e.g. Fe0.877S's real ratio is
+    0.877, and Fe7S8 (0.875) is within tolerance, but a candidate near a
+    different simple ratio like Fe0.75S (3:4) should be rejected even though
+    it might share some intermediate rationalization at a coarser
+    max_denominator.
+    """
+    target = formula_to_composition(target_bare_formula)
+    if target is None:
+        return True
+    try:
+        cand = Composition(candidate_composition)
+    except Exception:
+        return True
+    target_amts = target.get_el_amt_dict()
+    cand_amts = cand.get_el_amt_dict()
+    if set(target_amts) != set(cand_amts):
+        return False
+    anchor = next(iter(target_amts))
+    if target_amts[anchor] == 0:
+        return True
+    target_ratios = {el: amt / target_amts[anchor] for el, amt in target_amts.items()}
+    cand_ratios = {el: amt / cand_amts[anchor] for el, amt in cand_amts.items()}
+    return all(abs(cand_ratios[el] - target_ratios[el]) <= tol for el in target_ratios)
+
+
 def formula_to_composition(formula: str):
     """Best-effort parse of a (bracket-stripped) Barin formula into a pymatgen
     Composition, handling '*' hydrate/adduct notation and leading multipliers
@@ -510,20 +661,36 @@ def load_toc():
     for _, r in toc.iterrows():
         formula_raw = str(r["Formula"]).strip()
         name_raw = str(r["Name"]).strip()
-        page = int(r["Page number"])
         bare, tag = strip_phase_tag(formula_raw)
         # OCR sometimes mangles the '[g]' gas marker itself (e.g. '(g]',
         # '{g]', '/g]'), so also fall back to the Name column, which
         # reliably says "(GAS)" for every gas-phase entry.
         if tag == "g" or "(GAS)" in name_raw.upper():
-            continue  # gas phase, no crystal structure
-        if (page, name_raw) in PAGE_OVERRIDES:
-            # Formula field was copy-duplicated from a neighboring row.
-            formula_raw, fixed_name = PAGE_OVERRIDES[(page, name_raw)]
-            if fixed_name:
-                name_raw = fixed_name
-        corrected = OCR_OVERRIDES.get(formula_raw, formula_raw)
-        corrected = fix_ocr_letters(corrected)
+            # A gas has no crystal structure to look up, so this row is never
+            # a candidate for MP/COD matching -- but if it's organic, that's
+            # the clearest possible case of "no structure expected" and worth
+            # recording rather than vanishing with no trace. (Non-organic
+            # gases are left out entirely, as before, since Barin's is/are
+            # exhaustive elemental/simple-compound gas tables and recording
+            # all ~1000 of them isn't what's being asked for here.)
+            fully_bare = strip_all_tags(fix_ocr_letters(formula_raw))
+            if is_organic_formula(fully_bare):
+                rows.append(
+                    {
+                        "Formula": formula_raw,
+                        "Name": name_raw,
+                        "Page number": r["Page number"],
+                        "bare_formula": fully_bare,
+                        "phase_tag": tag,
+                        "reduced_formula": None,
+                        "parse_ok": False,
+                        "suspected_ocr_corruption": False,
+                        "is_gas": True,
+                        "is_nonstoichiometric": False,
+                    }
+                )
+            continue
+        corrected = fix_ocr_letters(formula_raw)
         corrected = fix_hydrate_water(corrected)
         bare, tag = strip_phase_tag(corrected)  # tag may itself have been letter-fixed
         bare = fix_unparseable_leading_element(bare, name_raw)
@@ -544,7 +711,16 @@ def load_toc():
             comp = formula_to_composition(bare)
             n_elements = len(comp.elements) if comp is not None else 0
             suspicious = comp is not None and n_elements <= 1 and len(bare) > 4
-        reduced = comp.reduced_formula if comp is not None else None
+        nonstoich = comp is not None and is_nonstoichiometric(comp)
+        if nonstoich:
+            # MP only indexes/searches whole-number formulas -- search using
+            # the nearest simple integer ratio (e.g. Fe0.877S -> Fe7S8), and
+            # keep the exact fractional bare_formula around so
+            # composition_ratio_close() can re-verify candidates against the
+            # true measured ratio rather than trusting the approximation.
+            reduced = rationalize_composition(comp).reduced_formula
+        else:
+            reduced = comp.reduced_formula if comp is not None else None
         rows.append(
             {
                 "Formula": formula_raw,
@@ -555,6 +731,8 @@ def load_toc():
                 "reduced_formula": reduced,
                 "parse_ok": comp is not None and not suspicious,
                 "suspected_ocr_corruption": suspicious,
+                "is_gas": False,
+                "is_nonstoichiometric": nonstoich,
             }
         )
     return pd.DataFrame(rows)
@@ -579,7 +757,8 @@ def chunked(seq, n):
 def query_candidates(mpr, reduced_formulas):
     """Batch-query MP summary docs for a list of reduced formulas.
     Returns a DataFrame of candidates (no structure yet)."""
-    fields = ["material_id", "formula_pretty", "symmetry", "energy_above_hull", "is_stable", "nsites"]
+    fields = ["material_id", "formula_pretty", "symmetry", "energy_above_hull",
+              "is_stable", "nsites", "theoretical", "composition", "database_IDs"]
     all_docs = []
     formulas = sorted(set(reduced_formulas))
     batches = list(chunked(formulas, 100))
@@ -595,6 +774,7 @@ def query_candidates(mpr, reduced_formulas):
             tqdm.write(f"  FAILED batch starting with {batch[0]}, skipping")
             continue
         for d in docs:
+            icsd_ids = d.database_IDs.get("icsd") if d.database_IDs else None
             all_docs.append(
                 {
                     "reduced_formula": d.formula_pretty,
@@ -603,41 +783,175 @@ def query_candidates(mpr, reduced_formulas):
                     "energy_above_hull": d.energy_above_hull,
                     "is_stable": d.is_stable,
                     "nsites": d.nsites,
+                    "theoretical": d.theoretical,
+                    "composition": str(d.composition),
+                    "icsd_n": len(icsd_ids) if icsd_ids else 0,
                 }
             )
         tqdm.write(f"  queried {len(batch)} formulas, total candidates so far: {len(all_docs)}")
     return pd.DataFrame(all_docs)
 
 
-def select_candidate(row, candidates):
+def query_remarks(mpr, material_ids):
+    """Batch-fetch MP's provenance 'remarks' (the "User remarks" field shown
+    on a material's web page, e.g. ['Pyrrhotite 4C', 'Iron sulfide (7/8)'])
+    for a list of material_ids. Returns {material_id: [remark strings]}."""
+    lookup = {}
+    if not material_ids:
+        return lookup
+    for batch in chunked(sorted(set(material_ids)), 100):
+        for attempt in range(3):
+            try:
+                docs = mpr.materials.provenance.search(material_ids=batch, 
+                                                       fields=["material_id", "remarks"])
+                break
+            except Exception as e:
+                tqdm.write(f"  remarks query error ({e}), retrying...")
+                time.sleep(5)
+        else:
+            tqdm.write(f"  FAILED remarks batch starting with {batch[0]}, skipping")
+            continue
+        for d in docs:
+            lookup[str(d.material_id)] = d.remarks or []
+    return lookup
+
+
+def select_candidate(row, candidates, remarks_lookup=None):
     """Pick a material_id for one toc row from its candidate pool."""
     cands = candidates[candidates["reduced_formula"] == row["reduced_formula"]]
+
+    organic = is_organic_formula(row["bare_formula"])
+    if organic:
+        # MP's formula= search matches by simplest ratio, so e.g. cyclohexane
+        # (C6H12), methylcyclopentane (C6H12[M]), and methylcyclohexane
+        # (C7H14[M]) all land in the same candidate pool as any other CnH2n
+        # compound. Keep only candidates whose exact per-cell composition
+        # could actually be tiled from whole molecules of this formula --
+        # otherwise even a lone "single candidate" can be a different-sized
+        # molecule entirely (e.g. a C4H8 cell can't be built from C6H12).
+        cands = cands[cands["composition"].apply(
+            lambda c: is_whole_molecule_multiple(row["bare_formula"], c)
+        )]
+
+    nonstoich = bool(row.get("is_nonstoichiometric", False))
+    if nonstoich:
+        # reduced_formula here is only rationalize_composition()'s integer
+        # approximation of Barin's exact measured ratio -- verify each
+        # candidate's true composition is actually close to that ratio, not
+        # just coincidentally sharing the same simplified search formula.
+        cands = cands[cands["composition"].apply(
+            lambda c: composition_ratio_close(row["bare_formula"], c)
+        )]
+
     if len(cands) == 0:
         return None, "no_mp_match", None
+
+    if nonstoich and remarks_lookup:
+        # Non-stoichiometric defect compounds (pyrrhotite, wuestite, ...)
+        # commonly have several real, differently-ordered superstructure
+        # polytypes at essentially the same ratio. MP's "remarks"/"tags"
+        # field often names the specific mineral (e.g. mp-542794's remarks
+        # include "Pyrrhotite 4C") -- prefer a candidate whose remarks
+        # mention this row's name over a blind lowest-energy guess among
+        # otherwise-indistinguishable polytypes.
+        name_key = re.split(r"[\s(),]", row["Name"].upper())[0]
+        name_matches = cands[cands["material_id"].apply(
+            lambda mid: any(name_key in rem.upper() or rem.upper() in name_key
+                             for rem in remarks_lookup.get(mid, []))
+        )]
+        name_matches_exp = name_matches[name_matches["theoretical"] == False]  # noqa: E712
+        pool = name_matches_exp if len(name_matches_exp) >= 1 else name_matches
+        if len(pool) >= 1:
+            # Among several same-named candidates (distinct real polytypes,
+            # e.g. pyrrhotite's 3T/4C/5C/... superstructures, can be nearly
+            # energy-degenerate), prefer whichever has the most independent
+            # ICSD structure determinations -- the more "canonical"/commonly
+            # observed form -- before falling back to lowest energy.
+            c = pool.sort_values(["icsd_n", "energy_above_hull"], ascending=[False, True]).iloc[0]
+            return c["material_id"], "nonstoichiometric_remarks_match", c["spacegroup"]
+
     if len(cands) == 1:
         c = cands.iloc[0]
         return c["material_id"], "single_candidate", c["spacegroup"]
 
-    if row["phase_tag"]:
+    if pd.notna(row["phase_tag"]) and row["phase_tag"]:
         hint_sg = POLYMORPH_SPACEGROUP_HINTS.get((row["bare_formula"], row["phase_tag"]))
         if hint_sg:
             match = cands[cands["spacegroup"] == hint_sg]
             if len(match) >= 1:
-                c = match.sort_values("energy_above_hull").iloc[0]
+                match_exp = match[match["theoretical"] == False]  # noqa: E712
+                pool = match_exp if len(match_exp) >= 1 else match
+                c = pool.sort_values("energy_above_hull").iloc[0]
                 return c["material_id"], "spacegroup_hint", c["spacegroup"]
+    else:
+        # No [TAG] in the formula, but some untagged rows still specify their
+        # polymorph via a Name parenthetical alone (e.g. 'TIN (WHITE)') --
+        # for those, "most stable by DFT energy" can silently pick a
+        # different, colder-stable named polymorph instead.
+        hint_sg = UNTAGGED_NAME_SPACEGROUP_HINTS.get(row["bare_formula"])
+        if hint_sg:
+            match = cands[cands["spacegroup"] == hint_sg]
+            if len(match) >= 1:
+                match_exp = match[match["theoretical"] == False]  # noqa: E712
+                pool = match_exp if len(match_exp) >= 1 else match
+                c = pool.sort_values("energy_above_hull").iloc[0]
+                return c["material_id"], "name_spacegroup_hint", c["spacegroup"]
+
+    if organic:
+        # No spacegroup hint applies (that table is inorganic-only) and
+        # multiple candidates survived the whole-molecule check -- for an
+        # organic that most likely means distinct isomers of the same size,
+        # which composition alone can't disambiguate further.
+        return None, "organic_ambiguous_isomers", None
+
+    # Barin's data is entirely experimental, and DFT energy_above_hull (a 0K
+    # ground-state proxy) can miss finite-temperature entropic stabilization
+    # of the polymorph actually tabulated. Prefer candidates MP has matched
+    # to a real ICSD structure (theoretical == False) before falling back to
+    # pure lowest-energy among all candidates.
+    has_tag = pd.notna(row["phase_tag"]) and bool(row["phase_tag"])
+    experimental = cands[cands["theoretical"] == False]  # noqa: E712
+    if len(experimental) >= 1:
+        c = experimental.sort_values("energy_above_hull").iloc[0]
+        method = "most_stable_experimental_polymorph_unresolved" if has_tag else "most_stable_experimental"
+        return c["material_id"], method, c["spacegroup"]
 
     c = cands.sort_values("energy_above_hull").iloc[0]
-    method = "most_stable_guess" if not row["phase_tag"] else "most_stable_guess_polymorph_unresolved"
+    method = "most_stable_guess_polymorph_unresolved" if has_tag else "most_stable_guess"
     return c["material_id"], method, c["spacegroup"]
 
 
 def sanitize_filename(formula: str) -> str:
-    return re.sub(r"[^A-Za-z0-9_.\[\]-]", "_", formula.replace("*", "_hyd_"))
+    # '(' ')' are kept as-is (they're valid on every filesystem this repo
+    # runs on, just needing quotes in a shell command) so hydrate/complex
+    # formulas like 'Al2(SO4)3' read as themselves in the filename instead
+    # of becoming 'Al2_SO4_3'. '*' (Barin's hydrate separator, e.g.
+    # 'ZnSO4*7H2O') is kept as-is too, matching how read_all_thermodata_pdf.py
+    # names the corresponding .json -- so a hydrate's .cif and .json share
+    # the same base name instead of one saying '_hyd_' and the other '*'.
+    return re.sub(r"[^A-Za-z0-9_.()\[\]*-]", "_", formula)
+
+
+# match_method values where the *specific* phase/polymorph identity Barin
+# names (a [TAG] or a Name parenthetical like '(WHITE)') was actually
+# cross-checked against MP's own data -- a hardcoded, researched spacegroup
+# hint, or a match against MP's own remarks/tags field -- as opposed to a
+# stoichiometry-only pick (single_candidate, most_stable_experimental*,
+# most_stable_guess*) that never confirms MP's structure is *this* named
+# polymorph specifically, just that it's *a* structure with the right formula.
+PHASE_NAME_VERIFIED_METHODS = {
+    "spacegroup_hint",
+    "name_spacegroup_hint",
+    "nonstoichiometric_remarks_match",
+}
 
 
 def main():
     toc = load_toc()
-    print(f"Non-gas toc rows: {len(toc)}")
+    gas_organic = toc[toc["is_gas"]].copy()
+    toc = toc[~toc["is_gas"]].copy()
+    print(f"Non-gas toc rows: {len(toc)} (plus {len(gas_organic)} gas-phase organics, "
+          f"recorded as no-structure-expected)")
     print(f"Rows with amorphous tag (skipped, no CIF possible): "
           f"{(toc['phase_tag'].isin(AMORPHOUS_TAGS)).sum()}")
 
@@ -651,10 +965,24 @@ def main():
         candidates = query_candidates(mpr, parseable["reduced_formula"].dropna().tolist())
         candidates.to_csv(ROOT / "mp_candidates_raw.csv", index=False)
 
+        nonstoich_formulas = set(parseable.loc[parseable["is_nonstoichiometric"], "reduced_formula"].dropna())
+        nonstoich_mids = candidates.loc[
+            candidates["reduced_formula"].isin(nonstoich_formulas), "material_id"
+        ].tolist()
+        print(f"Fetching MP remarks for {len(set(nonstoich_mids))} non-stoichiometric-formula "
+              f"candidates (for mineral-name disambiguation)...")
+        remarks_lookup = query_remarks(mpr, nonstoich_mids)
+
         results = []
         for _, row in parseable.iterrows():
-            mid, method, sg = select_candidate(row, candidates)
-            results.append({**row.to_dict(), "material_id": mid, "match_method": method, "spacegroup": sg})
+            mid, method, sg = select_candidate(row, candidates, remarks_lookup)
+            results.append({
+                **row.to_dict(),
+                "material_id": mid,
+                "match_method": method,
+                "phase_name_verified": (method in PHASE_NAME_VERIFIED_METHODS) if mid else None,
+                "spacegroup": sg,
+            })
         results_df = pd.DataFrame(results)
 
         matched = results_df[results_df["material_id"].notna()].copy()
@@ -688,7 +1016,21 @@ def main():
                 cif_paths.append(None)
                 continue
             fname = f"{sanitize_filename(row['Formula'])}.cif"
-            struct.to(filename=str(CIF_DIR / fname), fmt="cif")
+            # symprec finds the actual space group and writes the compact
+            # conventional cell with real symmetry operations -- without it,
+            # pymatgen's CifWriter defaults to unreduced P1 (every site listed
+            # explicitly, identity symmetry only), which loses exactly the
+            # spacegroup information this pipeline goes to such lengths to
+            # resolve per polymorph.
+            try:
+                cif_text = struct.to(fmt="cif", symprec=0.1)
+            except Exception:
+                # A handful of structures (disordered occupancies, unusual
+                # cells) can make symmetry-finding itself throw -- fall back
+                # to the unreduced P1 write rather than losing the CIF.
+                cif_text = struct.to(fmt="cif")
+            cif_text = f"# Source: Materials Project {mid} (https://materialsproject.org/materials/{mid})\n" + cif_text
+            (CIF_DIR / fname).write_text(cif_text)
             cif_paths.append(fname)
         matched["cif_file"] = cif_paths
 
@@ -699,15 +1041,19 @@ def main():
     unparseable = unparseable.assign(
         material_id=None,
         match_method=unparseable.apply(unparseable_label, axis=1),
+        phase_name_verified=None,
         spacegroup=None,
     )
+    gas_organic = gas_organic.assign(
+        material_id=None, match_method="gas_phase_organic", phase_name_verified=None, spacegroup=None
+    )
     unmatched = pd.concat(
-        [results_df[results_df["material_id"].isna()], unparseable],
+        [results_df[results_df["material_id"].isna()], unparseable, gas_organic],
         ignore_index=True,
     )
 
     cols = ["Formula", "Name", "Page number", "bare_formula", "phase_tag",
-            "reduced_formula", "material_id", "match_method", "spacegroup", "cif_file"]
+            "reduced_formula", "material_id", "match_method", "phase_name_verified", "spacegroup", "cif_file"]
     matched.reindex(columns=cols).to_csv(SUMMARY_CSV, index=False)
     unmatched.reindex(columns=[c for c in cols if c != "cif_file"]).to_csv(UNMATCHED_CSV, index=False)
 

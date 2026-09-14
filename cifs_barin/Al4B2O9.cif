@@ -1,0 +1,59 @@
+# Source: Materials Project mp-1229135 (https://materialsproject.org/materials/mp-1229135)
+# generated using pymatgen
+data_Al4B2O9
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   14.73086013
+_cell_length_b   5.53417948
+_cell_length_c   15.03828545
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   91.12499380
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Al4B2O9
+_chemical_formula_sum   'Al32 B16 O72'
+_cell_volume   1225.73319692
+_cell_formula_units_Z   8
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al  Al0  8  0.00108075  0.25608994  0.75534174  1.0
+  Al  Al1  4  0.06937755  0.50000000  0.06889643  1.0
+  Al  Al2  4  0.13767130  0.00000000  0.66310101  1.0
+  Al  Al3  4  0.17087166  0.50000000  0.34472326  1.0
+  Al  Al4  4  0.19395882  0.00000000  0.84174309  1.0
+  Al  Al5  4  0.25000000  0.25000000  0.00000000  1.0
+  Al  Al6  4  0.25000000  0.25000000  0.50000000  1.0
+  B  B7  4  0.10149017  0.00000000  0.10370697  1.0
+  B  B8  4  0.11103369  0.50000000  0.61256778  1.0
+  B  B9  4  0.12340040  0.50000000  0.88256312  1.0
+  B  B10  4  0.12734458  0.00000000  0.36988392  1.0
+  O  O11  8  0.06562490  0.21612565  0.13558122  1.0
+  O  O12  8  0.07837974  0.28222819  0.64337032  1.0
+  O  O13  8  0.16047294  0.21431678  0.40493373  1.0
+  O  O14  8  0.18142561  0.28390066  0.89363376  1.0
+  O  O15  4  0.05635498  0.50000000  0.95120927  1.0
+  O  O16  4  0.06675773  0.00000000  0.30047697  1.0
+  O  O17  4  0.07059497  0.50000000  0.28381295  1.0
+  O  O18  4  0.07313135  0.50000000  0.79900123  1.0
+  O  O19  4  0.08064100  0.00000000  0.77615295  1.0
+  O  O20  4  0.16727943  0.00000000  0.04135656  1.0
+  O  O21  4  0.17985259  0.50000000  0.55174312  1.0
+  O  O22  4  0.19621223  0.50000000  0.06230835  1.0
+  O  O23  4  0.20990812  0.00000000  0.56743486  1.0
+  O  O24  4  0.24085794  0.00000000  0.73260421  1.0

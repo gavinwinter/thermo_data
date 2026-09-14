@@ -1,21 +1,39 @@
+# Source: Materials Project mp-19417 (https://materialsproject.org/materials/mp-19417)
 # generated using pymatgen
 data_TiFeO3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.13076939
-_cell_length_b   5.55420694
-_cell_length_c   8.95446172
-_cell_angle_alpha   106.22217531
-_cell_angle_beta   89.46683158
-_cell_angle_gamma   115.58158959
-_symmetry_Int_Tables_number   1
+_symmetry_space_group_name_H-M   R-3
+_cell_length_a   5.08657790
+_cell_length_b   5.08657790
+_cell_length_c   13.74697930
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   148
 _chemical_formula_structural   TiFeO3
-_chemical_formula_sum   'Ti4 Fe4 O12'
-_cell_volume   219.16653633
-_cell_formula_units_Z   4
+_chemical_formula_sum   'Ti6 Fe6 O18'
+_cell_volume   308.02737162
+_cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-x+2/3, -y+1/3, -z+1/3'
+  9  '-y+2/3, x-y+1/3, z+1/3'
+  10  'y+2/3, -x+y+1/3, -z+1/3'
+  11  '-x+y+2/3, -x+1/3, z+1/3'
+  12  'x-y+2/3, x+1/3, -z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-x+1/3, -y+2/3, -z+2/3'
+  15  '-y+1/3, x-y+2/3, z+2/3'
+  16  'y+1/3, -x+y+2/3, -z+2/3'
+  17  '-x+y+1/3, -x+2/3, z+2/3'
+  18  'x-y+1/3, x+2/3, -z+2/3'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,23 +42,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ti  Ti0  1  0.28348600  0.56347700  0.42777200  1.0
-  Ti  Ti1  1  0.78371400  0.56387600  0.92783100  1.0
-  Ti  Ti2  1  0.21625000  0.43609100  0.07217300  1.0
-  Ti  Ti3  1  0.71652300  0.43654500  0.57223800  1.0
-  Fe  Fe4  1  0.96769000  0.93523600  0.32370500  1.0
-  Fe  Fe5  1  0.03233300  0.06480200  0.67629000  1.0
-  Fe  Fe6  1  0.46784800  0.93546000  0.82375300  1.0
-  Fe  Fe7  1  0.53220200  0.06453300  0.17625800  1.0
-  O  O8  1  0.77351200  0.26577400  0.71695200  1.0
-  O  O9  1  0.27342400  0.26534900  0.21684600  1.0
-  O  O10  1  0.31251600  0.27039800  0.52562500  1.0
-  O  O11  1  0.81234700  0.27070900  0.02561100  1.0
-  O  O12  1  0.33382100  0.26076800  0.89027300  1.0
-  O  O13  1  0.83373200  0.26074300  0.39034900  1.0
-  O  O14  1  0.72661300  0.73465700  0.78314400  1.0
-  O  O15  1  0.22645400  0.73421500  0.28304400  1.0
-  O  O16  1  0.18760700  0.72927200  0.97439400  1.0
-  O  O17  1  0.68750100  0.72960500  0.47437000  1.0
-  O  O18  1  0.16629300  0.73926400  0.60965400  1.0
-  O  O19  1  0.66613700  0.73922400  0.10971700  1.0
+  Ti  Ti0  6  0.00000000  0.00000000  0.34987676  1.0
+  Fe  Fe1  6  0.00000000  0.00000000  0.14914585  1.0
+  O  O2  18  0.01387828  0.65137888  0.91962933  1.0

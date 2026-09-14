@@ -1,21 +1,37 @@
+# Source: Materials Project mp-22968 (https://materialsproject.org/materials/mp-22968)
 # generated using pymatgen
 data_NaClO4
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.71875978
-_cell_length_b   4.71876030
+_symmetry_space_group_name_H-M   Cmcm
+_cell_length_a   6.99214440
+_cell_length_b   6.33850946
 _cell_length_c   6.98561793
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   95.61421131
-_symmetry_Int_Tables_number   1
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   63
 _chemical_formula_structural   NaClO4
-_chemical_formula_sum   'Na2 Cl2 O8'
-_cell_volume   154.80050180
-_cell_formula_units_Z   2
+_chemical_formula_sum   'Na4 Cl4 O16'
+_cell_volume   309.60100361
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z+1/2'
+  4  'x, y, -z+1/2'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z+1/2'
+  8  'x, -y, z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'x+1/2, y+1/2, -z+1/2'
+  13  'x+1/2, -y+1/2, -z'
+  14  '-x+1/2, y+1/2, z'
+  15  '-x+1/2, y+1/2, -z+1/2'
+  16  'x+1/2, -y+1/2, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,15 +40,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Na  Na0  1  0.65640662  0.65640662  0.25000000  1.0
-  Na  Na1  1  0.34359338  0.34359338  0.75000000  1.0
-  Cl  Cl2  1  0.15944971  0.15944971  0.25000000  1.0
-  Cl  Cl3  1  0.84055029  0.84055029  0.75000000  1.0
-  O  O4  1  0.14146958  0.80682710  0.75000000  1.0
-  O  O5  1  0.85852942  0.19317290  0.25000000  1.0
-  O  O6  1  0.80682710  0.14146958  0.75000000  1.0
-  O  O7  1  0.19317290  0.85852942  0.25000000  1.0
-  O  O8  1  0.29367690  0.29367690  0.08342575  1.0
-  O  O9  1  0.70632310  0.70632310  0.58342575  1.0
-  O  O10  1  0.29367690  0.29367690  0.41657425  1.0
-  O  O11  1  0.70632310  0.70632310  0.91657425  1.0
+  Na  Na0  4  0.00000000  0.34359338  0.75000000  1.0
+  Cl  Cl1  4  0.00000000  0.15944971  0.25000000  1.0
+  O  O2  8  0.00000000  0.29367690  0.08342575  1.0
+  O  O3  8  0.16732124  0.02585166  0.25000000  1.0

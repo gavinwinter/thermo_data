@@ -1,21 +1,33 @@
+# Source: Materials Project mp-1184756 (https://materialsproject.org/materials/mp-1184756)
 # generated using pymatgen
 data_IrI
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.02026335
-_cell_length_b   4.02026335
+_symmetry_space_group_name_H-M   P6_3mc
+_cell_length_a   4.02026367
+_cell_length_b   4.02026367
 _cell_length_c   7.53717900
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   119.99998926
-_symmetry_Int_Tables_number   1
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   186
 _chemical_formula_structural   IrI
 _chemical_formula_sum   'Ir2 I2'
-_cell_volume   105.49904129
+_cell_volume   105.49904700
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  'x-y, x, z+1/2'
+  3  '-y, x-y, z'
+  4  '-x, -y, z+1/2'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z+1/2'
+  7  'y, x, z+1/2'
+  8  'x, x-y, z'
+  9  'x-y, -y, z+1/2'
+  10  '-y, -x, z'
+  11  '-x, -x+y, z+1/2'
+  12  '-x+y, y, z'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,7 +36,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ir  Ir0  1  0.66666700  0.33333300  0.86011700  1.0
-  Ir  Ir1  1  0.33333300  0.66666700  0.36011700  1.0
-  I  I2  1  0.66666700  0.33333300  0.51488400  1.0
-  I  I3  1  0.33333300  0.66666700  0.01488400  1.0
+  Ir  Ir0  2  0.33333333  0.66666667  0.36011700  1.0
+  I  I1  2  0.33333333  0.66666667  0.01488400  1.0

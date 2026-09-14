@@ -1,21 +1,33 @@
+# Source: Materials Project mp-2651 (https://materialsproject.org/materials/mp-2651)
 # generated using pymatgen
 data_PrF3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   7.06402107
-_cell_length_b   7.06402262
+_symmetry_space_group_name_H-M   P-3c1
+_cell_length_a   7.06402184
+_cell_length_b   7.06402184
 _cell_length_c   7.26753433
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   120.00000234
-_symmetry_Int_Tables_number   1
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   165
 _chemical_formula_structural   PrF3
 _chemical_formula_sum   'Pr6 F18'
-_cell_volume   314.06661983
+_cell_volume   314.06662724
 _cell_formula_units_Z   6
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z+1/2'
+  8  '-y, -x, z+1/2'
+  9  'x-y, -y, -z+1/2'
+  10  '-x+y, y, z+1/2'
+  11  '-x, -x+y, -z+1/2'
+  12  'x, x-y, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,27 +36,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Pr  Pr0  1  0.65671949  0.65671949  0.75000000  1.0
-  Pr  Pr1  1  -0.00000000  0.34328051  0.75000000  1.0
-  Pr  Pr2  1  0.34328051  0.00000000  0.75000000  1.0
-  Pr  Pr3  1  0.34328051  0.34328051  0.25000000  1.0
-  Pr  Pr4  1  0.00000000  0.65671949  0.25000000  1.0
-  Pr  Pr5  1  0.65671949  -0.00000000  0.25000000  1.0
-  F  F6  1  0.00000000  0.00000000  0.75000000  1.0
-  F  F7  1  0.00000000  0.00000000  0.25000000  1.0
-  F  F8  1  0.33333300  0.66666700  0.67958419  1.0
-  F  F9  1  0.66666700  0.33333300  0.82041581  1.0
-  F  F10  1  0.66666700  0.33333300  0.32041581  1.0
-  F  F11  1  0.33333300  0.66666700  0.17958419  1.0
-  F  F12  1  0.36997075  0.05878090  0.08164221  1.0
-  F  F13  1  0.94121910  0.31118984  0.08164221  1.0
-  F  F14  1  0.68881016  0.63002925  0.08164221  1.0
-  F  F15  1  0.31118984  0.94121910  0.41835779  1.0
-  F  F16  1  0.63002925  0.68881016  0.41835779  1.0
-  F  F17  1  0.05878090  0.36997075  0.41835779  1.0
-  F  F18  1  0.63002925  0.94121910  0.91835779  1.0
-  F  F19  1  0.05878090  0.68881016  0.91835779  1.0
-  F  F20  1  0.31118984  0.36997075  0.91835779  1.0
-  F  F21  1  0.68881016  0.05878090  0.58164221  1.0
-  F  F22  1  0.36997075  0.31118984  0.58164221  1.0
-  F  F23  1  0.94121910  0.63002925  0.58164221  1.0
+  Pr  Pr0  6  0.00000000  0.34328051  0.75000000  1.0
+  F  F1  12  0.05878090  0.36997075  0.41835779  1.0
+  F  F2  4  0.33333333  0.66666667  0.67958419  1.0
+  F  F3  2  0.00000000  0.00000000  0.25000000  1.0

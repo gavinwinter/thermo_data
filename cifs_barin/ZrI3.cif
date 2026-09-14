@@ -1,21 +1,45 @@
+# Source: Materials Project mp-23282 (https://materialsproject.org/materials/mp-23282)
 # generated using pymatgen
 data_ZrI3
-_symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.68026760
-_cell_length_b   7.60045633
-_cell_length_c   13.19350180
+_symmetry_space_group_name_H-M   P6_3/mcm
+_cell_length_a   7.49956719
+_cell_length_b   7.49956719
+_cell_length_c   6.56347802
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   90.00000000
-_symmetry_Int_Tables_number   1
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   193
 _chemical_formula_structural   ZrI3
-_chemical_formula_sum   'Zr4 I12'
-_cell_volume   669.87475096
-_cell_formula_units_Z   4
+_chemical_formula_sum   'Zr2 I6'
+_cell_volume   319.69590040
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  'x-y, x, z+1/2'
+  4  '-x+y, -x, -z+1/2'
+  5  '-y, x-y, z'
+  6  'y, -x+y, -z'
+  7  '-x, -y, z+1/2'
+  8  'x, y, -z+1/2'
+  9  '-x+y, -x, z'
+  10  'x-y, x, -z'
+  11  'y, -x+y, z+1/2'
+  12  '-y, x-y, -z+1/2'
+  13  '-y, -x, -z'
+  14  'y, x, z'
+  15  '-x, -x+y, -z+1/2'
+  16  'x, x-y, z+1/2'
+  17  '-x+y, y, -z'
+  18  'x-y, -y, z'
+  19  'y, x, -z+1/2'
+  20  '-y, -x, z+1/2'
+  21  'x, x-y, -z'
+  22  '-x, -x+y, z'
+  23  'x-y, -y, -z+1/2'
+  24  '-x+y, y, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,19 +48,5 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Zr  Zr0  1  0.48221056  0.24685232  0.75000000  1.0
-  Zr  Zr1  1  0.01778944  0.24685232  0.75000000  1.0
-  Zr  Zr2  1  0.51778944  0.75314768  0.25000000  1.0
-  Zr  Zr3  1  0.98221056  0.75314768  0.25000000  1.0
-  I  I4  1  0.25000000  0.40759766  0.90955569  1.0
-  I  I5  1  0.25000000  0.92658582  0.75000000  1.0
-  I  I6  1  0.25000000  0.90807460  0.09501864  1.0
-  I  I7  1  0.25000000  0.90807460  0.40498136  1.0
-  I  I8  1  0.75000000  0.09192540  0.59501864  1.0
-  I  I9  1  0.75000000  0.59240234  0.40955569  1.0
-  I  I10  1  0.75000000  0.55758678  0.75000000  1.0
-  I  I11  1  0.75000000  0.09192540  0.90498136  1.0
-  I  I12  1  0.75000000  0.59240234  0.09044431  1.0
-  I  I13  1  0.75000000  0.07341418  0.25000000  1.0
-  I  I14  1  0.25000000  0.44241322  0.25000000  1.0
-  I  I15  1  0.25000000  0.40759766  0.59044431  1.0
+  Zr  Zr0  2  0.00000000  0.00000000  0.00000000  1.0
+  I  I1  6  0.00000000  0.32256166  0.25000000  1.0

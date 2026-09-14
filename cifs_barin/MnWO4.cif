@@ -1,13 +1,14 @@
+# Source: Materials Project mp-19407 (https://materialsproject.org/materials/mp-19407)
 # generated using pymatgen
 data_MnWO4
-_symmetry_space_group_name_H-M   'P 1'
+_symmetry_space_group_name_H-M   P2/c
 _cell_length_a   4.78246130
-_cell_length_b   5.00177661
-_cell_length_c   5.75089782
+_cell_length_b   5.75089782
+_cell_length_c   5.00177661
 _cell_angle_alpha   90.00000000
-_cell_angle_beta   90.00000000
-_cell_angle_gamma   91.07424021
-_symmetry_Int_Tables_number   1
+_cell_angle_beta   91.07424021
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   13
 _chemical_formula_structural   MnWO4
 _chemical_formula_sum   'Mn2 W2 O8'
 _cell_volume   137.54191591
@@ -16,6 +17,9 @@ loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
   1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z+1/2'
+  4  'x, -y, z+1/2'
 loop_
  _atom_site_type_symbol
  _atom_site_label
@@ -24,15 +28,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Mn  Mn0  1  0.50000000  0.25000000  0.67750343  1.0
-  Mn  Mn1  1  0.50000000  0.75000000  0.32250057  1.0
-  W  W2  1  -0.00000000  0.25000000  0.17873380  1.0
-  W  W3  1  -0.00000000  0.75000000  0.82126520  1.0
-  O  O4  1  0.74510687  0.10288040  0.37487174  1.0
-  O  O5  1  0.25489313  0.39711960  0.37487174  1.0
-  O  O6  1  0.25489313  0.89711960  0.62512726  1.0
-  O  O7  1  0.74510687  0.60288040  0.62512726  1.0
-  O  O8  1  0.78703768  0.06065109  0.89500904  1.0
-  O  O9  1  0.21296232  0.43934891  0.89500904  1.0
-  O  O10  1  0.21296232  0.93934891  0.10498996  1.0
-  O  O11  1  0.78703768  0.56065109  0.10498996  1.0
+  Mn  Mn0  2  0.50000000  0.32249657  0.25000000  1.0
+  W  W1  2  0.00000000  0.17873380  0.75000000  1.0
+  O  O2  4  0.21296232  0.10499096  0.43934891  1.0
+  O  O3  4  0.25489313  0.37487174  0.89711960  1.0

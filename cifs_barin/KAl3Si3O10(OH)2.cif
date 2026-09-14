@@ -1,0 +1,52 @@
+# Source: Materials Project mp-1200795 (https://materialsproject.org/materials/mp-1200795)
+# generated using pymatgen
+data_KAl3Si3(HO6)2
+_symmetry_space_group_name_H-M   P2/c
+_cell_length_a   5.23354700
+_cell_length_b   9.08652800
+_cell_length_c   20.44006743
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   95.64150325
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   13
+_chemical_formula_structural   KAl3Si3(HO6)2
+_chemical_formula_sum   'K4 Al12 Si12 H8 O48'
+_cell_volume   967.31469519
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z+1/2'
+  4  'x, -y, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  2  0.00000000  0.40216000  0.75000000  1.0
+  K  K1  2  0.50000000  0.10297000  0.25000000  1.0
+  Al  Al2  4  0.03716000  0.26032800  0.36498600  1.0
+  Al  Al3  4  0.24741300  0.41559000  0.49902100  1.0
+  Al  Al4  4  0.25148400  0.08608300  0.49872100  1.0
+  Si  Si5  4  0.03949700  0.06963700  0.86566300  1.0
+  Si  Si6  4  0.44859900  0.24321200  0.63340600  1.0
+  Si  Si7  4  0.48176300  0.43100600  0.13510400  1.0
+  H  H8  4  0.13677200  0.34281100  0.94634800  1.0
+  H  H9  4  0.37634200  0.14414700  0.06718900  1.0
+  O  O10  4  0.03668300  0.05596800  0.94579500  1.0
+  O  O11  4  0.04501300  0.43415200  0.95196500  1.0
+  O  O12  4  0.08394200  0.08527300  0.33052300  1.0
+  O  O13  4  0.12488200  0.25028600  0.45007200  1.0
+  O  O14  4  0.23462600  0.38886400  0.33108300  1.0
+  O  O15  4  0.24156900  0.13634000  0.66618600  1.0
+  O  O16  4  0.25672600  0.18817000  0.84376700  1.0
+  O  O17  4  0.28364100  0.30717300  0.15614100  1.0
+  O  O18  4  0.39120100  0.24824000  0.55401800  1.0
+  O  O19  4  0.41386900  0.40558600  0.66621800  1.0
+  O  O20  4  0.45438400  0.05824900  0.04883100  1.0
+  O  O21  4  0.46750800  0.45048900  0.05431000  1.0

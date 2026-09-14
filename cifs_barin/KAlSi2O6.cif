@@ -1,0 +1,52 @@
+# Source: Materials Project mp-554433 (https://materialsproject.org/materials/mp-554433)
+# generated using pymatgen
+data_KAl(SiO3)2
+_symmetry_space_group_name_H-M   I4_1/a
+_cell_length_a   13.16486600
+_cell_length_b   13.16486600
+_cell_length_c   14.01660800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   88
+_chemical_formula_structural   KAl(SiO3)2
+_chemical_formula_sum   'K16 Al16 Si32 O96'
+_cell_volume   2429.27014905
+_cell_formula_units_Z   16
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x+1/2, z+1/4'
+  3  '-x+1/2, -y+1/2, z+1/2'
+  4  'y+1/2, -x, z+3/4'
+  5  '-x, -y+1/2, -z+1/4'
+  6  'y, -x, -z'
+  7  'x+1/2, y, -z+3/4'
+  8  '-y+1/2, x+1/2, -z+1/2'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-y+1/2, x, z+3/4'
+  11  '-x, -y, z'
+  12  'y, -x+1/2, z+1/4'
+  13  '-x+1/2, -y, -z+3/4'
+  14  'y+1/2, -x+1/2, -z+1/2'
+  15  'x, y+1/2, -z+1/4'
+  16  '-y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  16  0.10804800  0.37032800  0.98835300  1.0
+  Al  Al1  16  0.13902700  0.33098600  0.50302300  1.0
+  Si  Si2  16  0.05499050  0.35402650  0.29295050  1.0
+  Si  Si3  16  0.10363300  0.38889700  0.71049400  1.0
+  O  O4  16  0.01226350  0.36937250  0.78941350  1.0
+  O  O5  16  0.06180150  0.36895350  0.40742050  1.0
+  O  O6  16  0.06475200  0.85711100  0.64495800  1.0
+  O  O7  16  0.06485250  0.12810450  0.98602850  1.0
+  O  O8  16  0.08588450  0.24213650  0.25668150  1.0
+  O  O9  16  0.17632000  0.70210200  0.75476500  1.0
