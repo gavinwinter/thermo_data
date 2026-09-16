@@ -1,0 +1,73 @@
+# Source: Crystallography Open Database COD-1541067 (https://www.crystallography.net/cod/1541067.html)
+#------------------------------------------------------------------------------
+#$Date: 2016-01-01 14:20:09 +0200 (Fri, 01 Jan 2016) $
+#$Revision: 172288 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/54/10/1541067.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1541067
+loop_
+_publ_author_name
+'Tuenge, R.T.'
+'Eyring, L.'
+_publ_section_title
+;
+ On the structures of the intermediate phases in the terbium oxide system
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              75
+_journal_page_last               89
+_journal_volume                  41
+_journal_year                    1982
+_chemical_formula_sum            'O20 Tb11'
+_chemical_name_systematic        'Tb11 O20'
+_space_group_IT_number           2
+_symmetry_space_group_name_Hall  '-P 1'
+_symmetry_space_group_name_H-M   'P -1'
+_cell_angle_alpha                90
+_cell_angle_beta                 99.6
+_cell_angle_gamma                96.3
+_cell_formula_units_Z            1
+_cell_length_a                   6.5
+_cell_length_b                   9.9
+_cell_length_c                   6.5
+_cell_volume                     409.855
+_citation_journal_id_ASTM        JSSCBI
+_cod_data_source_file            Tuenge_JSSCBI_1982_236.cif
+_cod_data_source_block           O20Tb11
+_cod_original_cell_volume        409.8554
+_cod_database_code               1541067
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Tb3 Tb 0.575 0.191 0.086 1 0.0
+O2 O 0.227 0.659 0.705 1 0.0
+O10 O 0.409 0.386 0.068 1 0.0
+O6 O 0.682 0.477 0.614 1 0.0
+O9 O 0.864 0.705 0.477 1 0.0
+O8 O 0.136 0.795 0.023 1 0.0
+O1 O 0.955 0.068 0.659 1 0.0
+Tb5 Tb 0.818 0.273 0.636 1 0.0
+Tb2 Tb 0.288 0.089 0.576 1 0.0
+O4 O 0.409 0.886 0.568 1 0.0
+O5 O 0.318 0.023 0.886 1 0.0
+Tb6 Tb 0.364 0.455 0.727 1 0.0
+Tb4 Tb 0.058 0.383 0.191 1 0.0
+Tb1 Tb 0 0 0 1 0.0
+O7 O 0.5 0.25 0.75 1 0.0
+O3 O 0.046 0.432 0.841 1 0.0

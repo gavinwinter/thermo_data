@@ -1,0 +1,310 @@
+# Source: Crystallography Open Database COD-1559494 (https://www.crystallography.net/cod/1559494.html)
+#------------------------------------------------------------------------------
+#$Date: 2020-11-10 11:28:51 +0200 (Tue, 10 Nov 2020) $
+#$Revision: 259062 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/55/94/1559494.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1559494
+loop_
+_publ_author_name
+'Karen, P.'
+'Fjellvag, H.'
+'Kjekshus, A.'
+'Andresen, A. F.'
+_publ_section_title
+;
+ On the Phase Relations and Structural and Magnetic Properties of the
+ Stable Manganese Carbides Mn23C6, Mn5C2 and Mn7C3
+;
+_journal_name_full               'Acta Chemica Scandinavica'
+_journal_page_first              549
+_journal_page_last               557
+_journal_paper_doi               10.3891/acta.chem.scand.45-0549
+_journal_volume                  45
+_journal_year                    1991
+_chemical_formula_sum            'C6 Mn23'
+_chemical_formula_weight         1335.64
+_chemical_name_common
+;
+Mn23C6
+;
+_space_group_IT_number           225
+_space_group_name_Hall           '-F 4 2 3'
+_space_group_name_H-M_alt        'F m -3 m'
+_symmetry_cell_setting           cubic
+_symmetry_Int_Tables_number      225
+_symmetry_space_group_name_Hall  '-F 4 2 3'
+_symmetry_space_group_name_H-M   'F m -3 m'
+_cell_angle_alpha                90.
+_cell_angle_beta                 90.
+_cell_angle_gamma                90.
+_cell_formula_units_Z            4
+_cell_length_a                   10.595(2)
+_cell_length_b                   10.595(2)
+_cell_length_c                   10.595(2)
+_cell_volume                     1189.3(4)
+_diffrn_ambient_temperature      298
+_diffrn_radiation_probe          neutron
+_diffrn_radiation_wavelength     1.877
+_exptl_crystal_density_diffrn    7.460
+_pd_proc_ls_prof_R_factor        0.080
+_refine_ls_R_I_factor            0.080
+_cod_data_source_file            Acta-Chem-Scand-1991-45-549-3.cif
+_cod_data_source_block           1
+_cod_depositor_comments
+;
+No thermal parameters, U values arbitrarily set to 0.02
+No more details about the Rietveld refinements
+;
+_cod_original_cell_volume        1189.3(7)
+_cod_database_code               1559494
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -y,x,z
+3 -x,-y,z
+4 y,-x,z
+5 x,-y,-z
+6 y,x,-z
+7 -x,y,-z
+8 -y,-x,-z
+9 z,x,y
+10 -x,z,y
+11 -z,-x,y
+12 x,-z,y
+13 z,-x,-y
+14 x,z,-y
+15 -z,x,-y
+16 -x,-z,-y
+17 y,z,x
+18 -z,-y,-x
+19 -z,y,x
+20 z,y,-x
+21 z,-y,x
+22 y,-z,-x
+23 -y,-z,x
+24 -y,z,-x
+25 -x,-y,-z
+26 y,-x,-z
+27 x,y,-z
+28 -y,x,-z
+29 -x,y,z
+30 -y,-x,z
+31 x,-y,z
+32 y,x,z
+33 -z,-x,-y
+34 x,-z,-y
+35 z,x,-y
+36 -x,z,-y
+37 -z,x,y
+38 -x,-z,y
+39 z,-x,y
+40 x,z,y
+41 -y,-z,-x
+42 z,y,x
+43 z,-y,-x
+44 -z,-y,x
+45 -z,y,-x
+46 -y,z,x
+47 y,z,-x
+48 y,-z,x
+49 x,1/2+y,1/2+z
+50 -y,1/2+x,1/2+z
+51 -x,1/2-y,1/2+z
+52 y,1/2-x,1/2+z
+53 x,1/2-y,1/2-z
+54 y,1/2+x,1/2-z
+55 -x,1/2+y,1/2-z
+56 -y,1/2-x,1/2-z
+57 z,1/2+x,1/2+y
+58 -x,1/2+z,1/2+y
+59 -z,1/2-x,1/2+y
+60 x,1/2-z,1/2+y
+61 z,1/2-x,1/2-y
+62 x,1/2+z,1/2-y
+63 -z,1/2+x,1/2-y
+64 -x,1/2-z,1/2-y
+65 y,1/2+z,1/2+x
+66 -z,1/2-y,1/2-x
+67 -z,1/2+y,1/2+x
+68 z,1/2+y,1/2-x
+69 z,1/2-y,1/2+x
+70 y,1/2-z,1/2-x
+71 -y,1/2-z,1/2+x
+72 -y,1/2+z,1/2-x
+73 -x,1/2-y,1/2-z
+74 y,1/2-x,1/2-z
+75 x,1/2+y,1/2-z
+76 -y,1/2+x,1/2-z
+77 -x,1/2+y,1/2+z
+78 -y,1/2-x,1/2+z
+79 x,1/2-y,1/2+z
+80 y,1/2+x,1/2+z
+81 -z,1/2-x,1/2-y
+82 x,1/2-z,1/2-y
+83 z,1/2+x,1/2-y
+84 -x,1/2+z,1/2-y
+85 -z,1/2+x,1/2+y
+86 -x,1/2-z,1/2+y
+87 z,1/2-x,1/2+y
+88 x,1/2+z,1/2+y
+89 -y,1/2-z,1/2-x
+90 z,1/2+y,1/2+x
+91 z,1/2-y,1/2-x
+92 -z,1/2-y,1/2+x
+93 -z,1/2+y,1/2-x
+94 -y,1/2+z,1/2+x
+95 y,1/2+z,1/2-x
+96 y,1/2-z,1/2+x
+97 1/2+x,y,1/2+z
+98 1/2-y,x,1/2+z
+99 1/2-x,-y,1/2+z
+100 1/2+y,-x,1/2+z
+101 1/2+x,-y,1/2-z
+102 1/2+y,x,1/2-z
+103 1/2-x,y,1/2-z
+104 1/2-y,-x,1/2-z
+105 1/2+z,x,1/2+y
+106 1/2-x,z,1/2+y
+107 1/2-z,-x,1/2+y
+108 1/2+x,-z,1/2+y
+109 1/2+z,-x,1/2-y
+110 1/2+x,z,1/2-y
+111 1/2-z,x,1/2-y
+112 1/2-x,-z,1/2-y
+113 1/2+y,z,1/2+x
+114 1/2-z,-y,1/2-x
+115 1/2-z,y,1/2+x
+116 1/2+z,y,1/2-x
+117 1/2+z,-y,1/2+x
+118 1/2+y,-z,1/2-x
+119 1/2-y,-z,1/2+x
+120 1/2-y,z,1/2-x
+121 1/2-x,-y,1/2-z
+122 1/2+y,-x,1/2-z
+123 1/2+x,y,1/2-z
+124 1/2-y,x,1/2-z
+125 1/2-x,y,1/2+z
+126 1/2-y,-x,1/2+z
+127 1/2+x,-y,1/2+z
+128 1/2+y,x,1/2+z
+129 1/2-z,-x,1/2-y
+130 1/2+x,-z,1/2-y
+131 1/2+z,x,1/2-y
+132 1/2-x,z,1/2-y
+133 1/2-z,x,1/2+y
+134 1/2-x,-z,1/2+y
+135 1/2+z,-x,1/2+y
+136 1/2+x,z,1/2+y
+137 1/2-y,-z,1/2-x
+138 1/2+z,y,1/2+x
+139 1/2+z,-y,1/2-x
+140 1/2-z,-y,1/2+x
+141 1/2-z,y,1/2-x
+142 1/2-y,z,1/2+x
+143 1/2+y,z,1/2-x
+144 1/2+y,-z,1/2+x
+145 1/2+x,1/2+y,z
+146 1/2-y,1/2+x,z
+147 1/2-x,1/2-y,z
+148 1/2+y,1/2-x,z
+149 1/2+x,1/2-y,-z
+150 1/2+y,1/2+x,-z
+151 1/2-x,1/2+y,-z
+152 1/2-y,1/2-x,-z
+153 1/2+z,1/2+x,y
+154 1/2-x,1/2+z,y
+155 1/2-z,1/2-x,y
+156 1/2+x,1/2-z,y
+157 1/2+z,1/2-x,-y
+158 1/2+x,1/2+z,-y
+159 1/2-z,1/2+x,-y
+160 1/2-x,1/2-z,-y
+161 1/2+y,1/2+z,x
+162 1/2-z,1/2-y,-x
+163 1/2-z,1/2+y,x
+164 1/2+z,1/2+y,-x
+165 1/2+z,1/2-y,x
+166 1/2+y,1/2-z,-x
+167 1/2-y,1/2-z,x
+168 1/2-y,1/2+z,-x
+169 1/2-x,1/2-y,-z
+170 1/2+y,1/2-x,-z
+171 1/2+x,1/2+y,-z
+172 1/2-y,1/2+x,-z
+173 1/2-x,1/2+y,z
+174 1/2-y,1/2-x,z
+175 1/2+x,1/2-y,z
+176 1/2+y,1/2+x,z
+177 1/2-z,1/2-x,-y
+178 1/2+x,1/2-z,-y
+179 1/2+z,1/2+x,-y
+180 1/2-x,1/2+z,-y
+181 1/2-z,1/2+x,y
+182 1/2-x,1/2-z,y
+183 1/2+z,1/2-x,y
+184 1/2+x,1/2+z,y
+185 1/2-y,1/2-z,-x
+186 1/2+z,1/2+y,x
+187 1/2+z,1/2-y,-x
+188 1/2-z,1/2-y,x
+189 1/2-z,1/2+y,-x
+190 1/2-y,1/2+z,x
+191 1/2+y,1/2+z,-x
+192 1/2+y,1/2-z,x
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_thermal_displace_type
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Mn3 Mn Uiso 0.00000 0.1691(2) 0.1691(2) 1.000 0.0200 . . . .
+Mn4 Mn Uiso 0.3820(3) 0.3820(3) 0.3820(3) 1.000 0.0200 . . . .
+Mn1 Mn Uiso 0.00000 0.00000 0.00000 1.000 0.0200 . . . .
+Mn2 Mn Uiso 0.25000 0.25000 0.25000 1.00 0.0200 . . . .
+C C Uiso 0.2762(3) 0.00000 0.00000 1.000 0.0200 . . . .
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+C Mn3 C 154.70(15) 2_555 . 17_555 yes
+Mn3 C Mn3 115.30(17) 4_555 . 6_555 yes
+Mn3 C Mn3 73.36(8) 4_555 . 17_555 yes
+Mn3 C Mn3 73.36(8) 4_555 . 21_555 yes
+Mn3 C Mn4 142.28(9) 4_555 . 49_544 yes
+Mn3 C Mn3 73.36(8) 6_555 . 17_555 yes
+Mn3 C Mn3 73.36(8) 6_555 . 21_555 yes
+Mn3 C Mn4 77.41(10) 6_555 . 49_544 yes
+Mn3 C Mn3 115.30(17) 17_555 . 21_555 yes
+Mn3 C Mn4 142.28(9) 17_555 . 49_544 yes
+Mn3 C Mn4 77.41(10) 21_555 . 49_544 yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Mn3 C 2.121(3) . 2_555 yes
+Mn3 C 2.121(3) . 17_555 yes
+Mn4 C 2.094(4) . 49_555 yes

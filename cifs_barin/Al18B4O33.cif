@@ -1,0 +1,77 @@
+# Source: Crystallography Open Database COD-1545125 (https://www.crystallography.net/cod/1545125.html)
+#------------------------------------------------------------------------------
+#$Date: 2017-01-23 11:29:23 +0200 (Mon, 23 Jan 2017) $
+#$Revision: 190836 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/54/51/1545125.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1545125
+loop_
+_publ_author_name
+'Ihara, M.'
+'Imai, K.'
+'Fukunaga, J.'
+'Yoshida, N.'
+_publ_section_title
+;
+ Crystal structure of boroaluminate, 9Al2O3*2B2O3
+;
+_journal_name_full               Yogyo-Kyokai-Shi
+_journal_page_first              77
+_journal_page_last               84
+_journal_volume                  88
+_journal_year                    1980
+_chemical_formula_sum            'Al18 B4 O33'
+_chemical_name_common            9Al2O3*2B2O3
+_space_group_IT_number           36
+_space_group_name_H-M_alt        'C m c 21'
+_symmetry_space_group_name_Hall  'C 2c -2'
+_symmetry_space_group_name_H-M   'C m c 21'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            1
+_cell_length_a                   5.682(13)
+_cell_length_b                   14.973(34)
+_cell_length_c                   7.692(17)
+_cell_volume                     654(3)
+_cod_data_source_file            Al18B4O33.cif
+_cod_data_source_block           Al18B4O33
+_cod_database_code               1545125
+loop_
+_space_group_symop_operation_xyz
+'x, y, z'
+'-x, -y, z+1/2'
+'x, -y, z+1/2'
+'-x, y, z'
+'x+1/2, y+1/2, z'
+'-x+1/2, -y+1/2, z+1/2'
+'x+1/2, -y+1/2, z+1/2'
+'-x+1/2, y+1/2, z'
+loop_
+_atom_site_label
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_B_iso_or_equiv
+_atom_site_type_symbol
+B 1.0 0.000000 0.02(3) 0.23(3) Biso 1.500000 B
+Al1 1.0 0.249(5) 0.383(4) 0.000000 Biso 1.000000 Al
+Al2 1.0 0.500000 0.245(7) 0.186(9) Biso 1.400000 Al
+Al3 1.0 0.500000 0.056(7) 0.182(9) Biso 1.200000 Al
+Al4 1.0 0.000000 0.296(6) 0.334(8) Biso 1.000000 Al
+O1 1.0 0.210(12) 0.048(11) 0.282(13) Biso 1.500000 O
+O2 1.0 0.242(11) 0.310(11) 0.199(13) Biso 1.400000 O
+O3 1.0 0.500000 0.148(16) 0.035(18) Biso 1.600000 O
+O4 1.0 0.000000 0.191(15) 0.435(17) Biso 1.100000 O
+O5 1.0 0.500000 0.171(16) 0.370(18) Biso 1.400000 O
+O6 1.0 0.000000 0.454(15) 0.074(18) Biso 1.300000 O
+O7 1.0 0.500000 0.455(15) 0.094(16) Biso 0.900000 O

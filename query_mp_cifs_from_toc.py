@@ -1,49 +1,26 @@
 """
 First-pass retrieval of CIF crystal structures for phases listed in
-toc_barin.csv (produced by read_all_thermodata_pdf.py), using the Materials
-Project API (mp-api).
+toc_barin.csv (produced by read_all_thermodata_pdf.py), using the
+Materials Project API (mp-api).
 
-Setup: this is the one thing you need to provide -- a free Materials
-Project API key (https://next.materialsproject.org/api), exported as an
-environment variable:
-
-    export MP_API_KEY=your_key_here
-
-Run with a Python environment that has mp-api + pandas installed (see
-README):
-
-    python query_mp_cifs_from_toc.py
-
-Nothing else needs to change: paths are resolved relative to this script's
-own location, so the repo can live anywhere.
+Usage: export MP_API_KEY=your_key_here (https://next.materialsproject.org/api),
+then `python query_mp_cifs_from_toc.py`. Paths resolve relative to this
+script's own location, so the repo can live anywhere.
 
 Pipeline:
-  0. Correct systematic OCR errors in the Formula column. Letter<->letter
-     confusions (lowercase 'l' misread as capital 'I', 'Al' misread as
-     'AI', 'Cl' misread as 'CI') are always safe to fix outright -- see
-     fix_ocr_letters(). Letter<->digit confusions (typically an element
-     letter like 'O' or 'S' misread as a digit, silently dropping that
-     element) are repaired by cross-checking against the Name column,
-     which almost always spells out the compound's elements -- see
-     fix_missing_element_from_name() and repair_single_element_collapse().
-     A short OCR_OVERRIDES table covers the residual one-off artifacts
-     that don't fit any repeatable pattern.
-  1. Parse toc_barin.csv -> drop gas-phase [g] entries, strip polymorph tags
-     (e.g. Al2O3[C]) and expand hydrate notation (e.g. AlCl3*6H2O) into a
-     pymatgen Composition.
+  0. Correct systematic OCR errors in the Formula column -- safe
+     letter<->letter fixes (fix_ocr_letters), letter<->digit fixes
+     cross-checked against the Name column (fix_missing_element_from_name,
+     repair_single_element_collapse), and a residual OCR_OVERRIDES table.
+  1. Parse toc_barin.csv -> drop [g] entries, strip polymorph tags, expand
+     hydrate notation into a pymatgen Composition.
   2. Batch-query Materials Project for every unique reduced formula.
-  3. For each toc row, select a candidate structure:
-       - single candidate -> use it
-       - polymorph tag matches a known spacegroup hint -> use that match
-       - otherwise -> lowest energy-above-hull (most stable) candidate,
-         flagged as a "best-guess" pick for manual review
-     Rows whose parsed composition collapses to a single element despite a
-     long/complex formula string (a strong signature of leftover OCR
-     corruption) are pulled out and sent to the unmatched list instead of
-     being auto-matched.
-  4. Fetch structures for the selected material_ids and write one CIF per
-     toc row into cifs_barin/, plus a match summary CSV and an unmatched
-     CSV (picked up next by query_cod_cifs_from_toc.py).
+  3. Select a candidate per row: single candidate, or a polymorph-tag
+     spacegroup match, or lowest energy-above-hull as a best-guess pick.
+     Rows whose composition collapses to a single element despite a
+     complex formula (a sign of leftover OCR corruption) go to unmatched.
+  4. Fetch structures and write one CIF per row into cifs_barin/, plus a
+     match summary CSV and an unmatched CSV for query_cod_cifs_from_toc.py.
 """
 import os
 import re
@@ -70,28 +47,17 @@ CIF_DIR.mkdir(exist_ok=True)
 # Known amorphous / non-crystalline entries: no CIF applies, don't bother querying.
 AMORPHOUS_TAGS = {"GL"}  # glass
 
-# toc_barin.csv itself has been cleaned of the systematic OCR
-# character-confusion errors (Al/AI, Cl/CI, lowercase l or i misread as
-# capital I, malformed '[g]' tags, and a handful of individually-verified
-# one-off mid-string drops like Cr2306 -> Cr23C6) at the source, rather
-# than patched around here. What follows still guards against whatever a
-# *different* OCR pass over the same PDF might produce, by cross-checking
-# each formula against its Name column, which almost always spells out
-# the compound's elements (directly, via a compound-class suffix like
-# "...OXIDE"/"...SULFATE", or an explicit count like "4-CALCIUM
-# 3-TITANIUM 10-OXIDE"):
-#   - a digit run hiding a dropped element letter (e.g. '209' -> '2O9')
-#     -> fix_missing_element_from_name()
-#   - a formula that fails to parse at all because a leading digit is a
-#     misread element-starting capital letter -> fix_unparseable_leading_element()
-#   - a real-but-wrong element where Name wants a different, same-length
-#     one (e.g. 'Pr' misread for 'Pt') -> fix_wrong_element_swap()
-#   - two adjacent single-letter elements that should merge into one
-#     2-letter element (e.g. 'P'+'I' misread for 'Pt') -> fix_adjacent_orphan_merge()
-#   - a single-letter element missing its second letter (e.g. 'S' for
-#     'Sc') -> fix_orphan_element_extension()
-#   - a formula collapsing to one element despite a long string, fixed by
-#     trying common trailing-character confusions -> repair_single_element_collapse()
+# toc_barin.csv has already been cleaned of systematic OCR
+# character-confusion errors at the source; what follows guards against
+# whatever a *different* OCR pass might produce, by cross-checking each
+# formula against its Name column (which almost always spells out the
+# compound's elements, directly or via a suffix like "...SULFATE"):
+#   - digit run hiding a dropped letter ('209'->'2O9') -> fix_missing_element_from_name()
+#   - unparseable leading digit (misread element letter) -> fix_unparseable_leading_element()
+#   - wrong same-length element ('Pr' for 'Pt') -> fix_wrong_element_swap()
+#   - two letters that should merge into one ('P'+'I' for 'Pt') -> fix_adjacent_orphan_merge()
+#   - single letter missing its second letter ('S' for 'Sc') -> fix_orphan_element_extension()
+#   - collapses to one element despite a long string -> repair_single_element_collapse()
 
 # Full element symbol table, used to read the element(s) a Name column cell
 # actually claims to contain -- e.g. "COBALT SELENITE" implies {Co, Se}.
@@ -182,19 +148,13 @@ def implied_elements_from_name(name: str) -> set:
 
 
 def _digit_run_fix_positions(formula: str):
-    """Positions where a dropped element letter could plausibly be hiding
-    inside a run of consecutive digits -- e.g. Barin's 'Al4B209' merges the
-    missing 'O' between boron's count '2' and oxygen's count '9' into a
-    single run '209'. Only two run lengths are structurally unambiguous
-    enough to guess blindly:
-      - a 2-digit run: the letter must be the *first* digit (the only split
-        that leaves both the preceding and the new element with a
-        non-empty count) -- 'B04' -> 'B' + 'O' + '4'.
-      - a 3-digit run: the letter must be the *middle* digit, preserving a
-        count on both sides -- '209' -> '2' + 'O' + '9'.
-    A lone digit is left alone (no room to split without leaving some
-    element with an empty count, which is too ambiguous to guess), and so
-    is a run of 4+ digits (no longer a single unambiguous split point).
+    """Positions where a dropped element letter could plausibly hide inside
+    a run of consecutive digits (e.g. Barin's 'Al4B209' merges the missing
+    'O' between '2' and '9' into '209'). Only two run lengths are
+    unambiguous enough to guess: a 2-digit run splits at the *first* digit
+    ('B04' -> 'B'+'O'+'4'), a 3-digit run at the *middle* digit ('209' ->
+    '2'+'O'+'9'). A lone digit or a 4+ digit run is left alone -- too
+    ambiguous to split.
     """
     positions = []
     i = 0
@@ -215,15 +175,13 @@ def _digit_run_fix_positions(formula: str):
 
 
 def fix_missing_element_from_name(formula: str, name: str):
-    """If the Name column implies an element that isn't in the parsed
-    composition, and a digit run in the formula structurally matches where a
-    dropped element letter would hide (see _digit_run_fix_positions), try
-    substituting it in (most commonly '0' misread from 'O') and accept the
-    first substitution that resolves *every* Name-implied element, not just
-    the one being targeted -- requiring the whole set to check out is what
-    keeps this from accepting a structurally-valid but chemically-wrong
-    split. This generalizes the common Barin OCR error of an element letter
-    being read as a digit, instead of hand-listing every affected formula.
+    """If the Name column implies an element missing from the parsed
+    composition, and a digit run structurally matches where a dropped
+    element letter would hide (see _digit_run_fix_positions), substitute
+    it in (usually '0' misread from 'O') and accept the first fix that
+    resolves *every* Name-implied element, not just the one targeted --
+    this generalizes Barin's letter-read-as-digit OCR error instead of
+    hand-listing every affected formula.
     """
     comp = formula_to_composition(formula)
     if comp is None:
@@ -340,14 +298,12 @@ def fix_orphan_element_extension(formula: str, name: str):
 
 
 def fix_adjacent_orphan_merge(formula: str, name: str):
-    """The formula parses fine as two adjacent single-letter elements that
-    Name doesn't call for, which together spell out (as plain text) a
-    2-letter element Name does call for and that's missing -- a letter
-    inside a 2-letter symbol misread as a *different* valid single-letter
-    element, splitting one element into two (e.g. platinum 'Pt' read as
-    phosphorus 'P' + iodine 'I', because the 't' was misread as a capital
-    'I'). Merge the two-character substring into the missing element and
-    require every other element's count to be untouched."""
+    """The formula parses as two adjacent single-letter elements Name
+    doesn't call for, which together spell a missing 2-letter element Name
+    does call for -- a letter inside a 2-letter symbol misread as a
+    different valid single-letter element (e.g. 'Pt' read as 'P'+'I', the
+    't' misread as capital 'I'). Merges the pair into the missing element,
+    requiring every other element's count to stay untouched."""
     comp = formula_to_composition(formula)
     if comp is None:
         return formula
@@ -374,13 +330,11 @@ def fix_adjacent_orphan_merge(formula: str, name: str):
 
 
 # When a formula collapses to a single element despite a long/complex
-# string (see load_toc()'s suspicious-corruption check), the usual cause is
-# the *last* character being a misread element letter rather than part of
-# the stoichiometric count -- e.g. wuestite "Fe0.9470" (trailing '0' should
-# be 'O') or pyrrhotite "Fe0.8778" (trailing '8' should be 'S', since '8'
-# and 'S' are an easy OCR confusion). Try the common confusions in order and
-# keep the first one that resolves the collapse into a real 2+ element
-# composition.
+# string (see load_toc()'s check), the usual cause is the *last* character
+# being a misread element letter, not a stoichiometric count (e.g.
+# "Fe0.9470" -> trailing '0' should be 'O'; "Fe0.8778" -> trailing '8'
+# should be 'S'). Try common confusions in order, keep the first that
+# resolves the collapse into a real 2+ element composition.
 _TRAILING_CHAR_CONFUSIONS = {"0": "O", "8": "S", "1": "I", "5": "S"}
 
 
@@ -439,13 +393,11 @@ POLYMORPH_SPACEGROUP_HINTS = {
                                     # untagged row's pick)
 }
 
-# Some rows carry their polymorph identity only as a Name parenthetical, e.g.
-# 'SODIUM SULFATE (III)' vs the [III]-tagged case above; specifically here, a
-# handful of untagged toc rows (bare_formula, phase_tag=None) whose Name says
-# e.g. '(WHITE)' or '(CUBIC)' -- meaning "most stable by DFT energy" is not
-# actually what that row represents. Verified against MP: for each of these,
-# the lowest-energy_above_hull experimental candidate is a *different*,
-# well-known named polymorph than the one the Name specifies.
+# Some rows carry their polymorph identity only as a Name parenthetical
+# (e.g. '(WHITE)', '(CUBIC)') rather than a [tag] -- meaning "most stable
+# by DFT energy" isn't actually what that row represents. Verified
+# against MP: for each, the lowest-energy_above_hull candidate is a
+# different, well-known named polymorph than the one Name specifies.
 UNTAGGED_NAME_SPACEGROUP_HINTS = {
     "Sn": "I4_1/amd",       # white/beta-Sn (body-centered tetragonal) -- the
                              # lowest-energy candidate is gray/alpha-Sn (Fd-3m,
@@ -479,24 +431,21 @@ UNTAGGED_NAME_SPACEGROUP_HINTS = {
     "Fe0.778S": "C2/c", 
 }
 
-# Elements that appear in this dataset's actual organic entries (hydrocarbons,
-# alcohols, acids: C/H, plus the O/S/N/halogens that show up in their
-# functional groups). A formula needs C and H *and* nothing outside this set
-# to count as organic here -- otherwise something like NaHCO3 (sodium
-# bicarbonate, a genuine mineral with Na present) would get misclassified as
-# organic just because it happens to contain both C and H.
+# Elements in this dataset's actual organic entries (hydrocarbons,
+# alcohols, acids): C/H plus the O/S/N/halogens in their functional
+# groups. A formula needs C and H *and* nothing outside this set to count
+# as organic -- otherwise NaHCO3 (a genuine mineral with Na) would get
+# misclassified just for containing both C and H.
 _ORGANIC_ALLOWED_ELEMENTS = {"C", "H", "N", "O", "S", "P", "F", "Cl", "Br", "I"}
 
 
 def is_organic_formula(bare_formula: str) -> bool:
-    """Contains both carbon and hydrogen, with no elements outside the
-    CHNOPS+halogens set (i.e. not an inorganic salt that happens to contain
-    both). Distinct organic molecules -- positional/substituent isomers
-    especially -- routinely share an empirical formula (e.g. cyclohexane and
-    methylcyclopentane are both C6H12), unlike most inorganic polymorphs of
-    the same reduced formula. So multiple MP candidates for an organic
-    formula can't be safely disambiguated by stoichiometry alone the way
-    select_candidate()'s fallback tiers do for inorganics.
+    """Contains both C and H, with nothing outside CHNOPS+halogens (i.e.
+    not an inorganic salt that happens to contain both). Distinct organic
+    isomers routinely share an empirical formula (e.g. cyclohexane and
+    methylcyclopentane are both C6H12), unlike most inorganic polymorphs --
+    so multiple MP candidates here can't be disambiguated by stoichiometry
+    alone the way select_candidate()'s inorganic fallback tiers do.
     """
     comp = formula_to_composition(bare_formula)
     if comp is None:
@@ -506,16 +455,14 @@ def is_organic_formula(bare_formula: str) -> bool:
 
 
 def is_whole_molecule_multiple(bare_formula: str, candidate_composition: str) -> bool:
-    """MP's formula= search matches by simplest-ratio (reduced formula), which
-    collapses every CnH2n cycloalkane/alkene onto the same search bucket --
-    C6H12 (cyclohexane), C6H12[M] (methylcyclopentane), and C7H14[M]
-    (methylcyclohexane) are all indistinguishable to it. A candidate can only
-    actually BE (some multiple of whole molecules of) the target if its exact
-    per-cell atom counts are an integer multiple of the target's own exact
-    formula -- e.g. a C4H8 unit cell can't be built from any number of whole
-    C6H12 molecules. This check catches that case even when there's only one
-    MP candidate (so select_candidate()'s single_candidate tier can't be
-    trusted blindly for organics either).
+    """MP's formula= search matches by reduced formula, collapsing every
+    CnH2n cycloalkane/alkene onto the same bucket (C6H12, C6H12[M],
+    C7H14[M] are all indistinguishable to it). A candidate can only
+    actually BE a multiple of the target if its exact per-cell atom counts
+    are an integer multiple of the target's own formula (a C4H8 cell can't
+    be built from whole C6H12 molecules) -- catches this even with only
+    one MP candidate, so select_candidate()'s single_candidate tier can't
+    be trusted blindly for organics either.
     """
     target = formula_to_composition(bare_formula)
     if target is None:
@@ -585,17 +532,15 @@ def fix_hydrate_water(formula: str) -> str:
 
 def rationalize_composition(comp: Composition, max_denominator: int = 20) -> Composition:
     """Approximate a composition with non-integer element amounts by the
-    nearest simple whole-number-ratio composition.
+    nearest whole-number-ratio composition.
 
-    Barin includes non-stoichiometric defect compounds measured at an exact
-    fractional ratio (e.g. Fe0.877S for pyrrhotite, Fe0.947O for wuestite).
-    MP indexes and searches by whole-number formulas only, and the real MP
-    entry for a compound like this is a specific small-integer formula (e.g.
-    Fe7S8) rather than the literal measured decimal -- so searching MP with
-    the raw decimal formula returns nothing. This finds that nearby integer
-    formula for search purposes; composition_ratio_close() below re-verifies
-    the result against the true (non-integer) target ratio with tolerance,
-    since the rationalized formula is only an approximation.
+    Barin includes non-stoichiometric defect compounds at an exact
+    fractional ratio (e.g. Fe0.877S for pyrrhotite). MP indexes only
+    whole-number formulas, and the real MP entry is a specific
+    small-integer formula (e.g. Fe7S8), not the literal decimal -- so this
+    finds that integer formula for search purposes; composition_ratio_close()
+    below re-verifies the result against the true ratio with tolerance,
+    since this is only an approximation.
     """
     amt_dict = comp.get_el_amt_dict()
     fracs = {el: Fraction(amt).limit_denominator(max_denominator) for el, amt in amt_dict.items()}
@@ -666,13 +611,12 @@ def load_toc():
         # '{g]', '/g]'), so also fall back to the Name column, which
         # reliably says "(GAS)" for every gas-phase entry.
         if tag == "g" or "(GAS)" in name_raw.upper():
-            # A gas has no crystal structure to look up, so this row is never
-            # a candidate for MP/COD matching -- but if it's organic, that's
-            # the clearest possible case of "no structure expected" and worth
-            # recording rather than vanishing with no trace. (Non-organic
-            # gases are left out entirely, as before, since Barin's is/are
-            # exhaustive elemental/simple-compound gas tables and recording
-            # all ~1000 of them isn't what's being asked for here.)
+            # A gas has no crystal structure to look up, so it's never a
+            # matching candidate -- but if it's organic, that's the
+            # clearest "no structure expected" case, worth recording rather
+            # than vanishing silently. (Non-organic gases are left out
+            # entirely: Barin's gas tables are exhaustive elemental/simple
+            # entries, and recording all ~1000 isn't what's being asked here.)
             fully_bare = strip_all_tags(fix_ocr_letters(formula_raw))
             if is_organic_formula(fully_bare):
                 rows.append(
@@ -822,13 +766,12 @@ def select_candidate(row, candidates, remarks_lookup=None):
 
     organic = is_organic_formula(row["bare_formula"])
     if organic:
-        # MP's formula= search matches by simplest ratio, so e.g. cyclohexane
-        # (C6H12), methylcyclopentane (C6H12[M]), and methylcyclohexane
-        # (C7H14[M]) all land in the same candidate pool as any other CnH2n
-        # compound. Keep only candidates whose exact per-cell composition
+        # MP's formula= search matches by simplest ratio, so cyclohexane,
+        # methylcyclopentane, and methylcyclohexane all land in the same
+        # candidate pool. Keep only candidates whose exact composition
         # could actually be tiled from whole molecules of this formula --
-        # otherwise even a lone "single candidate" can be a different-sized
-        # molecule entirely (e.g. a C4H8 cell can't be built from C6H12).
+        # otherwise even a lone candidate can be a different-sized molecule
+        # (e.g. a C4H8 cell can't be built from C6H12).
         cands = cands[cands["composition"].apply(
             lambda c: is_whole_molecule_multiple(row["bare_formula"], c)
         )]
@@ -848,12 +791,11 @@ def select_candidate(row, candidates, remarks_lookup=None):
 
     if nonstoich and remarks_lookup:
         # Non-stoichiometric defect compounds (pyrrhotite, wuestite, ...)
-        # commonly have several real, differently-ordered superstructure
-        # polytypes at essentially the same ratio. MP's "remarks"/"tags"
-        # field often names the specific mineral (e.g. mp-542794's remarks
-        # include "Pyrrhotite 4C") -- prefer a candidate whose remarks
-        # mention this row's name over a blind lowest-energy guess among
-        # otherwise-indistinguishable polytypes.
+        # commonly have several real superstructure polytypes at the same
+        # ratio. MP's remarks/tags field often names the specific mineral
+        # (e.g. mp-542794's remarks include "Pyrrhotite 4C") -- prefer a
+        # candidate whose remarks mention this row's name over a blind
+        # lowest-energy guess.
         name_key = re.split(r"[\s(),]", row["Name"].upper())[0]
         name_matches = cands[cands["material_id"].apply(
             lambda mid: any(name_key in rem.upper() or rem.upper() in name_key
@@ -922,23 +864,19 @@ def select_candidate(row, candidates, remarks_lookup=None):
 
 
 def sanitize_filename(formula: str) -> str:
-    # '(' ')' are kept as-is (they're valid on every filesystem this repo
-    # runs on, just needing quotes in a shell command) so hydrate/complex
-    # formulas like 'Al2(SO4)3' read as themselves in the filename instead
-    # of becoming 'Al2_SO4_3'. '*' (Barin's hydrate separator, e.g.
-    # 'ZnSO4*7H2O') is kept as-is too, matching how read_all_thermodata_pdf.py
-    # names the corresponding .json -- so a hydrate's .cif and .json share
-    # the same base name instead of one saying '_hyd_' and the other '*'.
+    # '(' ')' are kept as-is (valid on every filesystem here, just needing
+    # quotes in a shell command) so formulas like 'Al2(SO4)3' read as
+    # themselves in the filename. '*' (Barin's hydrate separator) is kept
+    # too, matching read_all_thermodata_pdf.py's .json naming, so a
+    # hydrate's .cif and .json share the same base name.
     return re.sub(r"[^A-Za-z0-9_.()\[\]*-]", "_", formula)
 
 
-# match_method values where the *specific* phase/polymorph identity Barin
-# names (a [TAG] or a Name parenthetical like '(WHITE)') was actually
-# cross-checked against MP's own data -- a hardcoded, researched spacegroup
-# hint, or a match against MP's own remarks/tags field -- as opposed to a
-# stoichiometry-only pick (single_candidate, most_stable_experimental*,
-# most_stable_guess*) that never confirms MP's structure is *this* named
-# polymorph specifically, just that it's *a* structure with the right formula.
+# match_method values where the *specific* polymorph Barin names (a [TAG]
+# or a Name parenthetical) was actually cross-checked against MP's own
+# data -- a researched spacegroup hint, or a remarks/tags match -- as
+# opposed to a stoichiometry-only pick that confirms only *a* structure
+# with the right formula, not that it's *this* named polymorph.
 PHASE_NAME_VERIFIED_METHODS = {
     "spacegroup_hint",
     "name_spacegroup_hint",

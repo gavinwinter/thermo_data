@@ -1,0 +1,128 @@
+# Source: Crystallography Open Database COD-1531670 (https://www.crystallography.net/cod/1531670.html)
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/53/16/1531670.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1531670
+loop_
+_publ_author_name
+'Kim, J.S.'
+'Choi, Y.-N.'
+'Lee, C.H.'
+'Kim, S.-H.'
+'Lee, Y.-W.'
+_publ_section_title
+;
+ Crystal structure analysis of uranium oxides
+;
+_journal_name_full               'Journal of the Korean Ceramic Society'
+_journal_page_first              967
+_journal_page_last               972
+_journal_volume                  38
+_journal_year                    2001
+_chemical_formula_sum            'O2.234 U'
+_chemical_name_systematic        'U O2.234'
+_space_group_IT_number           220
+_symmetry_space_group_name_Hall  'I -4bd 2c 3'
+_symmetry_space_group_name_H-M   'I -4 3 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            256
+_cell_length_a                   21.8761
+_cell_length_b                   21.8761
+_cell_length_c                   21.8761
+_cell_volume                     10469.108
+_citation_journal_id_ASTM        HSHAF7
+_cod_data_source_file            Kim_HSHAF7_2001_633.cif
+_cod_data_source_block           O2.234U1
+_cod_original_cell_volume        10469.11
+_cod_original_formula_sum        'O2.234 U1'
+_cod_database_code               1531670
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y+1/4,-x+3/4,-z+1/4
+-x,-y+1/2,z
+-y+3/4,x+3/4,-z+1/4
+x,-y,-z+1/2
+-y+1/4,-x+3/4,z+3/4
+-x,y+1/2,-z+1/2
+y+3/4,x+3/4,z+3/4
+z,x,y
+x+1/4,-z+3/4,-y+1/4
+-z,-x+1/2,y
+-x+3/4,z+3/4,-y+1/4
+z,-x,-y+1/2
+-x+1/4,-z+3/4,y+3/4
+-z,x+1/2,-y+1/2
+x+3/4,z+3/4,y+3/4
+y,z,x
+y,-z,-x+1/2
+-z+1/4,-y+3/4,x+3/4
+-y,z+1/2,-x+1/2
+z+1/4,y+1/4,x+1/4
+-y+1/2,-z,x+1/2
+-z+1/4,y+1/4,-x+3/4
+z+3/4,-y+1/4,-x+3/4
+x+1/2,y+1/2,z+1/2
+y+3/4,-x+5/4,-z+3/4
+-x+1/2,-y+1,z+1/2
+-y+5/4,x+5/4,-z+3/4
+x+1/2,-y+1/2,-z+1
+-y+3/4,-x+5/4,z+5/4
+-x+1/2,y+1,-z+1
+y+5/4,x+5/4,z+5/4
+z+1/2,x+1/2,y+1/2
+x+3/4,-z+5/4,-y+3/4
+-z+1/2,-x+1,y+1/2
+-x+5/4,z+5/4,-y+3/4
+z+1/2,-x+1/2,-y+1
+-x+3/4,-z+5/4,y+5/4
+-z+1/2,x+1,-y+1
+x+5/4,z+5/4,y+5/4
+y+1/2,z+1/2,x+1/2
+y+1/2,-z+1/2,-x+1
+-z+3/4,-y+5/4,x+5/4
+-y+1/2,z+1,-x+1
+z+3/4,y+3/4,x+3/4
+-y+1,-z+1/2,x+1
+-z+3/4,y+3/4,-x+5/4
+z+5/4,-y+3/4,-x+5/4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+U1 U+4 0 0 0 1 0.0
+O2 O-2 -0.015 -0.0097 0.3514 1 0.0
+O9 O-2 -0.0614 0.06 0.447 1 0.0
+U7 U+4 -0.0082 0.125 0.1307 1 0.0
+O1 O-2 -0.0337 0.089 0.2536 1 0.0
+O8 O-2 -0.0577 0.0643 0.0576 1 0.0
+O4 O-2 0.059 0.059 0.059 1 0.0
+U2 U+4 0.25 0 0.25 1 0.0
+O14 O-2 0.875 0 0.25 1 0.0
+O11 O-2 -0.0663 0.1886 0.323 1 0.0
+O3 O-2 0.8938 0.084 0.3296 1 0.0
+O12 O-2 0.0686 0.0584 0.3075 1 0.0
+O13 O-2 -0.0648 0.1961 0.4436 1 0.0
+U3 U+4 0.125 0.125 0.25 1 0.0
+U4 U+4 0.0067 0 0.25 1 0.0
+U5 U+4 0.8792 0.0045 0.1244 1 0.0
+O5 O-2 0.1812 0.1812 0.1812 1 0.0
+O6 O-2 0.0563 0.1848 0.1853 1 0.0
+U6 U+4 -0.0053 0.1177 0.3724 1 0.0
+O7 O-2 0.0712 0.0637 0.1926 1 0.0
+O10 O-2 -0.066 0.1999 0.1885 1 0.0

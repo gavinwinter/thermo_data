@@ -1,0 +1,87 @@
+# Source: Crystallography Open Database COD-2310427 (https://www.crystallography.net/cod/2310427.html)
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/31/04/2310427.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2310427
+loop_
+_publ_author_name
+'Knott, H.W.'
+'Mueller, M.H.'
+'Heaton, L.'
+_publ_section_title
+;
+ The crystal structure of Mn15 Si26
+;
+_journal_name_full               'Acta Crystallographica (1,1948-23,1967)'
+_journal_page_first              549
+_journal_page_last               555
+_journal_volume                  23
+_journal_year                    1967
+_chemical_formula_sum            'Mn15 Si26'
+_space_group_IT_number           122
+_symmetry_space_group_name_Hall  'I -4 2bw'
+_symmetry_space_group_name_H-M   'I -4 2 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   5.531
+_cell_length_b                   5.531
+_cell_length_c                   65.311
+_cell_volume                     1997.992
+_citation_journal_id_ASTM        ACCRA9
+_cod_data_source_file            Knott_ACCRA9_1967_1388.cif
+_cod_data_source_block           Mn15Si26
+_cod_database_code               2310427
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,-x,-z
+-x,-y,z
+-y,x,-z
+x,-y+1/2,-z+1/4
+-y+1/2,-x,z+3/4
+-x,y+1/2,-z+1/4
+y+1/2,x,z+3/4
+x+1/2,y+1/2,z+1/2
+y+1/2,-x+1/2,-z+1/2
+-x+1/2,-y+1/2,z+1/2
+-y+1/2,x+1/2,-z+1/2
+x+1/2,-y+1,-z+3/4
+-y+1,-x+1/2,z+5/4
+-x+1/2,y+1,-z+3/4
+y+1,x+1/2,z+5/4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Mn2 Mn 0 0 0.0653 1 0.0
+Mn5 Mn 0 0 0.2669 1 0.0
+Mn7 Mn 0 0 0.4013 1 0.0
+Mn8 Mn 0 0 0.4644 1 0.0
+Si5 Si 0.1591 0.3122 0.0848 1 0.0
+Mn1 Mn 0 0 0 1 0.0
+Si7 Si 0.3479 0.25 0.125 1 0.0
+Si4 Si 0.6657 0.3434 0.068 1 0.0
+Si6 Si 0.7744 0.1523 0.1063 1 0.0
+Mn4 Mn 0 0 0.1996 1 0.0
+Mn6 Mn 0 0 0.3326 1 0.0
+Si2 Si 0.8515 0.1811 0.0311 1 0.0
+Si1 Si 0.2161 0.3445 0.0119 1 0.0
+Mn3 Mn 0 0 0.133 1 0.0
+Si3 Si 0.3167 0.1642 0.048 1 0.0

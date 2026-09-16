@@ -3,30 +3,16 @@ OCR extraction of thermodynamic data tables from a scanned copy of Barin's
 'Thermochemical Data of Pure Substances' (3rd Edition, 1995) -- see README
 for the copyright note on the source PDF.
 
-Setup: this is the one thing you need to provide -- your own local copy of
-the Barin PDF, passed in via CLI:
-
+Usage:
     python read_all_thermodata_pdf.py --input-pdf /path/to/barin_1995.pdf
 
-Run with a Python environment that has pdfplumber, opencv, pytesseract, and
-the `tesseract` OCR engine itself installed (see README) -- pytesseract is
-just a thin wrapper around the `tesseract` binary, which is looked up on
-PATH (i.e. whichever environment you've activated), falling back to the
-directory containing the current Python interpreter.
+Requires pdfplumber, opencv, pytesseract, and the `tesseract` binary on
+PATH (see README).
 
-Pipeline:
-  1. Render every PDF page to an image, clean it up (grayscale, sharpen,
-     threshold) for OCR, and save it under barin_jpg_data/.
-  2. Look up each formula in toc_barin.csv (a pre-built table of contents
-     mapping formula -> page number, tracked in this repo) to find its page.
-  3. OCR that page and parse out each phase's T/Cp/S/G/H/.../logKf table,
-     validating rows against the thermodynamic identity G = H - T*S and
-     monotonicity (dG/dT = -S < 0) to catch and repair OCR digit errors.
-  4. Write one JSON file per formula into --output-dir (default:
-     barin_json_data/), which query_mp_cifs_from_toc.py's sibling scripts
-     do not depend on -- that pipeline only needs toc_barin.csv.
-
-Nothing else about the internals needs to change to run this end to end.
+Pipeline: render each PDF page to a cleaned-up image -> look up its page in
+toc_barin.csv -> OCR the page and parse each phase's T/Cp/S/G/H/.../logKf
+table, validating rows against G = H - T*S and monotonicity to catch OCR
+digit errors -> write one JSON file per formula into --output-dir.
 """
 import argparse
 import itertools
@@ -51,11 +37,9 @@ ROOT = Path(__file__).resolve().parent
 
 
 def configure_tesseract():
-    """Point pytesseract at the `tesseract` binary/tessdata for whichever
-    Python environment is currently active -- checks PATH first (the normal
-    case after `conda activate`), then falls back to the directory
-    containing this interpreter (the case when a script is run via an
-    env's absolute python path without activating it)."""
+    """Point pytesseract at the active env's `tesseract` binary/tessdata --
+    checks PATH first, then falls back to the interpreter's own directory
+    (for running via an absolute python path without activating the env)."""
     tesseract_path = shutil.which("tesseract")
     env_bin = Path(sys.executable).resolve().parent
     if not tesseract_path:
@@ -119,11 +103,9 @@ def closest_match(input_string, string_list):
 
 
 def fix_zero_before_digit(formula: str) -> str:
-    """Replace '0' with 'O' whenever it's immediately followed by a digit
-    (e.g. "Ag2C03" -> "Ag2CO3", "Fe203" -> "Fe2O3"), except inside a
-    legitimate decimal number like "0.702" or "1.05" -- those zeros are
-    real stoichiometric digits, not a misread 'O', and blindly converting
-    them would turn e.g. "NbC0.702" into the wrong "NbC0.7O2"."""
+    """Replace '0' with 'O' when followed by a digit (e.g. "Ag2C03" ->
+    "Ag2CO3"), except inside a decimal like "0.702" -- those zeros are
+    real stoichiometric digits, not a misread 'O'."""
     decimal_spans = [m.span() for m in re.finditer(r"\d+\.\d+", formula)]
 
     def in_decimal(pos):
@@ -141,17 +123,11 @@ def fix_zero_before_digit(formula: str) -> str:
 # Functions for extracting thermodynamic data
 # -------------------------------------------
 def get_ocr_data(page_num, image_to_data=False, image_to_string=True):
-    """OCR one rendered Barin page and return its text as a list of lines.
-
-    Crops the page-number/binding-gutter margins before OCR. With
-    image_to_string (the default), runs Tesseract's plain-text mode and
-    repairs a few systematic Tesseract artifacts (spaces hallucinated
-    after decimal points and minus signs, missing spaces before a merged
-    negative number). With image_to_data instead, runs Tesseract's
-    word-level bounding-box mode and bins each word into one of the
-    table's 10 data columns by its horizontal position, reconstructing
-    each row from those bins -- an alternative extraction path for pages
-    where the plain-text mode's column spacing gets scrambled.
+    """OCR one rendered Barin page into a list of lines, after cropping the
+    page-number/gutter margins. image_to_string (default) uses Tesseract's
+    plain-text mode with repairs for known spacing artifacts; image_to_data
+    instead bins words into the table's 10 columns by x-position -- an
+    alternate path for pages where plain-text column spacing gets scrambled.
     """
     img_path = 'barin_jpg_data/Thermochemical_Data_of_Pure_Substances___1995___Barin_Page_{:04}.jpg'.format(page_num)
     img = Image.open(img_path)
@@ -258,45 +234,30 @@ def get_ocr_data(page_num, image_to_data=False, image_to_string=True):
     return lines
 
 
-# The table's second header line always starts with the temperature units
-# label '[K]', which must not be mistaken for a phase name -- but OCR mangles
-# its brackets inconsistently ('{K]', '{[K]', '(K]', etc., the same
-# bracket-shape confusion seen throughout this OCR'd source), so matching
-# the *shape* of one-or-more opening-bracket-like characters + 'K' +
-# one-or-more closing-bracket-like characters catches every variant a
-# literal '!= "[K]"' comparison misses -- including a doubled/lowercased
-# 'K' (e.g. '[kK]'), which OCR produces just as readily as the single
-# uppercase form, and which a strict single-'K' pattern would otherwise
-# let through as if it were a genuine new phase name (see CHClI2[g]).
+# The header's temperature-unit label '[K]' must not be mistaken for a
+# phase name -- OCR mangles its brackets inconsistently ('{K]', '[kK]',
+# etc.), so match the *shape* (bracket-like chars + K's + bracket-like
+# chars) instead of a literal '[K]' comparison (see CHClI2[g]).
 _TEMP_UNIT_LABEL_PATTERN = re.compile(r"^[\[{(]+[kK]+[\]})]+$")
 
 
 def read_thermo_data(name, lines, debug=False, formula=None):
-    """Parse OCR'd page lines into per-phase thermodynamic data tables for one compound.
+    """Parse OCR'd page lines into per-phase thermodynamic data tables for
+    one compound.
 
-    Locates the named entry, splits it into phases at each new phase-name
-    row, and for each data row repairs common OCR artifacts (missing
-    decimal points, digit/letter confusions, hallucinated spacing) before
-    parsing its 10 columns (T, Cp, S, -(G-H298)/T, H, H-H298, G, dHf, dGf,
-    logKf). Each candidate row is validated against the thermodynamic
-    identity G = H - TS; if no combination of parsed floats satisfies it,
-    the row falls back to a positional parse rather than being dropped,
-    gated by the global constraint that G is monotonically non-increasing
-    in T (dG/dT = -S < 0) across the entire table -- including phase
-    transitions -- which is what prevents gaps at phase-transition
-    boundaries that a per-phase-only check would miss.
+    Locates the entry, splits it into phases, repairs common OCR artifacts,
+    and parses each row's 10 columns (T, Cp, S, -(G-H298)/T, H, H-H298, G,
+    dHf, dGf, logKf). Rows are validated against G = H - TS; if no
+    combination of parsed floats satisfies that, the row falls back to a
+    positional parse instead of being dropped, gated by dG/dT = -S < 0
+    checked globally rather than per-phase, so gaps at phase-transition
+    boundaries aren't missed.
 
-    `formula` (optional) is tried as a second channel for locating the
-    entry's own header window when `name` doesn't match anywhere on the
-    page -- the compound's *name* can pick up an ordinary OCR letter drop
-    just like anything else on the page (e.g. Cu3I3[g]'s name OCR'd as
-    'TRICOPPER TRIODIDE', missing an I), and with name matching using zero
-    fuzzy tolerance by design (see _fuzzy_match_tolerance), that alone was
-    enough to miss the header entirely and fall through to parsing from the
-    top of the page -- silently picking up whichever *other* entry's table
-    happened to be first there instead (Cu3I3[g] pulling CuI[g]'s data).
-    The formula is far less prone to this specific failure mode: it's
-    shorter, and it sits right next to the name on the same header line.
+    `formula` (optional) is a second channel for locating the entry's
+    header when `name` (zero fuzzy tolerance by design) fails to match due
+    to an ordinary OCR letter drop -- otherwise parsing silently falls
+    through to whichever other entry's table is first on the page (e.g.
+    Cu3I3[g] pulling CuI[g]'s data).
     """
 
     reading_phase = False
@@ -304,16 +265,12 @@ def read_thermo_data(name, lines, debug=False, formula=None):
     T, Cp, S, G_H298_T, H, H_H298, G, ΔHf, ΔGf, logKf = [], [], [], [], [], [], [], [], [], []
     phases = []
 
-    # Tracks the last accepted row's (T, G, S) across the whole table,
-    # including across phase boundaries. This is what lets us enforce
-    # dG/dT = -S globally, not just within a single phase's list -- which is
-    # what let garbage rows through at the very first row of each new phase
-    # last time. The direction of that constraint flips once S itself has
-    # gone negative (see last_S_global below): most substances never do,
-    # but a few (e.g. Cd(OH)2, which decomposes) genuinely tabulate an S
-    # that crosses zero, and from that point on G is *supposed* to rise
-    # with T, not fall -- enforcing "G must not increase" past that point
-    # would drop real data (see NSPT decomposition entries generally).
+    # Tracks the last accepted row's (T, G, S) globally (not per-phase), so
+    # dG/dT = -S is enforced across phase boundaries too. Flips direction
+    # once S goes negative (see last_S_global): a few entries (e.g.
+    # Cd(OH)2, which decomposes) genuinely tabulate S crossing zero, after
+    # which G is supposed to rise with T -- enforcing "G must not
+    # increase" there would drop real data.
     last_T_global = None
     last_G_global = None
     last_S_global = None
@@ -330,35 +287,14 @@ def read_thermo_data(name, lines, debug=False, formula=None):
 
     lines = [line for line in lines if not is_bare_footnote(line)]
 
-    # Barin packs multiple short entries onto one page (e.g. ALUMINIUM COBALT
-    # and 5-ALUMINIUM 2-COBALT both fit on the same page), so this compound's
-    # own table can start anywhere in `lines`, not at the top. A literal
-    # `name in line` substring check is too brittle to find it reliably --
-    # names with a numeric prefix ('5-ALUMINIUM 2-COBALT', '18-ALUMINIUM
-    # 4-BORON 33-OXIDE', ...) routinely get that prefix's hyphen/spacing
-    # OCR'd differently than it was typed here, so the check silently never
-    # matches and `lines` is left unsliced -- meaning parsing falls through
-    # to whichever *earlier* compound's table happens to be first on the
-    # page instead of this one's own.
-    #
-    # Anchor to the 'Phase T Cp S ...' data-header line itself (same
-    # detection _entry_header_windows() uses), not to whichever line the
-    # name text happens to land on: a short preceding entry's leftover
-    # References-section row can get OCR'd onto the *same line* as the next
-    # entry's own name/formula (e.g. 'SOL W1/e e Hu1 MPT= 1918.252.774
-    # 5-ALUMINIUM 2-COBALT Al5Co2'), and starting the parse there instead of
-    # at the next clean header confuses the phase/data-row detection below.
-    #
-    # Try an exact normalized match against every header's lookback window
-    # first, across the whole page, before considering any fuzzy match:
-    # 'ALUMINIUM 3-NICKEL' and '3-ALUMINIUM NICKEL' normalize to strings
-    # only one transposition apart (edit distance 2, right at the fuzzy
-    # threshold below), so falling back to fuzzy matching per-header instead
-    # of exhausting exact matches everywhere first could match one entry to
-    # the other's header. Both names normally have their own exact match
-    # (OCR usually preserves letters fine; it's the hyphen/spacing around a
-    # numeric prefix that's unreliable), so fuzzy matching is only reached
-    # for a name that doesn't cleanly appear anywhere as typed.
+    # Barin packs multiple short entries per page, so this compound's table
+    # can start anywhere in `lines`. Anchor to each 'Phase T Cp S ...'
+    # data-header line (same detection as _entry_header_windows()) rather
+    # than a literal `name in line` check, which is too brittle against
+    # OCR'd numeric-prefix spacing and can land on a preceding entry's
+    # leftover References row instead. Exact header matches are tried
+    # across the whole page before any fuzzy match, since two differently
+    # ordered names can otherwise fall within each other's fuzzy threshold.
     name_key = _normalize_for_page_match(name)
     formula_key = _normalize_for_page_match(formula) if formula else ""
     if name_key or formula_key:
@@ -416,16 +352,11 @@ def read_thermo_data(name, lines, debug=False, formula=None):
         preceding_lines_str = " ".join(lines[max(0, i-3):i])
         is_phase_header_nearby = "Phase" in preceding_lines_str
 
-        # 'References' itself gets OCR'd inconsistently (e.g. 'Referenzen'
-        # on some pages, seemingly a font/ligature artifact) -- a literal
-        # '!= "References"' comparison misses that, which then lets the
-        # References section's own 'Phase H/S Cp' sub-header slip past as
-        # if it were a genuine new data phase, since the exclusion below
-        # never fires and the section-end check further down never breaks
-        # out of the loop either. Tolerate up to 2 edits (rather than the
-        # usual length-scaled tolerance) since this is a single well-known
-        # word being checked in a low-risk context -- collateral false
-        # positives on unrelated short tokens are effectively impossible.
+        # 'References' itself gets OCR'd inconsistently (e.g. 'Referenzen'),
+        # so a literal comparison would miss it and let the References
+        # section's own sub-header slip through as a new data phase.
+        # Tolerate up to 2 edits (fixed, not length-scaled) since this is
+        # one well-known word checked in a low-risk context.
         is_references_token = _fuzzy_find(
             "REFERENCES", _normalize_for_page_match(cleaned_first_token), 2
         ) != -1
@@ -460,15 +391,11 @@ def read_thermo_data(name, lines, debug=False, formula=None):
             if first_word.isupper() and not _TEMP_UNIT_LABEL_PATTERN.match(first_word):
                 line = line[line.find(first_word) + len(first_word):]
 
-            # Repair numbers that lost their decimal point in OCR
-            # e.g. "34199" -> "34.199", "-964615" -> "-964.615", "-1144412" -> "-1144.412"
-            # This is the actual root cause of every dropped row: a missing
-            # decimal point makes the float regex skip the token entirely,
-            # which shifts every subsequent column's index by one and makes
-            # G get compared against what's really ΔHf or ΔGf.
-            # Barin's tables use a fixed format: T has 2 decimal places,
-            # every other column has 3 -- so this is fully deterministic,
-            # not a guess.
+            # Repair numbers that lost their decimal point in OCR (e.g.
+            # "34199" -> "34.199"): a missing point makes the float regex
+            # skip the token, shifting every later column's index. Barin's
+            # format is fixed -- T has 2 decimal places, every other column
+            # has 3 -- so this is deterministic, not a guess.
             def repair_missing_decimal(token, is_first_token):
                 if re.fullmatch(r'-?\d{4,7}', token):
                     sign = '-' if token.startswith('-') else ''
@@ -547,17 +474,12 @@ def read_thermo_data(name, lines, debug=False, formula=None):
                     if (last_S_global is None or last_S_global >= 0) and G_cand > last_G_global + 1.0:
                         sane = False
 
-                # G=H-TS coarse sanity floor, applied even on the very first
-                # row of a phase (where there's no previous row to check
-                # monotonicity against, so the checks above are skipped
-                # entirely). The sieve above already tried this at strict
-                # (2.0) tolerance and failed -- otherwise valid_row would
-                # already be set -- so a *wide* tolerance here is only about
-                # catching a positionally-assigned column that's grossly
-                # wrong (e.g. a stray extra OCR'd digit inflating one value
-                # by orders of magnitude), not normal per-digit noise. Without
-                # this, a garbage first-row G silently becomes last_G_global
-                # and fails every real row after it out of the gate.
+                # G=H-TS coarse sanity floor, applied even on a phase's
+                # first row (no previous row to check monotonicity
+                # against). The sieve already tried this at strict (2.0)
+                # tolerance and failed, so this wide tolerance only catches
+                # a grossly wrong positional column, not per-digit noise --
+                # otherwise a garbage first-row G poisons last_G_global.
                 T_cand, S_cand, H_cand, G_cand = abs(candidate[0]), candidate[2], candidate[4], candidate[6]
                 if abs((H_cand - T_cand * (S_cand / 1000.0)) - G_cand) > 50.0:
                     sane = False
@@ -631,20 +553,12 @@ def read_thermo_data(name, lines, debug=False, formula=None):
 
 
 def _breaks_established_trend(T, Cp, i, rel_tol=0.4):
-    """True if going from row i-1 to i changes Cp at a rate substantially
-    different from the established rate from i-2 to i-1 (per unit T) --
-    i.e. this row doesn't continue the trend its own immediate history was
-    already following. Used as an extra gate on top of the H/S cross-check
-    specifically at the last row of a phase: a backward-only secant estimate
-    of Cp systematically approximates the *midpoint* of its span rather than
-    the endpoint, so a steep but perfectly linear trend (e.g. CaSO4*2H2O's
-    SOL phase increases by exactly the same ~31.8 J/(mol K) every 100 K,
-    right through its real last row) can otherwise look identical to a
-    genuine anomaly to the H/S check alone, which has no way to tell
-    "unusually steep, but consistent" from "wrong." A real misread breaks
-    that established local pattern outright (e.g. NH2[g]'s Cp increments by
-    ~0.5 per 100 K for many rows, then by ~10.5 at the corrupted one).
-    Conservatively returns True (does not block a flag/correction) when
+    """True if row i's Cp-vs-T rate deviates from the established rate at
+    i-1 -- an extra gate used at a phase's last row, where a one-sided
+    secant estimate systematically approximates the *midpoint* of its span
+    rather than the endpoint, so a steep-but-linear trend (e.g. CaSO4*2H2O's
+    steady ~31.8 J/(mol K) rise per 100 K) can otherwise look identical to a
+    genuine anomaly to the H/S check alone. Conservatively returns True when
     there isn't enough history (i < 2) or the recent steps are degenerate.
     """
     if i < 2:
@@ -657,28 +571,21 @@ def _breaks_established_trend(T, Cp, i, rel_tol=0.4):
     return abs(rate_last - rate_prev) > max(0.02, rel_tol * abs(rate_prev))
 
 
-# Cp estimates implied by H's or S's local slope that fall outside this
-# range are themselves numerically unreliable (typically because two
-# adjacent tabulated values happen to be nearly equal, so dividing by their
-# tiny difference amplifies ordinary 3-decimal rounding into a huge, bogus
-# result) rather than evidence of anything -- no real substance in this
-# dataset has a molar Cp outside it, so such an estimate is discarded
-# instead of being compared against.
+# Cp estimates outside this range are numerically unreliable (typically
+# two near-equal tabulated values amplifying ordinary rounding through
+# division), not evidence of anything real -- no substance here has a
+# molar Cp outside it, so such estimates are discarded, not compared.
 _PLAUSIBLE_CP_RANGE = (-20.0, 900.0)
 
 
 def _sign_flip_improves_trend(T, S, i):
-    """True if flipping S[i]'s sign brings it closer to the value implied
-    by a linear extrapolation from its two preceding rows than leaving it
-    as-is -- shared by check_phase_consistency (flagging) and
-    apply_consistency_corrections (fixing) so the two can't disagree about
-    which negative S values are real. Some entries (e.g. Cd(OH)2's SOL
-    phase, which decomposes readily) genuinely tabulate an S that smoothly
-    crosses zero and keeps decreasing -- 20.876, 5.787, -6.970 -- where the
-    negative sign is real data, not a misread, and flipping it to +6.970
-    would actually be the one breaking the trend it was already smoothly
-    continuing. Conservatively returns True (treats it as a likely misread)
-    when there isn't enough history to tell.
+    """True if flipping S[i]'s sign fits the trend extrapolated from its
+    two preceding rows better than leaving it as-is -- shared by
+    check_phase_consistency (flagging) and apply_consistency_corrections
+    (fixing) so the two can't disagree. Some entries (e.g. Cd(OH)2's
+    decomposing SOL phase) genuinely tabulate an S that smoothly crosses
+    zero, where the negative sign is real, not a misread. Conservatively
+    returns True when there isn't enough history to tell.
     """
     if i < 2:
         return True
@@ -692,11 +599,9 @@ def _sign_flip_improves_trend(T, S, i):
 
 def _neighbor_index_pairs(i, n):
     """Two (a, b) index pairs spanning i from either side, for estimating a
-    local slope at i without using row i's own value. Interior points use
-    the immediate neighbor on each side; the first/last point of a phase
-    (which only has neighbors on one side) instead uses that side's nearest
-    and next-nearest neighbor, giving two pairs of different width so they
-    aren't simply duplicates of each other."""
+    local slope at i without using row i's own value. Boundary points (only
+    one-sided neighbors) get two different-width pairs from that side
+    instead, so they aren't duplicates of each other."""
     if i == 0:
         return [(0, 1), (0, 2)] if n > 2 else ([(0, 1)] if n > 1 else [])
     if i == n - 1:
@@ -705,50 +610,29 @@ def _neighbor_index_pairs(i, n):
 
 
 def check_phase_consistency(T, Cp, S, H, cp_margin=5.0, check_last_row=False):
-    """Cross-check each row's tabulated Cp and S against the thermodynamic
-    identities Cp = dH/dT and Cp = T*dS/dT, to catch a single-token OCR
-    misread (a dropped/substituted digit, a flipped sign) in Cp, H, or S
-    that leaves the *other* columns internally smooth -- the kind of error
-    read_thermo_data()'s own-row G=H-TS sieve can't see, since a row can
-    satisfy G=H-TS internally while still being wildly inconsistent with its
-    neighbors' trend.
+    """Cross-check each row's tabulated Cp and S against Cp = dH/dT and
+    Cp = T*dS/dT, to catch a single-token OCR misread (digit or sign) in
+    Cp, H, or S that leaves the *other* columns internally smooth -- an
+    error read_thermo_data()'s own-row G=H-TS check can't see, since a row
+    can satisfy G=H-TS while still being inconsistent with its neighbors.
 
-    Two independent checks, run per row:
-      - Cp vs. neighbors: estimate Cp two ways from each of H's and S's
-        local slope (see _neighbor_index_pairs), without using the row's own
-        H/S/Cp values, and flag if the tabulated Cp falls outside *both* the
-        H-implied and S-implied range (with cp_margin of slack). Requiring
-        both to disagree, rather than either, is what keeps this from firing
-        on genuine curvature: real curvature in Cp shows up matching in both
-        H's and S's slope, and typically brackets the tabulated Cp between
-        the two neighbor-pair estimates rather than missing it entirely.
-        Skipped at the first row of a phase, and at the last row *unless*
-        check_last_row says no further phase follows this one: a one-sided
-        (backward- or forward-only) neighbor estimate systematically
-        underestimates Cp specifically where it's curving fastest, and real
-        substances routinely show a genuine Cp rise heading into their next
-        phase transition (e.g. AgBr's last solid-phase row, just below its
-        705 K melting point, is legitimately anomalous pre-melting behavior,
-        not an OCR error) at a magnitude this can't distinguish from actual
-        corruption. That risk is specific to a row sitting right before a
-        transition, though -- the truly last row of a compound's last phase
-        (nothing tabulated after it at all) has no such transition to
-        explain a deviation, so the caller should pass check_last_row=True
-        there (see NH2[g]'s last GAS row, a genuine OCR misread with no
-        transition anywhere nearby to legitimize it).
-      - S sign: within one phase, entropy is normally always positive, so a
-        lone negative value surrounded by otherwise-positive neighbors is
-        usually a sign flip, independent of the Cp check above (which can
-        miss this, since Cp can still agree fine with H's slope while S
-        alone is corrupted). Only flagged when flipping it would actually
-        continue the established local trend better than leaving it
-        negative (see _sign_flip_improves_trend) -- some entries (e.g.
-        Cd(OH)2's SOL phase) genuinely tabulate an S that smoothly crosses
-        zero, and flagging that as an error every run would be noise, not
-        signal.
+    Two independent checks per row:
+      - Cp vs. neighbors: estimate Cp from H's and S's local slope on each
+        side (see _neighbor_index_pairs), and flag if the tabulated Cp
+        falls outside *both* estimates (with cp_margin slack) -- requiring
+        both to disagree avoids false positives on genuine curvature, which
+        typically shows up consistently in both. Skipped at a phase's first
+        row, and at its last row unless check_last_row=True (no further
+        phase follows): a one-sided estimate can't tell a real
+        pre-transition Cp rise (e.g. AgBr nearing its melting point) from
+        corruption, and that risk only exists right before a transition.
+      - S sign: a lone negative S among otherwise-positive neighbors is
+        flagged as a sign flip only when flipping it fits the local trend
+        better (see _sign_flip_improves_trend) -- some entries (e.g.
+        Cd(OH)2) genuinely tabulate S crossing zero.
 
-    Returns a list of (index, T_i, Cp_i, S_i, reasons) tuples, where reasons
-    is a subset of ['Cp', 'S_sign'] naming which check(s) fired.
+    Returns a list of (index, T_i, Cp_i, S_i, reasons) tuples, reasons
+    being a subset of ['Cp', 'S_sign'].
     """
     n = len(T)
     n_positive_S = sum(1 for v in S if v > 0)
@@ -796,26 +680,16 @@ def check_phase_consistency(T, Cp, S, H, cp_margin=5.0, check_last_row=False):
 
 def _invert_pair_estimate(est, i, a, b, T, Cp):
     """Convert a two-point secant estimate `est` (H's or S's implied
-    average Cp over [T[a], T[b]], from _neighbor_index_pairs/H or S) into
-    an estimate of Cp AT row i, one endpoint of that pair -- rather than
-    treating the estimate as if it already approximated Cp[i] itself.
+    average Cp over [T[a], T[b]]) into an estimate of Cp AT row i, an
+    endpoint of that pair, rather than treating `est` as if it already
+    approximated Cp[i] itself.
 
-    For an *adjacent* pair (a single interval, i.e. i's immediate
-    neighbor), `est` ~ (Cp[i] + Cp[neighbor]) / 2, so Cp[i] is recovered by
-    inverting that average against the neighbor's own already-tabulated
-    (trusted) Cp. For a *wide* pair that skips one interior point (two
-    intervals -- the second, cross-check pair _neighbor_index_pairs hands
-    back at the very first/last row of a phase), the skipped point's own
-    trusted Cp resolves the second interval the same way.
-
-    Without this inversion, a boundary row's correction ends up averaging
-    together one estimate centered on the interval *between* i and its
-    neighbor with one centered on a span that only reaches i at its very
-    edge -- systematically biasing the "corrected" value toward the
-    interior of that span rather than the true value at i. That's what
-    made NH2[g]'s last GAS row (T=3000) resolve to 57.785 instead of the
-    true 58.186: nothing wrong with the estimates themselves, just averaged
-    as if they were both already centered on the row being corrected.
+    For an adjacent pair, Cp[i] is recovered by inverting the average
+    against the neighbor's own trusted Cp; for a wide pair (skips one
+    interior point), the skipped point's trusted Cp resolves it the same
+    way. Without this inversion, a boundary correction is biased toward
+    the interior of the span rather than the true value at i -- what made
+    NH2[g]'s last GAS row resolve to 57.785 instead of the true 58.186.
     """
     lo, hi = (a, b) if a < b else (b, a)
     if hi - lo == 1:
@@ -829,24 +703,15 @@ def _invert_pair_estimate(est, i, a, b, T, Cp):
 
 
 def _snap_to_plausible_digit_fix(old_value, estimate, tol=0.1, allow_fallback=True):
-    """If changing a single digit of old_value's own printed form lands
-    within `tol` of the physics-derived `estimate`, return that exact
-    value instead of the estimate itself.
-
-    Every OCR corruption this correction step is designed to catch is a
-    single misread digit (a '3' read as '8', a '5' as '6' or '9', etc. --
-    see e.g. HgS[g]'s Cp 87.226 for a true 37.226, or NH2[g]'s 68.186 for a
-    true 58.186), not a value drawn from nowhere. The physics estimate
-    (from H's/S's local slope) is only ever an approximation -- exact for
-    perfectly linear Cp, off by a curvature-dependent amount otherwise --
-    so when one specific one-digit fix of the original token lands
-    squarely on top of it, that fix almost certainly *is* the original
-    tabulated value, and is preferable to the estimate's own approximate
-    reconstruction of it.
+    """If changing a single digit of old_value's printed form lands within
+    `tol` of the physics-derived `estimate`, return that exact value
+    instead of the estimate itself -- OCR corruption here is consistently
+    a single misread digit (e.g. HgS[g]'s 87.226 for a true 37.226), so a
+    one-digit fix landing on the estimate is almost certainly the true
+    tabulated value, more reliable than the estimate's own approximation.
 
     allow_fallback=False returns None instead of the raw estimate when no
-    single-digit fix is found -- see apply_consistency_corrections for why
-    a boundary row needs that distinction.
+    single-digit fix is found (see apply_consistency_corrections).
     """
     s = f"{old_value:.3f}"
     best, best_dist = None, tol
@@ -867,37 +732,21 @@ def _snap_to_plausible_digit_fix(old_value, estimate, tol=0.1, allow_fallback=Tr
 
 def apply_consistency_corrections(T, Cp, S, H, cp_margin=5.0, check_last_row=False):
     """Auto-correct the same Cp/S problems check_phase_consistency() flags,
-    using the same H/S-implied estimates that flag them as the correction
-    itself -- rather than trying to pattern-match the specific OCR mechanism
-    (a substituted digit, an inserted one, a dropped one all look different
-    character-by-character but identical from this side: a value that
-    doesn't match its neighbors' trend), this trusts the two independent
-    physics-derived estimates directly. That's only safe when H's slope and
-    S's slope agree with *each other* (not just both disagree with the
-    tabulated value) -- e.g. HgS[g]'s GAS Cp goes 37.173, 37.092, [87.226],
-    37.263, 37.289: both cp_from_H and cp_from_S land near 37.2 independently,
-    which is real corroborating evidence, not a coincidence. If they don't
-    agree with each other either, there's no confident correction to make,
-    and the row is left for check_phase_consistency() to flag for manual
-    review instead.
+    using the same H/S-implied estimates as the correction itself. Only
+    applied when H's and S's estimates agree with *each other* (not just
+    both disagreeing with the tabulated value) -- e.g. HgS[g]'s cp_from_H
+    and cp_from_S both land near 37.2 independently, real corroborating
+    evidence. Otherwise the row is left for check_phase_consistency() to
+    flag for manual review.
 
     S sign flips are corrected when a lone negative value sits among
-    otherwise-positive ones *and* flipping it actually continues the
-    established local trend better than leaving it negative -- checked
-    against a linear extrapolation from the two preceding rows, the same
-    kind of check _breaks_established_trend does for Cp. Some entries
-    (e.g. Cd(OH)2's SOL phase, which decomposes readily) genuinely tabulate
-    an S that smoothly crosses zero and keeps decreasing -- 20.876, 5.787,
-    -6.970 -- where the negative sign is real data, not a misread, and
-    blindly flipping it to +6.970 would actually be the one breaking the
-    trend it was already smoothly continuing. check_last_row controls
-    whether the last row is eligible for the *Cp* correction below too --
-    pass True only when the caller knows no further phase follows this one
-    (see check_phase_consistency).
+    otherwise-positive ones and flipping it fits the local trend better
+    (see _sign_flip_improves_trend) -- some entries (e.g. Cd(OH)2) genuinely
+    tabulate S crossing zero. check_last_row controls whether the last row
+    is eligible for the Cp correction too (see check_phase_consistency).
 
-    Returns (corrected_Cp, corrected_S, corrections), where corrections is a
-    list of (index, T_i, field, old_value, new_value) tuples describing what
-    changed, for logging/audit purposes.
+    Returns (corrected_Cp, corrected_S, corrections), corrections being a
+    list of (index, T_i, field, old_value, new_value) tuples for audit.
     """
     n = len(T)
     Cp = list(Cp)
@@ -953,20 +802,15 @@ def apply_consistency_corrections(T, Cp, S, H, cp_margin=5.0, check_last_row=Fal
                 ) / len(cp_from_S)
             else:
                 h_final, s_final = h_mid, s_mid
-            # A boundary row only has neighbors on one side, so its
-            # physics estimate can't be cross-checked against a *trusted*
-            # value on the other side the way an interior row's can -- it's
-            # equally consistent with either "this row was misread" or
-            # "this row is genuine curvature the estimate doesn't capture"
-            # (e.g. As4S4's LIQ phase Cp accelerates for real approaching
-            # its BPT=995K decomposition: 266.534, 268.638, 285.817,
-            # 310.093 -- printed cleanly, no misread, just a steepening
-            # trend the H/S check reads as anomalous). Requiring an actual
-            # single-digit fix of the printed value -- not just the raw
-            # estimate -- is what tells apart NH2[g]'s real corruption
-            # (68.186 -> a clean one-digit fix landing on 58.186) from
-            # that: no one-digit fix of "310.093" lands anywhere near its
-            # physics estimate, because 310.093 was never wrong.
+            # A boundary row only has neighbors on one side, so its physics
+            # estimate can't be cross-checked against a trusted value the
+            # other side the way an interior row's can -- equally
+            # consistent with "misread" or "genuine curvature the estimate
+            # doesn't capture" (e.g. As4S4's LIQ Cp really does accelerate
+            # near its decomposition point). Requiring an actual
+            # single-digit fix of the printed value, not just the raw
+            # estimate, is what tells NH2[g]'s real corruption apart from
+            # that.
             corrected = _snap_to_plausible_digit_fix(
                 Cp[i], (h_final + s_final) / 2, allow_fallback=not is_boundary
             )
@@ -987,32 +831,20 @@ def get_thermo_data(name, page_num, image_to_data=False, image_to_string=True):
 
 
 def _normalize_for_page_match(s):
-    """Uppercase, strip everything but letters/digits/brackets, and unify
-    the OCR confusions that legitimately vary *independently* between
-    toc_barin.csv and a given page's own OCR pass -- each was cleaned
-    separately, and their noise doesn't line up: 'O'/'0', lowercase
-    'l'/capital 'I' (which, once uppercased, folds 'L' and 'I' together --
-    a bonus of that is it also unifies 'Al'/'AI' and 'Cl'/'CI', the exact
-    same confusion pair applied to those digraphs), and '{'/'}' standing in
-    for '['/']' (e.g. 'KBr{g]') -- unified into square brackets *before*
-    stripping, so they survive as the bracket characters the rest of this
-    function (and page_contains_compound's polymorph-tag check) expect,
-    rather than being dropped as punctuation. Every OTHER digit and letter
-    stays distinct, since digit counts are exactly what discriminates
-    between similarly-named compounds (e.g. 'CaTiO3' vs 'Ca3Ti2O7' both
-    reduce to the same letters, but not the same digit-aware skeleton).
-    This is a matching heuristic only -- it never touches the formula text
-    that actually gets written out.
+    """Uppercase, strip to letters/digits/brackets, and unify OCR
+    confusions that vary independently between toc_barin.csv and a page's
+    own OCR pass: 'O'/'0', lowercase 'l'/capital 'I' (also unifying
+    'Al'/'AI' and 'Cl'/'CI'), and '{'/'}' standing in for '['/']'. Every
+    other digit/letter stays distinct, since digit counts discriminate
+    between similarly-named compounds (e.g. 'CaTiO3' vs 'Ca3Ti2O7').
+    Matching heuristic only -- never touches the formula text written out.
 
-    Also collapses runs of repeated bracket characters down to one: OCR
-    sometimes reads a single '[' as *both* a '{' and a '[' landing right
-    next to each other (e.g. 'Cu3l3{[g]' for 'Cu3I3[g]'), which survives
-    the {/}->[/] unification above as a doubled '[[' that a formula's own
-    single-bracket key then fails to substring-match at all -- silently
-    falling through to formula-based verification failing entirely, and
-    from there to whatever page/entry happens to be first on the
-    fallback page (see Cu3I3[g], which this let mismatch onto CuI[g]'s
-    table instead of its own)."""
+    Also collapses repeated bracket characters to one: OCR sometimes reads
+    a single '[' as both '{' and '[' landing next to each other (e.g.
+    'Cu3l3{[g]' for 'Cu3I3[g]'), which otherwise survives as a doubled
+    '[[' that a formula's single-bracket key fails to match, falling
+    through to the wrong page's entry (see Cu3I3[g] mismatching onto
+    CuI[g])."""
     s = str(s).replace("{", "[").replace("}", "]")
     s = re.sub(r"[^A-Za-z0-9\[\]]", "", s).upper()
     s = re.sub(r"\[+", "[", s)
@@ -1022,27 +854,22 @@ def _normalize_for_page_match(s):
 
 
 def _entry_header_windows(lines, lookback=3):
-    """Barin packs multiple short entries onto one page when their tables
-    are small (e.g. a page can hold AgCN's whole table, then Ag2CO3's
-    right after it), so a compound's own header can be anywhere on the
-    page, not just the first few lines. Each entry's data table is
-    introduced by a 'Phase T Cp S ...' column-header line right after its
-    name/formula line -- unlike the References section's differently-worded
-    'Phase H/S ...' header, which must NOT be treated as an entry boundary,
-    since compounds get *mentioned* there too (e.g. a decomposition remark
-    like '(LIQ + CaTiO3)') without that being this page's own entry for
-    them. Returns the text immediately preceding each genuine data-header
-    line, which is where an entry's own name/formula actually lives.
+    """Barin packs multiple short entries onto one page (e.g. AgCN then
+    Ag2CO3), so an entry's header can be anywhere, not just at the top.
+    Each entry's table is introduced by a 'Phase T Cp S ...' header line,
+    unlike the References section's 'Phase H/S ...' header, which must NOT
+    count as an entry boundary (compounds get mentioned there too, e.g. in
+    a decomposition remark, without owning that page). Returns the text
+    immediately preceding each genuine data-header line, where an entry's
+    own name/formula lives.
     """
     windows = []
     for i, line in enumerate(lines):
-        # Tolerate OCR noise before 'Phase' (e.g. a stray leading bullet/dot
-        # character). Rather than requiring 'T' to follow -- the data
-        # header's column-label row is itself OCR'd inconsistently enough
-        # that '(Phase) T Cp S' sometimes loses its 'T' entirely, e.g.
-        # 'Phase Cy S -(G-H298)/T ...' -- key off what's actually constant:
-        # the References section's header is the only place 'Phase' is ever
-        # followed by 'H' (from 'Phase H/S ...'), so reject just that.
+        # Tolerate OCR noise before 'Phase' (a stray bullet/dot) and don't
+        # require 'T' to follow -- the header row is OCR'd inconsistently
+        # enough to lose its 'T' (e.g. 'Phase Cy S -(G-H298)/T ...'). Key
+        # off what's actually constant: only the References header ever
+        # follows 'Phase' with 'H' (from 'Phase H/S ...'), so reject that.
         m = re.match(r"^[^A-Za-z]{0,3}Phase\b[^A-Za-z]{0,10}([A-Za-z])", line, re.IGNORECASE)
         if m and m.group(1).upper() != "H":
             windows.append(" ".join(lines[max(0, i - lookback) : i]))
@@ -1053,39 +880,30 @@ _TAG_AFTER_PATTERN = re.compile(r"^\[[A-Za-z0-9,]{1,6}\]")
 
 
 def _looks_like_tag(text_after_match: str) -> bool:
-    """True if a page-text position immediately following a formula match
-    looks like a genuine short polymorph/isomer tag ('[B]', '[III]',
-    '[1,1]') that closes within a few characters -- as opposed to a bare
-    '[' that's actually unrelated OCR noise landing right after the match
-    by coincidence (e.g. 'IRON' misread as '[RON' in the adjacent Name
-    text, which never closes with ']' within a handful of characters)."""
+    """True if the text right after a formula match looks like a genuine
+    short polymorph/isomer tag ('[B]', '[III]') that closes within a few
+    characters -- as opposed to unrelated OCR noise (e.g. 'IRON' misread
+    as '[RON') that never closes with ']'."""
     return bool(_TAG_AFTER_PATTERN.match(text_after_match))
 
 
 def _fuzzy_match_tolerance(key: str) -> int:
-    """Max edit distance to tolerate when fuzzy-matching a normalized name
-    skeleton against OCR'd page text. Always 0 (exact match only): chemical
-    names can be genuine minimal pairs just like formulas can -- 'AMIDOGEN'
-    (NH2) and 'IMIDOGEN' (NH) differ by exactly one letter but are different
-    real compounds, and edit-distance-1 tolerance let 'AMIDOGEN' match a
-    page that only had 'IMIDOGEN' on it, verifying the *wrong* compound's
-    page as if it were correct. Since page_contains_compound() tries the
-    formula and the name as two independent channels, either one matching
-    exactly is enough -- this only costs verification when *both* fields
-    happen to have OCR noise on the same entry, which is rare, versus
-    silently accepting a different compound's data, which is far worse.
+    """Max edit distance for fuzzy-matching a normalized name skeleton
+    against OCR'd page text. Always 0: chemical names can be genuine
+    minimal pairs ('AMIDOGEN' vs 'IMIDOGEN', different compounds one
+    letter apart), so any tolerance risks verifying the wrong compound's
+    page. Since page_contains_compound() tries formula and name as
+    independent channels, either matching exactly is enough.
     """
     return 0
 
 
 def _fuzzy_find(needle: str, haystack: str, max_dist: int):
     """Index of a substring of haystack within max_dist edits of needle, or
-    -1. needle/haystack are short normalized formula/name skeletons here
-    (at most a few dozen characters), so trying every window length within
-    +/-max_dist at every position is cheap -- this is what survives a
-    single stray inserted/dropped/substituted character that isn't one of
-    the specific confusions _normalize_for_page_match already unifies
-    (e.g. a flat-out extra digit, as in 'Fe2MnO4' OCR'd as 'Fe2Mn0O4').
+    -1. Cheap here since needle/haystack are short formula/name skeletons --
+    catches a stray inserted/dropped/substituted character not already
+    covered by _normalize_for_page_match (e.g. 'Fe2MnO4' OCR'd as
+    'Fe2Mn0O4').
     """
     n = len(needle)
     if n == 0:
@@ -1099,34 +917,24 @@ def _fuzzy_find(needle: str, haystack: str, max_dist: int):
 
 def page_contains_compound(lines, formula, name):
     """Best-effort check that a page plausibly contains this formula's own
-    table (not just a passing mention of it elsewhere, e.g. in another
-    entry's decomposition remarks). Checking this before trusting a page
-    number is what catches a wrong page-offset guess landing on a
-    *different, real* compound's table instead of erroring out.
+    table, not just a passing mention elsewhere (e.g. a decomposition
+    remark) -- catches a wrong page-offset guess landing on a different
+    real compound's table.
 
-    An untagged formula (e.g. 'Ca2SiO4') must NOT match a page whose header
-    continues with a polymorph tag right after it (e.g. 'Ca2SiO4[B]',
-    LARNITE, the beta form) -- that's a different, more specific entry with
-    its own row in toc_barin.csv, and accepting it here would silently
-    pull the wrong polymorph's data. Matching tolerates a small edit
-    distance (not just exact substring containment) since the page's own
-    OCR pass can introduce noise -- e.g. a stray inserted digit -- that
-    _normalize_for_page_match's specific character unifications don't
-    cover.
+    An untagged formula (e.g. 'Ca2SiO4') must NOT match a page whose
+    header continues with a polymorph tag (e.g. 'Ca2SiO4[B]') -- that's a
+    separate toc entry, and accepting it would silently pull the wrong
+    polymorph. Matching tolerates a small edit distance for page-specific
+    OCR noise that _normalize_for_page_match doesn't already cover.
     """
     page_text = _normalize_for_page_match(" ".join(_entry_header_windows(lines)))
     formula_key = _normalize_for_page_match(formula)
     if formula_key:
-        # Formulas get no fuzzy tolerance at all, unlike names: a name typo
-        # from ordinary OCR letter noise is still recognizably the same
-        # compound, but a single-digit difference in a formula is a
-        # *different compound* by definition -- 'WBr5[g]' (tungsten
-        # pentabromide) fuzzy-matched within edit-distance-1 of 'WBr[g]'
-        # (tungsten monobromide, no '5') on a page that only had the latter,
-        # which is exactly the wrong-page acceptance this check exists to
-        # prevent. The name check below still catches genuine OCR noise
-        # like 'Fe2MnO4' OCR'd as 'Fe2Mn0O4' -- an extra stray digit that
-        # doesn't happen to spell out a different real stoichiometry.
+        # Formulas get no fuzzy tolerance, unlike names: an ordinary OCR
+        # letter typo still reads as the same compound, but a single-digit
+        # formula difference is a *different compound* (e.g. 'WBr5[g]' vs
+        # 'WBr[g]'). The name check below still catches genuine noise like
+        # 'Fe2MnO4' OCR'd as 'Fe2Mn0O4'.
         max_dist = 0
         idx = page_text.find(formula_key)
         match_len = len(formula_key)
@@ -1148,14 +956,12 @@ def page_contains_compound(lines, formula, name):
 
 
 def find_verified_page(formula, name, guessed_page, search_radius=3):
-    """Try the precomputed page number first (cheapest, and right most of
-    the time); if its header doesn't match this compound, search outward
-    (+/-1, +/-2, ...) for a nearby page that does, since Barin's TOC-page-
-    to-PDF-page offset is a piecewise approximation that's occasionally off
-    by one or two. Returns (page_num, lines, verified) -- if nothing in the
-    search radius verifies, falls back to the original guess with
-    verified=False so the caller can flag it instead of silently trusting
-    unverified data.
+    """Try the precomputed page first; if its header doesn't match, search
+    outward (+/-1, +/-2, ...) since Barin's TOC-to-PDF page offset is
+    occasionally off by one or two. Returns (page_num, lines, verified) --
+    falls back to the original guess with verified=False if nothing in
+    the search radius matches, so the caller can flag it instead of
+    silently trusting unverified data.
     """
     offsets = [0]
     for r in range(1, search_radius + 1):
@@ -1256,11 +1062,9 @@ def main(input_pdf, output_dir="barin_json_data"):
 
         names.append(toc['Name'].tolist()[idx])
         # These base offsets were empirically off by one across a diverse
-        # sample spanning all three ranges (28/30 needed a -1 correction
-        # from find_verified_page) -- corrected here so the first guess is
-        # right for the common case again, instead of paying for an extra
-        # OCR call on nearly every formula. find_verified_page remains as
-        # the safety net for whatever's still off.
+        # sample (28/30 needed a -1 correction from find_verified_page) --
+        # corrected here so the common case doesn't pay for an extra OCR
+        # call. find_verified_page remains the safety net for the rest.
         if int(toc['Page number'].tolist()[idx]) <= 924:
             page_nums.append(int(toc['Page number'].tolist()[idx])+114)
         elif (int(toc['Page number'].tolist()[idx]) >= 925 

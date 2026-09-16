@@ -1,0 +1,78 @@
+# Source: Crystallography Open Database COD-9001567 (https://www.crystallography.net/cod/9001567.html)
+#------------------------------------------------------------------------------
+#$Date: 2024-04-18 18:56:43 +0300 (Thu, 18 Apr 2024) $
+#$Revision: 291269 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/15/9001567.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9001567
+loop_
+_publ_author_name
+'Balzar, D.'
+'Ledbetter, H.'
+_publ_section_title
+;
+ Crystal structure and compressibility of 3:2 mullite
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1192
+_journal_page_last               1196
+_journal_volume                  78
+_journal_year                    1993
+_chemical_formula_sum            'Al2.25 O4.871 Si0.75'
+_chemical_name_mineral           Mullite
+_space_group_IT_number           55
+_symmetry_space_group_name_Hall  '-P 2 2ab'
+_symmetry_space_group_name_H-M   'P b a m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   7.54336
+_cell_length_b                   7.69176
+_cell_length_c                   2.88402
+_cell_formula_units_Z            2
+_cell_volume                     167.336
+_database_code_amcsd             0001618
+_exptl_crystal_density_diffrn    3.170
+_cod_original_formula_sum        'Al2.25 Si.75 O4.871'
+_cod_database_code               9001567
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2-y,z
+1/2-x,1/2+y,-z
+1/2-x,1/2+y,z
+1/2+x,1/2-y,-z
+x,y,-z
+-x,-y,z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Al 0.00000 0.00000 0.00000 1.00000 0.00291
+Al1 0.14850 0.34070 0.50000 0.52500 0.00304
+Si1 0.14850 0.34070 0.50000 0.34200 0.00304
+Al2 0.26100 0.20730 0.50000 0.10000 ?
+Si2 0.26100 0.20730 0.50000 0.03300 ?
+O1 0.35770 0.42350 0.50000 1.00000 0.02685
+O2 0.50000 0.00000 0.50000 0.47500 0.02609
+O3 0.46350 0.04650 0.50000 0.19800 0.05737
+O4 0.12650 0.21970 0.00000 1.00000 0.02736
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0001618

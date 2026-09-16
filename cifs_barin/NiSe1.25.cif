@@ -1,0 +1,71 @@
+# Source: Crystallography Open Database COD-9009244 (https://www.crystallography.net/cod/9009244.html)
+#------------------------------------------------------------------------------
+#$Date: 2024-05-06 10:39:41 +0300 (Mon, 06 May 2024) $
+#$Revision: 291735 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/92/9009244.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009244
+loop_
+_publ_author_name
+'Hiller, J. E.'
+'Wegener, W.'
+_publ_section_title
+;
+ Untersuchungen im system nickel-selen
+;
+_journal_name_full
+'Neues Jahrbuch fur Mineralogie, Abhandlungen'
+_journal_page_first              1147
+_journal_page_last               1159
+_journal_volume                  94
+_journal_year                    1960
+_chemical_formula_sum            'Ni3 Se4'
+_chemical_name_mineral           Wilkmanite
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 149.37
+_cell_angle_gamma                90
+_cell_length_a                   12.15
+_cell_length_b                   3.633
+_cell_length_c                   10.45
+_cell_formula_units_Z            2
+_cell_volume                     235.015
+_database_code_amcsd             0014699
+_exptl_crystal_density_diffrn    6.951
+_cod_database_code               9009244
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,z
+1/2+x,1/2-y,z
+-x,y,-z
+1/2-x,1/2+y,-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Ni1 0.00000 0.00000 0.00000
+Ni2 0.00000 0.00000 0.25000
+Se1 0.33333 0.00000 0.45800
+Se2 0.33333 0.00000 0.95800
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0014699

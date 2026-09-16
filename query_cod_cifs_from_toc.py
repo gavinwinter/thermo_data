@@ -1,33 +1,21 @@
 """
-Second-pass CIF retrieval for Barin toc entries that Materials Project didn't
-have (query_mp_cifs_from_toc.py's cif_unmatched_mp.csv), using the free,
-open Crystallography Open Database (COD) REST search
-(https://www.crystallography.net/cod/) -- unlike ICSD, COD is CC0 and its
-search/download endpoints are meant for exactly this kind of automated use.
+Second-pass CIF retrieval for Barin toc entries that Materials Project
+didn't have (query_mp_cifs_from_toc.py's cif_unmatched_mp.csv), using the
+free, open Crystallography Open Database (COD) REST search
+(https://www.crystallography.net/cod/) -- unlike ICSD, COD is CC0.
 
-No API key needed for this stage. Run after query_mp_cifs_from_toc.py, with
-a Python environment that has pymatgen + pandas installed (see README):
-
+No API key needed. Run after query_mp_cifs_from_toc.py:
     python query_cod_cifs_from_toc.py
 
-Nothing else needs to change: paths are resolved relative to this script's
-own location, so the repo can live anywhere.
-
 For each row in cif_unmatched_mp.csv:
-  0. Set aside rows with no parseable composition (unparseable_formula /
-     suspected_ocr_corruption) and rows that are room-temperature organic
-     liquids (no realistic crystal structure applies) -- neither is worth
-     sending to COD. Both go straight into the final outputs.
-  1. Query COD by element set (exact element count match, any stoichiometry).
-  2. Parse each candidate's reported formula and compare its element ratios
-     to our target composition (tight tolerance -- this is a stoichiometry
-     check, not a fuzzy search, since a wrong match here would be worse than
-     no match).
-  3. On a hit, download the actual CIF from crystallography.net/cod/<id>.cif
-     into cifs_barin/, alongside the Materials Project results.
+  0. Set aside unparseable/organic-liquid rows (no realistic structure to
+     look up) straight into the final outputs.
+  1. Query COD by element set (exact count match, any stoichiometry).
+  2. Compare each candidate's formula ratios to the target (tight
+     tolerance -- a wrong match here is worse than no match).
+  3. On a hit, download the CIF into cifs_barin/, alongside MP's results.
   4. Write cif_matches_cod.csv, cif_no_structure_expected.csv (organic
-     liquids, informational only), and cif_unmatched_final.csv -- the
-     genuine remaining candidates for manual ICSD lookup.
+     liquids), and cif_unmatched_final.csv (genuine ICSD candidates).
 """
 import json
 import re
@@ -123,34 +111,29 @@ def best_candidate(target_comp, docs, tol=RATIO_TOL):
 
 
 def sanitize_filename(formula: str) -> str:
-    # '(' ')' are kept as-is (they're valid on every filesystem this repo
-    # runs on, just needing quotes in a shell command) so hydrate/complex
-    # formulas like 'Al2(SO4)3' read as themselves in the filename instead
-    # of becoming 'Al2_SO4_3'. '*' (Barin's hydrate separator, e.g.
-    # 'ZnSO4*7H2O') is kept as-is too, matching how read_all_thermodata_pdf.py
-    # names the corresponding .json -- so a hydrate's .cif and .json share
-    # the same base name instead of one saying '_hyd_' and the other '*'.
+    # '(' ')' are kept as-is (valid on every filesystem here, just needing
+    # quotes in a shell command) so formulas like 'Al2(SO4)3' read as
+    # themselves in the filename. '*' (Barin's hydrate separator) is kept
+    # too, matching read_all_thermodata_pdf.py's .json naming, so a
+    # hydrate's .cif and .json share the same base name.
     return re.sub(r"[^A-Za-z0-9_.()\[\]*-]", "_", formula)
 
 
-# Elements that appear in this dataset's actual organic entries (hydrocarbons,
-# alcohols, acids: C/H, plus the O/S/N/halogens in their functional groups). A
-# formula needs C and H *and* nothing outside this set to count as organic --
-# otherwise something like NaHCO3 (sodium bicarbonate, a genuine mineral with
-# Na present) would get misclassified as organic just because it contains
-# both C and H.
+# Elements in this dataset's actual organic entries (hydrocarbons,
+# alcohols, acids): C/H plus the O/S/N/halogens in their functional
+# groups. A formula needs C and H *and* nothing outside this set to count
+# as organic -- otherwise NaHCO3 (a genuine mineral with Na) would get
+# misclassified just for containing both C and H.
 _ORGANIC_ALLOWED_ELEMENTS = {"C", "H", "N", "O", "S", "P", "F", "Cl", "Br", "I"}
 
 
 def is_organic_liquid(bare_formula) -> bool:
-    """Contains both carbon and hydrogen, with no elements outside the
-    CHNOPS+halogens set -- these are the room-temperature organic
-    liquids/gases in Barin's table, none of which have a meaningful
-    solid-state crystal structure to look up (and, per query_mp_cifs_from_toc's
-    organic_ambiguous_isomers routing, can't be safely guessed by stoichiometry
-    anyway since isomers share a formula). Composition-based rather than a
-    hardcoded name-keyword list so it generalizes to every such entry, not
-    just the ones someone thought to list.
+    """Contains both C and H, with nothing outside CHNOPS+halogens -- the
+    room-temperature organic liquids/gases in Barin's table, none of which
+    have a meaningful solid-state structure to look up (isomers share a
+    formula, so query_mp_cifs_from_toc.py can't safely guess by
+    stoichiometry either). Composition-based rather than a hardcoded
+    keyword list, so it generalizes to every such entry.
     """
     try:
         comp = Composition(str(bare_formula))

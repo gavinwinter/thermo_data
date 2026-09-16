@@ -1,0 +1,104 @@
+# Source: Crystallography Open Database COD-9009903 (https://www.crystallography.net/cod/9009903.html)
+#------------------------------------------------------------------------------
+#$Date: 2024-08-07 20:09:39 +0300 (Wed, 07 Aug 2024) $
+#$Revision: 294031 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/99/9009903.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009903
+loop_
+_publ_author_name
+'Rost, E.'
+'Vestersjo, E.'
+_publ_section_title
+;
+ On the system Ni-Se-Te
+ Note: Phase F, sample 90
+;
+_journal_name_full               'Acta Chemica Scandinavica'
+_journal_page_first              2118
+_journal_page_last               2134
+_journal_paper_doi               10.3891/acta.chem.scand.22-2118
+_journal_volume                  22
+_journal_year                    1968
+_chemical_compound_source        Synthetic
+_chemical_formula_sum            'Ni0.958 Te1.042'
+_chemical_name_mineral           Imgreite
+_space_group_IT_number           194
+_symmetry_space_group_name_Hall  '-P 6c 2c'
+_symmetry_space_group_name_H-M   'P 63/m m c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            2
+_cell_length_a                   3.969
+_cell_length_b                   3.969
+_cell_length_c                   5.358
+_cell_volume                     73.096
+_database_code_amcsd             0011910
+_exptl_crystal_density_diffrn    8.595
+_cod_original_formula_sum        'Ni.958 Te1.042'
+_cod_database_code               9009903
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+-x,-x+y,1/2+z
+x,x-y,1/2-z
+-x+y,-x,1/2-z
+x-y,x,1/2+z
+-y,-x,z
+y,x,-z
+y,-x+y,-z
+-y,x-y,z
+x-y,-y,1/2+z
+-x+y,y,1/2-z
+x,y,1/2-z
+-x,-y,1/2+z
+x,x-y,z
+-x,-x+y,-z
+x-y,x,-z
+-x+y,-x,z
+y,x,1/2+z
+-y,-x,1/2-z
+-y,x-y,1/2-z
+y,-x+y,1/2+z
+-x+y,y,z
+x-y,-y,-z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+Ni 0.00000 0.00000 0.00000 0.95800
+Te1 0.00000 0.00000 0.00000 0.04200
+Te2 0.33333 0.66667 0.25000 1.00000
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.10.1
+Id: cif_fix_AMCSD_atom_labels 10224 2024-08-07 11:09:31Z saulius
+;
+2024-08-07T19:39:59+03:00
+;Changed the following '_atom_site_label' values:
+the first duplicated label 'Te'  converted to 'Te1'
+duplicated label 'Te' at index 2 converted to 'Te2'
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0011910
